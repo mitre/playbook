@@ -1,0 +1,29 @@
+<div class="sidebar-menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <%= content_tag(:li, link_to("High-level Summary", "index.html", nav_active('playbook/index')), nav_active('playbook/index')) %>
+  <%= content_tag(:li, link_to("Introduction", "introduction.html", nav_active('playbook/introduction')), nav_active('playbook/introduction')) %>
+  <% if show_sub('playbook/introduction') %> 
+  	<li class="sub"><a href="#motivation">Motivation</a></li>
+	  <li class="sub"><a href="#intended_audience">Intended Audience</a></li>
+  	<li class="sub"><a href="#organization">Organization</a></li>
+  <% end %>
+
+  <%= content_tag(:li, link_to("Building Community", "community.html", nav_active('playbook/community')), nav_active('playbook/community')) %>
+  <% if show_sub('playbook/community') %> 
+  	<li class="sub"><a href="#champions">Champions</a></li>
+	  <li class="sub"><a href="#governance">Governance</a></li>
+  	<li class="sub"><a href="#growth">Growth</a></li>
+  	<li class="sub"><a href="#observations">Observations</a></li>
+  <% end %>
+
+
+  <%= content_tag(:li, link_to("Planning & Use Cases", "planning_use_cases.html", nav_active('playbook/planning_use_cases')), nav_active('playbook/planning_use_cases')) %>
+  <%= content_tag(:li, link_to("Standards Development", "standards.html", nav_active('playbook/standards')), nav_active('playbook/standards')) %>
+  <%= content_tag(:li, link_to("Implementation & Testing", "implementation.html", nav_active('playbook/implementation')), nav_active('playbook/implementation')) %>
+  <%= content_tag(:li, link_to("Adoption & Value", "adoption.html", nav_active('playbook/adoption')), nav_active('playbook/adoption')) %>
+  <%= content_tag(:li, link_to("Summary & Next Steps", "summary.html", nav_active('playbook/summary')), nav_active('playbook/summary')) %>
+</ul>
+
+</ul>
+</div>
