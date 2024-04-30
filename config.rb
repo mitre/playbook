@@ -59,10 +59,10 @@ configure :build do
   config[:root] = "/playbook/"
   set :base_url, "/codex-playbook" # baseurl for GitLab Pages (project name) - leave empty if you're building a user/group website
   set :build_dir, 'public'
-  config[:http_prefix] = '/playbook'
-  # activate :relative_assets # Use relative URLs
-  # set :relative_links, true
-  activate :asset_host, :host => '/playbook'
+  # config[:http_prefix] = '/playbook'
+  activate :relative_assets # Use relative URLs
+  set :relative_links, true
+  # activate :asset_host, :host => '/playbook'
   config[:css_dir] = "stylesheets"
   config[:js_dir] = "javascripts"
 end
