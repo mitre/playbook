@@ -132,6 +132,12 @@ ol.section-list li {
   ol.section-list li a:first-child {
     font-weight: bold; }
 
+ol.action-list > li {
+  font-weight: bold;
+  margin-bottom: 1em; }
+  ol.action-list > li ul li {
+    font-weight: normal; }
+
 .playbook-bottom-navigation {
   display: flex;
   margin: 5rem 0;
