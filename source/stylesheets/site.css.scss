@@ -141,6 +141,12 @@ ol.section-list li {
   margin:1rem 0;
   a:first-child {font-weight:bold;}
 }
+
+ol.action-list>li {
+font-weight:bold;
+ margin-bottom:1em;
+ul li {font-weight:normal;}}
+
 .playbook-bottom-navigation {
   display:flex;
   margin:5rem 0;
