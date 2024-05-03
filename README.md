@@ -30,7 +30,7 @@ other unix based operating systems
         git version 2.37.1
         ```
          
-        Jump to [step 7](#step-7) if this is the case.
+        Jump to [step 6](#step-6) if this is the case.
     
     * If __Terminal__ responded with anything that might indicate it did not 
     recognize __Git__, such as:
@@ -102,7 +102,7 @@ the following commands will create it directly in the home directory:
     git clone https://github.com/CodeX-HL7-FHIR-Accelerator/playbook.git
     ```
 
-10. <a name="step-10"></a>Check if you have __Ruby__ installed by inputting:
+9. <a name="step-10"></a>Check if you have __Ruby__ installed by inputting:
 
     ```
     ruby -v 
@@ -115,7 +115,7 @@ the following commands will create it directly in the home directory:
         ruby 3.2.2
         ```
          
-        Jump to [step 14](#step-14) if this is the case.
+        Jump to [step 13](#step-13) if this is the case.
     
     * If __Terminal__ responded with anything that might indicate it did not 
     recognize __Ruby__, such as:
@@ -124,9 +124,9 @@ the following commands will create it directly in the home directory:
          -bash: ruby: command not found
          ``` 
          
-        continue to [step 11](#step-11).
+        continue to [step 10](#step-10).
 
-11. <a name="step-11"></a>Check if you have the **R**uby **V**ersion 
+10. <a name="step-11"></a>Check if you have the **R**uby **V**ersion 
 **M**anager (__RVM__) by inputting: 
 
     ```
@@ -140,7 +140,7 @@ the following commands will create it directly in the home directory:
         rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
         ```
          
-        Jump to [step 13](#step-13) if this is the case.
+        Jump to [step 12](#step-12) if this is the case.
     
     * If __Terminal__ responded with anything that might indicate it did not 
     recognize __RVM__, such as:
@@ -149,9 +149,9 @@ the following commands will create it directly in the home directory:
          -bash: rvm: command not found
          ``` 
          
-        continue to [step 12](#step-12)
+        continue to [step 11](#step-11)
 
-12. <a name="step-12"></a>Install __RVM__ by inputting:
+11. <a name="step-12"></a>Install __RVM__ by inputting:
 
     ```
     \curl -L https://get.rvm.io | bash -s stable
@@ -165,13 +165,13 @@ the following commands will create it directly in the home directory:
     ```
     Then close __Terminal__, and open __Terminal__ again.
 
-13. <a name="step-13"></a>Install __Ruby__ by inputting:
+12. <a name="step-13"></a>Install __Ruby__ by inputting:
 
     ```
     rvm install ruby-3.2.2
     ```
 
-14. <a name="step-14"></a>Install __Rails__. 
+13. <a name="step-14"></a>Install __Rails__. 
 
     First, input the following to ensure that **Ruby**'s package 
     manager __RubyGems__ is up to date:
@@ -180,13 +180,23 @@ the following commands will create it directly in the home directory:
     gem update --system
     ```
 
-15. <a name="step-15"></a>Set up your local instance of the app. 
+14. <a name="step-15"></a>Set up your local instance of the app. 
     
     First, make sure you're in the correct directory (Remember to change 
     the cd path if you chose to set up the app in a different location):
 
     ```
     cd ~/playbook
+    ```
+
+    Create a gemset for the project:
+    ```
+    rvm gemset create playbook
+    ```
+
+    Switch to the __RVM__ gemset you just created:
+    ```
+    rvm @playbook
     ```
 
     Next, ensure you have the __Bundler__ gem installed by inputting:
