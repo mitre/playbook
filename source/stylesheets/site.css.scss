@@ -123,6 +123,11 @@ h1 {font-weight:bold}
   
 }
 
+body.casestudy .sidebar-menu {
+  li.active a {color:white;background-color:#477460}
+  li a:hover {background-color:#EBF7F4;}
+}
+
 .about-author {
   margin-top:4em;
   border-top:1px solid #eeeeee;
@@ -136,6 +141,7 @@ h1 {font-weight:bold}
   }
 
 }
+p.lead {margin-top:2em;}
 
 ol.section-list li {
   margin:1rem 0;
@@ -164,6 +170,8 @@ ul li {font-weight:normal;}}
     margin:0;
   }
 }
+hr {margin-top:2em}
+hr+h2 {margin:2em 0 1em 0}
 
 .date {
   color: #999999;
