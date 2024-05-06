@@ -258,4 +258,4 @@ running. To do this gracefully, you need to do two things:
 
 ## Copyright
 
-Copyright 2024 The MITRE Corporation
+Copyright 2024 The MITRE Corporation. All rights reserved.
