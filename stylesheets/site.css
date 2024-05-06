@@ -116,6 +116,13 @@ h1 {
   .sidebar-menu li.sub a {
     padding-left: 1.5em; }
 
+body.casestudy .sidebar-menu li.active a {
+  color: white;
+  background-color: #477460; }
+
+body.casestudy .sidebar-menu li a:hover {
+  background-color: #EBF7F4; }
+
 .about-author {
   margin-top: 4em;
   border-top: 1px solid #eeeeee;
@@ -126,6 +133,9 @@ h1 {
     font-size: 1rem;
     text-transform: uppercase;
     color: #999999; }
+
+p.lead {
+  margin-top: 2em; }
 
 ol.section-list li {
   margin: 1rem 0; }
@@ -154,6 +164,12 @@ ol.action-list > li {
     font-size: 0.9em;
     color: #333333;
     margin: 0; }
+
+hr {
+  margin-top: 2em; }
+
+hr + h2 {
+  margin: 2em 0 1em 0; }
 
 .date {
   color: #999999;
