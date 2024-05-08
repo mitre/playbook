@@ -62,7 +62,8 @@ body.resources .breadcrumb-box {
   background-color: var(--hero-box-bkg); }
 
 .featured-case-study-box {
-  background-color: var(--casestudies-bkg); }
+  background-color: var(--casestudies-bkg);
+  margin-bottom: 2em; }
 
 footer {
   background-color: var(--footer-bkg);
