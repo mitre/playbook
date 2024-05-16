@@ -14,7 +14,199 @@ theme: playbook
   
     <div class="col-md-9">
       <h2>Standards Development</h2>
-      <p class="lead">Introductory paragraph describing standards development.</p>
+      <h3>Health Data Standards provide the Common Language for Better Health</h3>
+      <p class="lead">
+        Health data standards are help patients, health systems, payers, researchers and others who need to work together communicate using a common language. Good health data standards can specify very clearly how data are collected, stored, shared, and/or used such that very piece of data can be unambiguously created and understood by all entities within the health ecosystem. Good standards enable semantic interoperability.
+      </p>
+      <p>
+        Standards are not the end product, from the perspective of this Playbook. However, standards are an essential component for accurate, electronic sharing of data need to improve health care and access, and to reduce burden and costs. Standards are community-driven (and sometimes mandated by the Government), and must be implemented in systems and workflows by the community.
+      </p>
+      <p>
+        Here’s high-level background on the standards organizations and standards that have been foundational for the mCODE cancer data standard, and to using that standard (and others) to empower Use Cases and provide valuable, new solutions in the health ecosystem.
+      </p>
+      <p>
+        The <a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a> is the “principal federal entity charged with coordination of nationwide efforts to implement and use the most advanced health information technology and the electronic exchange of health information”. ONC spearheads assembling community agreement on a “standardized set of health data classes and constituent data elements for nationwide, interoperable health information exchange”, called the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>. 
+      </p>
+      <p>
+        ONC has increasingly partnered with <a href="https://www.hl7.org/">Health Level Seven (HL7)</a>, the preeminent organization for gathering communities to develop standards that enable health data interoperability. Of the many important efforts within HL7, two are foundational for the work described in this Playbook:
+        <ul>
+          <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a> is the health data sharing framework widely used now and is being mandated for certain applications through ONC.</li>
+          <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide (IG)</a> essentially encapsulates into the FHIR framework the data classes and data elements defined in USCDI, and will evolve as USCDI grows and evolves.</li>
+        </ul>
+      </p>
+      <p>
+        The <a href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig/">mCODE FHIR IG<a/> and other work in CodeX build on the above foundations.  This has many benefits, including helping to ensure (not guaranteed) that mCODE and CodeX products are more likely to be consistent with other efforts. It’s not that simple, but close enough.
+      </p>
+      <p>
+        The next figure illustrates the (a) Clinical Requirements, (b) FHIR IG Development, and (c) HL7 Standardization stages covered in subsequent subsections. 
+      </p>
+      <p>
+        The next table summarizes key principles central standards work done in CodeX, including the mCODE IG.
+      </p>
+
+      <h3>Requirements to FHIR IG Process</h3>
+      <h4>An Agile process of iterations between each phase.</h4>
+      <h4>Clinical SMEs are involved in every phase</h4>
+      <p><%= image_tag 'fhir-ig-process.png', :width => '100%', :class => 'py-5' %></p>
+
+      <h3>Design Principles that Guide mCODE Development</h3>
+      <h4>If additional specialties follow these, that are more likely to be interoperable and compatible as part of a life-time patient Standard Health Record</h4>
+      <h4>Design Principles</h4>
+      <ol>
+        <li><b>Community and Use Case</b> driven, with <b>adoption</b> and <b>value</b> a focus from the beginning.
+          <ul>
+            <li>Need broadest possible support of patients, providers, Gov’t, vendors, payers, etc.</li>
+            <li>Ensure standards are informed by and address real community problems. Plan from the start for implementation, adoption and real value.</li>
+            <li>Demonstrate potential value in the real environments.</li>
+          </ul>
+        </li>
+
+        <li>Standardized <b>data</b> is part of the <b>standard of health care</b>. Thus, the primary focus is collection and sharing of quality, core data related to <b>patient care and outcomes</b>, with goal of a lifetime Standard Health Record.
+          <ul>
+            <li>Data originally collected for one health state can be important for future states.</li>
+            <li>Secondary uses of patient care data (personal, research, quality measurement, payer operations, etc.) will be hugely valuable and more cost-effective than current approaches.</li>
+            <li>Can also create supplemental IGs.</li>
+          </ul>
+        </li>
+
+        <li><b>Encounter-based</b> and <b>discrete</b> observations and actions (e.g. patient birth date = 11/04/1989 vs. patient is 34 years old).
+          <ul>
+            <li>Allows aggregated calculations using different observations and actions, via different approaches, for different use cases, at different times.</li>
+          </ul>
+        </li>
+
+        <li><b>Data collected once</b> (generally around the encounter). Data collected can then be reused for multiple use cases going forward.
+          <ul>
+            <li>Not all data elements will be collected for every patient during every encounter, since people and their disease states differ.</li>
+            <li>When data should be collected, the standard provides the template.</li>
+          </ul>
+        </li>
+
+        <li>Define <b>core clinical data elements</b> needed across key use cases and stakeholders.
+          <ul>
+            <li>Create supplemental IGs for details important for very specialized situations.</li>
+          </ul>
+        </li>
+
+        <li>Ensure <b>consistent representation</b> of data elements that may be used across specialties.
+          <ul>
+            <li>Different specialties require similar data that might have been historically described differently.</li>
+            <li>Establish principles, templates and processes that reconcile differences and consolidate in one place, where possible.</li>
+          </ul>
+        </li>
+
+        <li>Leverage <b>Government-backed interoperability standards</b> whenever possible (e.g., FHIR, USCDI represented in FHIR as US Core, USCDI+ ...).
+          <ul>
+            <li>Gov’t support increases impetuous for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
+            <li>May require changes to representations of previous work.</li>
+          </ul>
+        </li>
+
+        <li>Leverage the <b>best available work</b> (standards, tools, etc.).
+          <ul>
+            <li>If previous work is already represented in Government backed standards, use rather than re-do.</li>
+            <li>Leverage the available approaches and tools for modeling and IG development.</li>
+            <li>These will motivate higher-quality FHIR IGs that are more coherent across specialties, use cases and projects.</li>
+          </ul>
+        </li>
+
+        <li>Leverage <b>global code systems</b>.
+          <ul>
+            <li>Observations and actions are represented consistently within and across specialties, in many cases, around the world.</li>
+          </ul>
+        </li>
+
+        <li>Review through <b>clinical specialists and patients first</b>, then other medical, standards and vendor experts.
+          <ul>
+            <li>Ensure clinical relevance first.</li>
+            <li>Add other health use case, technical, and standards expertise.</li>
+          </ul>
+        </li>
+
+        <li>These are data standards for data <b>collection</b> (storage) and <b>exchange, not</b> for user <b>interfaces</b>.
+          <ul>
+            <li>Systems can be created to present data subsets, and understandable interfaces related to collect, use and analysis for patients, providers and other.</li>
+          </ul>
+        </li>
+
+        <li><b>Controlled by the patient</b>.
+          <ul>
+            <li>Consent: who gets what data for what purposes for what timeframes in a way that follows the data.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3 id="clinical_requirements">Compile clinical data requirements and model, based on Use Case Requirements led by medical specialists.</h3>
+      <p>
+        Each Use Case dictates the clinical information that needs to be collected and shared, and thus the data that will later go into updated or new FHIR IGs..
+      </p>
+      <p>
+        Health domain professionals, supported by an objective faciliatator work to define a clinical data dictionary needed for the Use Case. The group should use familiar medical terms, define needs, identify previous work that could be consider.
+      </p>
+      <p>
+        One approach is to create conceptual models with mind-mapping.  Common mind-mapping tools include Freemind, XMind, Coggle, or plain ol' whiteboarding.
+      </p>
+      <p>Create a Data Dictionary – logical model elements to clinical information cross-walk</p>
+      <p>NOTE: More content to be added</p>
+
+      <p>See the next 2 figures.</p>
+
+      <h4>Clinical Information Survey</h4>
+      <p><%= image_tag 'clinical-info-survey.png', :width => '100%', :class => 'py-5' %></p>
+
+      <h4>Survey Breakdown</h4>
+      <p><%= image_tag 'survey-breakdown.png', :width => '100%', :class => 'py-5' %></p>
+
+      <h3 id="fhir_ig_development">Integrate requirements into and standardize specialty FHIR Implementation Guide(s) (IGs)...</h3>
+      <p>
+        Health and informatic professional collaborate on forging a data model from the dictionary.
+      </p>
+      <div class="row">
+        <div class="col-md-3">
+          <b>Element categories mapped:</b>
+          <ul>
+            <li>Patient Demographics</li>
+            <li>Test Information</li>
+            <li>Specimen</li>
+            <li>Variant</li>
+            <li>Relevant Drug Therapy</li>
+            <li>Biomarkers (TMB, MSI)</li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <p><%= image_tag 'scoping-minimal.png', :width => '100%', :class => 'py-5' %></p>
+        </div>
+      <p>
+        Based on this, a FHIR IG is developed, based as much as possible on the US Core IG.
+      </p>
+      <p>Tools Built, Initially, for mODE Development.  Now, Leveraged Around the World of Health IT.</p>
+      <p>Building FOUNDATIONS for advancing health interoperability</p>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag 'fsh-logo.png', :width => '100%', :class => 'py-5' %>
+        </div>
+        <div class="col-md-8">
+          <p>
+            FHIR Shorthand (FSH) is an author-friendly language for defining the contents of FHIR Implementation Guides
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag 'synthea-logo.png', :width => '100%', :class => 'py-5' %>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Synthea™ is an open-source, synthetic patient generator. With no cost and no restrictions, Synthea empowers research, health IT, and policy formation
+          </p>
+        </div>
+      </div>
+      <p>NOTE: More content to be added</p>
+
+      <h3 id="hl7_standardization">Step 3: Standardize the FHIR IGs through HL7</h3>
+      <p>NOTE: More content to be added</p>
+    </div>
+
     <div class="playbook-bottom-navigation">
         <div class="previous">  <%= link_to("Prev: Use Cases & Planning", "use_cases_planning.html") %></div>
         <div class="next"><%= link_to("Next: Implementation & Testing", "implementation.html") %></div>
