@@ -2,6 +2,7 @@
 <h4>Playbook Menu</h4>
 <ul>
   <%= content_tag(:li, link_to("High-level Summary", "index.html", nav_active('playbook/index')), nav_active('playbook/index')) %>
+  <%= content_tag(:li, link_to("Getting Started", "getting_started.html", nav_active('playbook/getting_started')), nav_active('playbook/getting_started')) %>
   <%= content_tag(:li, link_to("Introduction", "introduction.html", nav_active('playbook/introduction')), nav_active('playbook/introduction')) %>
   <% if show_sub('playbook/introduction') %> 
   	<li class="sub"><a href="#motivation">Motivation</a></li>
