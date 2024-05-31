@@ -87,35 +87,36 @@ h1 {
   .feature-path h3 {
     font-size: 1.3rem; }
 
-.sidebar-menu h4 {
-  font-weight: bold;
-  margin-bottom: 1.5rem; }
-
-.sidebar-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem; }
-  .sidebar-menu ul li {
-    border-top: 1px solid #eeeeee;
-    font-weight: bold; }
-    .sidebar-menu ul li a {
-      display: block;
-      text-decoration: none;
-      padding: 0.5em;
-      color: #000; }
-      .sidebar-menu ul li a:hover {
-        background-color: #F0F7FE; }
-  .sidebar-menu ul li:last-child {
-    border-bottom: 1px solid #eeeeee; }
-  .sidebar-menu ul li.active a {
-    color: white;
-    background-color: #43507A; }
-
-.sidebar-menu li.sub {
-  font-weight: normal; }
-  .sidebar-menu li.sub a {
-    padding-left: 1.5em; }
+.sidebar-menu {
+  position: sticky;
+  top: 50px; }
+  .sidebar-menu h4 {
+    font-weight: bold;
+    margin-bottom: 1.5rem; }
+  .sidebar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem; }
+    .sidebar-menu ul li {
+      border-top: 1px solid #eeeeee;
+      font-weight: bold; }
+      .sidebar-menu ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em;
+        color: #000; }
+        .sidebar-menu ul li a:hover {
+          background-color: #F0F7FE; }
+    .sidebar-menu ul li:last-child {
+      border-bottom: 1px solid #eeeeee; }
+    .sidebar-menu ul li.active a {
+      color: white;
+      background-color: #43507A; }
+  .sidebar-menu li.sub {
+    font-weight: normal; }
+    .sidebar-menu li.sub a {
+      padding-left: 1.5em; }
 
 body.casestudy .sidebar-menu li.active a {
   color: white;
