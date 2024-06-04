@@ -10,6 +10,8 @@
   <% end %>
 
   <%= content_tag(:li, link_to("Getting Started", "getting_started.html", nav_active('playbook/getting_started')), nav_active('playbook/getting_started')) %>
+  <%= content_tag(:li, link_to("Design Principles", "design_principles.html", nav_active('playbook/design_principles')), nav_active('playbook/design_principles')) %>
+  
   <%= content_tag(:li, link_to("Building Community", "community.html", nav_active('playbook/community')), nav_active('playbook/community')) %>
   <% if show_sub('playbook/community') %> 
   	<li class="sub"><a href="#champions">Champions</a></li>
