@@ -139,9 +139,9 @@ body.casestudy .sidebar-menu li a:hover {
 p.lead {
   margin-top: 2em; }
 
-ol.section-list li {
+ol.section-list > li {
   margin: 1rem 0; }
-  ol.section-list li a:first-child {
+  ol.section-list > li a:first-child {
     font-weight: bold; }
 
 ol.action-list > li {
