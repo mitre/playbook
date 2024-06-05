@@ -156,6 +156,12 @@ font-weight:bold;
  margin-bottom:1em;
 ul li {font-weight:normal;}}
 
+
+ul.action-list>li {
+font-weight:bold;
+ margin-bottom:1em;
+ul li {font-weight:normal;}}
+
 .playbook-bottom-navigation {
   display:flex;
   margin:5rem 0;
