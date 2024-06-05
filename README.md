@@ -4,7 +4,7 @@ captures the learnings of the MITRE FHIR teams as they developed mCODE and other
 FHIR-based efforts – what worked well and what did not – and to provide a recipe to 
 successfully launch and implement new healthcare interoperability initiatives.
 
-You can see it up and running at [https://codex-hl7-fhir-accelerator.github.io/playbook/](https://codex-hl7-fhir-accelerator.github.io/playbook/)
+You can see it up and running at [https://mitre.github.io/playbook/](https://mitre.github.io/playbook/)
 
 ## Installation
 These installation instructions may seem verbose as they were written to be 
