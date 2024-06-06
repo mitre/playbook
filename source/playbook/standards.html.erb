@@ -85,10 +85,8 @@ The group should agree on a charter for their work, including scope, timelines, 
 <h4>Defining the Data Dictionary</h4>
 <p>A Data Dictionary is a conversion of the clinical information gathered, to logical model data elements.</p>
 
-<p>The following two figures show a work-in-progress from an clinical expert group working to build a Data Dictionary for a Use Case to provide an initial assessment of a potential cancer patient. Methods and strategies like those noted above help the group get to this point.</p>
-
-<p>
-The first table contains information needs (potential data elements), where the information could be extracted, references to prior work, and results of a survey of the experts regarding the “Relevance to Patients Like Mine” to help prioritize the minimal set of information needed. The next table is an example of creating a "Rosetta Stone" Data Dictionary, defining data elements mapped to the clinical information requirements.  
+<p>The following figure shows a work-in-progress from an clinical expert group working to build a Data Dictionary for a Use Case to provide an initial assessment of a potential cancer patient. Methods and strategies like those noted above help the group get to this point. 
+The table contains information needs (potential data elements), where the information could be extracted, references to prior work, and results of a survey of the experts regarding the “Relevance to Patients Like Mine” to help prioritize the minimal set of information needed. The next table is an example of creating a "Rosetta Stone" Data Dictionary, defining data elements mapped to the clinical information requirements.  
 </p>
 
       <h3>Clinical Information Survey</h3>
@@ -96,8 +94,6 @@ The first table contains information needs (potential data elements), where the 
             <p class="alert alert-warning">Image is placeholder only - will replace with accessible table</p>
       <p><%= image_tag 'clinical-info-survey.png', :width => '100%', :class => 'py-5' %></p>
 
-  <h3>Creating a "Rosetta Stone" Data Dictionary to define data elements mapped to the clinical information requirements</h3>
-  <p><%= image_tag 'rosetta-stone-table.png', :width => '100%', :class => 'py-5' %></p>
 
 <p>Once the information need have been prioritized (even if preliminary) here are additional step which may be taken within the clinical subject matter experts group and/or in conjunction with the other work around creating a FHIR IG:</p>
 <p>Determine which information (data elements) should be Required, Optional, or Must Support </p>
@@ -117,7 +113,8 @@ The first table contains information needs (potential data elements), where the 
 <li>From a clinical perspective, will the new Data Dictionary be compatible with other, known or prospective data dictionaries with the specialty and outside of it?
 </li>
 </ul>
-
+  <h3>Creating a "Rosetta Stone" Data Dictionary to define data elements mapped to the clinical information requirements</h3>
+  <p><%= image_tag 'rosetta-stone-table.png', :width => '100%', :class => 'py-5' %></p>
 <hr>
 
   <h3 id="fhir_ig_development">Integrate requirements into a specialty FHIR Implementation Guide(s) (IGs).</h3>
