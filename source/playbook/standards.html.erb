@@ -106,7 +106,7 @@ The table contains information needs (potential data elements), where the inform
   <dd>Software is required to support this data element</dd>
 </dl>
 
-<p>Review the Data Dictionary</p>
+<h4>Review the Data Dictionary</h4>
 <ul>
   <li>Does the developed Data Dictionary address the goal and needs of the Use Cases?
 </li>
@@ -115,6 +115,17 @@ The table contains information needs (potential data elements), where the inform
 </ul>
   <h3>Creating a "Rosetta Stone" Data Dictionary to define data elements mapped to the clinical information requirements [NOTE: This figure needs more context and/or probably moved?]</h3>
   <p><%= image_tag 'rosetta-stone-table.png', :width => '100%', :class => 'py-5' %></p>
+
+<h4>Common Challenges Related to Compiling Clinical Information Requirements</h4>
+<ul>
+  <li>Starting with a large set of “important” data needs/elements, rather than focusing on the needs for each prioritized Use Cases.</li>
+  <li>Not thinking aobut how maximize the utility of information across other potential Use Cases.  For example, the group may be working on information needed for initial diagnosis of cancer, but could also think ahead about other potential uses of that same information and how slight changes to their initial requirements might make that same information for, say, clinical trials matching, conducting trials, etc. </li>
+  <li>Asking for interpreted information rather than source data because that is established practice.  A trivial example would be asking for age, rather than collecting birth data and date/time of the encounter. </li>
+<li> [NOTE: more to be added]
+
+<p>These and other potential pitfalls can be largely avoided by following the Design Principles https://mitre.github.io/playbook/playbook/design_principles.html covered earlier.</p>
+</ul>
+
 <hr>
 
   <h3 id="fhir_ig_development">Integrate requirements into a specialty FHIR Implementation Guide(s) (IGs).</h3>
