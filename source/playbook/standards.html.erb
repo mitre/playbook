@@ -38,8 +38,8 @@ theme: playbook
         The <a href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig/">mCODE FHIR IG</a> and other work in CodeX build on the above foundations.  This has many benefits, including helping to ensure (not guaranteed) that mCODE and CodeX products are more likely to be consistent with other efforts. It’s not that simple, but close enough.
       </p>
       
-      <h3>Requirements to FHIR IG Process</h3>
-      <h4>An Agile process of iterations between each phase.</h4>
+      <h3>From Clinical Requirements to a FHIR IG</h3>
+      <h4>An Agile process of iterations between each step.</h4>
       <p>Clinical <abbr title="Subject Matter Experts">SMEs</abbr> are involved in every phase</p>
       <p><%= image_tag 'fhir-ig-process.png', :width => '100%', :class => 'py-5', :alt => 'Diagram of FHIR IG process from clinical concept to HL7 standard'%></p>
 
@@ -49,14 +49,14 @@ theme: playbook
       </p>
       <br>
 
-      <h3 id="clinical_requirements">Compile clinical data requirements and model, based on Use Case Requirements led by medical specialists.</h3>
+      <h3 id="clinical_requirements">Compile and prioritize clinical data requirements and model.</h3>
       <p>
-        Each Use Case dictates the clinical information that needs to be collected and shared, and thus the data that will later go into updated or new FHIR IGs.
+        Each Use Case dictates the clinical information that must be collected and shared, and thus the data that will later go into new or updated FHIR IGs.
       </p>
 
       <p>The goal is for a group of clinical experts to work together to prioritize information requirements within a Data Dictionary needed for the Use Case. 
       </p>
-      <p>This sub-step and subsequent steps are typically iterative.  For example, The clinical expert group may develop a first draft Data Dictionary.  Subsequent steps may need to come back to the experts to request clarifications, or suggest updates to the Data Dictionary based on FHIR development, implementation, and testing.
+      <p>This sub-step and subsequent steps are typically iterative.  For example, the clinical expert group may develop a first draft of the Data Dictionary. Subsequent steps often result in requests to the clinical experts for clarification or suggestions for updates to the Data Dictionary based on FHIR development, implementation, and testing.
 </p>
 
 <h4>Convening the Clinical Subject Matter Experts Group</h4>
@@ -66,10 +66,11 @@ theme: playbook
 Consider engaging (depending on the Use Case) patients, doctors, nurses, technicians, researchers, clinical experts from vendors, and/or payers.  Some of the SMEs should be familiar with previous work done to define clinical data elements and data dictionaries and are able to help the group understand the applicability of prior efforts to the work at hand.
 </p>
 <p>
-SMEs do not need to be expert in FHIR development, HL7 processes. The group should use familiar medical terms and define clinical needs.
+SMEs do not need to be expert in FHIR development, HL7 processes. The group should use familiar medical terms and define clinical needs. It’s been found beneficial to include an objective facilitator, with experience moderating discussion and aligning diverse views.
 </p>
 <p>
-It’s been found beneficial to include an objective facilitator, with experience moderating discussion and aligning diverse views. One approach to aligning expert views is to create conceptual models with mind-mapping.  Common mind-mapping tools include Freemind, XMind, Coggle, or whiteboarding. Surveys of the experts can be useful.  See an example output of a survey in the figure below.</p>
+Various tools and techniques for aligning expert views regarding priorities for information needs have been used in mCODE and CodeX Use Cases. A modified Delphi method was employed to expand mCODE to better-cover pediatric cancers. This method builds group consensus on informatinn requirement based on expert judgement, literature review, and input from outdide stakeholders prioritize. Where consensus is not reached at first, the group can discuss discrepancies and make progress. Common tools for building consensus include Freemind, XMind, Coggle, whiteboarding, surveys, and spreadsheets. See below for how these methods work to build a Data Dictionary.
+</p>
 
 <p>It would be helpful for the facilitator, and/or additional participants have familiarity with FHIR and integration of FHIR IGs into systems and processes to lend those perspectives when needed. It would be helpful for someone to be familiar with work on related Use Case to minimize the potential for duplication of effort or divergent approaches to the same data concept.</p>
 <p>
@@ -78,13 +79,16 @@ The group should agree on a charter for their work, including scope, timelines, 
 <hr>
 
 <h4>Minimal vs. Comprehensive</h4>
-<p>It’s been helpful to agree on how minimal vs. comprehensive the e Data Dictionary should be. General principles in this regard could even be included in the charter, to ensure all participants are on the same page. CodeX work has focused on defining a minimal set of data elements for mCODE and each Use Case – covering the most common important cases, and not necessarily all edge cases. Keeping it minimal helps speed the development work and improve odd of achieving deliverables. The comprehensiveness of the Dictionary could be expanded or supplemented in the future.  
+<p>It’s been helpful to agree on how minimal vs. comprehensive the Data Dictionary should be. General principles in this regard could even be included in the charter, to ensure all participants are on the same page. CodeX work has focused on defining a minimal set of data elements for mCODE and each Use Case – covering the most common important cases, and not necessarily all edge cases. Keeping it minimal helps speed the development work and improve odd of achieving deliverables. The comprehensiveness of the Dictionary could be expanded or supplemented in the future.  
 </p>
 
 <h4>Defining the Data Dictionary</h4>
 <p>A Data Dictionary is a conversion of the clinical information gathered, to logical model data elements.</p>
 
-<p>The following two figures show a work-in-progress from an SME group working to build a Data Dictionary for an initial assessment of a potential cancer patient. The first table contains information needs (potential data elements), from where the information could extracted, references to prior work, and results of a survey of the experts regarding the “Relevance to Patients Like Mine”, to help prioritize toward a minimal set of data elements. The next table is an example of creating a "Rosetta Stone" Data Dictionary, defining data elements mapped to the clinical information requirements.  
+<p>The following two figures show a work-in-progress from an clinical expert group working to build a Data Dictionary for a Use Case to provide an initial assessment of a potential cancer patient. Methods and strategies like those noted above help the group get to this point.</p>
+
+<p>
+The first table contains information needs (potential data elements), where the information could be extracted, references to prior work, and results of a survey of the experts regarding the “Relevance to Patients Like Mine” to help prioritize the minimal set of information needed. The next table is an example of creating a "Rosetta Stone" Data Dictionary, defining data elements mapped to the clinical information requirements.  
 </p>
 <p>Once the information need have been prioritized (even if preliminary) here are additional step which may be taken within the clinical subject matter experts group and/or in conjunction with the other work around creating a FHIR IG:</p>
 <p>Determine which information (data elements) should be Required, Optional, or Must Support </p>
@@ -104,7 +108,6 @@ The group should agree on a charter for their work, including scope, timelines, 
 <li>From a clinical perspective, will the new Data Dictionary be compatible with other, known or prospective data dictionaries with the specialty and outside of it?
 </li>
 </ul>
- 
 
       <h3>Clinical Information Survey</h3>
       <p>Prioritizing clinical information requirements</p>
@@ -116,7 +119,7 @@ The group should agree on a charter for their work, including scope, timelines, 
 
 <hr>
 
-  <h3 id="fhir_ig_development">Integrate requirements into and standardize specialty FHIR Implementation Guide(s) (IGs).</h3>
+  <h3 id="fhir_ig_development">Integrate requirements into a specialty FHIR Implementation Guide(s) (IGs).</h3>
 
 <p>
 Once the clinical subject matter expert group has at least a draft of their Data Dictionary for the Use Case, work can begin on incorporating the clinical information into a FHIR Implementation Guide (IG).  
