@@ -65,15 +65,15 @@ layout: home
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
       <img class="mb-5" src="images/blank-image.png" style="max-width:300px">
-      <h3 class="fs-2 text-body-emphasis">mCODE and CodeX</h3>
+      <h3 class="fs-2 text-body-emphasis"><%= link_to("mCODE Standard and CodeX Community","/casestudies/mcode_codex.html") %></h3>
       <p>Learn how the CodeX Community was created and how it is deploying a standard core set of data elements that is changing oncology care and research.</p>
     </div>
       
       
     <div class="feature col">
       <img class="mb-5" src="images/blank-image.png" style="max-width:300px">
-      <h3 class="fs-2 text-body-emphasis">mCARD</h3>
-      <p>Development of FHIR standard for a core set of common data elements for cardiovascular health.</p>
+      <h3 class="fs-2 text-body-emphasis"><%= link_to("Radiation Therapy Treatment Data","/casestudies/radiation_therapy.html") %></h3>
+      <p>Read how the the American Society for Radiation Oncology joined CodeX to standardize radiation therapy treatment summaries.</p>
     </div>
 
     <div class="feature col">
@@ -110,23 +110,21 @@ layout: home
 </div>
 
 <!-- featured Project -->
-<div class="featured-project-box">
-    <div class="container">
+<div class="featured-project-box container">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-sm-8 col-md-6">
-        <img src="images/blank-image.png" height="500" loading="lazy">
+        <%= image_tag 'blank-image.png', :width => '500', :class => 'py-5' %>
+
       </div>
       <div class="col-lg-6">
-        <h1 class="fw-bold lh-1 mb-3">Featured Project Name</h1>
+        <h1 class="fw-bold lh-1 mb-3">mCODE Standard and CodeX Community</h1>
         <div class="row border-bottom py-4 mb-3">
-          <div class="col-4">
-            <span class="field-label">Organization</span><br/>
-            <strong>MITRE Corp.</strong>
-          </div>
-          <div class="col-4">
+          <div class="col">
+            <span class="field-label">Organizations</span><br/>
+            <strong>American Society of Clinical Oncology, MITRE Corportation, and now over 40 additional organizations</strong>
           </div>
         </div>
-        <p class="py-3">This space highlights a project that has leveraged the Playbook guidance successfully with great impact.</p>
+        <p class="py-3">An overview of the mCODE standard, the CodeX Community, and progress that suggests these might be good models for other specialties to follow</p>
         <div class="row py-4 mb-3">
           <div class="col-4">
             <span class="field-label">Maturity</span><br/>
@@ -144,9 +142,8 @@ layout: home
         </div>
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore Project</button>
+          <%= link_to("View Case Study", "casestudies/mcode_codex.html", :class=> "btn btn-primary btn-lg px-4 me-md-2") %>
         </div>
       </div>
     </div>
   </div>
-</div>
