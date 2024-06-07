@@ -7,7 +7,7 @@
   --hero-box-bkg: #F0F7FE;
   --playbook-bkg: #F0F7FE;
   --casestudies-bkg: #EBF7F4;
-
+  --card-title-bkg: #F0F7FE;
 }
 
 body {
@@ -209,3 +209,13 @@ h2 {font-weight:bold}
 div.community-growth-items h4 {padding-top:2em;border-bottom:1px solid #eee;padding-bottom:5px}
 
 p.stakeholder-value {font-weight:bold;font-style:italic;}
+.flex-cards {
+display:flex;
+gap:1em;
+}
+.flex-cards>.card {flex-basis:100%}
+.flex-cards .card-body ul {padding-left:1rem}
+.card-title {
+  background-color:var(--card-title-bkg);
+  padding:0.5rem 1rem;
+}
