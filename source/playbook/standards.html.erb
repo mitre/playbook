@@ -16,13 +16,13 @@ theme: playbook
       <h2>Standards Development</h2>
       <h3>Health Data Standards provide the Common Language for Better Health</h3>
       <p class="lead">
-        Health data standards help patients, health systems, payers, researchers and others who need to work together communicate using a common language. Goodhealth data standards specify very clearly how data are collected, stored, shared, and/or used such that very piece of data can be unambiguously created andunderstood by all entities within the health ecosystem. Good standards enable semantic interoperability.
+        Health data standards help patients, health systems, payers, researchers and others who need to work together communicate using a common language. Good health data standards specify very clearly how data are collected, stored, shared, and/or used such that every piece of data can be unambiguously created and understood by all entities within the health ecosystem. Good standards enable semantic interoperability across systems and people.
       </p>
       <p>
         Standards are not the end product, from the perspective of this Playbook. However, standards are an essential component for accurate, electronic sharing of dataneed to improve health care and access, and to reduce burden and costs. Standards are community-driven (and sometimes mandated by the Government), and mustbe implemented in systems and workflows by the community.
       </p>
       <p>
-        Here’s high-level background on the key organizations and standards that have been foundational for the mCODE cancer data standard, and to using that standard(and others) to empower Use Cases and provide valuable, new solutions in the health ecosystem.
+        Below is high-level background on the key organizations and standards that have been foundational for the mCODE cancer data standard, and to using that standard(and others) to empower Use Cases and provide valuable, new solutions in the health ecosystem.
       </p>
       <p>
         The <a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a> is the “principal federal entity charged with coordination of nationwide efforts to implement and use the most advanced health information technology and the electronic exchange of health information”. ONC spearheads assembling community agreement on a “standardized set of health data classes and constituent data elements for nationwide, interoperable health information exchange”, called the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>. 
@@ -40,7 +40,7 @@ theme: playbook
       
       <h3>From Clinical Requirements to a FHIR IG</h3>
       <h4>An Agile process of iterations between each step.</h4>
-      <p>Clinical <abbr title="Subject Matter Experts">SMEs</abbr> are involved in every phase</p>
+      
       <p><%= image_tag 'fhir-ig-process.png', :width => '100%', :class => 'py-5', :alt => 'Diagram of FHIR IG process from clinical concept to HL7 standard'%></p>
 
       <br>
@@ -293,13 +293,19 @@ Guidance for inclusion is narrative (not computable or enforceable)</li>
   </li>
   </ul>
   
-  
+<h4>Maintaining HL7 Standards</h4>
+<p>Once the first version of a specialty standards (Standard for Trial Use or STU) has been completed and published, work begins on maintaining the standard over time. Any standard that is valued, implemented into systems, used widely will have requests for updated versions.</p>
+<p>Updates to speciality standardards maybe needed for a variety of reasons. The  standards on which your standard depend (e.g., FHIR) may be updated, and may or may not require or at least motivate changes to standards that depend on them. Users may ask vendors who've integrated your standard or the vendors themselves may ask for updates. Governement rules and regulations may motivate changes.</p>
+<p>Because changes to your standard may be required over time, it's important to keep a cpre of the original standards team intact, with the necessary skills (e.g., clinical, FHIR, HL7) availble when needed. It's important to keep a good relationship with the sponsoring Work Group. It's necessary to have a system to collect, organize, prioritize, and address requests for changes and other comments - likely the same system used for building the original standard (e.g, Jira at HL7).</p>
+<p>Be aware that the interest of the original team, and even of teh Use Csae Champions, may change as the work enters the maintence phase. Also always in the Playbook, think about which members of the Community care most about ensuring a standard is maintained in a well-governed, careful manner. For example, vendors who've implemented the standard and provided it to many customers typically care about maintenance.</p>
+<p> ... etc.</p>
+
 <h4>Best Practices for Smoother HL7 Standardization,Based on the CodeX/mCODE Experience</h4>
 <ul>
-<li>The standards process leader for thew Use Case should have deep knowledge of HL7 processes and standardization schedule</li>
-<li>Build HL7 standardization into your Use Case plan from the start.  Allow plenty of time ...</li>
-<li>It’s helpful to have a good relationship with a sponsoring Work Group
-Conducting the Use Case project within (or near) and HL7 FHIR Accelerator (CodeX or other)  has the benefit of working within a group likely to be more knowledgeable of and more closely connected to HL7.</li>
+<li>The standards process leader for the Use Case should have thorough knowledge of HL7 processes and standardization schedule.</li>
+<li>Build HL7 standardization into your Use Case plan from the start.  Allow plenty of time to go through the process.</li>
+<li>Have a good relationship with a sponsoring HL7 Work Group and its leadership. Ensure they are included in plans and progress, and respect that your IG is usually not the only IG the Work Group is reponsible for. They likely won't have deep expertise in your health specialty (though, it's possible they do.  However, they will know HL7 standards (including FHIR), HL7 processes, and work that other Work Groups are doing that may related to your work.
+<li>Conducting the Use Case project within (or near) an HL7 FHIR Accelerator (CodeX or other) has the benefit of working within an organization that will be more knowledgeable of and more closely connected to HL7 people and processes.</li>
 <li>...etc.</li>
 </ul>
     
