@@ -119,7 +119,7 @@ h1 {
     .sidebar-menu li.sub a {
       padding-left: 1.5em; }
 
-body.casestudy .sidebar-menu li.active a {
+body.casestudy .sidebar-menu li.active a, body.casestudy .sidebar-menu li.active a:hover {
   color: white;
   background-color: #477460; }
 
@@ -214,9 +214,13 @@ div.community-growth-items h4 {
   border-bottom: 1px solid #eee;
   padding-bottom: 5px; }
 
-p.stakeholder-value {
+div.community-growth-items p.stakeholder-value {
   font-weight: bold;
   font-style: italic; }
+
+.embed-video {
+  text-align: center;
+  margin: 1em 0; }
 
 .flex-cards {
   display: flex;
