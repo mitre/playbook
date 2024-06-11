@@ -127,7 +127,7 @@ h1 {font-weight:bold}
 }
 
 body.casestudy .sidebar-menu {
-  li.active a {color:white;background-color:#477460}
+  li.active a, li.active a:hover {color:white;background-color:#477460}
   li a:hover {background-color:#EBF7F4;}
 }
 
@@ -204,17 +204,37 @@ hr+h2 {margin:2em 0 1em 0}
     text-transform:uppercase;
   }
 }
+
 h1.super-title {text-transform:uppercase; letter-spacing:0.2em; color:#888; font-size: 1.5rem}
 h2 {font-weight:bold}
-div.community-growth-items h4 {padding-top:2em;border-bottom:1px solid #eee;padding-bottom:5px}
 
-p.stakeholder-value {font-weight:bold;font-style:italic;}
-.flex-cards {
-display:flex;
-gap:1em;
+div.community-growth-items {
+  h4 {
+    padding-top:2em;
+    border-bottom:1px solid #eee;
+    padding-bottom:5px;
+  }
+
+  p.stakeholder-value {
+    font-weight:bold;
+    font-style:italic;
+  }
 }
-.flex-cards>.card {flex-basis:100%}
-.flex-cards .card-body ul {padding-left:1rem}
+.embed-video {
+  text-align:center;
+  margin:1em 0;
+}
+
+.flex-cards {
+  display:flex;
+  gap:1em;
+}
+.flex-cards>.card {
+  flex-basis:100%;
+}
+.flex-cards .card-body ul {
+  padding-left:1rem;
+}
 .card-title {
   background-color:var(--card-title-bkg);
   padding:0.5rem 1rem;
