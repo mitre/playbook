@@ -12,21 +12,22 @@ theme: playbook
       <h2>Design Principles</h2>
       
       <p class="lead">
-        Below are principles that have guided the CodeX and expanded community in the design, development, testing, and adoption of mCODE. If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, and to be interoperable and compatible across specialties as part of a life-time patient Standard Health Record.
+        Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %> and in the design, development, testing, and adoption of FHIR-based data standards, including <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %>. If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, and to be interoperable and compatible across specialties as part of a life-time patient Standard Health Record.
       </p>
              
       <ol class="section-list">
-        <li><b>Community and Use Case</b> driven, with <b>adoption</b> and <b>value</b> a focus from the beginning.
+        <li>Standards work must be <b>Community and Use Case</b> driven, with <b>adoption</b> and <b>value</b> the focus from the beginning.
           <ul>
             <li>Need broadest possible support of patients, providers, Gov’t, vendors, payers, etc.</li>
-            <li>Ensure standards are informed by and address real community problems. Plan from the start for implementation, adoption and real value.</li>
+            <li>Ensure standards are informed by and address real community problems. Plan from the start for implementation, adoption, and real value.</li>
             <li>Demonstrate potential value in the real environments.</li>
           </ul>
         </li>
 
-        <li>Standardized <b>data</b> is part of the <b>standard of health care</b>. Thus, the primary focus is collection and sharing of quality, core data related to <b>patient care and outcomes</b>, with goal of a lifetime Standard Health Record.
+        <li>Standardized <b>data</b> must part of every patient's <b>standard of care</b>. 
           <ul>
-            <li>Data originally collected for one health state can be important for future states.</li>
+            <li>The primary focus is collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b>, with a visionary result of a coherent lifetime Standard Health Record for every patient.</li
+            <li>Data originally collected for one patient's health state can be important for future states.</li>
             <li>Secondary uses of patient care data (personal, research, quality measurement, payer operations, etc.) will be hugely valuable and more cost-effective than current approaches.</li>
             <li>Can also create supplemental IGs.</li>
           </ul>
@@ -47,14 +48,14 @@ theme: playbook
 
         <li>Define <b>core clinical data elements</b> needed across key use cases and stakeholders.
           <ul>
-            <li>Create supplemental IGs for details important for very specialized situations.</li>
+            <li>Create supplemental IGs for more detailed data needs that are important mainly for very specialized situations.</li>
           </ul>
         </li>
 
         <li>Ensure <b>consistent representation</b> of data elements that may be used across specialties.
           <ul>
             <li>Different specialties require similar data that might have been historically described differently.</li>
-            <li>Establish principles, templates and processes that reconcile differences and consolidate in one place, where possible.</li>
+            <li>Establish principles, templates, and processes that reconcile differences and consolidate in one place, where possible.</li>
           </ul>
         </li>
 
@@ -65,36 +66,37 @@ theme: playbook
           </ul>
         </li>
 
-        <li>Leverage the <b>best available work</b> (standards, tools, etc.).
+        <li>Leverage the <b>best, previous work</b> (standards, tools, etc.).
           <ul>
             <li>If previous work is already represented in Government backed standards, use rather than re-do.</li>
             <li>Leverage the available approaches and tools for modeling and IG development.</li>
-            <li>These will motivate higher-quality FHIR IGs that are more coherent across specialties, use cases and projects.</li>
+            <li>These will motivate higher-quality FHIR IGs that are more coherent across specialties, use cases, and projects.</li>
           </ul>
         </li>
 
         <li>Leverage <b>global code systems</b>.
           <ul>
-            <li>Observations and actions are represented consistently within and across specialties, in many cases, around the world.</li>
+            <li>Observations and actions can be represented consistently within and across specialties, in many cases, around the world using standardized, widely used terminologies, vocabularies, and codes (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
           </ul>
         </li>
 
-        <li>Review through <b>clinical specialists and patients first</b>, then other medical, standards and vendor experts.
+        <li>Get input and review through <b>clinical specialists and patients first</b>, then other medical, standards, and vendor experts.
           <ul>
-            <li>Ensure clinical relevance first.</li>
-            <li>Add other health use case, technical, and standards expertise.</li>
+            <li>Ensure clinical relevance as a priority.</li>
+            <li>Add other health Use Cases, technical, and standards expertise.</li>
           </ul>
         </li>
 
         <li>These are data standards for data <b>collection</b> (storage) and <b>exchange, not</b> for user <b>interfaces</b>.
           <ul>
-            <li>Systems can be created to present data subsets, and understandable interfaces related to collect, use and analysis for patients, providers and other.</li>
+            <li>Software can be developed to compile customized calculations based on standardized data</li>
+            <li>User interfaces can be developed to collect, use, and analyze data in a manner understandable to different users.</li>
           </ul>
         </li>
 
         <li><b>Controlled by the patient</b>.
           <ul>
-            <li>Consent: who gets what data for what purposes for what timeframes in a way that follows the data.</li>
+            <li>Patient decide who gets what data for what purposes for what timeframes in a way that follows the data.</li>
           </ul>
         </li>
       </ol>
