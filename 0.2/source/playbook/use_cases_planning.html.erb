@@ -1,0 +1,149 @@
+---
+title: Use Cases & Planning
+pagetitle: Use Cases & Planning
+theme: playbook
+---
+
+<div class="container pt-5">
+
+  <div class="row">
+    <div class="col-md-3">
+      <%= partial "partials/playbook_menu" %>  
+    </div>
+  
+    <div class="col-md-9">
+      <h2>Use Cases & Planning</h2>
+      <p class="lead">Use Cases scope the work. Planning the work documents the steps, schedules and resources needed to deliver solutions successfully.</p>
+      <h3 id="what_is_use_case">What is a Use Case?</h3>
+      <p>A Use Case in the CodeX context is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within a new workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
+      <p>A specific Use Cases provides the scope for all that comes next. A Use Case attracts the subset of the larger community who care deeply about the scope, and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
+      <p>One of many possible Use Case examples is the CodeX Use Cases is Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologist with an mCODE-based FHIR exchange of structure radiation treatment summary data, thus improving information quality and reducing clinical burden.  See the <%= link_to("Radiation Therapy Treatment Data Case Study","/casestudies/radiation_therapy.html") %>.</p>
+      <figure>
+        <%= image_tag 'radiation-therapy-workflow.png', :width => '100%', :class => 'py-5' %>
+        <figcaption>A workflow diagram for Radiation Therapy Treatment Data for Cancer</figcaption>
+      </figure>
+
+      <h3 id="use_case_development_guidelines">CodeX Use Case Development Guidelines</h3>
+      <p>CodeX created Use Case Development Guidelines as a framework and decision process for successful Use Case discovery, planning, development, implementation, adoption, and impact. The CodeX Execution stage will be covered in the <%= link_to("Implementation & Testing","implementation.html") %> and <%= link_to("Adoption & Value","adoption.html")%> sections.</p>
+      <p>
+      <%= image_tag 'planning-flow.svg', :width => '100%', :class => 'p-3' %>
+      </p>
+
+      <h3>Phase Purpose</h3>
+       
+      <h4>
+        Discovery
+      </h4>
+      <ul>
+        <li>Perform due diligence of the use case process</li>
+        <li>Ensure concept is unique, doesn't conflict with other existing work, and is feasible within the boundary of CodeX.</li>
+      </ul>
+
+      <h4>
+        Planning
+      </h4>
+      <ul>
+        <li>Identify necessary stakeholders, objectives, deliverables, tasking, ownership of tasks, timelines, measures of success, potential funding/monetary support, and schedules </li>
+      </ul>
+
+      <h4>
+        Execution
+      </h4>
+      <ul>
+        <li>Operate the use case through member support, as defined in the project scope</li>
+        <li>Expanding the community and promoting sustainability through existing members</li>
+        <li>Work through to gaining adoption in the specialty and providing value to patients and other stakeholders.</li>
+      </ul>
+      
+      <h3 id="use_case_discovery">Use Case Disovery:<br>Identifying and prioritizing potential specialty projects</h3>
+      <p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), engaging and aligning other potential participants, and agreeing on the scope the Use Case project that can be planned in detail. </p>
+
+<p>For the CodeX leadership to assess readiness of a Use Case to go into the CodeX Discovery stage, the following information is requested:</p>
+<ul>
+
+	<li>High-level version of Concept (Problem space, Solution/workflow options and Potential impacts  - this does not have to be completely agreed of aligned with stakeholders),</li>
+	<li>List of organizations and individuals committed to lead the Discovery discussions and alignment, and</li>
+	<li>List other specific organizations across stakeholder groups that could be candidates for working the concept through Discovery, Planning and Execution.</li>
+</ul>
+<p>
+As next steps, projects that are most likely ready to move into the Planning stage...</p>
+<ul>
+	<li>Have the potential to substantial impact and viability to improve patient care and research in within or across specialties</li>
+	<li>Share the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
+	<li>Leverage clinically-based FHIR Implementation Guides for automated collection and exchange of clinical data
+	<ul>
+	<li>Leverage resources and open FHIR-based API-based data exchange</li>
+	<li>Leverage Gov’t supported frameworks, including USCDI, the US Core FHIR IG, and others.</li>
+	<li>Leverage and explore updates to mCODE and other foundational, IGs</li>
+	<li>May develop supplemental data elements/IGs, more specific to a use case</li>
+	</ul>
+	</li>
+		<li>Are community-driven: Champions, representatives from all stakeholders, committed resources</li>
+
+<li>Expedite work based on agile project plans, with short phases, quick results</li>
+<li>Pilot workflows and systems in real-world settings that demonstrate the “art of the possible” and can be adopted and scaled</li>
+</ul>
+
+<p>Other considerations that MITRE has found useful to determining readiness to proceed:</p>
+<ul>
+<li>A new specialty should consider starting with less ambitious Use Cases. This raises the probability of success at speed, and can help a new community to gel</li>
+<li>Ask the right questions
+<ul>
+	<li>What's driving the need for the Use Case?: e.g., clinical workflow improvement, research needs, regulatory requirements, costs, etc.</li>
+	<li>Who are the target actors? e.g., patients, physicians, nurses, researchers, payors, regulators, etc.</li>
+	</ul>
+	</li>
+	
+<li>Develop Use Case scenarios
+<ul>
+	<li>Write in plain-text</li>
+	<li>Create an example persona for role</li>
+	<li>Cite clinical sources, where applicable</li>
+</ul>
+</li>
+</ul>
+      
+      <h3>Use Case Planning:<br>From starting work to providing value in the ecosystem </h3>
+      <p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), engaging and aligning other potential participants, and agreeing on the scope the Use Case project that can be planned in detail. </p>
+
+ 
+<p>
+ Once a Use Case has been prioritized, that next step is to develop a plan.  Often some of the plan components have been considered and even detailed during the Discover stage. Here are considerations that CodeX documents in their Use Case Development Guidelines, augmented by additional MITRE experience.
+</p>
+
+<ul>
+	<li><b>Problem</b>. Why are current solutions are inadequate?</li>
+
+	<li><b>Solution</b>. What new systems and workflows planned?  Identify which roles/actors and standardized data are needed to in which parts of the solution.</li>
+
+	<li><b>Impact</b>. Where will the health ecosystem be substantially improved with the envisioned solution?</li>
+
+	<li><b>Champions</b>. Which organizations and people are committed to lead? Which others are needed and where does the engagement process stand?</li>
+
+	<li><b>Participants</b>. Which organizations and people are committed to participate actively? Which others are needed and where does the engagement process stand?  Think about participants needed over the entire project, through planning, development, implementation, testing, and realizing value in the real world.</li>
+
+	<li><b>Other Resources</b>. Are there additional personnel, facility, and/or financial resources required to succeed, that are not committed yet?  Describe the options and plans for attaining these. It can be difficult to estimate resource needs accurately, especially in the early phases of a Use Case. Note that Use Case scope and schedule can be adjusted to some extent, to resource availability and still result in a successful project. </li>
+
+	<li><b>Outside Activities</b>. Are there other consortia or other organizations outside of this Use Case with which the team may want to interface, coordinate or partner, or at least remain aware of? Consider outside work that could be competitive with this Use Case.</li>
+
+<li><b>Schedule of Work</b>
+<ul>
+	<li>Break the plan into Phases. Each Phase might be 3-9 months. Phase themes, stories, workflows, objectives, development (FHIR IGs, software) will vary. One pattern is a Phase starting with a small amount of synthetic data, progressing to a Phase with de-identified data, then a Phase with live patient data. Later Phases include strategies for driving Adoption and for Measuring Value in the real world. Participation, realism, results progress with new Phases.</li>
+	<li>Specify measures of success for each Phase, out to at least 1 year. </li>
+	<li>Note risks and other issues within the plan that require additional alignment within the Use Case team. </li>
+</ul>
+</li>
+<li><b>Communication</b>. There is value to having channels of communication (web, email lists) that are public (to gain attention, engage outsiders, and publicize progress) and others that are within the governing organization (like CodeX) or that Use Case team.
+    </li>
+    </ul> 
+      
+      
+      
+      
+      <div class="playbook-bottom-navigation">
+        <div class="previous">  <%= link_to("Prev: Building Community", "community.html") %></div>
+        <div class="next"><%= link_to("Next: Standards Development", "standards.html") %></div>
+      </div>
+    </div>
+  </div>
+</div>

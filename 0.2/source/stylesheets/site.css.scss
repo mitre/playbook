@@ -1,0 +1,219 @@
+:root {
+  --link-color: #0074BD;
+  --footer-bkg: #eeeeee;
+  --copyright-bkg: #dedede;
+  --breadcrumb-bkg: #F0F7FE;
+  --breadcrumb-border-color: #BFE0FE;
+  --hero-box-bkg: #F0F7FE;
+  --playbook-bkg: #F0F7FE;
+  --casestudies-bkg: #EBF7F4;
+
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: var(--link-color);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+header ul.nav a.nav-link {color:black; font-weight:bold;}
+
+.breadcrumb-box {
+  background-color:var(--breadcrumb-bkg);
+  border-top: 1px solid var(--breadcrumb-border-color);
+  border-bottom: 1px solid var(--breadcrumb-border-color);
+}
+
+body.playbook .breadcrumb-box {
+  background-color:var(--playbook-bkg);
+}
+
+body.casestudy .breadcrumb-box {
+  background-color:#EBF7F4;
+  border-top: 1px solid #9FC8B6;
+  border-bottom: 1px solid #9FC8B6;
+}
+
+
+body.solutions .breadcrumb-box {
+  background-color:#FFEDC9;
+  border-top: 1px solid #FFC550;
+  border-bottom: 1px solid #FFC550;
+}
+
+body.resources .breadcrumb-box {
+  background-color:#FFE3EB;
+  border-top: 1px solid #D48CA1;
+  border-bottom: 1px solid #D48CA1;
+}
+
+
+.breadcrumb .breadcrumb-item a {color:black;text-decoration:none}
+.breadcrumb .breadcrumb-item:first-child a {font-weight:bold}
+.breadcrumb .breadcrumb-item:last-child a {color:#555}
+
+.hero-box {
+  background-color:var(--hero-box-bkg);
+}
+
+.featured-case-study-box {
+  background-color:var(--casestudies-bkg);
+  margin-bottom: 2em;
+}
+footer {
+  background-color: var(--footer-bkg);
+  padding:5vh 0;
+  ul {
+    padding-left:0;
+    li {
+      list-style:none;margin:0;
+    }
+  }
+}
+
+h1 {font-weight:bold}
+
+.feature-path {
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:2em;
+  align-self:stretch !important;
+  height:100%;
+  
+  h3 {font-size:1.3rem;}
+}
+
+.sidebar-menu {
+  position:sticky;
+  top:50px;
+  h4 {font-weight:bold;margin-bottom:1.5rem;}
+  ul {list-style:none;
+  margin:0;
+  padding:0;
+  font-size:0.9rem;
+  li {
+    border-top:1px solid #eeeeee;
+    font-weight:bold;
+    a {
+    display:block;
+    text-decoration:none;
+    padding:0.5em;
+    color: #000;
+    &:hover {background-color:#F0F7FE}}
+  }
+  li:last-child {
+    border-bottom:1px solid #eeeeee;
+  }
+  li.active a {color:white;background-color:#43507A}
+  }
+  li.sub {font-weight:normal;
+  a {
+    padding-left:1.5em;
+  }
+  }
+  
+}
+
+body.casestudy .sidebar-menu {
+  li.active a {color:white;background-color:#477460}
+  li a:hover {background-color:#EBF7F4;}
+}
+
+.about-author {
+  margin-top:4em;
+  border-top:1px solid #eeeeee;
+  padding-top:4em;
+  margin-bottom:4em;
+  .h5 {
+    letter-spacing:1px;
+    font-size:1rem;
+    text-transform:uppercase;
+    color:#999999;
+  }
+
+}
+p.lead {margin-top:2em;}
+
+ol.section-list>li {
+  margin:1rem 0;
+  a:first-child {font-weight:bold;}
+}
+
+ol.action-list>li {
+font-weight:bold;
+ margin-bottom:1em;
+ul li {font-weight:normal;}}
+
+
+ul.action-list>li {
+font-weight:bold;
+ margin-bottom:1em;
+ul li {font-weight:normal;}}
+
+.playbook-bottom-navigation {
+  display:flex;
+  margin:5rem 0;
+  justify-content:space-between;
+  font-weight:bold;
+  a {color:#000;
+  text-decoration:none;}
+}
+.copyright {
+  padding:2vh 0;
+  background-color: var(--copyright-bkg);
+  p {
+    font-size:0.9em;
+    color:#333333;
+    margin:0;
+  }
+}
+hr {margin-top:2em}
+hr+h2 {margin:2em 0 1em 0}
+
+.date {
+  color: #999999;
+  font-size:0.9rem;
+  margin-bottom:0.5em;
+}
+.field-label {
+  color: #999999;
+}
+
+.blockquote {
+  border-left:5px solid #89325A;
+  padding-left:2rem;
+  font-size:1rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  .attrib {
+    font-weight:bold;
+    font-size:0.8em;
+    color:#777;
+    text-transform:uppercase;
+  }
+}
+h1.super-title {text-transform:uppercase; letter-spacing:0.2em; color:#888; font-size: 1.5rem}
+h2 {font-weight:bold}
+div.community-growth-items h4 {padding-top:2em;border-bottom:1px solid #eee;padding-bottom:5px}
+
+p.stakeholder-value {font-weight:bold;font-style:italic;}
+
+.video {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}

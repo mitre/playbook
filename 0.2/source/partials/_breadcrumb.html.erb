@@ -1,0 +1,12 @@
+<div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <%=     hierarchy = [current_page]
+                hierarchy.unshift hierarchy.first.parent while hierarchy.first.parent
+                hierarchy.collect {|page| content_tag("li class='breadcrumb-item'") { link_to(page.data.title, "/#{page.path}", relative: true)} }.join('')
+        %>
+      </ol>
+    </nav>
+  </div>
+</div>

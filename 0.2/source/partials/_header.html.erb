@@ -1,0 +1,22 @@
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <% link_to '/index.html', relative:true do %>
+          <%= image_tag 'playbook-logo.svg', :alt=>"MITRE Interoperability Playbook Logo" %>
+        <% end %>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><%= link_to("Playbook", "/playbook/index.html", :class => 'nav-link', relative: true) %></li>
+        <li><%= link_to("Case Studies", "/casestudies/index.html", :class => 'nav-link', relative: true) %></li>
+        <li><%= link_to("Solutions", "/solutions/index.html", :class => 'nav-link', relative: true) %></li>
+        <li><%= link_to("Resources", "/resources/index.html", :class => 'nav-link', relative: true) %></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </header>
+  </div>

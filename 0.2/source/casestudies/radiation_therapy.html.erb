@@ -1,0 +1,61 @@
+---
+pagetitle: Radiation Therapy Treatment Data
+title: Radiation Therapy Treatment Data
+theme: casestudy
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 pt-5 mb-3">
+      <%= partial "partials/five_steps_menu", :locals => {:title=>"On This Page"} %>
+    </div>
+    <div class="col-md-9 pt-5 mb-3">
+      <h1 class="super-title">Case Study</h1>
+      <h2>Radiation Therapy Treatment Data Case Study</h2>
+      <h3 id="community_building">Community Building</h3>
+      <p>In March 2020, the <%= link_to("American Society for Radiation Oncology","https://www.astro.org/") %> (ASTRO) joined CodeX<sup>™</sup> as a founding member with a proposal to standardize radiation therapy treatment summaries. They suggested leveraging work published by ASTRO and others in the “<%= link_to("Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper","https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext") %>”. ASTRO noted that the radiation therapy community had been interested in standardizing the complex treatment data that is gathered before, during, and after a course of radiation therapy treatment, but did not have the infrastructure or FHIR expertise to sufficiently act on this idea. ASTRO joined CodeX with the vision of leveraging the HL7 FHIR Accelerator’s platform, connections to other industry partners, expertise in FHIR modeling, and relationships with HL7 leadership to begin planning the use case. </p>
+      <p>Nearly one year after ASTRO joined CodeX, the <%= link_to("American Association of Physicists in Medicine","https://www.aapm.org/") %> (AAPM) joined as a founding member to support this effort. AAPM provided professional society expertise, along with work developed by the AAPM Big Data Subcommittee (i.e., <%= link_to("Operational Ontology for Oncology","https://pubmed.ncbi.nlm.nih.gov/37244628/") %> (O3)). At this point, the discovery phase of the CodeX Radiation Therapy use case began with the leadership and in-kind support of ASTRO and AAPM, which consisted of leveraging existing standards-focused work and collaborating with related radiation therapy professional societies. The below graphic represents the multi-professional society engagement and approach that the CodeX RTTD team took to ensure existing work and expertise from leaders in the field were adopted, repurposed, and modified to fit within the scope of our use case. The lack of data standardization within the radiation oncology community is an international issue that the below group of societies has started working toward resolving, and which the CodeX RTTD team continued modeling in FHIR.</p>
+      <figure>
+      <%= image_tag("images/rttd-multi-professional.png", :width=>"100%") %>
+      <figcaption>Diagram showing engagement between AAPM, HL7, mCODE, CodeX and other professional societies.</figcaption>
+        </figure>
+        
+        <h3 id="use_cases_planning">Use Cases & Planning</h3>
+        <p>Development History (<%= link_to("https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html","https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html")%>)</p>
+        
+<p>ASTRO and AAPM (with the assistance of The MITRE Corporation) planned and kicked off the CodeX<sup>™</sup> Radiation Therapy Treatment Data (RTTD) use case in early 2021. The team’s initial objective was to identify, define and model data components in an “end-of-treatment” radiation therapy (RT) care summary (i.e., a summary report that could be sent to the larger oncology team once the RT course has been completed). As previously mentioned, the data components were informed by the “<%= link_to("Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper","https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext") %>” and refined by consensus after stakeholder discussion. </p>
+<p>
+Once the “end-of-treatment” summary modeling was completed in June 2021, the RTTD stakeholders agreed that defining components of a RT prescription and an “in-progress” treatment summary would also be of value to the healthcare community. In-progress treatment summaries convey information about a patient in the midst of receiving treatment. The group, again, leveraged the Minimum Data Elements for Radiation Oncology Consensus Paper to identify potential data requirements, refined the definition of each data element via collaboration and stakeholder expertise, and modeled the FHIR specifications that would ultimately be published in the CodeX<sup>™</sup> RT Implementation Guide (IG).
+</p>
+
+<h3 id="standards_development">Standards Development</h3>
+<p>In January 2021, the RTTD use case approached the <%= link_to("Integrating the Healthcare Enterprise – Radiation Oncology","https://www.ihe-ro.org/") %> (IHE-RO) <%= link_to("Exchange of Radiotherapy Summaries","https://www.ihe-ro.org/doku.php?id=doc%3Aprofiles%3Axrts")%> (XRTS) Work Group about aligning the data model and FHIR structures created by the RTTD team with the technical architecture and transactions being defined in the XRTS technical specification document. The XRTS Work Group includes leading electronic health record (EHR) and radiation oncology information system (ROIS) vendors that consist of roughly 80% of the U.S. ROIS market – Varian, Elekta, RaySearch, and Epic. The CodeX<sup>™</sup> RTTD and XRTS teams aligned visions and began working together to develop the CodeX<sup>™</sup> RT Implementation Guide and the architecture and transactions within the XRTS Profile and technical specification.</p>
+<p>
+As a result of this collaboration, radiotherapy profiles were added to <%= link_to("mCODE STU2","https://hl7.org/fhir/us/mcode/STU2") %> (i.e., the <%= link_to("Radiotherapy Course Summary","https://hl7.org/fhir/us/mcode/STU2/StructureDefinition-mcode-radiotherapy-course-summary.html")%> and <%= link_to("Radiotherapy Volume profiles","https://hl7.org/fhir/us/mcode/STU2/StructureDefinition-mcode-radiotherapy-volume.html") %>), along with new value sets and extensions required to express a radiotherapy treatment summary. Radiotherapy specifications beyond what was considered “minimal” (which is a tenet of mCODE) were published in the CodeX<sup>™</sup> RT IG (<%= link_to("STU 1","https://hl7.org/fhir/us/codex-radiation-therapy/")%>), along with details that support 1) a radiation therapy prescription, and 2) “in-progress” treatment summaries. The image below depicts the profiles that fall within each portion of the radiotherapy clinical workflow. 
+</p>
+      <figure>
+      <%= image_tag("images/rttd-clinical-workflow.png", :width=>"100%") %>
+      <figcaption>Diagram showing various FHIR profiles associated with phases of radiotherapy clinical workflow.</figcaption>
+        </figure>
+        
+<h3 id="implementation_testing">Implementation and testing</h3>
+<p>The radiotherapy profiles and data elements were tested in December 2021 and May 2022 at IHE-RO XRTS Workshops by radiation oncology information technology vendors Varian, Elekta, and RaySearch, along with Epic, an electronic health record system vendor. The CodeX<sup>™</sup> RTTD and IHE-RO XRTS teams will continue to test the CodeX<sup>™</sup> RT IG at future IHE-RO XRTS Connectathons. Additionally, all insight and relevant feedback received from IHE-RO vendor testing at Workshops and formal Connectathons will be reviewed and assessed by the CodeX RTTD use case team for necessary updates and changes to the RT IG. Clinical modifications to the RT IG’s FHIR model will also be shared with the IHE-RO technical team to update the IHE-RO XRTS technical specification and retested at subsequent vendor Connectathons. This continuous feedback loop between the CodeX RTTD and IHE-RO XRTS team is represented in the below graphic, which is a critical component of this team’s success.
+   </p>
+              <figure>
+      <%= image_tag("images/codex-feedback-loop.png", :width=>"100%") %>
+      <figcaption>CodeX and IHE-RO feedback loop</figcaption>
+        </figure>
+        
+        <h3 id="adoption_value">Adoption and value</h3>
+        <p>The RTTD use case has accrued significant accomplishments, including:</p>
+        <ul>
+          <li>Adoption of mCODE RT profiles and the RT Implementation Guide in US radiation oncology information system vendors that support 80% of treatment sites.</li>
+          <li>Publishing the first version of the CodeX RT Implementation Guide. Second version to be published in Fall 2024. </li>
+          <li>Adding 275 SNOMED CT codes related to RT to the Global Patient Set, which are now publicly available for international use. </li>
+          <li>Incorporating mCODE radiotherapy profiles in the production system of a recent version of RayCare (i.e., RayCare 6A). </li>
+          <li>Realizing the official product release of Varian's ARIA FHIR API in December 2023 which includes FHIR RT profiles. </li>
+          <li>Targeting VA and Varian pilot to be deployed at Madison VA site in summer 2024. The pilot will test the exchange of RT FHIR profile information. </li>
+        </ul>
+        <p>The CodeX<sup>™</sup> RTTD and IHE-RO XRTS teams are continuing to work in harmony to leverage areas of expertise and explore opportunities for advancement of this work. The CodeX RTTD team is always looking for new CodeX members, vendor organizations to test the Radiation Therapy Implementation Guide, and pilot sites to test and assess the clinical applicability of the standard. If you’d like to get involved, contact us at <%= link_to("codex@hl7.org","mailto:codex@hl7.org") %></p>
+    </div>
+  </div>
+</div>

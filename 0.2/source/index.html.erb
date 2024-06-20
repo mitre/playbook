@@ -1,0 +1,149 @@
+---
+pagetitle: Welcome to MITRE Interoperability Playbook
+title: Home
+layout: home
+---
+<div class="hero-box">
+  <div class="container col-xxl-8 px-4 py-5 mb-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="images/hero-image.png" class="d-block mx-lg-auto img-fluid" alt="placeholder image" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to the MITRE Interoperability Playbook!</h1>
+        <p class="lead">Sharing the MITRE’s experience developing and deploying data standards that solve real-world challenges in patient care and research in oncology and beyond.</p>
+        <p class="lead">All medical specialties are invited to learn from and join the mission.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="playbook/index.html">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-4 border-bottom">
+  <h2 class="pb-2 fw-bold">Mission and Purpose</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Today, a patient’s health story is nearly impossible to gather and share because data are unreliable, stored in different locations, lack standardization, and are largely unusable. </p>
+      <p>The <%= link_to("CodeX HL7 Accelerator","https://confluence.hl7.org/display/COD/CodeX+Home") %> is a member-driven
+        community that is breaking down silos endemic to our current system
+        for specialty health data. The initial projects within CodeX worked to
+        solve problems in the cancer space, building and leveraging the
+        <%= link_to("minimal Common Oncology Data Elements (mCODE)","https://confluence.hl7.org/display/COD/mCODE") %> standard.  Now, the
+        expanding CodeX community is also addressing problems in the
+        cardiovascular disease and genomics domains.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p>Circumstances across the
+        health landscape are converging to make this time in history, finally, the right time
+        for all medical specialties to standardize health data and deploy
+        standards-based solutions to their most challenges problems. It’s hoped that the CodeX
+        experience shared on this site will speed the work of other
+        specialties. It’s also hoped that aligning future specialty standards development with the CodeX
+        approach will help ensure that new efforts are implemented
+        consistently, so that every person will have a coherent, cross-specialty,
+        lifetime Standard Health Record that improves care and research for all.
+      </p>
+    </div>
+  </div>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'Easy to get started', :body => "Learn critical first steps to immediately provide project impact - at no cost."}) %>
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'In-depth and detailed', :body => "Gain quick access to the deep knowledge you need by role, experience, and project maturity."}) %>
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'Real-world data', :body => "Tackle the challenges of working with real-world data based on actual experience from successful projects."}) %>
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'Open standards', :body => "Build successful projects based on established open public standards without proprietary roadblocks."}) %>
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'Building community', :body => "Leverage proven trategies to successfully create and grow communities with diversity of leaders, ideas, and skills."}) %>
+    <%= partial(:'partials/mission_feature', :locals => { :title => 'Safe and secure', :body => "Ensure that only authorized, authenticated parties access patient data."}) %>
+    <p><%= link_to("Learn more about the Playbook", "/playbook/index.html", relative: false) %></p>
+  </div>
+</div>
+
+<div class="container py-4 border-bottom">
+  <h2 class="pb-2">Featured Case Studies</h2>
+  <p class="col-md-6">Projects that have used the principles and best practices covered in the Playbook.</p>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <img class="mb-5" src="images/blank-image.png" style="max-width:300px">
+      <h3 class="fs-2 text-body-emphasis"><%= link_to("mCODE Standard and CodeX Community","/casestudies/mcode_codex.html") %></h3>
+      <p>Learn how the CodeX Community was created and how it is deploying a standard core set of data elements that is changing oncology care and research.</p>
+    </div>
+      
+      
+    <div class="feature col">
+      <img class="mb-5" src="images/blank-image.png" style="max-width:300px">
+      <h3 class="fs-2 text-body-emphasis"><%= link_to("Radiation Therapy Treatment Data","/casestudies/radiation_therapy.html") %></h3>
+      <p>Read how the the American Society for Radiation Oncology joined CodeX to standardize radiation therapy treatment summaries.</p>
+    </div>
+
+    <div class="feature col">
+      <img class="mb-5" src="images/pacio.png" style="max-width:300px">
+      <h3 class="fs-2 text-body-emphasis"><%= link_to("PACIO Project","/casestudies/pacio.html") %></h3>
+      <p>Streamlining transitions of care and care coordination between post-acute care (PAC) and other providers, patients, and key stakeholders through FHIR.</p>
+    </div>            
+  </div>
+</div>
+
+<div class="hero-box">
+  <div class="container py-5">
+    <div class="row align-items-top py-5">
+      <div class="col-md-4">
+        <h1 class="fw-bold">A Deep Knowledge Base</h1>
+        <p>A lot of knowledge and a variety disciplines are often needed to successfully propel a new specialty use case from conception to widespread adoption. The MITRE Interoperability Playbook knowledge base provides concrete, tested advice to tackle those challenges.</p>
+      </div>
+      <div class="col-md-6 offset-md-2">
+      <div class="col d-flex align-items-start">
+        <div class="display-2 fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3">
+          300+
+        </div> 
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Resources</h3>
+          <p>Let the Playbook to connect you with key resources to help ensure success.</p>
+          <%= link_to("View Resources", "/resources/index.html", :class => 'btn btn-primary', relative: false) %>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  
+  </div>
+</div>
+
+<!-- featured Project -->
+<div class="featured-project-box container">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-sm-8 col-md-6">
+        <%= image_tag 'blank-image.png', :width => '500', :class => 'py-5' %>
+
+      </div>
+      <div class="col-lg-6">
+        <h1 class="fw-bold lh-1 mb-3">mCODE Standard and CodeX Community</h1>
+        <div class="row border-bottom py-4 mb-3">
+          <div class="col">
+            <span class="field-label">Organizations</span><br/>
+            <strong>American Society of Clinical Oncology, MITRE Corportation, and now over 40 additional organizations</strong>
+          </div>
+        </div>
+        <p class="py-3">An overview of the mCODE standard, the CodeX Community, and progress that suggests these might be good models for other specialties to follow</p>
+        <div class="row py-4 mb-3">
+          <div class="col-4">
+            <span class="field-label">Maturity</span><br/>
+            <strong>In Production</strong>
+          </div>
+          <div class="col-4">
+            <span class="field-label">Experience</span><br/>
+            <strong>High Expertise</strong>
+          </div>
+          <div class="col-4">
+            <span class="field-label">Suitable Roles</span><br/>
+            <strong>Technical Lead</strong><br>
+            <strong>Research Lead</strong>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <%= link_to("View Case Study", "casestudies/mcode_codex.html", :class=> "btn btn-primary btn-lg px-4 me-md-2") %>
+        </div>
+      </div>
+    </div>
+  </div>
