@@ -111,7 +111,7 @@ The table contains information needs (potential data elements), where the inform
   <li>Asking for interpreted information rather than source data because that is established practice.  A trivial example would be asking for age, rather than collecting birth data and date/time of the encounter. </li>
 <li> [NOTE: more to be added]
 
-<p>These and other potential pitfalls can be largely avoided by following the <%= link_to("Design Principles", "/playbook/design_principles.html") %> covered earlier.</p>
+<p>These and other potential pitfalls can be largely avoided by following the <%= link_to("Design Principles", "/playbook/design_principles.html") %> compiled based on CodeX and mCODE experience, and available from a link on the left.</p>
 </ul>
 
 <h4>Clinical Review of the Data Dictionary</h4>
@@ -132,7 +132,7 @@ Once the clinical subject matter expert group has at least a draft of their Data
 
 
 <p>
-As noted before, the clinical expert group will can't simply throw their Dictionary over a transom to the FHIR developers.  The two groups will have frequent collaboration, working to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <%= link_to("Design Principles", "/playbook/design_principles.html") %> described in the introduction (and discussed below).
+As noted before, the clinical expert group will can't simply throw their Dictionary over a transom to the FHIR developers.  The two groups will have frequent collaboration, working to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <%= link_to("Design Principles", "/playbook/design_principles.html") %>.
 </p>
 
 
@@ -148,7 +148,7 @@ The ideal FHIR IG development group includes data modelers, FHIR Implementation 
   <li>Standard Terminology. (refs:  <%= link_to('HIMSS','https://www.himss.org/terminology-standards') %>, <%= link_to('CMS','https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf') %>) A terminology code system is a managed collection of structured terminologies (concepts like procedures, diagnoses, treatments, measurements, results, etc.) with the objective that there is one globally unique code (alpha-numeric, typically) to represent each concept. Code systems, terminologies, and vocabularies are not the same things, but are highly related and often used together or for the same idea. <%= link_to('SNOMED CT','https://www.snomed.org/use-snomed-ct') %>, <%= link_to('LOINC','https://loinc.org/') %>, <%= link_to('CPT','https://www.ama-assn.org/topics/cpt-codes') %>, and @@@ are examples of widely used code systems. The benefit of representing a concept with standard terminology in an IG (and elsewhere) is that the concept can be implemented (in FHIR or other standards) in health information systems and understood everywhere the concept is collected, stored, exchanged, and used.</li>
   </ul>
   
-<p>The mCODE FHIR IG and other work in CodeX build on the above framework, including other Design Principles described previously.  This has many benefits, including helping to ensure (not guarantee) that products leveraging this framework are more likely to be consistent with other efforts. It’s not that simple, but close enough.  
+<p>The mCODE FHIR IG and other work in CodeX build on the above framework, including CodeX/mCODE <%= link_to("Design Principles", "/playbook/design_principles.html") %>.  This has many benefits, including helping to ensure (not guarantee) that products leveraging this framework are more likely to be consistent with other efforts. It’s not that simple, but close enough.  
 </p>
 <p>
 Before going deeper into how a specialty FHIR IG can be built, consider the concept of a Standard Health Record (see figure below), a vision that would allow every person to have a lifetime health record in which their health data could be captured accurately and consistently across medical specialties.  Leveraging a common framework of US Core, standard terminologies, and the other Design Principles would enable individual specialties to develop their IGs relatively independently, and yet as consistently as possible. Some cross-specialty coordination would be helpful to maximize implementability and interoperability (filling gaps, avoiding duplication, etc.).
