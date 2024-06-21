@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Implementation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/site.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+  </head>
+  <body class="playbook playbook">
+    
+    <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./" class="nav-link">Playbook</a></li>
+        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
+        <li><a href="../solutions/" class="nav-link">Solutions</a></li>
+        <li><a href="../resources/" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </header>
+  </div>
+
+    <div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class='breadcrumb-item'><a href="../">Home</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="./">Playbook</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="implementation.html">Implementation</a></li class='breadcrumb-item'>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+    <div class="container pt-5">
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar-menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li><a href="./">High-level Summary</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+
+  <li><a href="getting_started.html">Getting Started</a></li>
+  <li><a href="design_principles.html">Design Principles</a></li>
+  
+  <li><a href="community.html">Building Community</a></li>
+
+  <li><a href="use_cases_planning.html">Use Cases & Planning</a></li>
+  
+  <li><a href="standards.html">Standards Development</a></li>
+  
+  <li class="active"><a href="implementation.html" class="active">Implementation & Testing</a></li>
+    <li class="sub"><a href="#implement_workflows">Implement into Systems</a></li>
+    <li class="sub"><a href="#execute_pilots">Test & Pilot</a></li>
+    <li class="sub"><a href="#use_feedback">Feedback</a></li>
+
+  <li><a href="adoption.html">Adoption & Value</a></li>
+</ul>
+
+</ul>
+</div>
+  
+    </div>
+  
+    <div class="col-md-9">
+      <h2>Implementation & Testing</h2>
+      <p class="lead">Health data standards must be implemented into software systems and workflows to provide a potentially-valuable new or enhanced function in the health ecosystem. Assessing the potential for real value requires testing, including pilots in increasingly realistic settings.</p>
+
+<p>Both the implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software.
+There are other significant biproducts of this Implementation & Testing track.  For example, it’s an opportunity to ensure the necessary community members are actively involved within increasingly realistic environments. It’s an opportunity to attract new, critical organizations, based by demonstrating and get recognition for potential value, rather than just asserting potential value.
+For Implementation & Testing to progress effectively, activities and necessary resources must be included thoughtfully in the Use Case plans, and prepared for as the Use Case initiative moves forward.</p>
+<p>
+The rest of this section covers experience gained in (a) Implementation, (b) Testing, and (c) Feedback into previously-discussed Use Case & Planning and Standards Development tracks.
+</p>
+<h3 id="implement_workflows">Implement FHIR IG(s) into systems and workflows</h3>
+<p>Every CodeX Use Case requires implementing at least part of a FHIR IG into software to support generally new aspects of the envisioned workflow to be piloted. It’s highly recommended to engage market-leading software vendors in the specialty space. Vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Candidate vendors should be engaged in the community and committed to implement and test (and more) as early in the Use Case project as possible.</p>
+<p>If in the early phases engaging leading vendors is not possible, implementation into prototypes and/or testing software may be a satisfactory first step to allow useful assessments.</p>
+<p>Questions that should be addressed during Implementation include:</p>
+<ul>
+	<li>Is the IG understandable based on technical specifications and documentation?</li>
+	<li>Is the IG implementable?</li>
+	<li>Is the system within which the IG is implemented consistent and interoperable with other systems with which data exchange would be needed?</li>
+	<li>Is the workflow represented within which the Use Case and IG realistic and consistent from the developer perspective (will also need user input during testing)?</li>
+</ul>
+<p>In all cases, it’s critical to receive specific comments and recommendations for change that can be taken back to the FHIR IG and the Use Case and Planning teams so that adjustments can be considered .. adjustments that could be very helpful before testing becomes intense.</p>
+
+<h3 id="execute_pilots">Test and Pilot</h3>
+<p>Testing and pilots within CodeX Use Cases tend to start simply and then ramp up to as realistic a scenario as possible, via multiple phases. Testing of the implemented IG should start as early as possible, even if very simply. </p>
+<p>The following table is a simplified set of testing axes that aim for a higher degree realistic challenges from the top of the table to the bottom.  A particular test or pilot might combine components from different rows, and not just across a single row. </p>
+
+<table class="table table-striped ">
+  <caption>
+  Example Options for Progressing System Testing
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Difficulty</th>
+      <th scope="col">Use Case Workflow</th>
+      <th scope="col">Software</th>
+      <th scope="col">Data</th>
+      <th scope="col">Participants</th>
+      <th scope="col">Environment</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="6"><sup>*</sup>Synthea is an open-source, synthetic patient generator. With no cost and no restrictions, Synthea has empowered multiple CodeX pilots as well as testing and research around the world.</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Lower</td>
+      <td>1 data element via 1 exchange in the workflow</td>
+      <td>Simple test scripts</td>
+      <td>Synthetic data<sup>*</sup></td>
+      <td>Developers</td>
+      <td>Developer's computers</td>
+    </tr>
+    <tr>
+      <td>Higher</td>
+      <td>More elements and exchanges</td>
+      <td>Prototypes of needed components of future software systems</td>
+      <td>De-identified data</td>
+      <td>Some developers and intended users</td>
+      <td>Connectathons with multiple organizations</td>
+    </tr>
+    <tr>
+      <td>Most realistic</td>
+      <td>All required data elements via all envisioned exchanges in the workflow</td>
+      <td>Software systems intended for deployment and adoption</td>
+      <td>Real patient data</td>
+      <td>Envisioned end users/actors from multiple entities of each type organization required by the workflow</td>
+      <td>Full-scale real-world pilots within the envisioned organizations (e.g., health system, lab ...). Likely includes some testing sandboxes in those organizations</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p>Early testing provides early feedback and engages key community members in activities that bring the Use Case concept and IG closer to life. </p>
+<p>However, the CodeX Use Cases have found it useful to start with very simple tests that can be started in 6-12 months after start of the project, including components similar to the first row in the table above. Over time, CodeX Use Cases typically ramp up through increasingly ambitious tests to real-world pilots including components similar to the bottom row:  e.g., demonstrating the full Use Case workflow, using software systems intended for sale or otherwise deployed, using real patient data, driven by the intended users, and within many organizations across which the future Use Case is planned to operate. See the <a href="https://codex-hl7-fhir-accelerator.github.io/playbook/casestudies/radiation_therapy.html">Radiation Therapy Treatment Data Case Study</a> for a good example of planning and ramping up of testing.</p>
+<p>
+Obviously, these real-world types of real-world pilot require substantial planning, commitment, preparation, and execution, well in advance of the execution of the pilot. This advanced planning is particularly important for testing in realy healthcare setting, using real patient data, etc.
+</p>
+
+<p>For each of the tests and pilots, considerations typically include the elements below.  These elements should be nearly finalized when initial planning is complete, especially the commitment of the necessary resources.</p>
+
+<ul class="action-list">
+  <li>Objectives 
+    <ul>
+      <li>What improvements in health care and/or research does the Use Case aim to provide that will be assessed?  (e.g., What will be made better, faster, less expensive, more accessible, etc.?)</li>
+    </ul>
+  </li>
+  <li>Test Configuration
+    <ul>
+      <li>What parts of the Use Case workflow are being tested, and where are they being tested?</li>
+    </ul>
+  </li>
+  <li>Resources
+    <ul>
+      <li>Skill sets (e.g., project management, clinical, technical, logistics, legal, operational, etc.)</li>
+    	<li>Software (e.g., EHRs, specialty systems, etc.)</li>
+    	<li>Facilities (e.g., health system, labs, homes, registries, etc.)</li>
+    	<li>Funding (e.g., for facilities, expertise, etc.)</li>
+    </ul>
+  </li>
+  <li>Success
+    <ul>
+      <li>What metrics are available to assess current capabilities?</li>
+      <li>What level of improvement will be measured during the test?</li>
+      <li>How will success be measured?</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="use_feedback">Feedback to Update Previous Work, As Needed</h3>
+<p>Even early phase pilots can provide salient feedback on the implementability of the IG in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow.  Both implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software. A test or pilot may need to be repeated, once these updates are agreed and implemented.</p>
+
+    <div class="playbook-bottom-navigation">
+        <div class="previous">  <a href="standards.html">Prev: Standards Development</a></div>
+        <div class="next"><a href="adoption.html">Next: Adoption & Value</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+      <p>
+        The MITRE Interoperability Playbook is provided as a resource for the health information community.
+        For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h5>Playbook</h5>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="./">The MITRE Interoperability Playbook</a></li>
+        <li><a href="../casestudies/">Case Studies</a></a></li>
+        <li><a href="../solutions/">Solutions</a></a></li>
+        <li><a href="../resources/">Resources</a></a></li>
+      </ul>
+    </div>
+    <div class="d-none col-md-2">
+      <h5>Information</h5>
+      <ul>
+        <li><a href="../about/">Privacy Policy</a></a></li>
+        <li><a href="../about/">Terms and Conditions</a></a></li>
+        <li><a href="../about/">Copyright</a></a></li>
+        <li><a href="../about/">License</a></a></li>
+      </ul>
+    </div>    
+    <div class="d-none col-md-2">
+      <h5>Organizations</h5>
+      <ul>
+        <li><a href="../about/">MITRE Corporation</a>MITRE Corporation</a></li>
+        <li><a href="../about/">Health Level Seven</a>Health Level Seven</a></li>
+
+      </ul>
+    </div>    
+</div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <p><span class="float-end">V0.2</span>&copy; Copyright 2024 MITRE Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+
+  </body>
+</html>
+

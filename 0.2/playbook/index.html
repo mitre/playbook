@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Playbook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/site.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+  </head>
+  <body class="playbook playbook">
+    
+    <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./" class="nav-link">Playbook</a></li>
+        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
+        <li><a href="../solutions/" class="nav-link">Solutions</a></li>
+        <li><a href="../resources/" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </header>
+  </div>
+
+    <div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class='breadcrumb-item'><a href="../">Home</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="./">Playbook</a></li class='breadcrumb-item'>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6 pt-5 mb-3">
+      <h1>Welcome to the Playbook!</h1>
+      <p>Lessons for medical specialties from MITRE's experience within the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator</a> and in other fora.  This includes working with the community to  pioneer the <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a> data standard, applying mCODE to solve real-world problems, and speeding adoption and value to patients.</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-3">
+    <div class="sidebar-menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li class="active"><a href="./" class="active">High-level Summary</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+
+  <li><a href="getting_started.html">Getting Started</a></li>
+  <li><a href="design_principles.html">Design Principles</a></li>
+  
+  <li><a href="community.html">Building Community</a></li>
+
+  <li><a href="use_cases_planning.html">Use Cases & Planning</a></li>
+  
+  <li><a href="standards.html">Standards Development</a></li>
+  
+  <li><a href="implementation.html">Implementation & Testing</a></li>
+
+  <li><a href="adoption.html">Adoption & Value</a></li>
+</ul>
+
+</ul>
+</div>
+
+  </div>
+
+  <div class="col-md-9">
+    <h2>High-level Summary</h2>
+    <p class="lead">The CodeX HL7 FHIR Accelerator Community has gained substantial experience in a developing global data standard for cancer care – the <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a>. CodeX has also gained experience deploying and demonstrating the value of mCODE for solving specific problems faced by cancer patients and others stakeholders. MITRE's perspective and experience are shared on this site to help other specialties leverage what’s been learned. If specialties could follow the CodeX approach in a collaborative way, this would help ensure that the sum of standards created across multiple specialties enables every person to have a coherent, lifetime Standard Health Record that improves health care and research for all.
+    
+    <h3>Our Approach</h3>
+    <p>The approach that has emerged from the CodeX Community can be summarized along five tracks that overlap in time, work closely together, and evolve with experience:</p>
+    <p><img src="../images/5_steps.png" width="100%" class="py-5" alt="" /></p>
+
+    <ol class="section-list">
+      <li><a href="community.html">Community Building</a>, including a committed leadership that has a broad reach; a fair and sustainable governance framework; and a growing group of diverse participants and skillsets. Certain organizations and skills are typically needed only at certain points across the tracks. </li>
+      <li><a href="use_cases_planning.html">Use Cases & Planning</a>, including prioritizing Use Cases (specific challenges, proposed new work and data flows); organizing and scheduling work right through to adoption and measuring value; and securing the resources (organizations, people/skills) needed to succeed. Specific Use Cases attract specific subsets of each specialty.</li>
+      <li><a href="standards.html">Standards Development</a>, based on compiling clinical experts’ information requirements within Use Cases; incorporating these requirements into HL7 Fast Healthcare Interoperability Resources Implementation Guides (FHIR IGs) based on a set of <a href="design_principles.html">Design Principles</a> that drove the development of mCODE; and standardizing, updating, and maintaining the FHIR IGs within the Health Level Seven (HL7) standards organization.</li>
+      <li><a href="implementation.html">Implementation & Testing</a> Implementation of the FHIR IG(s) into systems and workflows; testing these systems and workflows within the types organizations ultimately planned to host, use, and benefit from the work; and feedback from testing to update Planning and Standards work. Testing serves to demonstrate the potential value of the work and often attracts additional participants to the Community.</li>
+      <li><a href="adoption.html">Adoption & Value</a> in the real world is best driven by understanding at the Planning track what factors will move the market. Factors include user demand, Government mandates, and the promise of improved care and research demonstated during testing. It’s critical to Measure such improvements in the real world, to see where changes could make solutions even better (quality, cost, time) and motivate new participants engage.</li>
+    </ol>
+    
+
+
+
+    <div class="playbook-bottom-navigation">
+      <div class="previous inactive"></div>
+      <div class="next"><a href="introduction.html">Next: Introduction<i class="bi bi-arrow-right-short"></i></a></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+    <footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+      <p>
+        The MITRE Interoperability Playbook is provided as a resource for the health information community.
+        For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h5>Playbook</h5>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="./">The MITRE Interoperability Playbook</a></li>
+        <li><a href="../casestudies/">Case Studies</a></a></li>
+        <li><a href="../solutions/">Solutions</a></a></li>
+        <li><a href="../resources/">Resources</a></a></li>
+      </ul>
+    </div>
+    <div class="d-none col-md-2">
+      <h5>Information</h5>
+      <ul>
+        <li><a href="../about/">Privacy Policy</a></a></li>
+        <li><a href="../about/">Terms and Conditions</a></a></li>
+        <li><a href="../about/">Copyright</a></a></li>
+        <li><a href="../about/">License</a></a></li>
+      </ul>
+    </div>    
+    <div class="d-none col-md-2">
+      <h5>Organizations</h5>
+      <ul>
+        <li><a href="../about/">MITRE Corporation</a>MITRE Corporation</a></li>
+        <li><a href="../about/">Health Level Seven</a>Health Level Seven</a></li>
+
+      </ul>
+    </div>    
+</div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <p><span class="float-end">V0.2</span>&copy; Copyright 2024 MITRE Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
