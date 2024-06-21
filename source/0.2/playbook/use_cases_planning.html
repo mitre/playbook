@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Use Cases & Planning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/site.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+  </head>
+  <body class="playbook playbook">
+    
+    <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="./" class="nav-link">Playbook</a></li>
+        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
+        <li><a href="../solutions/" class="nav-link">Solutions</a></li>
+        <li><a href="../resources/" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </header>
+  </div>
+
+    <div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class='breadcrumb-item'><a href="../">Home</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="./">Playbook</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="use_cases_planning.html">Use Cases & Planning</a></li class='breadcrumb-item'>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+    <div class="container pt-5">
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar-menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li><a href="./">High-level Summary</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+
+  <li><a href="getting_started.html">Getting Started</a></li>
+  <li><a href="design_principles.html">Design Principles</a></li>
+  
+  <li><a href="community.html">Building Community</a></li>
+
+  <li class="active"><a href="use_cases_planning.html" class="active">Use Cases & Planning</a></li>
+  	<li class="sub"><a href="#what_is_use_case">What is a Use Case</a></li>
+	  <li class="sub"><a href="#use_case_development_guidelines">Guidelines</a></li>
+  	<li class="sub"><a href="#use_case_discovery">Use Case Discovery</a></li>
+  	<li class="sub"><a href="#use_case_planning">Use Case Planning</a></li>
+  
+  <li><a href="standards.html">Standards Development</a></li>
+  
+  <li><a href="implementation.html">Implementation & Testing</a></li>
+
+  <li><a href="adoption.html">Adoption & Value</a></li>
+</ul>
+
+</ul>
+</div>
+  
+    </div>
+  
+    <div class="col-md-9">
+      <h2>Use Cases & Planning</h2>
+      <p class="lead">Use Cases scope the work. Planning the work documents the steps, schedules and resources needed to deliver solutions successfully.</p>
+      <h3 id="what_is_use_case">What is a Use Case?</h3>
+      <p>A Use Case in the CodeX context is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within a new workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
+      <p>A specific Use Cases provides the scope for all that comes next. A Use Case attracts the subset of the larger community who care deeply about the scope, and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
+      <p>One of many possible Use Case examples is the CodeX Use Cases is Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologist with an mCODE-based FHIR exchange of structure radiation treatment summary data, thus improving information quality and reducing clinical burden.  See the <a href="../casestudies/radiation_therapy.html">Radiation Therapy Treatment Data Case Study</a>.</p>
+      <figure>
+        <img src="../images/radiation-therapy-workflow.png" width="100%" class="py-5" alt="" />
+        <figcaption>A workflow diagram for Radiation Therapy Treatment Data for Cancer</figcaption>
+      </figure>
+
+      <h3 id="use_case_development_guidelines">CodeX Use Case Development Guidelines</h3>
+      <p>CodeX created <a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">Use Case Development Guidelines</a> as a framework and decision process for successful Use Case work via three Stages: Discovery, Planning, and Execution (development, implementation, adoption, and impact).</p>
+      <p>
+      <img src="../images/planning-flow.svg" width="100%" class="p-3" alt="" />
+      </p>
+
+<p>Below are key learnings around the CodeX Discovery and Planning stages. The CodeX "Execution" experience will be referenced in the <a href="implementation.html">Implementation & Testing</a> and <a href="adoption.html">Adoption & Value</a> sections of this website.</p>
+
+<h3 id="use_case_discovery">Use Case Disovery:<br>Identifying and prioritizing potential specialty projects</h3>
+      <p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), engaging and aligning other potential participants, and agreeing on the scope a potential Use Case project. </p>
+
+<p>For the CodeX leadership to assess readiness of a Use Case to go into the CodeX Discovery stage, the following information is requested:</p>
+<ul>
+
+	<li>High-level version of Concept (Problem space, Solution/workflow options and Potential impacts  - this does not have to be completely agreed of aligned with stakeholders)</li>
+	<li>List of organizations and individuals committed to lead the Discovery discussions and alignment</li>
+	<li>List other specific organizations across stakeholder groups that could be candidates for working the concept through Discovery, Planning and Execution</li>
+</ul>
+<p>
+By the end of the Discovery stage, and before moring into the Planning Stage, a Use Case projects typicaly have the following attributes in the CodeX world:</p>
+<ul>
+	<li>Believed to be viable (some risk, is of course, natural and acceptable)</li>
+        <li>Have the potential to substantial improve patient care and research in within or across specialties</li>
+	<li>Share the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
+	<li>Leverage clinically-based FHIR Implementation Guides for automated collection and exchange of clinical data
+	<ul>
+	<li>Leverage resources and open FHIR-based API-based data exchange</li>
+	<li>Leverage Gov’t supported frameworks, including USCDI, the US Core FHIR IG, and others.</li>
+	<li>Leverage and explore updates to mCODE and other foundational, IGs</li>
+	<li>May develop supplemental data elements/IGs, more specific to a Use Case</li>
+	</ul>
+	</li>
+		<li>Are driven by a community, including Champions, representatives from all stakeholders, and committed resources</li>
+
+<li>Expedite Use Case project work based on agile project plans, with short phases, quick results</li>
+<li>Pilot workflows and systems in real-world settings that demonstrate the “art of the possible” and can be adopted and scaled</li>
+</ul>
+
+<p>Other considerations that MITRE has found useful to determining readiness to proceed:</p>
+<ul>
+<li>A new specialty should consider starting with less ambitious Use Cases. This raises the probability of success at speed, and can help a new community to gel</li>
+<li>Ask the right questions
+<ul>
+	<li>What's driving the need for the Use Case?: e.g., clinical workflow improvement, research needs, regulatory requirements, costs, etc.</li>
+	<li>Who are the target actors? e.g., patients, physicians, nurses, researchers, payors, regulators, etc.</li>
+	</ul>
+	</li>
+	
+<li>Develop Use Case scenarios
+<ul>
+	<li>Write scenarios such that widest group of potential participants can review and understanding</li>
+	<li>Create an example persona for role</li>
+	<li>Cite clinical sources, where applicable</li>
+</ul>
+</li>
+</ul>
+      
+      <h3 id="use_case_planning">Use Case Planning:<br>From starting work to providing value in the ecosystem </h3>
+ 
+<p>
+ Once a Use Case has been prioritized through the Discovery stage, the next step is to develop a plan.  Often some of the plan components have been considered and even detailed during the Discovery stage. Here are considerations that CodeX documents in their Use Case Development Guidelines, augmented by additional MITRE experience.
+</p>
+
+<ul>
+	<li><b>Problem</b>. Why are current solutions are inadequate?</li>
+
+	<li><b>Solution</b>. What new systems and workflows planned?  Identify which roles/actors and standardized data are needed to in which parts of the solution.</li>
+
+	<li><b>Impact</b>. Where will the health ecosystem be substantially improved with the envisioned solution?</li>
+
+	<li><b>Champions</b>. Which organizations and people are committed to lead? Which others are needed and where does engaging them stand?</li>
+
+	<li><b>Participants</b>. Which organizations and people are committed to participate actively? Which others are needed and where does engaging them stand?  Think about participants needed over the entire project, through planning, development, implementation, testing, adoption, and realizing value in the real world.</li>
+
+	<li><b>Other Resources</b>. Are there additional personnel, facility, and/or financial resources required to succeed, that are not committed yet?  Describe the options and plans for attaining these. It can be difficult to estimate resource needs accurately, especially in the early phases of a Use Case. Note that Use Case scope and schedule can be adjusted to some extent, to resource availability and still result in a successful project. </li>
+
+	<li><b>Outside Activities</b>. Are there other consortia or other organizations outside of this Use Case with which the team may want to interface, coordinate or partner, or at least remain aware of? Consider outside work that could be competitive with the current Use Case.</li>
+
+<li><b>Schedule of Work</b>
+<ul>
+	<li>Break the plan into Phases. Each Phase might be 3-9 months. Phase themes, stories, workflows, objectives, development (FHIR IGs, software) will vary.</li>
+<li>One pattern common in CodeX is a first Phase starting with a small amount of synthetic data, progressing to a Phase with de-identified data, then a Phase with live patient data. Later Phases include strategies for driving Adoption and for Measuring Value in the real world. Participation, realism, and results all becomemore ambitious with each new Phase.</li>
+	<li>Specify measures of success for each Phase, out to at least a year or two. </li>
+	<li>Note risks and other issues within the plan that require additional alignment within the Use Case team. </li>
+</ul>
+</li>
+<li><b>Communication</b>. There is value to having channels of communication (web, email lists) that are public (to gain attention, engage outsiders, and publicize progress) and others that are within the governing organization (like CodeX) or the Use Case team.
+    </li>
+    </ul> 
+      
+      
+      
+      
+      <div class="playbook-bottom-navigation">
+        <div class="previous">  <a href="community.html">Prev: Building Community</a></div>
+        <div class="next"><a href="standards.html">Next: Standards Development</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+      <p>
+        The MITRE Interoperability Playbook is provided as a resource for the health information community.
+        For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h5>Playbook</h5>
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="./">The MITRE Interoperability Playbook</a></li>
+        <li><a href="../casestudies/">Case Studies</a></a></li>
+        <li><a href="../solutions/">Solutions</a></a></li>
+        <li><a href="../resources/">Resources</a></a></li>
+      </ul>
+    </div>
+    <div class="d-none col-md-2">
+      <h5>Information</h5>
+      <ul>
+        <li><a href="../about/">Privacy Policy</a></a></li>
+        <li><a href="../about/">Terms and Conditions</a></a></li>
+        <li><a href="../about/">Copyright</a></a></li>
+        <li><a href="../about/">License</a></a></li>
+      </ul>
+    </div>    
+    <div class="d-none col-md-2">
+      <h5>Organizations</h5>
+      <ul>
+        <li><a href="../about/">MITRE Corporation</a>MITRE Corporation</a></li>
+        <li><a href="../about/">Health Level Seven</a>Health Level Seven</a></li>
+
+      </ul>
+    </div>    
+</div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <p><span class="float-end">V0.2</span>&copy; Copyright 2024 MITRE Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
