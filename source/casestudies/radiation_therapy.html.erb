@@ -20,8 +20,12 @@ theme: casestudy
         </figure>
         
         <h3 id="use_cases_planning">Use Cases & Planning</h3>
-        <p>Development History (<%= link_to("https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html","https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html")%>)</p>
-        
+        <p>The Development History for the Radiation Treatment Therapy Data Use Case is summarized the RTTD FHIR IG: (<%= link_to("https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html","https://hl7.org/fhir/us/codex-radiation-therapy/2024May/history.html")%>). A summary of the Use Case phased plan can be seen in the following graphic:</p>
+  <figure>
+      <%= image_tag("images/RTTD-Phase-Timeline.png", :width=>"100%") %>
+      <figcaption>RTTD Use Case worked ramped up to realistic pilots over 5 years.</figcaption>
+        </figure>
+<p>Now, let's dive a little deeper into the RTTD Use Case story:</p>
 <p>ASTRO and AAPM (with the assistance of The MITRE Corporation) planned and kicked off the CodeX<sup>™</sup> Radiation Therapy Treatment Data (RTTD) use case in early 2021. The team’s initial objective was to identify, define and model data components in an “end-of-treatment” radiation therapy (RT) care summary (i.e., a summary report that could be sent to the larger oncology team once the RT course has been completed). As previously mentioned, the data components were informed by the “<%= link_to("Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper","https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext") %>” and refined by consensus after stakeholder discussion. </p>
 <p>
 Once the “end-of-treatment” summary modeling was completed in June 2021, the RTTD stakeholders agreed that defining components of a RT prescription and an “in-progress” treatment summary would also be of value to the healthcare community. In-progress treatment summaries convey information about a patient in the midst of receiving treatment. The group, again, leveraged the Minimum Data Elements for Radiation Oncology Consensus Paper to identify potential data requirements, refined the definition of each data element via collaboration and stakeholder expertise, and modeled the FHIR specifications that would ultimately be published in the CodeX<sup>™</sup> RT Implementation Guide (IG).
