@@ -17,6 +17,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  position:relative;
 }
 
 a {
@@ -121,6 +122,7 @@ h1 {font-weight:bold}
   li.sub {font-weight:normal;
   a {
     padding-left:1.5em;
+    &.active {background-color:#F0F7FE}
   }
   }
   
@@ -164,11 +166,12 @@ ul li {font-weight:normal;}}
 
 .playbook-bottom-navigation {
   display:flex;
-  margin:5rem 0;
+  margin:3rem 0;
   justify-content:space-between;
   font-weight:bold;
   a {color:#000;
   text-decoration:none;}
+  a.btn.btn-primary {color:#fff}
 }
 .copyright {
   padding:2vh 0;

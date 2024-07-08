@@ -3,19 +3,30 @@ title: Introduction
 pagetitle: Introduction
 theme: playbook
 ---
-<div class="container pt-5">
+<h1>GONE</h1>
+
+<div class="container pt-5 data-bs-spy="scroll" data-bs-target="#playbook_menu" data-bs-offset="0">
   <div class="row">
     <div class="col-md-3">
       <%= partial "partials/playbook_menu" %>
     </div>
     <div class="col-md-9">
-      <h2>Introduction</h2>
+      <h1>Introduction</h1>
       <p class="lead">The MITRE Interoperability Playbook aims to be a useful set of steps to help future health specialties to succeed in creating and adopting standard health data elements for their domain.</p>
-<%#
-      <blockquote class="blockquote">
-        &ldquo;Impactful quote goes here.&rdquo; - <span class="attrib">Famous Person, CompanyName</span>
-        </blockquote>
-%>
+
+    <h2>Our Approach</h2>
+    <p>The approach that has emerged from the CodeX Community can be summarized along five tracks that overlap in time, work closely together, and evolve with experience:</p>
+    <p><%= image_tag '5_steps.png', :width => '100%', :class => 'py-5' %></p>
+
+    <ol class="section-list">
+      <li><%= link_to("Community Building", "community.html") %>, including a committed leadership that has a broad reach; a fair and sustainable governance framework; and a growing group of diverse participants and skillsets. Certain organizations and skills are typically needed only at certain points across the tracks. </li>
+      <li><%= link_to("Use Cases & Planning", "use_cases_planning.html") %>, including prioritizing Use Cases (specific challenges, proposed new work and data flows); organizing and scheduling work right through to adoption and measuring value; and securing the resources (organizations, people/skills) needed to succeed. Specific Use Cases attract specific subsets of each specialty.</li>
+      <li><%= link_to("Standards Development", "standards.html") %>, based on compiling clinical experts’ information requirements within Use Cases; incorporating these requirements into HL7 Fast Healthcare Interoperability Resources Implementation Guides (FHIR IGs) based on a set of <%= link_to("Design Principles", "design_principles.html") %> that drove the development of mCODE; and standardizing, updating, and maintaining the FHIR IGs within the Health Level Seven (HL7) standards organization.</li>
+      <li><%= link_to("Implementation & Testing", "implementation.html") %> Implementation of the FHIR IG(s) into systems and workflows; testing these systems and workflows within the types organizations ultimately planned to host, use, and benefit from the work; and feedback from testing to update Planning and Standards work. Testing serves to demonstrate the potential value of the work and often attracts additional participants to the Community.</li>
+      <li><%= link_to("Adoption & Value", "adoption.html") %> in the real world is best driven by understanding at the Planning track what factors will move the market. Factors include user demand, Government mandates, and the promise of improved care and research demonstated during testing. It’s critical to Measure such improvements in the real world, to see where changes could make solutions even better (quality, cost, time) and motivate new participants engage.</li>
+    </ol>
+    
+
       <h3 id="motivation">Motivation for this Site</h3>
       <p>Increasing adoption of <%= link_to("CodeX Use Case","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %> workflows based on the <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %> FHIT standard has led new specialties to ask questions such as:  What are CodeX and mCODE?  What impact are they having? How and why did you proceed the way you did? How could my specialty replicate your success or even collaborate?  These questions are some of the motivations that led to this site.</p>
       <p>Also, the time is right for other specialties to create FHIR-based standards to address challenges. Patients, providers, payer, researchers and others are realizing the need for standards that provide semantic interoperability. Recent Government rules and regulations are driving a common underpinning – like <%= link_to("USCDI","https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi") %>, <%= link_to("FHIR","https://www.hl7.org/fhir/overview.html") %>, <%= link_to("US Core","https://www.hl7.org/fhir/us/core/") %>, <%= link_to("TEFCA","https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca") %> - for future specialty standards. Vendors are working to meet customer demands and Government direction, delivering products increasingly based on standards. There is a long road ahead. However, formerly disparate elements are converging.</p>

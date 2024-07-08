@@ -4,7 +4,7 @@ pagetitle: Use Cases & Planning
 theme: playbook
 ---
 
-<div class="container pt-5">
+<div class="container pt-5" data-bs-spy="scroll" data-bs-target="#playbook_menu" data-bs-offset="0">
 
   <div class="row">
     <div class="col-md-3">
@@ -12,9 +12,9 @@ theme: playbook
     </div>
   
     <div class="col-md-9">
-      <h2>Use Cases & Planning</h2>
+      <h1>Use Cases & Planning</h1>
       <p class="lead">Use Cases scope the work. Planning the work documents the steps, schedules and resources needed to deliver solutions successfully.</p>
-      <h3 id="what_is_use_case">What is a Use Case?</h3>
+      <h2 id="what_is_use_case">What is a Use Case?</h2>
       <p>A Use Case in the CodeX context is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within a new workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
       <p>A specific Use Cases provides the scope for all that comes next. A Use Case attracts the subset of the larger community who care deeply about the scope, and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
       <p>One of many possible Use Case examples is the CodeX Use Cases is Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologist with an mCODE-based FHIR exchange of structure radiation treatment summary data, thus improving information quality and reducing clinical burden.  See the <%= link_to("Radiation Therapy Treatment Data Case Study","/casestudies/radiation_therapy.html") %>.</p>
@@ -23,7 +23,7 @@ theme: playbook
         <figcaption>A workflow diagram for Radiation Therapy Treatment Data for Cancer</figcaption>
       </figure>
 
-      <h3 id="use_case_development_guidelines">CodeX Use Case Development Guidelines</h3>
+      <h2 id="use_case_development_guidelines">CodeX Use Case Development Guidelines</h2>
       <p>CodeX created <%= link_to("Use Case Development Guidelines","https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines") %> as a framework and decision process for successful Use Case work via three Stages: Discovery, Planning, and Execution (development, implementation, adoption, and impact).</p>
       <p>
       <%= image_tag 'planning-flow.svg', :width => '100%', :class => 'p-3' %>
@@ -31,7 +31,7 @@ theme: playbook
 
 <p>Below are key learnings around the CodeX Discovery and Planning stages. The CodeX "Execution" experience will be referenced in the <%= link_to("Implementation & Testing","implementation.html") %> and <%= link_to("Adoption & Value","adoption.html")%> sections of this website.</p>
 
-<h3 id="use_case_discovery">Use Case Disovery:<br>Identifying and prioritizing potential specialty projects</h3>
+<h2 id="use_case_discovery">Use Case Disovery:<br>Identifying and prioritizing potential specialty projects</h2>
       <p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), engaging and aligning other potential participants, and agreeing on the scope a potential Use Case project. </p>
 
 <p>For the CodeX leadership to assess readiness of a Use Case to go into the CodeX Discovery stage, the following information is requested:</p>
@@ -80,7 +80,7 @@ By the end of the Discovery stage, and before moring into the Planning Stage, a 
 </li>
 </ul>
       
-      <h3 id="use_case_planning">Use Case Planning:<br>From starting work to providing value in the ecosystem </h3>
+      <h2 id="use_case_planning">Use Case Planning:<br>From starting work to providing value in the ecosystem </h2>
  
 <p>
  Once a Use Case has been prioritized through the Discovery stage, the next step is to develop a plan.  Often some of the plan components have been considered and even detailed during the Discovery stage. Here are considerations that CodeX documents in their Use Case Development Guidelines, augmented by additional MITRE experience.
@@ -117,8 +117,8 @@ By the end of the Discovery stage, and before moring into the Planning Stage, a 
       
       
       <div class="playbook-bottom-navigation">
-        <div class="previous">  <%= link_to("Prev: Building Community", "community.html") %></div>
-        <div class="next"><%= link_to("Next: Standards Development", "standards.html") %></div>
+        <div class="previous">  <%= link_to("Prev: Building Community", "community.html", :class=>"btn btn-outline-primary btn-lg") %></div>
+        <div class="next"><%= link_to("Next: Standards Development", "standards.html", :class=>"btn btn-outline-primary btn-lg") %></div>
       </div>
     </div>
   </div>
