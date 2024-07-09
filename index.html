@@ -26,10 +26,10 @@
 </a>      </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="playbook/" class="nav-link">Playbook</a></li>
+        <li><a href="playbook/" class="nav-link">Introduction</a></li>
         <li><a href="casestudies/" class="nav-link">Case Studies</a></li>
-        <li><a href="solutions/" class="nav-link">Solutions</a></li>
         <li><a href="resources/" class="nav-link">Resources</a></li>
+        <li><a href="about/" class="nav-link">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
@@ -41,8 +41,8 @@
   </div>
 
       <div class="hero-box">
-  <div class="container col-xxl-8 px-4 py-5 mb-3">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <div class="container px-4 py-5 mb-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="images/interop-puzzle.png" class="d-block mx-lg-auto img-fluid" alt="Puzzle pieces filling together to illustrate data interoperability for healthcare" width="700" height="500" loading="lazy">
       </div>
@@ -50,91 +50,53 @@
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to the MITRE Interoperability Playbook!</h1>
         <p class="lead">Sharing MITRE’s experience developing and deploying health data standards to solve real-world challenges in patient care and research in oncology and beyond.</p>
         <p class="lead">All medical specialties are invited to learn from and join the mission.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="playbook/index.html">Get Started</a>
-        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container py-4 border-bottom">
-  <h2 class="pb-2 fw-bold">Mission and Purpose</h2>
+<div id="content" class="container py-4 border-bottom">
   <div class="row">
-    <div class="col-md-6">
-      <p>Today, a patient’s health story is nearly impossible to collect and share because data are unreliable, stored in different locations, lack standardization, and are largely unusable. </p>
-      <p>The <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 Accelerator</a> is a member-driven
-        community, launched by MITRE in 2019, that is working together to break down silos endemic to our current system
-        for specialty health data. The initial projects within CodeX
-        solve problems in the cancer domain, building and leveraging the
-        <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a> standard. The
-        growing CodeX community is now also addressing problems in the
-        cardiovascular disease and genomics domains.
-      </p>
+    <div class="col-md-3">
+      <div class="sidebar-menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li><a href="playbook/">Introduction</a></li>
+  <li><a href="playbook/getting_started.html">Getting Started</a></li>
+  <li><a href="playbook/design_principles.html">Design Principles</a></li>
+  <li><a href="playbook/community.html">Building Community</a></li>
+  <li><a href="playbook/use_cases_planning.html">Use Cases & Planning</a></li>
+  <li><a href="playbook/standards.html">Standards Development</a></li>
+  <li><a href="playbook/implementation.html">Implementation & Testing</a></li>
+  <li><a href="playbook/adoption.html">Adoption & Value</a></li>
+</ul>
+
+</ul>
+</div>
+
     </div>
-    <div class="col-md-6">
-      <p>Circumstances across the
-        health landscape are converging to make this time in history, finally, the right time
-        for all medical specialties to standardize health data and deploy
-        standards-based solutions to their most challenges problems. It’s hoped that MITRE's experience in CodeX
-        and elsewhere, as shared on this site, will speed the work of other
-        specialties. It’s also hoped that aligning future specialty standards development with the CodeX
-        approach will help ensure that new efforts are implemented
-        consistently to give every person a coherent, cross-specialty,
-        lifetime Standard Health Record that improves care and research for all.
-      </p>
+    <div class="col-md-9">
+      <h2 class="pb-2 fw-bold">Mission and Purpose</h2>
+      <p class="lead">The CodeX HL7 FHIR Accelerator Community has gained substantial experience in a developing global data standard for cancer care – the <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a>. CodeX has also gained experience deploying and demonstrating the value of mCODE for solving specific problems faced by cancer patients and others stakeholders. MITRE's perspective and experience are shared on this site to help other specialties leverage what’s been learned. If specialties could follow the CodeX approach in a collaborative way, this would help ensure that the sum of standards created across multiple specialties enables every person to have a coherent, lifetime Standard Health Record that improves health care and research for all.</p>
+
+      <h3>Our Approach</h3>
+      <p>The approach that has emerged from the CodeX Community can be summarized along five tracks that overlap in time, work closely together, and evolve with experience:</p>
+      <p><img src="images/5_steps.png" width="100%" class="py-5" alt="" /></p>
+  
+      <ol class="section-list">
+        <li><a href="community.html">Community Building</a>, including a committed leadership that has a broad reach; a fair and sustainable governance framework; and a growing group of diverse participants and skillsets. Certain organizations and skills are typically needed only at certain points across the tracks. </li>
+        <li><a href="use_cases_planning.html">Use Cases & Planning</a>, including prioritizing Use Cases (specific challenges, proposed new work and data flows); organizing and scheduling work right through to adoption and measuring value; and securing the resources (organizations, people/skills) needed to succeed. Specific Use Cases attract specific subsets of each specialty.</li>
+        <li><a href="standards.html">Standards Development</a>, based on compiling clinical experts’ information requirements within Use Cases; incorporating these requirements into HL7 Fast Healthcare Interoperability Resources Implementation Guides (FHIR IGs) based on a set of <a href="design_principles.html">Design Principles</a> that drove the development of mCODE; and standardizing, updating, and maintaining the FHIR IGs within the Health Level Seven (HL7) standards organization.</li>
+        <li><a href="implementation.html">Implementation & Testing</a> Implementation of the FHIR IG(s) into systems and workflows; testing these systems and workflows within the types organizations ultimately planned to host, use, and benefit from the work; and feedback from testing to update Planning and Standards work. Testing serves to demonstrate the potential value of the work and often attracts additional participants to the Community.</li>
+        <li><a href="adoption.html">Adoption & Value</a> in the real world is best driven by understanding at the Planning track what factors will move the market. Factors include user demand, Government mandates, and the promise of improved care and research demonstated during testing. It’s critical to Measure such improvements in the real world, to see where changes could make solutions even better (quality, cost, time) and motivate new participants engage.</li>
+      </ol>
+
+      <div class="playbook-bottom-navigation">
+        <div class="previous inactive"></div>
+        <div class="next"><a href="playbook/" class="btn btn-primary btn-lg">Next: Introduction</a></div>
+      </div>
+      
     </div>
-  </div>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">Easy to get started</h3>
-  <p>Learn critical first steps to immediately provide project impact - at no cost.</p>
-</div>
-
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">In-depth and detailed</h3>
-  <p>Gain quick access to the deep knowledge you need by role, experience, and project maturity.</p>
-</div>
-
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">Real-world data</h3>
-  <p>Tackle the challenges of working with real-world data based on actual experience from successful projects.</p>
-</div>
-
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">Open standards</h3>
-  <p>Build successful projects based on established open public standards without proprietary roadblocks.</p>
-</div>
-
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">Building community</h3>
-  <p>Leverage proven trategies to successfully create and grow communities with diversity of leaders, ideas, and skills.</p>
-</div>
-
-    <div class="feature col">
-  <div class="feature-icon d-inline-flex align-items-center justify-content-center">
-    <img src="images/circle-star.svg" style="width:48px">
-  </div>
-  <h3 class="fs-2 text-body-emphasis">Safe and secure</h3>
-  <p>Ensure that only authorized, authenticated parties access patient data.</p>
-</div>
-
-    <p><a href="playbook">Learn more about the Playbook</a></p>
   </div>
 </div>
 
@@ -162,71 +124,10 @@
       <p>Review how the PACIO project is streamlining transitions of care and care coordination between post-acute care (PAC) and other providers, patients, and key stakeholders through FHIR.</p>
     </div>            
   </div>
+  <p><a href="casestudies">View all Case Studies</a></p>
+
 </div>
 
-<div class="hero-box">
-  <div class="container py-5">
-    <div class="row align-items-top py-5">
-      <div class="col-md-4">
-        <h1 class="fw-bold">A Deep Knowledge Base</h1>
-        <p>A great deail of experience and a variety disciplines are needed to successfully propel a new specialty use case from conception to widespread adoption. The MITRE Interoperability Playbook knowledge base provides demonstrated resources advice to tackle those challenges.</p>
-      </div>
-      <div class="col-md-6 offset-md-2">
-      <div class="col d-flex align-items-start">
-        <div class="display-2 fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3">
-          300+
-        </div> 
-        <div>
-          <h3 class="fs-2 text-body-emphasis">Resources</h3>
-          <p>Let the Playbook to connect you with key resources to help ensure success [NOTE: Resources not yet available here].</p>
-          <a href="resources" class="btn btn-primary">View Resources</a>
-        </div>
-      </div>
-      </div>
-      
-    </div>
-  
-  </div>
-</div>
-
-<!-- featured Project -->
-<div class="featured-project-box container">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-sm-8 col-md-6">
-        <img src="images/mcode-cancer-ring.png" width="500" class="py-5" alt="" />
-
-      </div>
-      <div class="col-lg-6">
-        <h1 class="fw-bold lh-1 mb-3">mCODE Standard and CodeX Community</h1>
-        <div class="row border-bottom py-4 mb-3">
-          <div class="col">
-            <span class="field-label">Organizations</span><br/>
-            <strong>American Society of Clinical Oncology, MITRE Corportation, and now over 40 additional organizations</strong>
-          </div>
-        </div>
-        <p class="py-3">An overview of the mCODE standard, the CodeX Community, and progress that demonstrates these might be good models for other specialties to follow</p>
-        <div class="row py-4 mb-3">
-          <div class="col-4">
-            <span class="field-label">Maturity</span><br/>
-            <strong>In Production</strong>
-          </div>
-          <div class="col-4">
-            <span class="field-label">Experience</span><br/>
-            <strong>High Expertise</strong>
-          </div>
-          <div class="col-4">
-            <span class="field-label">Suitable Roles</span><br/>
-            <strong>Technical Lead</strong><br>
-            <strong>Research Lead</strong>
-          </div>
-        </div>
-
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="casestudies/mcode_codex.html" class="btn btn-primary btn-lg px-4 me-md-2">View Case Study</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <footer>
 <div class="container">
@@ -244,7 +145,6 @@
         <li><a href="about/">About</a></li>
         <li><a href="playbook/">The MITRE Interoperability Playbook</a></li>
         <li><a href="casestudies/">Case Studies</a></a></li>
-        <li><a href="solutions/">Solutions</a></a></li>
         <li><a href="resources/">Resources</a></a></li>
       </ul>
     </div>
