@@ -4,7 +4,7 @@ pagetitle: Implementation
 theme: playbook
 ---
 
-<div class="container pt-5">
+<div id="content" class="container pt-5" data-bs-spy="scroll" data-bs-target="#playbook_menu" data-bs-offset="200">
 
   <div class="row">
     <div class="col-md-3">
@@ -12,7 +12,7 @@ theme: playbook
     </div>
   
     <div class="col-md-9">
-      <h2>Implementation & Testing</h2>
+      <h1>Implementation & Testing</h1>
       <p class="lead">Health data standards must be implemented into software systems and workflows to provide a potentially-valuable new or enhanced function in the health ecosystem. Assessing the potential for real value requires testing, including pilots in increasingly realistic settings.</p>
 
 <p>Both the implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software.
@@ -21,7 +21,7 @@ For Implementation & Testing to progress effectively, activities and necessary r
 <p>
 The rest of this section covers experience gained in (a) Implementation, (b) Testing, and (c) Feedback into previously-discussed Use Case & Planning and Standards Development tracks.
 </p>
-<h3 id="implement_workflows">Implement FHIR IG(s) into systems and workflows</h3>
+<h2 id="implement_workflows">Implement FHIR IG(s) into systems and workflows</h2>
 <p>Every CodeX Use Case requires implementing at least part of a FHIR IG into software to support generally new aspects of the envisioned workflow to be piloted. It’s highly recommended to engage market-leading software vendors in the specialty space. Vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Candidate vendors should be engaged in the community and committed to implement and test (and more) as early in the Use Case project as possible.</p>
 <p>If in the early phases engaging leading vendors is not possible, implementation into prototypes and/or testing software may be a satisfactory first step to allow useful assessments.</p>
 <p>Questions that should be addressed during Implementation include:</p>
@@ -33,7 +33,7 @@ The rest of this section covers experience gained in (a) Implementation, (b) Tes
 </ul>
 <p>In all cases, it’s critical to receive specific comments and recommendations for change that can be taken back to the FHIR IG and the Use Case and Planning teams so that adjustments can be considered .. adjustments that could be very helpful before testing becomes intense.</p>
 
-<h3 id="execute_pilots">Test and Pilot</h3>
+<h2 id="execute_pilots">Test and Pilot</h2>
 <p>Testing and pilots within CodeX Use Cases tend to start simply and then ramp up to as realistic a scenario as possible, via multiple phases. Testing of the implemented IG should start as early as possible, even if very simply. </p>
 <p>The following table is a simplified set of testing axes that aim for a higher degree realistic challenges from the top of the table to the bottom.  A particular test or pilot might combine components from different rows, and not just across a single row. </p>
 
@@ -75,12 +75,12 @@ Obviously, these real-world types of real-world pilot require substantial planni
   </li>
 </ul>
 
-<h3 id="use_feedback">Feedback to Update Previous Work, As Needed</h3>
+<h2 id="use_feedback">Feedback to Update Previous Work, As Needed</h2>
 <p>Even early phase pilots can provide salient feedback on the implementability of the IG in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow.  Both implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software. A test or pilot may need to be repeated, once these updates are agreed and implemented.</p>
 
     <div class="playbook-bottom-navigation">
-        <div class="previous">  <%= link_to("Prev: Standards Development", "standards.html") %></div>
-        <div class="next"><%= link_to("Next: Adoption & Value", "adoption.html") %></div>
+        <div class="previous">  <%= link_to("Prev: Standards Development", "standards.html", :class=>"btn btn-outline-primary btn-lg") %></div>
+        <div class="next"><%= link_to("Next: Adoption & Value", "adoption.html", :class=>"btn btn-outline-primary btn-lg") %></div>
       </div>
     </div>
   </div>

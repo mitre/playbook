@@ -1,9 +1,8 @@
-<div class="sidebar-menu">
+<nav class="sidebar-menu navbar" id="playbook_menu">
 <h4>Playbook Menu</h4>
 <ul>
-  <%= content_tag(:li, link_to("High-level Summary", "index.html", nav_active('playbook/index')), nav_active('playbook/index')) %>
-  <%= content_tag(:li, link_to("Introduction", "introduction.html", nav_active('playbook/introduction')), nav_active('playbook/introduction')) %>
-  <% if show_sub('playbook/introduction') %> 
+  <%= content_tag(:li, link_to("Introduction", "index.html", nav_active('playbook/index')), nav_active('playbook/index')) %>
+  <% if show_sub('playbook/index') %> 
   	<li class="sub"><a href="#motivation">Motivation</a></li>
 	  <li class="sub"><a href="#intended_audience">Intended Audience</a></li>
   	<li class="sub"><a href="#organization">Organization</a></li>
@@ -14,18 +13,18 @@
   
   <%= content_tag(:li, link_to("Building Community", "community.html", nav_active('playbook/community')), nav_active('playbook/community')) %>
   <% if show_sub('playbook/community') %> 
-  	<li class="sub"><a href="#champions">Champions</a></li>
-	  <li class="sub"><a href="#governance">Governance</a></li>
-  	<li class="sub"><a href="#growth">Growth</a></li>
-	<li class="sub"><a href="#value_prop">Value Propositions</a></li>
+  	<li class="sub"><a href="#champions" class="nav-link">Champions</a></li>
+	  <li class="sub"><a href="#governance" class="nav-link">Governance</a></li>
+  	<li class="sub"><a href="#growth" class="nav-link">Growth</a></li>
+	<li class="sub"><a href="#value_prop" class="nav-link">Value Propositions</a></li>
   <% end %>
 
   <%= content_tag(:li, link_to("Use Cases & Planning", "use_cases_planning.html", nav_active('playbook/use_cases_planning')), nav_active('playbook/use_cases_planning')) %>
   <% if show_sub('playbook/use_cases_planning') %> 
-  	<li class="sub"><a href="#what_is_use_case">What is a Use Case</a></li>
-	  <li class="sub"><a href="#use_case_development_guidelines">Guidelines</a></li>
-  	<li class="sub"><a href="#use_case_discovery">Use Case Discovery</a></li>
-  	<li class="sub"><a href="#use_case_planning">Use Case Planning</a></li>
+  	<li class="sub"><a href="#what_is_use_case" class="nav-link">What is a Use Case</a></li>
+	  <li class="sub"><a href="#use_case_development_guidelines" class="nav-link">Guidelines</a></li>
+  	<li class="sub"><a href="#use_case_discovery" class="nav-link">Use Case Discovery</a></li>
+  	<li class="sub"><a href="#use_case_planning" class="nav-link">Use Case Planning</a></li>
   <% end %>
   
   <%= content_tag(:li, link_to("Standards Development", "standards.html", nav_active('playbook/standards')), nav_active('playbook/standards')) %>
@@ -50,4 +49,4 @@
 </ul>
 
 </ul>
-</div>
+</nav>
