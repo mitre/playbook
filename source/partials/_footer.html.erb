@@ -1,39 +1,31 @@
+<div class="container pb-2 text-end">
+<a href="#top" data-js-hook="back-to-top-button">
+  <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+  <span id="back-to-top-title">Back to top</span>
+</a>
+</div>
 <footer>
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      <%= image_tag 'playbook-logo.svg', :alt=>"MITRE Interoperability Playbook Logo" %>
-      <p>
+        <% link_to '/index.html', relative:true do %>
+          <%= image_tag 'playbook-logo.svg', :alt=>"MITRE Interoperability Playbook Logo" %>
+        <% end %>
+        <p>
         The MITRE Interoperability Playbook is provided as a resource for the health information community.
         For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
       </p>
     </div>
     <div class="col-md-4">
-      <h5>Playbook</h5>
       <ul>
-        <li><%= link_to("About", "/about/index.html") %></li>
-        <li><%= link_to("The MITRE Interoperability Playbook", "/playbook/index.html") %></li>
+        <li><%= link_to("Home", "/index.html") %></li>
+        <li><%= link_to("Playbook Introduction", "/playbook/index.html") %></li>
         <li><%= link_to("Case Studies", "/casestudies/index.html") %></a></li>
         <li><%= link_to("Resources", "/resources/index.html") %></a></li>
+        <li><%= link_to("About", "/about/index.html") %></li>
       </ul>
     </div>
-    <div class="d-none col-md-2">
-      <h5>Information</h5>
-      <ul>
-        <li><%= link_to("Privacy Policy", "/about/index.html") %></a></li>
-        <li><%= link_to("Terms and Conditions", "/about/index.html") %></a></li>
-        <li><%= link_to("Copyright", "/about/index.html") %></a></li>
-        <li><%= link_to("License", "/about/index.html") %></a></li>
-      </ul>
-    </div>    
-    <div class="d-none col-md-2">
-      <h5>Organizations</h5>
-      <ul>
-        <li><%= link_to("MITRE Corporation", "/about/index.html") %>MITRE Corporation</a></li>
-        <li><%= link_to("Health Level Seven", "/about/index.html") %>Health Level Seven</a></li>
-
-      </ul>
-    </div>    
+  </div>
 </div>
 </footer>
 <%= partial "partials/copyright" %>

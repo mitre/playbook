@@ -21,6 +21,12 @@ body {
   position:relative;
 }
 
+.layout-grid {
+  display:grid;
+  min-height: 100dvh;
+  grid-template-rows: auto auto 1fr auto;
+}
+
 a {
   color: var(--link-color);
 
@@ -45,27 +51,37 @@ header ul.nav a.nav-link {
   border-bottom: 1px solid var(--breadcrumb-border-color);
 }
 
-body.playbook .breadcrumb-box {
-  background-color:var(--playbook-bkg);
+body.playbook, body.about {
+  .breadcrumb-box, .copyright {
+    background-color:var(--playbook-bkg);
+    border-top: 1px solid var(--breadcrumb-border-color);
+    border-bottom: 1px solid var(--breadcrumb-border-color);
+  }
 }
 
-body.casestudy .breadcrumb-box {
-  background-color:#EBF7F4;
-  border-top: 1px solid #9FC8B6;
-  border-bottom: 1px solid #9FC8B6;
+body.casestudy {
+  .breadcrumb-box, .copyright {
+    background-color:#EBF7F4;
+    border-top: 1px solid #9FC8B6;
+    border-bottom: 1px solid #9FC8B6;
+  }
 }
 
 
-body.solutions .breadcrumb-box {
-  background-color:#FFEDC9;
-  border-top: 1px solid #FFC550;
-  border-bottom: 1px solid #FFC550;
+body.solutions {
+  .breadcrumb-box, .copyright {
+    background-color:#FFEDC9;
+    border-top: 1px solid #FFC550;
+    border-bottom: 1px solid #FFC550;
+  }
 }
 
-body.resources .breadcrumb-box {
-  background-color:#FFE3EB;
-  border-top: 1px solid #D48CA1;
-  border-bottom: 1px solid #D48CA1;
+body.resources {
+  .breadcrumb-box, .copyright {
+    background-color:#feecf1;
+    border-top: 1px solid #D48CA1;
+    border-bottom: 1px solid #D48CA1;
+  }
 }
 
 
@@ -83,7 +99,7 @@ body.resources .breadcrumb-box {
 }
 footer {
   background-color: var(--footer-bkg);
-  padding:5vh 0;
+  background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(250,250,250,1) 55%, rgba(255,255,255,1) 100%);  padding:5vh 0;
   ul {
     padding-left:0;
     li {

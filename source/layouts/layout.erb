@@ -17,15 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
 
   </head>
-  <body class="<%= current_page.data.theme %> <%= page_classes.split(" ")[0] %>">
-    
+  <body class="<%= current_page.data.theme %>">
+  <div id="top"></div>  
+  <div class="layout-grid">
     <%= partial "partials/header" %>
     <%= partial "partials/breadcrumb" %>
 
     <%= yield %>
 
     <%= partial "partials/footer" %>
-
+  </div>
   </body>
 </html>
 
