@@ -17,9 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
 
   </head>
-  <body class="casestudy casestudies">
-    
-    <div class="container">
+  <body class="casestudy">
+  <div id="top"></div>  
+  <div class="layout-grid">
+    <div class="container" id="header">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
       <div class="col-md-3 mb-2 mb-md-0">
 <a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
@@ -358,42 +359,32 @@
 
 
 
-    <footer>
+    <div class="container pb-2 text-end">
+<a href="#top" data-js-hook="back-to-top-button">
+  <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+  <span id="back-to-top-title">Back to top</span>
+</a>
+</div>
+<footer>
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
-      <p>
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>        <p>
         The MITRE Interoperability Playbook is provided as a resource for the health information community.
         For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
       </p>
     </div>
     <div class="col-md-4">
-      <h5>Playbook</h5>
       <ul>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../playbook/">The MITRE Interoperability Playbook</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../playbook/">Playbook Introduction</a></li>
         <li><a href="./">Case Studies</a></a></li>
         <li><a href="../resources/">Resources</a></a></li>
+        <li><a href="../about/">About</a></li>
       </ul>
     </div>
-    <div class="d-none col-md-2">
-      <h5>Information</h5>
-      <ul>
-        <li><a href="../about/">Privacy Policy</a></a></li>
-        <li><a href="../about/">Terms and Conditions</a></a></li>
-        <li><a href="../about/">Copyright</a></a></li>
-        <li><a href="../about/">License</a></a></li>
-      </ul>
-    </div>    
-    <div class="d-none col-md-2">
-      <h5>Organizations</h5>
-      <ul>
-        <li><a href="../about/">MITRE Corporation</a>MITRE Corporation</a></li>
-        <li><a href="../about/">Health Level Seven</a>Health Level Seven</a></li>
-
-      </ul>
-    </div>    
+  </div>
 </div>
 </footer>
 <div class="copyright">
@@ -402,7 +393,7 @@
   </div>
 </div>
 
-
+  </div>
   </body>
 </html>
 

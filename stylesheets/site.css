@@ -19,6 +19,13 @@ body {
   font-style: normal;
   position: relative; }
 
+.layout-grid {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100dvh;
+  -ms-grid-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto; }
+
 a {
   color: var(--link-color); }
 
@@ -36,21 +43,23 @@ header ul.nav a.nav-link {
   border-top: 1px solid var(--breadcrumb-border-color);
   border-bottom: 1px solid var(--breadcrumb-border-color); }
 
-body.playbook .breadcrumb-box {
-  background-color: var(--playbook-bkg); }
+body.playbook .breadcrumb-box, body.playbook .copyright, body.about .breadcrumb-box, body.about .copyright {
+  background-color: var(--playbook-bkg);
+  border-top: 1px solid var(--breadcrumb-border-color);
+  border-bottom: 1px solid var(--breadcrumb-border-color); }
 
-body.casestudy .breadcrumb-box {
+body.casestudy .breadcrumb-box, body.casestudy .copyright {
   background-color: #EBF7F4;
   border-top: 1px solid #9FC8B6;
   border-bottom: 1px solid #9FC8B6; }
 
-body.solutions .breadcrumb-box {
+body.solutions .breadcrumb-box, body.solutions .copyright {
   background-color: #FFEDC9;
   border-top: 1px solid #FFC550;
   border-bottom: 1px solid #FFC550; }
 
-body.resources .breadcrumb-box {
-  background-color: #FFE3EB;
+body.resources .breadcrumb-box, body.resources .copyright {
+  background-color: #feecf1;
   border-top: 1px solid #D48CA1;
   border-bottom: 1px solid #D48CA1; }
 
@@ -73,6 +82,8 @@ body.resources .breadcrumb-box {
 
 footer {
   background-color: var(--footer-bkg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), color-stop(55%, #fafafa), to(white));
+  background: linear-gradient(180deg, #f4f4f4 0%, #fafafa 55%, white 100%);
   padding: 5vh 0; }
   footer ul {
     padding-left: 0; }
