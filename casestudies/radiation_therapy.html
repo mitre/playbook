@@ -9,6 +9,10 @@
     <title>Radiation Therapy Treatment Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascripts/lunr.js"></script>
+    <script src="../javascripts/handlebars.min-v4.7.8.js"></script>
+    <script src="../javascripts/mark.min.js"></script>
     <link href="../stylesheets/site.css" rel="stylesheet" />
     <script src="../javascripts/site.js" defer="defer"></script>
 
@@ -33,9 +37,13 @@
         <li><a href="../about/" class="nav-link">About</a></li>
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="col-md-3 text-end search-form">
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <div id="search_results" class="search-results" style="display:none">
+            <ul id="search_results_list">
+            </ul>
+          </div>
         </form>
       </div>
     </header>
@@ -51,7 +59,7 @@
   </div>
 </div>
 
-    <div class="container">
+    <divclass="container">
   <div class="row">
     <div class="col-md-3 pt-5 mb-3">
       <div class="sidebar-menu">
@@ -68,14 +76,14 @@
 </div>
 
     </div>
-    <div class="col-md-9 pt-5 mb-3">
+    <div id="content" class="col-md-9 pt-5 mb-3">
       <h1 class="super-title">Case Study</h1>
       <h2>CodeX Radiation Therapy Treatment Data Use Case</h2>
 <p>The Radiation Therapy Treatment Data Use Case is an excellent example of how a successful CodeX oncology Use Cases was started, how it was driven, what impacts it is having (as of 2024), and lessons learned. This should be especially valuable to a new medical specialty looking to conceive, plan, and execute a new project within a broader special standards initiative.</p>
 <br>
       <h3 id="community_building">Community Building</h3>
 <p>(Key Playbook Track: <a href="../playbook/community.html">Community Building</a>)</p>
-      <p>In March 2020, the <a href="https://www.astro.org/">American Society for Radiation Oncology</a> (ASTRO) joined CodeX<sup>™</sup> as a founding member with a proposal to standardize radiation therapy treatment summaries. They suggested leveraging work published by ASTRO and others in the “<a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>”. ASTRO noted that the radiation therapy Community had been interested in standardizing the complex treatment data that is gathered before, during, and after a course of radiation therapy treatment, but did not have the infrastructure or FHIR expertise to sufficiently act on this idea. ASTRO joined CodeX with the vision of leveraging the HL7 FHIR Accelerator’s platform, connections to other industry partners, expertise in FHIR modeling, and relationships with HL7 leadership to begin planning the Use Case. </p>
+      <p>In March 2020, the <a href="https://www.astro.org/">American Society for Radiation Oncology</a> (ASTRO) joined CodeX<sup>™</sup> as a founding member with a proposal to standardize radiation therapy treatment summaries. They suggested leveraging work published by ASTRO and others in the &ldquo;<a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>&rdquo;. ASTRO noted that the radiation therapy Community had been interested in standardizing the complex treatment data that is gathered before, during, and after a course of radiation therapy treatment, but did not have the infrastructure or FHIR expertise to sufficiently act on this idea. ASTRO joined CodeX with the vision of leveraging the HL7 FHIR Accelerator’s platform, connections to other industry partners, expertise in FHIR modeling, and relationships with HL7 leadership to begin planning the Use Case. </p>
       <p>Nearly one year after ASTRO joined CodeX, the <a href="https://www.aapm.org/">American Association of Physicists in Medicine</a> (AAPM) joined as a founding member to support this effort. AAPM provided professional society expertise, along with work developed by the AAPM Big Data Subcommittee (i.e., <a href="https://pubmed.ncbi.nlm.nih.gov/37244628/">Operational Ontology for Oncology</a> (O3)). At this point, the discovery phase of the CodeX Radiation Therapy Use Case began with the leadership and in-kind support of ASTRO and AAPM, which consisted of leveraging existing standards-focused work and collaborating with related radiation therapy professional societies. The below graphic represents the multi-professional society engagement and approach that the CodeX RTTD team took to ensure existing work and expertise from leaders in the field were adopted, repurposed, and modified to fit within the scope of our Use Case. The lack of data standardization within the radiation oncology Community is an international issue that the below group of societies has started working toward resolving, and which the CodeX RTTD team continued modeling in FHIR.</p>
       <figure>
       <img src="../images/rttd-multi-professional.png" width="100%" alt="" />
@@ -90,9 +98,9 @@
       <figcaption>RTTD Use Case work ramped up to realistic pilots over a 5 year period.</figcaption>
         </figure>
 <p>Now, let's dive a little deeper into the RTTD Use Case story:</p>
-<p>ASTRO and AAPM (with the assistance of The MITRE Corporation) planned and kicked off the CodeX<sup>™</sup> Radiation Therapy Treatment Data (RTTD) Use Case in early 2021. The team’s initial objective was to identify, define and model data components in an “end-of-treatment” radiation therapy (RT) care summary (i.e., a summary report that could be sent to the larger oncology team once the RT course has been completed). As previously mentioned, the data components were informed by the “<a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>” and refined by consensus after stakeholder discussion. </p>
+<p>ASTRO and AAPM (with the assistance of The MITRE Corporation) planned and kicked off the CodeX<sup>™</sup> Radiation Therapy Treatment Data (RTTD) Use Case in early 2021. The team’s initial objective was to identify, define and model data components in an &ldquo;end-of-treatment&rdquo; radiation therapy (RT) care summary (i.e., a summary report that could be sent to the larger oncology team once the RT course has been completed). As previously mentioned, the data components were informed by the “<a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>” and refined by consensus after stakeholder discussion. </p>
 <p>
-Once the “end-of-treatment” summary modeling was completed in June 2021, the RTTD stakeholders agreed that defining components of a RT prescription and an “in-progress” treatment summary would also be of value to the healthcare Community. In-progress treatment summaries convey information about a patient in the midst of receiving treatment. The group, again, leveraged the Minimum Data Elements for Radiation Oncology Consensus Paper to identify potential data requirements, refined the definition of each data element via collaboration and stakeholder expertise, and modeled the FHIR specifications that would ultimately be published in the CodeX<sup>™</sup> RT Implementation Guide (IG).
+Once the &ldquo;end-of-treatment&rdquo; summary modeling was completed in June 2021, the RTTD stakeholders agreed that defining components of a RT prescription and an “in-progress” treatment summary would also be of value to the healthcare Community. In-progress treatment summaries convey information about a patient in the midst of receiving treatment. The group, again, leveraged the Minimum Data Elements for Radiation Oncology Consensus Paper to identify potential data requirements, refined the definition of each data element via collaboration and stakeholder expertise, and modeled the FHIR specifications that would ultimately be published in the CodeX<sup>™</sup> RT Implementation Guide (IG).
 </p>
 
 <h3 id="standards_development">Standards Development</h3>
@@ -167,6 +175,11 @@ As a result of this collaboration, radiotherapy profiles were added to <a href="
 </div>
 
   </div>
+  <script id="results_template" type="text/x-handlebars-template">
+  <li class="result-item">
+    <a href="{{url}}?term={{query}}">{{title}}</a><br />
+  </li>
+</script>
   </body>
 </html>
 
