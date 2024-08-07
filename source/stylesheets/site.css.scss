@@ -276,3 +276,27 @@ div.community-growth-items {
   background-color:var(--card-title-bkg);
   padding:0.5rem 1rem;
 }
+
+.search-form {
+  position:relative;
+}
+.search-results {
+  min-width:15em;
+  width:100%;
+  text-align:left;
+  display:block;
+  padding:10px;
+  position:absolute;
+  background-color:white;
+  right:16px;
+  z-index:10;
+  box-shadow: 2px 2px 6px lightgray;
+}
+
+.search-results ul {
+  padding-left:1em;
+  list-style:none;
+  & li {
+    margin-bottom:0.3em;
+  }
+}

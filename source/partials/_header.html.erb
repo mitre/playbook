@@ -13,9 +13,13 @@
         <li><%= link_to("About", "/about/index.html", :class => 'nav-link', relative: true) %></li>
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="col-md-3 text-end search-form">
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <div id="search_results" class="search-results" style="display:none">
+            <ul id="search_results_list">
+            </ul>
+          </div>
         </form>
       </div>
     </header>

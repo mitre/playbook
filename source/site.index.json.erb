@@ -1,0 +1,25 @@
+<%
+# Need to filter out the 0.2 directory...
+pages = sitemap.resources.find_all { |p| p.source_file.match(/\.html.erb/) }
+entries = []
+
+pages.each_with_index do |page, index|
+  object = {}
+    # ... some specifics ommitted
+    entry = {
+      :id    => index,
+      :title => page.data.pagetitle,
+      :url   => page.url,
+      :content => page.render({:layout => false })
+        .downcase
+        # Need regex to remove HTML entities such as &ldquo;
+        # Need regex to replace - with ' '
+        .gsub(%r{</?[^>]+?>}, '' )
+        .gsub( /<.*?>/, "" )   # get rid of tags
+        .gsub( /[^\w ]/, "" )  # get rid of not letters
+        .split( /\s+/ )        # split by words
+        .sort.uniq
+    }
+  entries << entry
+end
+%><%= entries.to_json %>
