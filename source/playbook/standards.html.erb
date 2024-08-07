@@ -175,6 +175,12 @@ Before going deeper into how a specialty FHIR IG can be built, consider the conc
 <p>As noted before, terminologies, standard clinical code systems, are important for unambiguously defining how data within the data element are represented.  When a term cannot be found within an existing code system, it’s possible to work with the owner of the code system to add new terms, provided the justification is convincing.</p>
 
 
+<h3> Profiles and Extensions</h3>
+<p>FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a Resource are required and which are not for a particular context or Use Case. FHIR extensions add data elements and/or constraints the standard FHIR base Resource definitions to create more specific, customized resource definitions for a particular context or Use Case.</p>
+
+<p>The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. [NOTE: A better explanation and better/higher resolution graphics will be included]</p>
+              <%= image_tag("profile-derivations.png", :width=>"100%") %>
+              
 <h3>Questions to Plan FHIR IG Development</h3>
 <ul>
 <li>What are the possibly-related, external FHIR IG initiatives?
@@ -183,25 +189,25 @@ Before going deeper into how a specialty FHIR IG can be built, consider the conc
 </ul>
 </li>
 
-<li>What FHIR resources and profiles best fit the data model? 
+<li>What existing FHIR resources and profiles best fit the data model? 
 <ul>
-	<li>What resources and profiles best match the required data elements in the data model?</li>
-	<li>What resources and profiles result in the fewest FHIR extensions that are needed</li>
-	<li>Leveraging the defined purpose of resources and profiles that match desired use in implementation guide</li>
-	<li>What FHIR resources and profiles allow the necessary terminologies</li>
-	<li>Selected FHIR resources and profiles do not require data elements that may not be present in an exchange</li>
+	<li>What existing resources and profiles best match the required data elements in the data model?</li>
+	<li>What existing resources and profiles result in the fewest FHIR extensions that are needed?</li>
+	<li>What existing FHIR resources and profiles allow for use of the necessary terminologies?</li>
+	<li>Do the selected FHIR resources and profiles require data elements that may not be present in an exchange?</li>
 </ul>
 </li>
 
-<li>What FHIR profiles are needed? Profiles are created when further specifications (extensions or constraints) are needed on a FHIR base resource or an existing dependent FHIR profile.
+<li>What FHIR profiles must be created? 
 <ul>
 
-	<li>What existing resources and profiles need to be further constrained?</li>
+	<li>Profiles are created when further specifications (extensions or constraints) are needed on a FHIR base resource or an existing dependent FHIR profile.</li>
 </ul>
 </li>
 
-<li>What FHIR extensions are needed? Extensions are created appropriate FHIR resource do not exist.
+<li>What FHIR extensions are needed? 
 <ul>
+	<li>Extensions are created appropriate FHIR resource do not exist.</li>
 	<li>What existing resources and profiles need to be extended to support required data elements in the data model?</li>
 </ul>
 </li>
@@ -221,13 +227,6 @@ Before going deeper into how a specialty FHIR IG can be built, consider the conc
 </li>
 </ul>
 
-
-<h3> Profiles and Extensions</h3>
-<p>FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a Resource are required and which are not for a particular context or Use Case. FHIR extensions add data elements and/or constraints the standard FHIR base Resource definitions to create more specific, customized resource definitions for a particular context or Use Case.</p>
-
-<p>The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. [NOTE: A better explanation and better/higher resolution graphics will be included]</p>
-              <%= image_tag("profile-derivations.png", :width=>"100%") %>
-              
 
 <h3>Example: Patient Demographics</h3>              
 <%= image_tag("cancer-patient-demo-model.png", :width=>"500") %>
