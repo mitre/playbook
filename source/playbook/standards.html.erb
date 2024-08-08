@@ -207,8 +207,17 @@ Before going deeper into how a specialty FHIR IG can be built, consider the conc
 
 <li>What FHIR extensions are needed? 
 <ul>
-	<li>Extensions are created appropriate FHIR resource do not exist.</li>
+	<li>Extensions are used to add data elements that may be missing in FHIR resources and profiles to accommodate a business need.</li>
 	<li>What existing resources and profiles need to be extended to support required data elements in the data model?</li>
+  <li>Standards developers should first check the <a href="">FHIR Extension Registry</a> for existing extensions that may provide a solution</li>
+  <li>If an existing extension cannot be found, you may need to create a new extension in your implementation guide.  
+    <ul>
+      <li>Before doing so, the development team should discuss the extension and its purpose with the HL7 Working Group that oversees the FHIR Resource being extended.</li>
+      <li>Reviewing the proposed extension with the working group most familiar with the FHIR resource or profile will allow them to understand the purpose for wanting to extend the resource and potentially provide guidance on how best to achieve the necessary functionality.</li>
+      <li>All FHIR resources and profiles have an HL7 Working Group that oversees its development, listed on the resource page or in the footer of the profile page.</li>
+    </ul>
+  </li>
+  <li>New extensions will also require updating test scripts to ensure that the extension implementations function correctly and promote adoption.</li>
 </ul>
 </li>
 
