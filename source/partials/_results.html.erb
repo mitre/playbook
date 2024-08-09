@@ -1,5 +1,5 @@
 <script id="results_template" type="text/x-handlebars-template">
   <li class="result-item">
-    <a href="{{url}}?term={{query}}">{{title}}</a><br />
+    <%= link_to("{{title}}", "{{url}}?term={{query}}", relative: true) %>
   </li>
 </script>
