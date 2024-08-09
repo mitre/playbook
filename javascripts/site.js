@@ -27,7 +27,8 @@ function moveToTop(event) {
 }
 backToTopButton.addEventListener('click', moveToTop);
 
-$.getJSON("/site.index.json", function(data) {
+var siteindex = "/playbook/site.index.json"
+$.getJSON(siteindex, function(data) {
   var index = populateIndex(data);
   searchSetup(index,data);
 })
@@ -57,6 +58,7 @@ function debounce(func, delay) {
     }
 }
 function searchSetup(index, contents){
+  const root = "/playbook/";
   // Set up Handlebars template
   var resultsTemplate = Handlebars.compile($("#results_template").html());
 
@@ -71,7 +73,7 @@ function searchSetup(index, contents){
     $.each(results, function(index, result){
       $("#search_results_list").append(resultsTemplate({
         title: contents[result.ref].title,
-        url: contents[result.ref].url,
+        url: root + contents[result.ref].url,
         query: query
       }));
       $("#search_results").show();
