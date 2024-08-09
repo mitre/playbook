@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>The PACIO Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascripts/lunr.js"></script>
+    <script src="../javascripts/handlebars.min-v4.7.8.js"></script>
+    <script src="../javascripts/mark.min.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/site.js" defer="defer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+  </head>
+  <body class="casestudy">
+  <div id="top"></div>  
+  <div class="layout-grid">
+    <div class="container" id="header">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../playbook/" class="nav-link">Introduction</a></li>
+        <li><a href="./" class="nav-link">Case Studies</a></li>
+        <li><a href="../resources/" class="nav-link">Resources</a></li>
+        <li><a href="../about/" class="nav-link">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end search-form">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <div id="search_results" class="search-results" style="display:none">
+            <ul id="search_results_list">
+            </ul>
+          </div>
+        </form>
+      </div>
+    </header>
+  </div>
+
+    <div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class='breadcrumb-item'><a href="../">Home</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="./">Case Studies</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="pacio.html">PACIO Project</a></li class='breadcrumb-item'>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+    <div class="container">
+  <div class="row">
+      <div class="col-md-3 pt-5 mb-3">
+      <div class="sidebar-menu">
+	<h4>On This Page</h4>
+	<ul>
+	  <li class="active"><a href="pacio.html" class="active">PACIO</a></li>
+	  	<li class="sub"><a href="#how_it_started">How it Started</a></li>
+		  <li class="sub"><a href="#first_use_case">First Use Case</a></li>
+	  	<li class="sub"><a href="#design_principles">Design Principles</a></li>
+	  	<li class="sub"><a href="#starting_community">Starting the Community</a></li>
+	  	<li class="sub"><a href="#building_community">Building the Community</a></li>
+	  	<li class="sub"><a href="#delivering_value">Delivering Value</a></li>
+	  	<li class="sub"><a href="#growth_impact">Growth and Impact</a></li>
+	  	<li class="sub"><a href="#resources">Resources</a></li>
+	</ul>
+</div>
+    </div>
+    <div id="content" class="col-md-9 pt-5 mb-3">
+      <h1 class="super-title">Case Study</h1>
+      <h2>The PACIO Project</h2>
+      <h3 id="how_it_started">How it Started</h3>
+      <p>
+        The PACIO Project started with a simple question – “How do we get post-acute care (PAC) health data to follow the patient through transitions of care?” The solution was to build a Community to develop and drive adoption of Fast Healthcare Interoperability Resources (FHIR®) in post-acute care data exchange standards to facilitate transitions of care and care coordination across the healthcare continuum.
+      </p>
+
+      <div class="embed-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx6kOg52vqM?si=EABm_jViVk2G2Bh-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <h3>Background</h3>
+      <p>
+        Forty-five percent of Medicare patients leaving acute care end up in some form of post-acute care. 
+      </p>
+      <img src="../images/pac-importance.png" width="100%" class="py-5" alt="" />
+      <p>
+        The post-acute care population includes some of the most complex and vulnerable patients, many having multiple chronic conditions managed by different practitioners across time and settings. There is often poor communication between clinical care teams leading to inadequate information during transitions and poor continuity of care that can lengthen stays, increase costs, and result in poorer outcomes. There is a heavy reliance on patient and family caregiver recall of information, which may not be reliable or possible, which raises provider and patient burden. Providers may need to track down or recreate missing information through redundant processes. Meanwhile, patients may not receive needed transition critical care right away while missing data is assembled.
+      </p>
+      <img src="../images/pac-journey.png" width="100%" class="py-5" alt="" />
+      <h3>Environmental Scan</h3>
+      <p>
+        In fall of 2018, the Centers for Medicare and Medicaid Services (CMS) Division of Chronic and Post-acute Care (DCPAC) engaged MITRE to facilitate a Technical Advisory Group roundtable discussion.  Convening 75 post-acute care clinicians, vendors, and subject matter experts, with a series of one-on-one discussions with PAC providers, health IT vendors, and provider organizations, the MITRE team and this Community to gain insight and urgency into the state of the PAC interoperability landscape. These activities identified common themes around challenges to health data interoperability in PAC, including: lack of incentives, lack of standards, and not understanding the value of interoperability.
+      </p>
+      <p>
+        The graphs below display results from this foundational environmental scan.
+      </p>
+      <p>
+        Based on these results, CMS in partnership with the HHS Office of the National Coordinator for Health It (ONC) and MITRE established the PACIO Project.
+      </p>
+      <img src="../images/pacio-interop-challenges.png" width="100%" class="py-5" alt="" />
+      <img src="../images/pacio-interop-use-cases.png" width="100%" class="py-5" alt="" />
+      <p>
+        Armed with the environmental scan information, the PACIO Project was created with the following mission, goals, and priorities.
+      </p>
+      <h3>Mission:</h3>
+      <p>
+        The PACIO Project is a collaborative effort to advance interoperable health data exchange between post-acute care (PAC) and other providers, patients, and key stakeholders across healthcare and to promote health data exchange in collaboration with policy makers, standards organizations, and industry through a consensus-based approach.
+      </p>
+      <h3>Goals:</h3>
+      <ul>
+        <li>Promote interoperability!</li>
+        <li>Develop open, standard, non-proprietary FHIR APIs</li>
+        <li>Promote adoption of FHIR APIs</li>
+        <li>Promote reusability</li>
+        <li>Promote innovation</li>
+        <li>Support migration path from older systems to interoperable systems</li>
+        <li>Help establish trust framework for nationwide information exchange</li>
+      </ul>
+      <h3>Priorities:</h3>
+      <ul>
+        <li>Reach consensus on Governance, purpose, and goals</li>
+        <li>Decide on a tightly scoped Use Case or Use Cases to produce impact</li>
+        <li>Reuse / adapt / develop FHIR implementation guides for data models</li>
+      </ul>
+      <p>
+        Although the PACIO Project is not an HL7© FHIR® Accelerator, it operates using similar transparent collaboration processes, such as developing multiple Use Cases, defining data models, and authoring FHIR Implementation Guides (IGs).  One primary difference is the PACIO Project does not require financial contributions from its participants. PACIO FHIR IGs are regularly tested at HL7 and CMS Connectathons and Test Events. When testing indicates that the IG is ready, materials are prepared for the HL7 Ballot, which seeks validation and acceptance by the broader HL7 Community. Ultimately, the PACIO Project advocates for vendor adoption.
+      </p>
+      <img src="../images/pacio-process.png" width="100%" class="py-5" alt="" />
+      <h2 id="first_use_case">First Use Case</h2>
+      <p>
+        In selecting the PACIO Project’s first Use Case, the Community first looked at available prior work. Participants did not want to reinvent the wheel and wanted instead to leverage as much existing development as possible. The process began by examining the existing HL7 Clinical Document Architecture (CDA) specifications.
+      </p>
+      <p>
+        From this list of specifications, an experienced physician within the PACIO Community prioritized it, ranking the importance of the data (from 1 – most important to 3 – least important) for a variety of different actors: physician/nurse practitioner, registered nurse, therapist, administrator, and the patient/family. The broader PACIO Community reviewed the rankings and judged whether they accurately captured importance and priorities. Participants identified several high-priority sections (highlighted in yellow in the table below) and medium-priority sections (blue) as high value for potential Use Cases.
+      </p>
+      <img src="../images/pacio-top-use-cases.png" width="100%" class="py-5" alt="" />
+      <p>
+        Next, the PACIO Community determined which of the high and medium priority Use Cases candidates were already covered in FHIR and from that, identified three potential final candidates for collaborative work: Functional Status, Mental (or Cognitive) Status, and Advance Directives.
+      <p>
+      <p>
+        High Priority Use Cases:
+      </p>
+      <img src="../images/pacio-high-priority.png" width="100%" class="py-5" alt="" />
+      <p>
+        Medium Priority Use Cases:
+      </p>
+      <img src="../images/pacio-medium-priority.png" width="100%" class="py-5" alt="" />
+      <p>
+        Many participants collaborating in this first Use Case, were new to the data standards development process.  The group determined that a simpler Use Case was preferable in order to produce a useable standard more quickly. Further discussions with HL7 work groups indicated that Advance Directives, while an important Use Case, would be very complex and not ideal as a starting Use Case. Some members of the Community favored beginning with Functional Status and others Mental (Cognitive) Status.  Since the assessment framework for both were similar, the Community decided to tackle both concurrently as the initial Use Cases. Leveraging Use Cases based on CMS post-acute care assessments also allowed the PACIO Project to leverage the CMS Data Element Library (DEL) [add footnote with citation], which added significant value for the sponsoring CMS Division of Chronic and Post-Acute Care (DCPAC) team.
+      </p>
+      <p>
+        With the initial Use Cases decided, the group set out to define the required components for data exchanges (captured in the diagram below). These components guided the PACIO work for early connectathons.
+      </p>
+      <img src="../images/pacio-use-case-comp.png" width="100%" class="py-5" alt="" />
+
+      <h2 id="design_principles">Design Principles</h2>
+      <p>
+        In addition to the principles outlined generally in this playbook, the PACIO Project followed these additional design principles:
+      </p>
+      <h3>“People don’t know what they want until you show it to them” – Steve Jobs</h3>
+      <p>
+        How many people knew they needed a modern smart phone before 2007?  Most did not, but today almost everyone has a smart phone as an indispensable tool.  
+      </p>
+      <p>
+        People often have a general sense that something might be great to have, but to actually see a tangible example helps people conceptualize new ideas and how they can contribute to its improvement.
+      </p>
+      <p>
+        The PACIO Project has taken this approach from its inception, focusing on developing reference implementation prototypes to help illustrate what is possible, with a focus on getting to the demonstration as quickly as possible, at conferences, at connectathons, and any venue where people can see, listen and explore together.
+      </p>
+      <h3>Develop Minimum Viable Products (MVPs)</h3>
+      <p>
+        With any new venture or Use Case, it is important to show progress as quickly as possible to build excitement and momentum.  To get to that point quickly, the PACIO Project focused on scoping and prioritizing initial development as tightly as possible to show critical value inexpensively in the shortest amount of time.  Key questions are:
+      </p>
+      <ul>
+        <li>What is the minimum functionality that is needed to be useful?</li>
+        <li>How can we effectively demonstrate that functionality in the quickest way possible?</li>
+      </ul>
+      <h3>Show the Art of the Possible</h3>
+      <p>
+        Equally important to making progress and generating excitement, it is important to lean forward, be ambitious, and push limits to motivate participants and observers, while building upon what has been done before.
+      </p>
+
+      <h2 id="starting_community">Starting the Community</h2>
+      <p>
+        Networking has been fundamentally responsible for the success of The PACIO Project Community. Everyone involved in the early phase of the project opened their contact list to identify leaders with the experience, influence, and subject matter expertise in critical areas to help kickstart the project. PACIO Project leadership from MITRE and CMS drafted and sent a letter to leaders from government, vendors, associations, clinicians, and consultants detailing the purpose of the PACIO Project, its high-level goals and priorities, how it might operate, and included an invitation to attend a kick-off meeting to find out more.
+      </p>
+      <p>
+        Over 80 people attended the initial kick-off meeting in February 2019, both in person at MITRE and virtually. The kick-off meeting covered the project goals and priorities in more detail and discussed next steps, including the process for creating a Project Charter and deciding on what Use Cases to tackle first.
+      </p>
+      <h3>PACIO Project Charter</h3>
+      <p>The <a href="https://confluence.hl7.org/download/attachments/90899598/2020-12-02%20PACIO%20Project%20Charter.pdf?version=2&amp;modificationDate=1608680002591&amp;api=v2">PACIO Project Charter</a> acts as a guiding document providing in detail:</p>
+      <ul>
+        <li>The purpose of the PACIO Project</li>
+        <li>Governance Process, including how the group will make decisions</li>
+        <li>Project roles, descriptions, and responsibilities</li>
+        <li>How decisions will be made</li>
+        <li>Who owns the materials generated</li>
+      </ul>
+      <p>
+        The PACIO Project is purely a volunteer effort, so the project does not have the concept of participant tiers or a pay-to-play model.  Everyone has an equal voice and all viewpoints are heard and considered.  
+      </p>
+      <p>
+        Early in the Charter development process, a vocal minority suggested PACIO focus on developing standards in CDA instead of FHIR. After some discussion and consideration of all viewpoints, the PACIO leadership team decided to stick to the purpose expressed in the invitation letter and focus on FHIR-related standards development. That was the only time that a major project decision was made by the leadership team instead of the Community and that method should be used only when a consensus-based approach is not possible, as it can undermine the sense of Community. In this case, it was critical for setting a consistent, focused direction for the project and clearing the way for early progress and momentum.
+      </p>
+      <p>
+        Otherwise, the Community transparently developed and approved all aspects of the PACIO Project Charter and it has continued to be the guiding Governance for the project, with only minor modifications.
+      </p>
+      <p>
+        Deciding who owns materials generated during a project can be a sticky issue, but that turned out not to be the case with the PACIO Project. It is essential to establish clear expectations for ownership of the materials developed early to avoid problems later. Ideally, the owning organization should be:
+      </p>
+      <ul>
+        <li>An unbiased entity that will manage the materials in the best interest across the overall project</li>
+        <li>An entity that will continue to exist for the foreseeable future with appropriate contacts for copyright and license issues</li>
+      </ul>
+      <p>
+        In the case of the PACIO Project, with the exception of the FHIR IGs, which HL7 owns, MITRE has been designated the owner of PACIO Project materials for the following reasons:
+      </p>
+      <ul>
+        <li>MITRE is a non-profit organization that serves the public interest as an unbiased independent adviser</li>
+        <li>MITRE cannot compete with industry</li>
+        <li>MITRE is established and has longevity</li>
+        <li>MITRE can easily transfer ownership to another entity in the future</li>
+      </ul>
+      <p>
+        In short, taking on ownership of a Community-generated artifact is a great use of a Federally-Funded Research and Development Center (FFRDC).
+      </p>
+      <p>
+        PACIO materials are developed transparently and inclusively, consistent with ANSI and HL7 standard development practices. All source code for reference implementations is freely available on GitHub through the Apache 2.0 license, a very permissible license that also protects trademarks, like the PACIO name and logo. The Apache 2.0 license allows the software to be easily integrated into derivative works with attribution, while not encroaching on the licensing of the derivative software.
+      </p>
+      <h3>Selecting Use Case Leaders (Champions)</h3>
+      <p>
+        The Project Charter also highlighted important roles within the project and the responsibilities associated with each role, including the leadership structure for individual Use Cases under the project. Use Case Leaders are critical to the success of the PACIO Project, so while solicitations for leaders are open to all, candidates for those roles must be considered carefully. Using the role definitions in the PACIO Charter as a guide, PACIO Project leadership engages in an interview process to determine the qualifications of prospective Use Case leaders and determine their suitability for the role. Selection criteria for Use Case Leaders focus on experience leading diverse groups, conflict management, and the ability to build consensus, knowledge of the domain, and if applicable, technical ability and experience building FHIR standards.
+      </p>
+      <h3>When In Doubt, Vote</h3>
+      <p>
+        The Community votes on all major decisions using parliamentary procedures, as specified in the charter. This includes the establishment or modifications to the strategy to complete work, approving a document for ballot or publication, approval of a new Use Case, etc. Votes must be recorded in the minutes and provide a record of what has been decided. Documentation of past voting results can prevent reopening discussions that have also been resolved, if the same topic arises in a subsequent conversation. If someone wishes to reconsider, they can make a motion to reopen a topic for discussion, seconded, and voted on by the Community. Such motions should be deliberative and not in the event that no documentation exists of the group’s previous decision. If there is any doubt whether a vote is needed for a particular decision, a motion, second, and vote should be taken.
+      </p>
+      <h3>Branding</h3>
+      <p>
+        Branding is an important aspect of any public-facing project. The best branding is memorable with a short, pronounceable name and recognizable logo and can help the project gain traction. In the case of the PACIO Project, there was much discussion, and several names and logos were suggested. Ultimately, the name PACIO (Post-Acute Care InterOperability - pronounced “pass-ee-o”) was selected.
+      </p>
+      <p>
+        The selected logo displays a series of nodes (healthcare facilities) networked with a large central node, the patient, in the center, highlighting the importance of patient-centered care.
+      </p>
+      <p>
+        The PACIO Community approved this logo and name and uses it in all PACIO materials to establish the branding for the project.
+      </p>
+
+      <h2 id="building_community">Building the Community</h2>
+      <h3>Observer Meetings</h3>
+      <p>
+        Not all initial participants at the kick-off meeting continued to stay involved, as some have decided the project does not align with their interests or the time requirement is too much to actively contribute. To provide a way for the latter group to stay apprised of PACIO Project progress, a monthly half-hour PACIO “Observers” meeting series provides a summary of project updates. This type of meeting can serve as an effective recruiting tool as some “Observers” become weekly “Contributors”.
+      </p>
+      <h3>Contributor, Use Case, and Tech Team Meetings</h3>
+      <p>
+        There are many ways participants can contribute to the PACIO Project. Participants can start by joining the weekly Contributors Meeting, where quick Use Case updates, key discussions, and final PACIO Community votes take place. The Community also discusses specific Use Case topics during this meeting, but as the project has grown, each Use Case typically has a meeting series to dive deeply into the data modeling and standard development process specific to that Use Case. Participants can choose whether to attend those Use Case specific meetings if they want to be more involved.
+      </p>
+      <h3>Conferences</h3>
+      <p>
+        The PACIO Project also presents at several conferences every year to spread awareness of the project and its objectives.  To socialize the project and brand, PACIO buttons were printed and worn at conferences to invite discussion and further participation.
+      </p>
+      <img src="../images/pacio-button.png" width="35%" class="py-5 mx-auto d-block" alt="" />
+      <p>
+        The PACIO Project also maintains a YouTube channel featuring overviews on topics and recorded demonstrations from connectathons and other events.
+      </p>
+      <h3>Educate</h3>
+      <p>
+        A large part of the PACIO Project is educating the Community on the healthcare standards process to build and enable leaders to scale the work more broadly. As a result, the PACIO Project has been able to address more Use Cases with greater delegation of responsibilities to Use Case Leaders.
+      </p>
+      <p>
+        Clinician expertise is vital to determine what information is needed in a post-acute care setting, but the PACIO Project has found that the Community is far more effective if there is a high-level general understanding of how health data elements are specified in a standard. It is very helpful for the Community to understand the differences between optional, must support, and required elements, as well as the role of terminologies, and the potential impacts selected elements and terminologies on the FHIR IG. Not everyone in the Community needs to be an expert on these topics, but some level of familiarity with these concepts has helped the Community to understand and reach consensus as quickly as possible. 
+      </p>
+      <p>
+        Progress happens at the speed of trust and consensus. 
+      </p>
+      <p>
+        The Community appreciates the education the PACIO Project has provided on technical concepts and has opened new horizons for Community members, to a point where they have invited others to join PACIO.
+      </p>
+      <h3>Listen to and Respect Everyone</h3>
+      <p>
+        The PACIO Project strives to listen to every point of view and treat everyone with respect. There are no dumb ideas or questions. This provides an inclusive environment for people to bring their unique perspectives, voice their opinions, and ask key questions, which produces great discussions and conclusions on challenging topics.
+      </p>
+      <h3>Invite Guest Speakers</h3>
+      <p>
+        The PACIO Project has invited numerous guest subject matter experts to speak on related topics, projects, or research that can inform the development of PACIO standards, raise awareness, and result in collaboration opportunities. Several of these sessions have been critical to the development of the PACIO Project’s IGs and Community growth.
+      </p>
+      <h3>Get Things Done</h3>
+      <p>
+        The PACIO Community is made up of very busy people who donate their time to help solve problems to improve healthcare for all. It is important that the PACIO Project be respectful of participants’ time by establishing clear and efficient meeting agendas and expectations. Even as a volunteer organization, there is an expectation that participants fulfill commitments and collectively show meaningful progress to provide value for their time. Many long-time Community members appreciate this focus and the PACIO Project’s reputation helps draw new members into the Community because they see things getting done.
+      </p>
+      <p>
+        Meeting deadlines and fulfilling commitments also raises the profile of the PACIO Project within the broader healthcare Community. 
+      </p>
+      <h3>Break Bread Whenever Possible</h3>
+      <p>
+        Getting together at conferences and gatherings is great for building relationships, morale, and bonds within the Community, particularly through topics and venues outside of the PACIO work itself. Have dinner, see a ballgame, visit a museum. A sense of Community keeps participants engaged and energized.
+      </p>
+      <h3>Record What Happened</h3>
+      <p>
+        The PACIO Project records its meetings and places meeting materials on its <a href="https://confluence.hl7.org/display/PC/Meeting+Index+and+Minutes">HL7 Confluence site</a>.  This not only provides a record for future reference, but it also helps new and potential participants get up to speed quickly on what the project has been doing and where we are in the various work streams. It also lends flexibility to those unable to attend a specific meeting due to other commitments, so they can catch up on discussions they missed at their convenience.
+      </p>
+      <h2 id="delivering_value">Delivering Value</h2>
+      <h3>Initial Demonstration</h3>
+      <p>
+        To adhere to the design principles detailed above, the PACIO Project built a demonstration that quickly provided a minimal set of functionalities showing tangible value and what is possible using the CMS Data Element Library (DEL). The CMS DEL is a web-based repository containing the assessments CMS requires PAC providers to submit at specified intervals (for example, at admission and discharge) during every patient’s stay at a PAC facility. The PACIO Project’s initial focus was to demonstrate how the CMS DEL assessment metadata could be represented in FHIR to display forms in an application and collect responses.
+      </p>
+      <p>
+        This involved several key steps in preparation for the PACIO Project’s first HL7 Connectathon in September 2019:
+      </p>
+      <ol>
+        <li>Develop a prototype FHIR IG for the CMS Data Element Library (DEL)</li>
+        <li>Create a Pseudo-DEL (FHIR server) that implemented that prototype FHIR IG, populated with the public assessment metadata in the actual CMS DEL system</li>
+        <li>Develop a reference PAC assessment application (FHIR client) that could display assessment forms using the DEL metadata and collect the responses</li>
+        <li>Demonstrate that the Pseudo-DEL and PAC Assessment application could interoperate to display and capture the assessments required by CMS</li>
+      </ol>
+      <h3>Integration Tracks</h3>
+      <p>
+        The September 2019 HL7 connectathon was a success and gave the PACIO Project a great platform to build from for the next HL7 connectathon in January 2020. With the development of the Functional Status and Cognitive Status FHIR IG, the PACIO Project sought to demonstrate what could be done with the assessment data once it was collected. By pushing the envelope, we expanded the September connectathon work into a multi-scene demonstration, showing how assessment data not only can be collected, but shared across multiple acute and PAC facilities. The January 2020 connectathon work also incorporated other FHIR IGs developed by other projects to test and show that independent FHIR IGs can work together effectively as a system of systems.
+      </p>
+      <img src="../images/pacio-jan2020-scenario.png" width="100%" class="py-5" alt="" />
+      <img src="../images/pacio-jan2020-systems.png" width="100%" class="py-5" alt="" />
+
+      <div class="embed-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tdSqlma5ybA?si=m08SOmz14jknAZJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <p>
+        Over time, PACIO Project Connectathon tracks have grown to demonstrate FHIR data exchanges across up to 23 different systems using up to 17 different FHIR IGs by 14 different vendors and organizations. Beyond the PACIO Project IGs, other IGs include those developed by the Gravity, Da Vinci, CARIN Alliance, and FHIR-At-Scale Taskforce (FAST) FHIR Accelerators, as well as other independent projects and core FHIR Specifications.
+      </p>
+      <img src="../images/pacio-july2023-pfe.png" width="100%" class="py-5" alt="" />
+
+      <div class="embed-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ezIw04WIXOA?si=Cp30fW6JmGnbS9hv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <img src="../images/pacio-sept2023-adi.png" width="100%" class="py-5" alt="" />
+
+      <div class="embed-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DDT2h6k-4D8?si=iA58dF0zpl8aam4J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <p>
+        Through the PACIO connectathon tracks, the following FHIR Implementation Guides have been tested working together as a system:
+      </p>
+      <ul>
+        <li>PACIO Personal Functioning and Engagement (PFE)</li>
+        <li>PACIO Advanced Healthcare Directives Interoperability (ADI)</li>
+        <li>PACIO Re-assessment Timepoints</li>
+        <li>PACIO Transitions of Care (TOC)</li>
+        <li>PACIO Standardized Medication Profile (SMP)</li>
+        <li>Electronic Long-Term Services and Support (eLTSS)</li>
+        <li>Multiple Chronic Condition eCare Plan (MCC eCarePlan)</li>
+        <li>Gravity Social Determinants of Health – Clinical Care (SDOH-CC)</li>
+        <li>Da Vinci Data Exchange for Quality Measures (DEQM)</li>
+        <li>Da Vinci Coverage Requirements Discovery (CRD)</li>
+        <li>Da Vinci Documentation Templates and Rules (DTR)</li>
+        <li>Da Vinci Prior Authorization Support (PAS)</li>
+        <li>Da Vinci Payer Data Exchange Plan Net (Provider Directory)</li>
+        <li>CARIN Digital Insurance Card</li>
+        <li>FAST National Directory of Healthcare Providers & Services (NDH)</li>
+        <li>Physical Activity</li>
+        <li>FHIR Structured Data Capture (SDC)</li>
+        <li>FHIR US Core</li>
+      </ul>
+      <p>
+        The PACIO Project approaches connectathons differently than most other projects and organizations. Most projects develop the necessary FHIR IGs for the track and provide other materials including a reference implementation, but the preparation to connect systems and software does not start until the actual connectathon. The PACIO Project does all of that but recruits a core set of participants weeks in advance and works to have a fully functional demonstration with those participants the week before the connectathon. The actual connectathon is used to fine tune the demonstration and resolve any issues before recording the full demonstration. Starting the connecting process ahead of time allows the PACIO Project to test more complicated cross-project data interactions. Unexpected participants are still welcome and always add further value to the connectathon, but they integrate with participants who are already connecting, making it easier for them to participate.
+      </p>
+      <h3>PACIO Testing Events</h3>
+      <p>
+        Sometimes, the HL7 and CMS Connectathons do not align timing-wise with project requirements. In those cases, the PACIO Project conducts its own testing events. Project management at HL7 allows testing outside of connectathons as long as participation is open and transparent, the outcomes are recorded (similar to what is collected at the end of a connectathon), and any issues raised are captured in the HL7 Jira issue tracking system.
+      </p>
+      <p>
+        When conducting testing events, the PACIO Project makes every effort to match what is done during the life cycle of a connectathon track, namely:
+      </p>
+      <ul>
+        <li>Provide track descriptions using the same form as for HL7 connectathons</li>
+        <li>Conduct a kick-off meeting to orient participants to the track</li>
+        <li>Setup Zoom calls and breakout sessions as needed</li>
+        <li>Publish a track report listing track testing goals, participants, scenario, roles, accomplishments, challenges, and next steps</li>
+      </ul>
+
+      <h2 id="growth_impact">Growth and Impact</h2>
+      <p>
+        As of 2024, the PACIO Project has published five FHIR IGs. Two others were moving toward their first edition HL7 ballot and two more were being updated for second edition HL7 ballot. The PACIO Project has also been an active member of USCDI and USCDI+ development, providing many comments each year as the USCDI and USCDI+ versions progress, resulting in several new published data classes and data elements, such as Advance Directives, Functional Status, Mental/Cognitive Status, and Patient Communication Status.
+      </p>
+      <p>
+        USCDI updates inform FHIR US Core development. New regulations are requiring certain providers (not yet PAC providers) to implement newer US Core versions for certified APIs.  This would mandate support for these new data elements to comply with EHR certification requirements. The PACIO Project’s development and testing of relevant FHIR IGs through vendors in the PACIO Community brings additional credibility to the PACIO comments.
+      </p>
+      <img src="../images/pacio-use-cases.png" width="100%" class="py-5" alt="" />
+      <p>
+        The PACIO Project is well known and positively regarded by CMS, Office of the National Coordinator (ONC), and HL7, with multiple references in the Federal Register, ONC Interoperability Standards Advisory (ISA), trade journals, and both domestic and international FHIR interoperability specification lists. Many consider the PACIO Project to be the go-to source for PAC subject matter expertise and standards development.
+      </p>
+      <p>
+        The PACIO Project continues to attract new members from new sources, validating the project’s strategy of presenting and participating in a broadening list of conferences on a variety of Use Cases. The PACIO Advance Directives work has visibility at the highest levels of the FHIR Project Team who have taken a personal interest in the project.
+      </p>
+      <p>
+        The PACIO Project also is pursuing pilots and production opportunities. This has been more challenging than in other cases since post-acute care facilities were not included in the Electronic Health Record (EHR) Incentive Program and therefore did not receive funding to install and upgrade their EHR systems like other parts of healthcare. As a result, the number of available providers who have EHR systems sophisticated enough to participate in  pilots and production environments is much more limited. Nevertheless, the PACIO Project is forging a pathway forward for standardized exchange of post-acute care data.
+      </p>
+
+      <h2 id="resources">Resources</h2>
+      <ul>
+        <li><a href="http://pacioproject.org">PACIO Project Website</a></li>
+        <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project">HL7 Confluence Page for the PACIO Project</a></li>
+        <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project+Use+Cases">Use Cases</a></li>
+        <li><a href="https://confluence.hl7.org/display/PC/Dashboard">Dashboard</a></li>
+        <li><a href="https://confluence.hl7.org/display/PC/Meeting+Index">Meeting Index</a></li>
+        <li><a href="https://youtube.com/@pacioproject">YouTube Channel</a></li>
+        <li>FHIR Implementation Guides:
+          <ul>
+            <li><i>Personal Functioning and Engagement:</i>
+              <ul>
+                <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-pfe/">Implementation Guide</a></li>
+                <li><a href="https://github.com/HL7/fhir-pacio-pfe">FHIR Shorthand (FSH)</a></li>
+              </ul>
+            </li>
+            <li><i>Advance Directives Interoperability:</i>
+              <ul>
+                <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">Implementation Guide</a></li>
+                <li><a href="https://github.com/HL7/fhir-pacio-adi">FHIR Shorthand (FSH)</a></li>
+              </ul>
+            </li>
+            <li><i>Re-assessment Timepoints:</i>
+              <ul>
+                <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-rt/">Implementation Guide</a></li>
+                <li><a href="https://github.com/HL7/fhir-pacio-rt">FHIR Shorthand (FSH)</a></li>
+              </ul>
+            </li>
+            <li><i>Standardized Medication Profile:</i>
+              <ul>
+                <li><a href="https://build.fhir.org/ig/HL7/smp-ig/">Implementation Guide</a></li>
+                <li><a href="https://github.com/HL7/smp-ig">FHIR Shorthand (FSH)</a></li>
+              </ul>
+            </li>
+            <li><i>Transitions of Care:</i>
+              <ul>
+                <li>Coming soon!</li>
+              </ul>
+            </li>
+          </ul>
+        <li>GitHub Repositories: 
+          <ul>
+            <li><a href="https://github.com/paciowg">PACIO Project</a></li>
+            <li><a href="https://github.com/hl7">HL7</a></li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/paciowg/pseudo-ehr">Reference Implementation</a></li>
+        <li><a href="https://github.com/paciowg/sample-data">Sample Data</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container pb-2 text-end">
+<a href="#top" data-js-hook="back-to-top-button">
+  <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+  <span id="back-to-top-title">Back to top</span>
+</a>
+</div>
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>        <p>
+        The MITRE Interoperability Playbook is provided as a resource for the health information community.
+        For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../playbook/">Playbook Introduction</a></li>
+        <li><a href="./">Case Studies</a></a></li>
+        <li><a href="../resources/">Resources</a></a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <p><span class="float-end">V0.3</span>&copy; Copyright 2024 MITRE Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+  </div>
+  <script id="results_template" type="text/x-handlebars-template">
+  <li class="result-item">
+    <a href="{{url}}?term={{query}}">{{title}}</a>
+  </li>
+</script>
+  </body>
+</html>
+
