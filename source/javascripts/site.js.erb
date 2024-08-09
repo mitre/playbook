@@ -68,7 +68,6 @@ function searchSetup(index, contents){
       $("#search_results").hide();
       return;
     }
-    console.log("root ", root)
     var results = index.search(query);
     $("#search_results_list").empty();
     $.each(results, function(index, result){
