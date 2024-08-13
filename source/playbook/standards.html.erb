@@ -158,8 +158,15 @@ theme: playbook
       </p>
 
       <h3>Framework for FHIR Implementation Guide Development</h3>
+<p>As is likely clear by now, use of the FHIR exchange standard is foundational to the recommendations in this Playbook. Leaders should have a high-level understanding of what FHIR is and its benefits.  Implementers need a deeper understanding.  Here are some references that might be helpful:</p>
       <ul>
-        <li>FHIR Tutorials
+       <li>
+          <%= link_to('Fast Healthcare Interoperability Resources (FHIR)', 'https://hl7.org/fhir/summary.html') %> is the health data sharing framework widely used now and is being mandated for certain applications through ONC.
+        </li>
+        <li>
+          <%= link_to('US Core FHIR Implementation Guide','https://www.hl7.org/fhir/us/core/') %> (IG) encapsulates into the FHIR framework the data classes and data elements defined through US Government coordination and the United States Core Data for Interoperability (USCDI) and will evolve as Government work evolves. HL7 requires IGs designed for the US healthcare system to be based on the US Core FHIR framework unless a waiver is approved by HL7.
+        </li>
+<li>FHIR Tutorials
           <ul>
             <li><a href="https://www.youtube.com/watch?v=cBpLzLs-T1Y">FHIR Basics for Post-Acute Care</a> by Jessica Skopac (MITRE) - approachable introduction to FHIR for the non-technical</li>
             <li><a href="https://hl7fundamentals.org/">HL7 Courses on FHIR</a></li>
@@ -167,12 +174,7 @@ theme: playbook
             <li><a href="https://www.youtube.com/watch?v=m2O6HiA1Z7g">FHIR for Developers - Getting Started</a> by Gino Canessa (Microsoft)</li>
           </ul>
         </li>
-        <li>
-          <%= link_to('Fast Healthcare Interoperability Resources (FHIR)', 'https://hl7.org/fhir/summary.html') %> is the health data sharing framework widely used now and is being mandated for certain applications through ONC.
-        </li>
-        <li>
-          <%= link_to('US Core FHIR Implementation Guide','https://www.hl7.org/fhir/us/core/') %> (IG) encapsulates into the FHIR framework the data classes and data elements defined through US Government coordination and the United States Core Data for Interoperability (USCDI) and will evolve as Government work evolves. HL7 requires IGs designed for the US healthcare system to be based on the US Core FHIR framework unless a waiver is approved by HL7.
-        </li>
+        
         <li>
           Standard Terminology. (refs:  <%= link_to('HIMSS','https://www.himss.org/terminology-standards') %>, <%= link_to('CMS','https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf') %>) A terminology code system is a managed collection of structured terminologies (concepts like procedures, diagnoses, treatments, measurements, results, etc.) with the objective that there is one globally unique code (alpha-numeric, typically) to represent each concept. Code systems, terminologies, and vocabularies are not the same things, but are highly related and often used together or for the same idea. <%= link_to('SNOMED CT','https://www.snomed.org/use-snomed-ct') %>, <%= link_to('LOINC','https://loinc.org/') %>, <%= link_to('CPT','https://www.ama-assn.org/topics/cpt-codes') %> are some examples of widely used code systems. The benefit of representing a concept with standard terminology in an IG (and elsewhere) is that the concept can be implemented (in FHIR or other standards) in health information systems and understood everywhere the concept is collected, stored, exchanged, and used.
         </li>
