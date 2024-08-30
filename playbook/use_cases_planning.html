@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,6 +22,7 @@
 
   </head>
   <body class="playbook">
+  <div id="skiptocontent"><a href="#content">skip to main content</a></div>
   <div id="top"></div>  
   <div class="layout-grid">
     <div class="container" id="header">
@@ -100,15 +101,16 @@
       <p>A specific Use Case provides the scope for all that comes next. A Use Case attracts the subset of the larger Community who care deeply about the objectives and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
       <p>One of many possible Use Case examples is the Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologist with an mCODE-based FHIR exchange of structure radiation treatment summary data, thus improving information quality and reducing clinical burden. See the <a href="../casestudies/radiation_therapy.html">Radiation Therapy Treatment Data Case Study</a>.</p>
       <figure>
-        <img src="../images/radiation-therapy-workflow.png" width="100%" class="py-5" alt="" />
+        <img src="../images/radiation-therapy-workflow.png" width="100%" class="py-3" alt="Workflow diagram" />
         <figcaption>A workflow diagram for Radiation Therapy Treatment Data for Cancer</figcaption>
       </figure>
 			<hr>
       <h2 id="use_case_development_guidelines">CodeX Use Case Development Guidelines</h2>
       <p>CodeX created <a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">Use Case Development Guidelines</a> as a framework and decision process for successful Use Case work via three Stages: Discovery, Planning, and Execution (development, implementation, adoption, and impact).</p>
-      <p>
-      	<img src="../images/planning-flow.svg" width="100%" class="p-3" alt="" />
-      </p>
+      <figure>
+      	<img src="../images/planning-flow.svg" width="100%" class="py-3" alt="Use case diagram" />
+      	<figcaption>Diagram of use case development flow from Discovery to Planning to Execution phases.</figcaption>
+      </figure>
 
 			<p>Below are key learnings around the CodeX Use Case Discovery and Planning stages. The CodeX "Execution" experience will be referenced in the <a href="implementation.html">Implementation & Testing</a> and <a href="adoption.html">Adoption & Value</a> sections of this website.</p>
 			<hr>
@@ -116,13 +118,13 @@
 			<p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), engaging and aligning other potential participants, and agreeing on the scope a potential Use Case project. </p>
 
 			<p>For the CodeX leadership to assess readiness of a Use Case to go into the CodeX Discovery stage, the following information is requested:</p>
-			<ul>
+			<ul class="planning-list">
 				<li>High-level version of Concept (Problem space, Solution/workflow options and Potential impacts  - this does not have to be completely agreed of aligned with stakeholders)</li>
 				<li>List of organizations and individuals committed to lead the Discovery discussions and alignment</li>
 				<li>List other specific organizations across stakeholder groups that could be candidates for working the concept through Discovery, Planning and Execution</li>
 			</ul>
 			<p>By the end of the Discovery stage, and before moving into the Planning Stage, a Use Case projects typically have the following attributes in the CodeX world:</p>
-			<ul>
+			<ul class="planning-list">
 				<li>Believed to be viable (some risk, is of course, natural and acceptable)</li>
         <li>Have the potential to substantial improve patient care and research in within or across specialties</li>
 				<li>Share the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
@@ -140,7 +142,7 @@
 			</ul>
 
 			<p>Other considerations that MITRE has found useful to determining readiness to proceed:</p>
-			<ul>
+			<ul class="planning-list">
 				<li>A new specialty should consider starting with less ambitious Use Cases. This raises the probability of success at speed, and can help a new Community to gel</li>
 				<li>Ask the right questions
 					<ul>
@@ -164,7 +166,7 @@
 				Once a Use Case has been prioritized through the Discovery stage, the next step is to develop a plan.  Often some of the plan components have been considered and even detailed during the Discovery stage. Here are considerations that CodeX documents in their Use Case Development Guidelines, augmented by additional MITRE experience.
 			</p>
 
-			<ul>
+			<ul class="planning-list">
 				<li><b>Problem</b>. Why are current solutions inadequate?</li>
 
 				<li><b>Solution</b>. What new systems and workflows are planned?  Identify which roles/actors and standardized data are needed for each component of the solution.</li>
@@ -199,7 +201,7 @@
 </div>
 
 
-    <div class="container pb-2 text-end">
+    <div class="container mt-4 pb-2 text-end">
 <a href="#top" data-js-hook="back-to-top-button">
   <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
   <span id="back-to-top-title">Back to top</span>

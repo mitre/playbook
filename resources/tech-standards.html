@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
 
   </head>
-  <body class="playbook">
+  <body class="resources">
+  <div id="skiptocontent"><a href="#content">skip to main content</a></div>
   <div id="top"></div>  
   <div class="layout-grid">
     <div class="container" id="header">
@@ -100,12 +101,11 @@
         The following graphic illustrates key steps that are necessary and/or useful in developing and publishing a quality, HL7 standard, FHIR Implementation Guide. This process is agile (thus the cycles representing steps), with iterations and interactions between each cycle.
       </p>
       
-      <p><img src="../images/fhir-ig-process.png" width="100%" class="py-5" alt="Diagram of FHIR IG process from clinical concept to HL7 standard" /></p>
+      <figure>
+        <img src="../images/fhir-ig-process.png" width="100%" class="py-3" alt="Diagram of FHIR IG process from clinical concept to HL7 standard" />
+        <figcaption>Diagram describing the development of a FHIR Implementation Guide from Clinical Requirements to FHIR IG Development to HL7 Standardization.</figcaption>
+      </figure>
 
-      <br>
-      <p>
-        Next, the broad topics from the graphic above are broken down and discussed in greater detail: (a) Clinical Requirements, (b) FHIR IG Development, and (c) HL7 Standardization.
-      </p>
       <hr>
 
       <h2 id="clinical_requirements">Clinical Requirements:<br>Information Needs and Data Dictionary.</h2>
@@ -168,7 +168,7 @@
       </p>
 
       <p>
-        The group can next develop the Data Dictionary - a "Rosetta Stone" that defines data elements mapped to the clinical information requirements <!--[NOTE: This figure needs more context and/or probably moved?]-->
+        The group can next develop the Data Dictionary - a "Rosetta Stone" that defines data elements mapped to the clinical information requirements 
       </p>
       <p><img src="../images/rosetta-stone-table.png" width="100%" class="py-5" alt="" /></p>
 
@@ -183,7 +183,6 @@
         <li>
           Asking for interpreted information rather than source data because that is established practice.  A trivial example would be asking for age, rather than collecting birth data and date/time of the encounter. 
         </li>
-        <!--<li>[NOTE: more to be added]</li>-->
 
         <p>
           These and other potential pitfalls can be largely avoided by following the <a href="../playbook/design_principles.html">Design Principles</a> compiled based on CodeX and mCODE experience, and available from a link on the left.
@@ -271,10 +270,12 @@
         FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a Resource are required and which are not for a particular context or Use Case. FHIR extensions add data elements and/or constraints the standard FHIR base Resource definitions to create more specific, customized resource definitions for a particular context or Use Case.
       </p>
       <p>
-        The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. [NOTE: A better explanation and better/higher resolution graphics will be included]
+        The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. 
       </p>
-
-      <img src="../images/profile-derivations.png" width="100%" alt="" />
+      <figure>
+        <img src="../images/profile-derivations.png" width="100%" alt="FHIR Resource Derivations diagram" />
+        <figcaption>Diagram of FHIR Resource derivations, showing how mCODE is built on US Core and FHIR Base resources.</figcaption>
+      </figure>
 
       <p>
         Standards developers should first check the <a href="https://hl7.org/fhir/extensions/extension-registry.html">FHIR Extension Registry</a> for existing extensions that might be reused to provide a solution.  If an appropriate existing extension cannot be found, a new extension may need to be created as part of the IG.
@@ -310,7 +311,7 @@
       </p>
 
       <h3>Questions to Plan FHIR IG Development</h3>
-      <ul>
+      <ul class="action-list">
         <li>What are the possibly-related, external FHIR IG initiatives?
           <ul>
             <li>Are there projects being driven by others in Government and/or industry that need to be reviewed, consulted, and/or partnered with?</li>
@@ -360,7 +361,10 @@
       <img src="../images/mcode-fhir-resource-tables.png" width="100%" alt="" />
 
       <h3>Example: Patient Demographics</h3>              
-      <img src="../images/external-profile-mcode.png" width="100%" alt="" />
+      <figure>
+        <img src="../images/mcode_patient_bundle.svg" width="100%" alt="Diagram of mCODE Patient Bundle" />
+        <figcaption>Diagram of an mCODE Patient Bundle entry based on external profiles</figcaption>
+      </figure>
 
       <ul>
         <li>Relevant external profiles are added as an entry to the mCODE Patient Bundle profile.</li>
@@ -389,7 +393,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <img src="../images/fsh-logo.png" width="100%" alt="" />
+          <img src="../images/fsh-logo.png" width="100%" alt="Logo for FHIR Shorthand" />
         </div>
         <div class="col-md-8">
           <p>
@@ -476,7 +480,7 @@
 </div>
 
 
-    <div class="container pb-2 text-end">
+    <div class="container mt-4 pb-2 text-end">
 <a href="#top" data-js-hook="back-to-top-button">
   <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
   <span id="back-to-top-title">Back to top</span>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,6 +22,7 @@
 
   </head>
   <body class="playbook">
+  <div id="skiptocontent"><a href="#content">skip to main content</a></div>
   <div id="top"></div>  
   <div class="layout-grid">
     <div class="container" id="header">
@@ -252,48 +253,45 @@
 	   During the IG development process and after updates are common. This could be due to a variety of reasons including updates to the underlying standards (new FHIR versions, USCDI/UCSDI versions, US Core FHIR profile updates, terminology code system updates, etc.), government mandates and regulation changes, and shifting changes in need, functionality, and technology. Care should be taken to plan long-term upgrade processes to ensure the IG and associated software can be adapted to changing needs and functionality requirements. Further HL7 has established processes for IG updates, becoming more restrictive as the IG meets standarization milestones. It will be necessary to have a system to organize, prioritize, and address requests for changes and other comments during the IG development processes.
 	  </p>
 	  <h3>Questions to Plan FHIR IG Development</h3>
-      <ul>
-        <li>Are there related, external FHIR IG initiatives? </li>
-          <ul>
-            <li>Are there projects being driven by others in Government and/or industry that need to be reviewed, consulted, and/or partnered with?</li>
-          </ul>
+    <ul>
+      <li>Are there related, external FHIR IG initiatives? </li>
+        <ul>
+          <li>Are there projects being driven by others in Government and/or industry that need to be reviewed, consulted, and/or partnered with?</li>
+        </ul>
 
-        <li>What existing FHIR resources and profiles best fit the data model?</li>
-          <ul>
-          	<li>What existing resources and profiles best match the required data elements in the data model?</li>
-          	<li>What existing resources and profiles result in the fewest FHIR extensions that are needed?</li>
-          	<li>What existing FHIR resources and profiles allow for use of the necessary terminologies?</li>
-          	<li>Do the selected FHIR resources and profiles require data elements that may not be present in an exchange?</li>
-          </ul>
+      <li>What existing FHIR resources and profiles best fit the data model?</li>
+        <ul>
+          <li>What existing resources and profiles best match the required data elements in the data model?</li>
+          <li>What existing resources and profiles result in the fewest FHIR extensions that are needed?</li>
+          <li>What existing FHIR resources and profiles allow for use of the necessary terminologies?</li>
+          <li>Do the selected FHIR resources and profiles require data elements that may not be present in an exchange?</li>
+        </ul>
 
-        <li>What FHIR profiles must be created? </li> 
-          <ul>
-          	<li>Profiles are created when further specifications (extensions or constraints) are needed on a FHIR base resource or an existing dependent FHIR profile.</li>
-          </ul>
+      <li>What FHIR profiles must be created? </li> 
+        <ul>
+          <li>Profiles are created when further specifications (extensions or constraints) are needed on a FHIR base resource or an existing dependent FHIR profile.</li>
+        </ul>
 
-        <li>What FHIR extensions are needed? </li> 
-          <ul>
-          	<li>Extensions are used to add data elements that may be missing in FHIR resources and profiles to accommodate a business need.</li>
-          	<li>What existing resources and profiles need to be extended to support required data elements in the data model?</li>
-          </ul>
+      <li>What FHIR extensions are needed? </li> 
+        <ul>
+          <li>Extensions are used to add data elements that may be missing in FHIR resources and profiles to accommodate a business need.</li>
+          <li>What existing resources and profiles need to be extended to support required data elements in the data model?</li>
+        </ul>
 
-        <li>What documentation is needed by senior managers and implementers to understand and effectively implement?</li>
+      <li>What documentation is needed by senior managers and implementers to understand and effectively implement?</li>
 
-        <li>How will the data be accessed? </li>
-        	<ul>
-            <li>What requirements are needed for data querying and access?</li>
-          </ul>
+      <li>How will the data be accessed? </li>
+        <ul>
+          <li>What requirements are needed for data querying and access?</li>
+        </ul>
 
-        <li>Change management? </li>
-        	<ul>
-            <li>What version control system will be used?</li>
-          </ul>
-	  </ul>
+      <li>Change management? </li>
+        <ul>
+          <li>What version control system will be used?</li>
+        </ul>
+    </ul>
 
-
-<p>Further details for technical experts can be found in the <a href="/playbook/resources/tech-standards#fhir_ig_development">FHIR Implementation Guide (IG) Development Deep Dive</a> resource section of this site.</p>
-
-
+    <p>Further details for technical experts can be found in the <a href="/playbook/resources/tech-standards#fhir_ig_development">FHIR Implementation Guide (IG) Development Deep Dive</a> resource section of this site.</p>
       <hr>
 
       <h2 id="hl7_standardization">HL7 Standardization and Aproval:<br>Path Towards Wider Standards Adoption</h2>
@@ -342,7 +340,7 @@
 </div>
 
 
-    <div class="container pb-2 text-end">
+    <div class="container mt-4 pb-2 text-end">
 <a href="#top" data-js-hook="back-to-top-button">
   <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
   <span id="back-to-top-title">Back to top</span>

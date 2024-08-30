@@ -95,11 +95,13 @@ function searchSetup(index, contents){
 })(jQuery);
   
 $( document ).ready(function() {
-
-var scrollSpy = new bootstrap.ScrollSpy(jQuery('#content'), {
-  target: document.getElementById('playbook_menu'),
-  method: 'position'
-});
+  var playbookMenu = document.getElementById('playbook_menu');
+  if (playbookMenu) {
+    var scrollSpy = new bootstrap.ScrollSpy(jQuery('#content'), {
+      target: document.getElementById('playbook_menu'),
+      method: 'position'
+    });
+  }
 
   var term = $.uriGet('term');
   if (term) {

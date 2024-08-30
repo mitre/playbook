@@ -1,5 +1,5 @@
 :root {
-  --link-color: #0074BD;
+  --link-color: #0055b5;
   --footer-bkg: #eeeeee;
   --copyright-bkg: #dedede;
   --breadcrumb-bkg: #F0F7FE;
@@ -8,7 +8,11 @@
   --playbook-bkg: #F0F7FE;
   --casestudies-bkg: #EBF7F4;
   --card-title-bkg: #F0F7FE;
-  --bs-btn-primary: #457ed1; }
+  --bs-btn-primary: #457ed1;
+  --list-border: #dddddd;
+  --box-border: #dddddd;
+  --resources-border:#D48CA1;
+  --skip-nav-bkg: #0055b5; }
 
 body {
   background-color: #fff;
@@ -29,8 +33,42 @@ body {
 a {
   color: var(--link-color); }
 
-li > a:focus, li > a:hover, p > a:focus, p > a:hover, td > a:focus, td > a:hover {
+#content li {
+  margin-bottom: 1em; }
+
+#content li ul li {
+  margin-bottom: 0.4em; }
+
+#content ul.value-list li {
+  margin-bottom: 0.75em; }
+
+h4 > a:focus, h4 > a:hover, li > a:focus, li > a:hover, p > a:focus, p > a:hover, td > a:focus, td > a:hover {
   background-color: var(--breadcrumb-bkg); }
+
+h1 {
+  font-weight: bold; }
+
+h3 {
+  margin-top: 2em; }
+
+figure {
+  margin: 1em 0; }
+  figure figcaption {
+    margin-top: 1em;
+    font-size: 0.95em;
+    font-style: italic;
+    color: #595959;
+    padding: .5em 0;
+    display: table; }
+    figure figcaption::before {
+      content: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20512%20384%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22image%22%20fill%3D%22%23bbbbbb%22%20fill-rule%3D%22nonzero%22%3E%3Cpath%20d%3D%22M464%2C384%20L48%2C384%20C21.49%2C384%200%2C362.51%200%2C336%20L0%2C48%20C0%2C21.49%2021.49%2C0%2048%2C0%20L464%2C0%20C490.51%2C0%20512%2C21.49%20512%2C48%20L512%2C336%20C512%2C362.51%20490.51%2C384%20464%2C384%20Z%20M112%2C56%20C81.072%2C56%2056%2C81.072%2056%2C112%20C56%2C142.928%2081.072%2C168%20112%2C168%20C142.928%2C168%20168%2C142.928%20168%2C112%20C168%2C81.072%20142.928%2C56%20112%2C56%20Z%20M64%2C320%20L448%2C320%20L448%2C208%20L360.485%2C120.485%20C355.799%2C115.799%20348.201%2C115.799%20343.514%2C120.485%20L208%2C256%20L152.485%2C200.485%20C147.799%2C195.799%20140.201%2C195.799%20135.514%2C200.485%20L64%2C272%20L64%2C320%20Z%22%20id%3D%22Shape%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      height: 1em;
+      width: 1.9em;
+      padding-right: 0.5em;
+      display: table-cell;
+      vertical-align: baseline;
+      position: relative;
+      top: 0.05em; }
 
 header ul.nav a.nav-link {
   color: black;
@@ -43,7 +81,7 @@ header ul.nav a.nav-link {
   border-top: 1px solid var(--breadcrumb-border-color);
   border-bottom: 1px solid var(--breadcrumb-border-color); }
 
-body.playbook .breadcrumb-box, body.playbook .copyright, body.about .breadcrumb-box, body.about .copyright {
+body.playbook .breadcrumb-box, body.playbook .copyright, body.about .breadcrumb-box, body.about .copyright, body.home .breadcrumb-box, body.home .copyright {
   background-color: var(--playbook-bkg);
   border-top: 1px solid var(--breadcrumb-border-color);
   border-bottom: 1px solid var(--breadcrumb-border-color); }
@@ -63,6 +101,25 @@ body.resources .breadcrumb-box, body.resources .copyright {
   border-top: 1px solid #D48CA1;
   border-bottom: 1px solid #D48CA1; }
 
+#skiptocontent a {
+  padding: 5px 10px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  color: white;
+  background-color: var(--skip-nav-bkg);
+  -webkit-transition: top .5s ease-out;
+  transition: top .5s ease-out;
+  z-index: 100; }
+  #skiptocontent a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    outline-color: transparent;
+    outline: none;
+    -webkit-transition: top .05s ease-in;
+    transition: top .05s ease-in; }
+
 .breadcrumb .breadcrumb-item a {
   color: black;
   text-decoration: none; }
@@ -71,7 +128,7 @@ body.resources .breadcrumb-box, body.resources .copyright {
   font-weight: bold; }
 
 .breadcrumb .breadcrumb-item:last-child a {
-  color: #555; }
+  color: #505050; }
 
 .hero-box {
   background-color: var(--hero-box-bkg); }
@@ -84,7 +141,10 @@ footer {
   background-color: var(--footer-bkg);
   background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), color-stop(55%, #fafafa), to(white));
   background: linear-gradient(180deg, #f4f4f4 0%, #fafafa 55%, white 100%);
-  padding: 5vh 0; }
+  padding: 4vh 0 3vh; }
+  footer > .container {
+    padding-top: 1em;
+    border-top: 1px solid #ccc; }
   footer ul {
     padding-left: 0; }
     footer ul li {
@@ -94,8 +154,10 @@ footer {
   footer a:hover {
     background-color: var(--footer-bkg); }
 
-h1 {
-  font-weight: bold; }
+.feature-img {
+  margin-bottom: 3rem;
+  max-width: 360px;
+  max-height: 225px; }
 
 .feature-path {
   border: 1px solid #ddd;
@@ -167,6 +229,38 @@ ol.section-list > li {
   ol.section-list > li a:first-child {
     font-weight: bold; }
 
+ol.principles-list > li {
+  margin: 1rem 0 2rem;
+  font-size: 1.25rem; }
+  ol.principles-list > li::marker {
+    color: #556688;
+    font-weight: bold; }
+  ol.principles-list > li ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    border-left: 1px solid var(--list-border);
+    font-size: 1rem; }
+    ol.principles-list > li ul li {
+      margin-bottom: 1em; }
+
+ul.planning-list {
+  margin-bottom: 3em; }
+
+ul.planning-list > li {
+  margin: 1rem 0 2rem; }
+  ul.planning-list > li::marker {
+    color: #556688;
+    font-weight: bold; }
+  ul.planning-list > li ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    border-left: 1px solid var(--list-border);
+    font-size: 1rem; }
+    ul.planning-list > li ul li {
+      margin-bottom: 1em; }
+
 ol.action-list > li {
   font-weight: bold;
   margin-bottom: 1em; }
@@ -178,6 +272,15 @@ ul.action-list > li {
   margin-bottom: 1em; }
   ul.action-list > li ul li {
     font-weight: normal; }
+
+ul.resource-list > li ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  border-left: 1px solid var(--list-border);
+  font-size: 1rem; }
+  ul.resource-list > li ul li {
+    margin-bottom: 1em; }
 
 .playbook-bottom-navigation {
   display: flex;
@@ -205,7 +308,7 @@ hr {
   margin-top: 2em; }
 
 hr + h2 {
-  margin: 2em 0 1em 0; }
+  margin: 1.5em 0 1em 0; }
 
 .date {
   color: #999999;
@@ -216,9 +319,9 @@ hr + h2 {
   color: #999999; }
 
 .blockquote {
-  border-left: 5px solid #89325A;
+  border-left: 4px solid #89325A;
   padding-left: 2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem; }
   .blockquote .attrib {
@@ -284,3 +387,62 @@ div.community-growth-items p.stakeholder-value {
   list-style: none; }
   .search-results ul li {
     margin-bottom: 0.3em; }
+
+.resource-section-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5em;
+  margin-bottom: 2em; }
+  @media (min-width: 35em) {
+    .resource-section-container {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr; } }
+.resource-list-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5em; }
+  @media (min-width: 70em) {
+    .resource-list-container {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr; } }
+.resource-section {
+  border: 1px solid var(--box-border);
+  border-top-width: 5px;
+  border-top-color: var(--resources-border);
+  padding: 2em; }
+  .resource-section h3 {
+    margin-top: 0;
+    font-weight: bold; }
+  .resource-section ul li::marker {
+    color: #ccc; }
+  .resource-section section {
+    margin: 1.5em 0;
+    border-bottom: 1px solid var(--box-border); }
+  .resource-section .title {
+    display: flex;
+    align-content: baseline;
+    align-items: baseline;
+    justify-content: space-between; }
+    .resource-section .title a {
+      font-size: 1rem; }
+  .resource-section h4 a {
+    text-decoration: none; }
+
+.playbook-roles .role-sections-list {
+  border-top: 1px solid var(--box-border);
+  padding-top: 1em;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .playbook-roles .role-sections-list li {
+    margin-bottom: 0.5em; }
+  .playbook-roles .role-sections-list a.sub {
+    padding-left: 1em;
+    border-left: 1px solid var(--box-border); }
+
+.playbook-roles .role-row {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.playbook-roles .role-row h3 {
+  margin-top: 0; }
