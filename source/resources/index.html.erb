@@ -9,77 +9,97 @@ directory_index: false
     <div class="col-md-6 pt-5 mb-3">
       <h1>Resources</h1>
       <p>Playbook sections recommended for people in particular roles, lower-level details on particular topics, and links related to the tracks and Case Studies can be found on the Resources page.</p>
-<p>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-    <h2>Additional Playbook Content and Navigation</h2>
-<h4>
-    <ul>
-      <li><%= link_to("Playbook Content for Particular Roles", "roles.html") %></li>
-      <li><%= link_to("Standards Development Technical Deep Dive", "tech-standards.html") %></li>
-    </ul>
-</h4>
-
+  <div id="content">
+    <h2>Explore</h2>   
+    <div class="resource-section-container">
+        <div class="resource-section">
+          <h3>By Role</h3>
+          <p>View the most important Playbook sections for particular stakeholders and roles.</p>
+          <%= link_to("Playbook Content for Particular Roles", "roles.html") %>
+        </div>
+        <div class="resource-section">
+          <h3>Tech Standards</h3>
+          <p>Read a technical deep into FHIR-base standards development.</p>
+          <%= link_to("Standards Development Technical Deep Dive", "tech-standards.html") %>
+        </div>
     </div>
-    </div>
-  <div class="row">
-    <div class="col-md-6 pt-5 mb-3">
+    
+    <h2>Links to External Resources</h2>
+      <div class="resource-list-container">
+        <div class="resource-section">
+          <h3>Key References: <%= link_to("Five Tracks", "/playbook/index.html#organization") %></h3>
 
-      <h2>Key References: <%= link_to("Five Tracks", "/playbook/index.html#organization") %></h2>
+          <section>
+            <h4><%= link_to("Community Building", "/playbook/community.html") %></h4>
+            <ul class="resource-list">
+              <li><%= link_to("Questions to Address Before Getting Started","/playbook/getting_started.html") %></li>
+              <li><%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %></li>
+              <li><%= link_to("CodeX HL7 Membership List","https://confluence.hl7.org/display/COD/CodeX+Membership")%> </li>
+              <li><%= link_to("CodeX Membership Options","https://confluence.hl7.org/display/COD/CodeX+Membership+Options")%></li>
+              <li><%= link_to("CodeX Governance","https://confluence.hl7.org/display/COD/Governance")%></li>
+            </ul>
+          </section>
 
-      <h4><%= link_to("Community Building","/playbook/community.html") %></h4>
-      <ul>
-        <li><%= link_to("Questions to Address Before Getting Started","/playbook/getting_started.html") %></li>
-        <li><%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %></li>
-        <li><%= link_to("CodeX HL7 Membership List","https://confluence.hl7.org/display/COD/CodeX+Membership")%> </li>
-        <li><%= link_to("CodeX Membership Options","https://confluence.hl7.org/display/COD/CodeX+Membership+Options")%></li>
-        <li><%= link_to("CodeX Governance","https://confluence.hl7.org/display/COD/Governance")%></li>
-      </ul>
-      <h4><%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %></h4>
-      <ul>
-        <li><%= link_to("CodeX Use Case Development Guidelines","https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines")%></li>
-        <li><%= link_to("CodeX Use Cases: Plans and Progress","https://confluence.hl7.org/display/COD/CodeX+Use+Cases")%></li>
-      </ul>
-      <h4>Standards Development<br><%= link_to("Overview","/playbook/standards.html") %> and <%= link_to("Technical Deep Dive","tech-standards.html") %></h4>
-      <ul>
-        <li><%= link_to("CodeX Standards Design Principles","/playbook/design_principles.html") %></li>
-        <li><%= link_to("Video tutorial on the development of mCODE","https://youtu.be/r_uUseB9RzQ") %>   (May Terry, MITRE, Nov 2023, 2 hr 33 min)</li>
-      
-      <li><a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a></li>
-      <li><a href="https://www.hl7.org/">Health Level Seven (HL7)</a></li>
-      <li><%= link_to('  - HL7 Essentials','https://confluence.hl7.org/display/HE/HL7+Essentials') %> </li>
-        <li><%= link_to(' - Understanding the Standards Process','https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process') %></li>
-        <li><%= link_to('  - FHIR Implementation Guide Process Flow','https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow') %></li>  
-      <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a></li>
-      <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a></li>
-      <li><a href="https://uscdiplus.healthit.gov/uscdi">USCDI+ - specialty supplements to USCDI<a></li>
-      <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a></li>
-      <li><a href="https://www.aapc.com/resources/what-is-medical-coding">Health Information Coding Systems<a></li>
-      <li><a href="https://www.himss.org/terminology-standards">Health Information Terminology Standards<a></li>
-      <li><%= link_to('FHIR Shorthand (FSH) - Language for creating FHIR IGs','https://hl7.org/fhir/uv/shorthand/') %></li>
-          <li><%= link_to('- FSH School Tutorial', 'https://fshschool.org/') %></li>
-          <li><%= link_to("- Learn to FSH: A friendly introduction to FHIR Shorthand (Video)","https://www.youtube.com/watch?v=tmtEnjxrCDA") %></li>
-      
-      <li><a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) FHIR Implementation Guide<a></li>
 
-      
-      </ul>
-      <h4><%= link_to("Implementation & Testing", "/playbook/implementation.html") %></h4>
-      <ul>
-      <li>Coming soon.</li>
-      </ul>
-      <h4><%= link_to("Adoption & Value", "/playbook/adoption.html") %></h4> 
-      <ul>
-      <li><%= link_to("Stakeholder-Specific Value Propositions", "/playbook/community.html#value_prop") %></li>
-      </ul>
-    </div>
-    <div class="col-md-6 pt-5 mb-3">
-      <h2>Key References: <%= link_to("Case Studies","/casestudies/index.html") %></h2>
-      <h4><%= link_to("mCODE Standard and CodeX Community","/casestudies/mcode_codex.html") %></h4>
-      <ul>
-<li>[NOTE:  Is there a consolidated, maintained list of publications that reference mCODE?]</li>
+         <section> 
+            <h4><%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %></h4>
+            <ul>
+              <li><%= link_to("CodeX Use Case Development Guidelines","https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines")%></li>
+              <li><%= link_to("CodeX Use Cases: Plans and Progress","https://confluence.hl7.org/display/COD/CodeX+Use+Cases")%></li>
+            </ul>
+        </section>
+
+        <section>        
+            <h4><%= link_to("Standards Development", "/playbook/standards.html") %></h4>
+            <ul class="resource-list">
+              <li><%= link_to("CodeX Standards Design Principles","/playbook/design_principles.html") %></li>
+              <li><%= link_to("Video tutorial on the development of mCODE","https://youtu.be/r_uUseB9RzQ") %>   (May Terry, MITRE, Nov 2023, 2 hr 33 min)</li>
+              <li><a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a></li>
+              <li><a href="https://www.hl7.org/">Health Level Seven (HL7)</a>
+                <ul>
+                  <li><%= link_to('HL7 Essentials','https://confluence.hl7.org/display/HE/HL7+Essentials') %> </li>
+                  <li><%= link_to('Understanding the Standards Process','https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process') %></li>
+                  <li><%= link_to('FHIR Implementation Guide Process Flow','https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow') %></li>  
+                </ul>
+              </li>              
+              
+              <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a></li>
+              <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a></li>
+              <li><a href="https://uscdiplus.healthit.gov/uscdi">USCDI+ - specialty supplements to USCDI<a></li>
+              <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a></li>
+              <li><a href="https://www.aapc.com/resources/what-is-medical-coding">Health Information Coding Systems<a></li>
+              <li><a href="https://www.himss.org/terminology-standards">Health Information Terminology Standards<a>
+              <li><%= link_to('FHIR Shorthand (FSH) - Language for creating FHIR IGs','https://hl7.org/fhir/uv/shorthand/') %>
+                <ul>
+                  <li><%= link_to('FSH School Tutorial', 'https://fshschool.org/') %></li>
+                  <li><%= link_to("Learn to FSH: A friendly introduction to FHIR Shorthand (Video)","https://www.youtube.com/watch?v=tmtEnjxrCDA") %></li>
+                </ul>
+              </li>
+              <li><a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) FHIR Implementation Guide<a></li>
+            </ul>
+        </section>
+        <section>
+            <h4><%= link_to("Implementation & Testing", "/playbook/implementation.html") %></h4>
+              <ul class="resource-list">
+                <li>Coming soon</li>
+              </ul>
+        </section>
+        <section>
+            <h4><%= link_to("Adoption & Value", "/playbook/adoption.html") %></h4> 
+              <ul class="resource-list">
+                <li><%= link_to("Stakeholder-Specific Value Propositions", "/playbook/community.html#value_prop") %></li>
+              </ul>
+            </section>
+      </div><!-- end resource-section -->
+   
+          <div class="resource-section">
+            <h3>Key References: <%= link_to("Case Studies", "/casestudies/index.html") %></h3>
+            
+            <section>
+            <h4><%= link_to("mCODE Standard and CodeX Community","/casestudies/mcode_codex.html") %></h4>
+              <ul class="resource-list">
       <li><%= link_to("Improving Cancer Data Interoperability: The Promise of the Minimal Common Oncology Data Elements (mCODE) Initiative","https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7713551/") %>. (Osterman et al., JCO Clinical Cancer Informatics Journal, Nov 2020)</li>
       <li><%= link_to("Unlocking the promise of learning from everyone with cancer","https://www.statnews.com/2023/02/01/mcode-learning-from-everyone-with-cancer/") %>. (Schnitzer., STAT, Feb 2023)</li>
        <li><%= link_to("2019 Cancer Data Summit", "https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit") %></li>
@@ -92,19 +112,23 @@ directory_index: false
         <li><%= link_to("CodeX Use Case Development Guidelines","https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines")%></li>
         <li><%= link_to("CodeX Use Cases","https://confluence.hl7.org/display/COD/CodeX+Use+Cases")%></li>
         <li><%= link_to("CodeX Standards Design Principles","/playbook/design_principles.html") %></li>
-      <li>[NOTE:  Is there a consolidated, maintained list of implementations that use mCODE?]</li>
-      </ul>
-      <h4><%= link_to("CodeX Radiation Therapy Treatment Data Use Case","/casestudies/radiation_therapy.html") %></h4>
-      <ul>
+              </ul>
+        </section>
+        <section>
+            <h4><%= link_to("CodeX Radiation Therapy Treatment Data Use Case","/casestudies/radiation_therapy.html") %></h4>
+              <ul>
       <li><%= link_to("Radiation Therapy Treatment Data Use Case CodeX Page","https://confluence.hl7.org/display/COD/Radiation+Therapy+Treatment+Data+for+Cancer") %></li>
       <li><%= link_to("Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper","https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext") %>(Hayman et al., 2019)</li>
       <li><%= link_to("Operational Ontology for Oncology (O3): A Professional Society-Based, Multistakeholder, Consensus-Driven Informatics Standard Supporting Clinical and Research Use of Real-World Data From Patients Treated for Cancer","https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext") %>(May et al. et al., 2023)</li>
-      </ul>
-      <h4><%= link_to("PACIO Project","/casestudies/pacio.html") %></h4>
-      <ul>
-      <li>[tbd]</li>
-      </ul>
-
+              </ul>
+            </section>
+        <section>
+            <h4><%= link_to("PACIO Project","/casestudies/pacio.html") %></h4>
+              <ul>
+                <li>Coming soon.</li>
+              </ul>
+        </section>
     </div>
+</div>
 </div>
 </div>

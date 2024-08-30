@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1168px" height="382px" viewBox="0 0 1168 382" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <g id="Group" transform="translate(808, 0)">
+                <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="358" height="380"></rect>
+                <rect id="Rectangle-Copy" stroke="#979797" stroke-width="2" fill="#FFFFFF" x="43" y="53" width="279" height="291"></rect>
+                <g id="Profile-Button-Copy-6" transform="translate(66, 278)">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="233" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="94.5092208" y="29">CBC</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-7" transform="translate(66, 194)">
+                    <rect id="Rectangle" fill="#F3B26C" x="0" y="0" width="233" height="70" rx="4"></rect>
+                    <text id="Primary-Cancer-Condi" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="77.7106304" y="29">Primary</tspan>
+                        <tspan x="29.174591" y="54">Cancer Condition</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-8" transform="translate(66, 99)">
+                    <rect id="Rectangle" fill="#83DBD8" x="0" y="0" width="233" height="81" rx="4"></rect>
+                    <text id="Cancer-Patient" font-family="Arial-BoldMT, Arial" font-size="28" font-weight="bold" letter-spacing="-0.611394" fill="#000000">
+                        <tspan x="70.365432" y="35">Cancer</tspan>
+                        <tspan x="71.4640978" y="66">Patient</tspan>
+                    </text>
+                </g>
+                <text id="Entry" font-family="Arial-ItalicMT, Arial" font-size="20" font-style="italic" font-weight="normal" letter-spacing="-0.43671" fill="#000000">
+                    <tspan x="57.7519312" y="81">Entry</tspan>
+                </text>
+                <text id="mCODE-Patient-Bundle" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" letter-spacing="-0.524052" fill="#000000">
+                    <tspan x="15.5608325" y="34">mCODE Patient Bundle</tspan>
+                </text>
+                <text id="etc..." font-family="Arial-ItalicMT, Arial" font-size="20" font-style="italic" font-weight="normal" letter-spacing="-0.43671" fill="#000000">
+                    <tspan x="162.635325" y="366">etc...</tspan>
+                </text>
+            </g>
+            <g id="Group-2" transform="translate(0, 278)">
+                <g id="Profile-Button">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="191" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="18.0087777" y="29">Blood Pressure</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-2" transform="translate(201, 0)">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="117" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="26.1975145" y="29">Height</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-3" transform="translate(328, 0)">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="125" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="27.9704399" y="29">Weight</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-4" transform="translate(463, 0)">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="117" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="35.3338667" y="29">CMP</tspan>
+                    </text>
+                </g>
+                <g id="Profile-Button-Copy-5" transform="translate(590, 0)">
+                    <rect id="Rectangle" fill="#B2CBFF" x="0" y="0" width="124" height="43" rx="4"></rect>
+                    <text id="Blood-Pressure" font-family="Arial-BoldMT, Arial" font-size="22" font-weight="bold" letter-spacing="-0.480381" fill="#000000">
+                        <tspan x="39.4851824" y="29">CBC</tspan>
+                    </text>
+                </g>
+            </g>
+            <text id="External-Profiles" font-family="Arial-BoldMT, Arial" font-size="28" font-weight="bold" letter-spacing="-0.611394" fill="#606060">
+                <tspan x="251.707591" y="256">External Profiles</tspan>
+            </text>
+            <path id="Line" d="M860.47742,292.545344 L874.5,299.5 L860.522727,306.545271 L860.503,300.545 L726.93231,300.977579 C726.458058,304.371421 723.549104,306.988551 720.022654,306.999963 C716.156681,307.012475 713.012548,303.888627 713.000037,300.022654 C712.987525,296.156681 716.111373,293.012548 719.977346,293.000037 C723.503722,292.988624 726.429504,295.58676 726.925806,298.977356 L860.496,298.545 L860.47742,292.545344 Z" fill="#C00001" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

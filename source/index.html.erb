@@ -2,6 +2,7 @@
 pagetitle: Welcome to MITRE Health Data Interoperability Playbook
 title: Home
 layout: home
+theme: home
 ---
 <div class="hero-box">
   <div class="container px-4 py-5 mb-3">
@@ -18,55 +19,68 @@ layout: home
   </div>
 </div>
 
-<div id="content" class="container py-4 border-bottom">
+<div class="container py-4 border-bottom">
   <div class="row">
     <div class="col-md-3">
       <%= partial "partials/homepage_menu" %>
     </div>
-    <div class="col-md-9">
+    <div id="content" class="col-md-9">
       <h2 class="pb-2 fw-bold">Better Data. Better Health.</h2>
+
       <p class="lead"> In 2017, leaders within <%= link_to("The MITRE Corporation","https://www.mitre.org") %> and the <%= link_to("American Society of Clinical Oncology (ASCO)","https://www.asco.org/") %> recognized a fundamental challenge in oncology: lack of a single standard for collecting and sharing data electronically. This lack of standardization led to numerous issues, including difficulties in sharing or quickly analyzing data and an increased risk of miscommunicating critical treatment information.</p>
 
-<p class="lead">To address these issues, MITRE and ASCO partnered with additional experts to develop <%= link_to("minimal Common Oncology Data Elements (mCODE)","https://confluence.hl7.org/display/COD/mCODE") %>: a FHIR-based standard for oncology data capture and sharing. MITRE also worked with Health Level Seven (HL7) to launch the <%=link_to("CodeX HL7 FHIR Accelerator", "https://confluence.hl7.org/display/COD/CodeX+Home") %>, an expanding Community of providers, researchers, payers, vendors, and other stakeholders demonstrating the value and driving adoption of mCODE to address a range of real-world challenges.</p>
-
-<p class="lead">This Health Data Interoperability Playbook ("the Playbook") summarizes MITRE's experience leading mCODE and CodeX, with the intent of helping <%= link_to("Champions", "/playbook/community.html#champions") %> and their teams from additional specialties guide their Communities through the development of data standard that improve health care and research.</p>
-
-<p>The Playbook is organized around five tracks that form a framework for the CodeX / mCODE approach: <%= link_to("Community Building", "/playbook/community.html") %>, <%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %>, <%= link_to("Standards Development", "/playbook/standards.html") %>, <%= link_to("Implementation & Testing", "/playbook/implementation.html") %>, and <%= link_to("Adoption & Value", "/playbook/adoption.html") %>. A high-level overview of the five tracks can be found in the <%= link_to("Introduction", "/playbook/index.html#organization") %>, with more details on each track via the links above and the Playbook Menu site navigation.</p>
-
-<p>Questions that a new specialty should ask themselves before embarking on the above tracks are covered on the <%= link_to("Getting Started", "/playbook/getting_started.html") %> page. The <%= link_to("Design Principles", "/playbook/design_principles.html") %> have been compiled to ensure alignment between different standards development initiatives, whether within or across specialties.</p>
+      <p class="lead">To address these issues, MITRE and ASCO partnered with additional experts to develop <%= link_to("minimal Common Oncology Data Elements (mCODE)","https://confluence.hl7.org/display/COD/mCODE") %>: a FHIR-based standard for oncology data capture and sharing. MITRE also worked with Health Level Seven (HL7) to launch the <%=link_to("CodeX HL7 FHIR Accelerator", "https://confluence.hl7.org/display/COD/CodeX+Home") %>, an expanding Community of providers, researchers, payers, vendors, and other stakeholders demonstrating the value and driving adoption of mCODE to address a range of real-world challenges.</p>
       
-<p>Also provided are <%= link_to("Case Studies", "/casestudies/index.html") %> that illustrate how specific projects have leveraged the tracks. Case Studies include the history of activities, outcomes of the work, and lessons learned that may be useful for new specialties. Additional details related to the tracks and Case Studies can be found in the <%= link_to("Resources", "/resources/index.html") %> section.</p>
+      <p class="lead">This Health Data Interoperability Playbook ("the Playbook") summarizes MITRE's experience leading mCODE and CodeX, with the intent of helping <%= link_to("Champions", "/playbook/community.html#champions") %> and their teams from additional specialties guide their Communities through the development of data standard that improve health care and research.</p>
+      
+      <p>The Playbook is organized around five tracks that form a framework for the CodeX / mCODE approach: <%= link_to("Community Building", "/playbook/community.html") %>, <%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %>, <%= link_to("Standards Development", "/playbook/standards.html") %>, <%= link_to("Implementation & Testing", "/playbook/implementation.html") %>, and <%= link_to("Adoption & Value", "/playbook/adoption.html") %>. A high-level overview of the five tracks can be found in the <%= link_to("Introduction", "/playbook/index.html#organization") %>, with more details on each track via the links above and the Playbook Menu site navigation.</p>
+      
+      <p>Questions that a new specialty should ask themselves before embarking on the above tracks are covered on the <%= link_to("Getting Started", "/playbook/getting_started.html") %> page. The <%= link_to("Design Principles", "/playbook/design_principles.html") %> have been compiled to ensure alignment between different standards development initiatives, whether within or across specialties.</p>
+            
+      <p>Also provided are <%= link_to("Case Studies", "/casestudies/index.html") %> that illustrate how specific projects have leveraged the tracks. Case Studies include the history of activities, outcomes of the work, and lessons learned that may be useful for new specialties. Additional details related to the tracks and Case Studies can be found in the <%= link_to("Resources", "/resources/index.html") %> section.</p>
+
       <div class="playbook-bottom-navigation">
         <div class="previous inactive"></div>
         <div class="next"><%= link_to("Next: Introduction", "playbook/index.html", :class=>"btn btn-primary btn-lg") %></div>
       </div>
+
     </div>
   </div>
 </div>
 
 <div class="container py-4">
   <h2 class="pb-2">Featured Case Studies</h2>
-  <p class="col-md-6">Projects that have developed and used the principles and practices covered in the Playbook.</p>
+  <p class="col-md-8">Projects that have developed and used the principles and practices covered in the Playbook.</p>
 
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-    <div class="feature col">
-      <img class="mb-5" src="images/cancer-survivor.png" style="max-width:360px;max-height:225px">
-      <h3 class="fs-2 text-body-emphasis"><%= link_to("mCODE Standard and CodeX Community","/casestudies/mcode_codex.html") %></h3>
-      <p>Learn how the CodeX Community was created and how it is deploying a standard, FHIR-based, core set of data elements that is changing oncology care and research.</p>
-    </div>
+  
+    <%= partial "partials/case_study_feature",
+    :locals => {
+      :image => "cancer-survivor.png",
+      :image_alt => "Woman cancer survivor with knit cap",
+      :link_text => "mCODE Standard and CodeX Community",
+      :url => "mcode_codex.html",
+      :text => "Learn how the CodeX Community was created and how it is deploying a standard, FHIR-based, core set of data elements that is changing oncology care and research."
+    } %>
       
-      
-    <div class="feature col">
-      <img class="mb-5" src="images/radiation-theraphy-patient.png" style="max-width:360px;max-height:225px">
-      <h3 class="fs-2 text-body-emphasis"><%= link_to("CodeX Radiation Therapy Treatment Data Use Case","/casestudies/radiation_therapy.html") %></h3>
-      <p>Read how the the American Society for Radiation Oncology and American Association of Phycisists in Medicine joined CodeX to build a community and standardize FHIR-based radiation therapy treatment summaries.</p>
-    </div>
+    <%= partial "partials/case_study_feature",
+    :locals => {
+      :image => "radiation-theraphy-patient.png",
+      :image_alt => "Nurse attending to patient receiving therapy",
+      :link_text => "CodeX Radiation Therapy Treatment Data Use Case",
+      :url => "radiation_therapy.html",
+      :text => "Read how the the American Society for Radiation Oncology and American Association of Phycisists in Medicine joined CodeX to build a community and standardize FHIR-based radiation therapy treatment summaries."
+    } %>
+          
+    <%= partial "partials/case_study_feature",
+    :locals => {
+      :image => "woman-walker-round.png",
+      :image_alt => "Woman using a walker",
+      :link_text => "PACIO Project",
+      :url => "pacio.html",
+      :text => "Review how the PACIO project is streamlining transitions of care and care coordination between post-acute care (PAC) and other providers, patients, and key stakeholders through FHIR."
+    } %>
 
-    <div class="feature col">
-      <img class="mb-5 rounded" src="images/woman-walker-round.png" style="max-width:360px;max-height:225px">
-      <h3 class="fs-2 text-body-emphasis"><%= link_to("PACIO Project","/casestudies/pacio.html") %></h3>
-      <p>Review how the PACIO project is streamlining transitions of care and care coordination between post-acute care (PAC) and other providers, patients, and key stakeholders through FHIR.</p>
-    </div>            
   </div>
   <p><%= link_to("View all Case Studies", "casestudies") %></p>
 

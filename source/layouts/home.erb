@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
 
   </head>
-  <body>
-    
+  <body class="<%= current_page.data.theme %>">
+    <div id="skiptocontent"><a href="#content">skip to main content</a></div>
     <%= partial "partials/header" %>
       <%= yield %>
     <%= partial "partials/footer" %>
