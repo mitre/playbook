@@ -24,11 +24,17 @@ theme: casestudy
       <p>
         Forty-five percent of Medicare patients leaving acute care end up in some form of post-acute care. 
       </p>
-      <%= image_tag 'pac-importance.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+        <%= image_tag 'pac-importance.png', :width => '100%', :class => 'py-5', :alt=>"Post-hospitalization services breakdown" %>
+        <figcaption>Diagram of post-hospitalization acute care service utilization by Medicare patients in 2014</figcaption>
+      </figure>
       <p>
         The post-acute care population includes some of the most complex and vulnerable patients, many having multiple chronic conditions managed by different practitioners across time and settings. There is often poor communication between clinical care teams leading to inadequate information during transitions and poor continuity of care that can lengthen stays, increase costs, and result in poorer outcomes. There is a heavy reliance on patient and family caregiver recall of information, which may not be reliable or possible, which raises provider and patient burden. Providers may need to track down or recreate missing information through redundant processes. Meanwhile, patients may not receive needed transition critical care right away while missing data is assembled.
       </p>
-      <%= image_tag 'pac-journey.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+        <%= image_tag 'pac-journey.png', :width => '100%', :class => 'py-3', :alt=>"diagram of care coordination" %>
+        <figcaption>Schematic diagram illustrating the complexity of care coordination between patient, caregivers and CMS</figcaption>
+      </figure>
       <h3>Environmental Scan</h3>
       <p>
         In fall of 2018, the Centers for Medicare and Medicaid Services (CMS) Division of Chronic and Post-acute Care (DCPAC) engaged MITRE to facilitate a Technical Advisory Group roundtable discussion.  Convening 75 post-acute care clinicians, vendors, and subject matter experts, with a series of one-on-one discussions with PAC providers, health IT vendors, and provider organizations, the MITRE team and this Community to gain insight and urgency into the state of the PAC interoperability landscape. These activities identified common themes around challenges to health data interoperability in PAC, including: lack of incentives, lack of standards, and not understanding the value of interoperability.
@@ -39,8 +45,14 @@ theme: casestudy
       <p>
         Based on these results, CMS in partnership with the HHS Office of the National Coordinator for Health It (ONC) and MITRE established the PACIO Project.
       </p>
-      <%= image_tag 'pacio-interop-challenges.png', :width => '100%', :class => 'py-5' %>
-      <%= image_tag 'pacio-interop-use-cases.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+      <%= image_tag 'pacio-interop-challenges.png', :width => '100%', :class => 'py-3', :alt=>"Bar graph of Interoperability challenges" %>
+        <figcaption>Bar chart indicating the number of citations for different challenges to PAC interoperability/</figcaption>
+      </figure>
+      <figure>
+      <%= image_tag 'pacio-interop-use-cases.png', :width => '100%', :class => 'py-3', :alt=>"Bar graph of Interoperability use cases" %>
+        <figcaption>Bar chart of common PAC interoperability use cases.</figcaption>
+      </figure>
       <p>
         Armed with the environmental scan information, the PACIO Project was created with the following mission, goals, and priorities.
       </p>
@@ -67,7 +79,10 @@ theme: casestudy
       <p>
         Although the PACIO Project is not an HL7© FHIR® Accelerator, it operates using similar transparent collaboration processes, such as developing multiple Use Cases, defining data models, and authoring FHIR Implementation Guides (IGs).  One primary difference is the PACIO Project does not require financial contributions from its participants. PACIO FHIR IGs are regularly tested at HL7 and CMS Connectathons and Test Events. When testing indicates that the IG is ready, materials are prepared for the HL7 Ballot, which seeks validation and acceptance by the broader HL7 Community. Ultimately, the PACIO Project advocates for vendor adoption.
       </p>
-      <%= image_tag 'pacio-process.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+      <%= image_tag 'pacio-process.png', :width => '100%', :class => 'py-3', :alt=>"Conceptual timeline of IG development" %>
+      <figcaption>A conceptual timeline of FHIR IG development as applicable to PACIO</figcaption>
+    </figure>
       <h2 id="first_use_case">First Use Case</h2>
       <p>
         In selecting the PACIO Project’s first Use Case, the Community first looked at available prior work. Participants did not want to reinvent the wheel and wanted instead to leverage as much existing development as possible. The process began by examining the existing HL7 Clinical Document Architecture (CDA) specifications.
@@ -75,31 +90,48 @@ theme: casestudy
       <p>
         From this list of specifications, an experienced physician within the PACIO Community prioritized it, ranking the importance of the data (from 1 – most important to 3 – least important) for a variety of different actors: physician/nurse practitioner, registered nurse, therapist, administrator, and the patient/family. The broader PACIO Community reviewed the rankings and judged whether they accurately captured importance and priorities. Participants identified several high-priority sections (highlighted in yellow in the table below) and medium-priority sections (blue) as high value for potential Use Cases.
       </p>
-      <%= image_tag 'pacio-top-use-cases.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+      <%= image_tag 'pacio-top-use-cases.png', :width => '100%', :class => 'py-3', :alt=>"Image of spreadsheet" %>
+      <figcaption>Image of a spreadsheet used to identify and prioritize elements and their importance for PACIO</figcaption>
+      </figure>
       <p>
         Next, the PACIO Community determined which of the high and medium priority Use Cases candidates were already covered in FHIR and from that, identified three potential final candidates for collaborative work: Functional Status, Mental (or Cognitive) Status, and Advance Directives.
       <p>
       <p>
         High Priority Use Cases:
       </p>
-      <%= image_tag 'pacio-high-priority.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+        <%= image_tag 'pacio-high-priority.png', :width => '100%', :class => 'py-3', :alt=>"Image of spreadsheet of data elements" %>
+        <figcaption>Image of a spreadsheet used to identify data elements in high priority use cases</figcaption>
+      </figure>
       <p>
         Medium Priority Use Cases:
       </p>
-      <%= image_tag 'pacio-medium-priority.png', :width => '100%', :class => 'py-5' %>
+      <figure>
+        <%= image_tag 'pacio-medium-priority.png', :width => '100%', :class => 'py-3', :alt=>"Image of spreadsheet of data elements" %>
+        <figcaption>Image of a spreadsheet used to identify data elements in medium priority use cases</figcaption>
+      </figure>
       <p>
         Many participants collaborating in this first Use Case, were new to the data standards development process.  The group determined that a simpler Use Case was preferable in order to produce a useable standard more quickly. Further discussions with HL7 work groups indicated that Advance Directives, while an important Use Case, would be very complex and not ideal as a starting Use Case. Some members of the Community favored beginning with Functional Status and others Mental (Cognitive) Status.  Since the assessment framework for both were similar, the Community decided to tackle both concurrently as the initial Use Cases. Leveraging Use Cases based on CMS post-acute care assessments also allowed the PACIO Project to leverage the CMS Data Element Library (DEL) [add footnote with citation], which added significant value for the sponsoring CMS Division of Chronic and Post-Acute Care (DCPAC) team.
       </p>
       <p>
         With the initial Use Cases decided, the group set out to define the required components for data exchanges (captured in the diagram below). These components guided the PACIO work for early connectathons.
       </p>
-      <%= image_tag 'pacio-use-case-comp.png', :width => '100%', :class => 'py-5' %>
-
+      <figure>
+        <%= image_tag 'pacio-use-case-comp.png', :width => '100%', :class => 'py-3', :alt=>"Diagram of relationships between use case components" %>
+        <figcaption>Diagram showing use case components and their relationships</figcaption>
+      </figure>
       <h2 id="design_principles">Design Principles</h2>
       <p>
         In addition to the principles outlined generally in this playbook, the PACIO Project followed these additional design principles:
       </p>
-      <h3>“People don’t know what they want until you show it to them” – Steve Jobs</h3>
+      <figure>
+        <blockquote class="blockquote">
+        <p>“People don’t know what they want until you show it to them”</p>
+        - <span class="attrib">Steve Jobs</span>
+        </blockquote>
+      </figure>
+
       <p>
         How many people knew they needed a modern smart phone before 2007?  Most did not, but today almost everyone has a smart phone as an indispensable tool.  
       </p>
@@ -201,7 +233,7 @@ theme: casestudy
       <p>
         The PACIO Project also presents at several conferences every year to spread awareness of the project and its objectives.  To socialize the project and brand, PACIO buttons were printed and worn at conferences to invite discussion and further participation.
       </p>
-      <%= image_tag "pacio-button.png", :width => '35%', :class => 'py-5 mx-auto d-block' %>
+       <%= image_tag "pacio-button.png", :width => '35%', :class => 'py-3 mx-auto d-block', :alt=>"Image of PACIO Conference Button" %>
       <p>
         The PACIO Project also maintains a YouTube channel featuring overviews on topics and recorded demonstrations from connectathons and other events.
       </p>
@@ -259,8 +291,8 @@ theme: casestudy
       <p>
         The September 2019 HL7 connectathon was a success and gave the PACIO Project a great platform to build from for the next HL7 connectathon in January 2020. With the development of the Functional Status and Cognitive Status FHIR IG, the PACIO Project sought to demonstrate what could be done with the assessment data once it was collected. By pushing the envelope, we expanded the September connectathon work into a multi-scene demonstration, showing how assessment data not only can be collected, but shared across multiple acute and PAC facilities. The January 2020 connectathon work also incorporated other FHIR IGs developed by other projects to test and show that independent FHIR IGs can work together effectively as a system of systems.
       </p>
-      <%= image_tag "pacio-jan2020-scenario.png", :width => '100%', :class => 'py-5' %>
-      <%= image_tag "pacio-jan2020-systems.png", :width => '100%', :class => 'py-5' %>
+      <%= image_tag "pacio-jan2020-scenario.png", :width => '100%', :class => 'py-3' %>
+      <%= image_tag "pacio-jan2020-systems.png", :width => '100%', :class => 'py-3' %>
 
       <div class="embed-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tdSqlma5ybA?si=m08SOmz14jknAZJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -269,13 +301,13 @@ theme: casestudy
       <p>
         Over time, PACIO Project Connectathon tracks have grown to demonstrate FHIR data exchanges across up to 23 different systems using up to 17 different FHIR IGs by 14 different vendors and organizations. Beyond the PACIO Project IGs, other IGs include those developed by the Gravity, Da Vinci, CARIN Alliance, and FHIR-At-Scale Taskforce (FAST) FHIR Accelerators, as well as other independent projects and core FHIR Specifications.
       </p>
-      <%= image_tag "pacio-july2023-pfe.png", :width => '100%', :class => 'py-5' %>
+      <%= image_tag "pacio-july2023-pfe.png", :width => '100%', :class => 'py-3' %>
 
       <div class="embed-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ezIw04WIXOA?si=Cp30fW6JmGnbS9hv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
-      <%= image_tag "pacio-sept2023-adi.png", :width => '100%', :class => 'py-5' %>
+      <%= image_tag "pacio-sept2023-adi.png", :width => '100%', :class => 'py-3' %>
 
       <div class="embed-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DDT2h6k-4D8?si=iA58dF0zpl8aam4J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -328,7 +360,7 @@ theme: casestudy
       <p>
         USCDI updates inform FHIR US Core development. New regulations are requiring certain providers (not yet PAC providers) to implement newer US Core versions for certified APIs.  This would mandate support for these new data elements to comply with EHR certification requirements. The PACIO Project’s development and testing of relevant FHIR IGs through vendors in the PACIO Community brings additional credibility to the PACIO comments.
       </p>
-      <%= image_tag "pacio-use-cases.png", :width => '100%', :class => 'py-5' %>
+      <%= image_tag "pacio-use-cases.png", :width => '100%', :class => 'py-3' %>
       <p>
         The PACIO Project is well known and positively regarded by CMS, Office of the National Coordinator (ONC), and HL7, with multiple references in the Federal Register, ONC Interoperability Standards Advisory (ISA), trade journals, and both domestic and international FHIR interoperability specification lists. Many consider the PACIO Project to be the go-to source for PAC subject matter expertise and standards development.
       </p>

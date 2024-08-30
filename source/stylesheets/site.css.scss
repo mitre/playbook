@@ -283,6 +283,15 @@ font-weight:bold;
  margin-bottom:1em;
 ul li {font-weight:normal;}}
 
+ul.resource-list>li ul {
+    list-style:none;
+    padding-left:1rem;
+    margin-top:1rem;
+    border-left:1px solid var(--list-border);
+    font-size:1rem;
+    li {margin-bottom:1em}
+}
+
 .playbook-bottom-navigation {
   display:flex;
   margin:3rem 0;
@@ -315,9 +324,9 @@ hr+h2 {margin:1.5em 0 1em 0}
 }
 
 .blockquote {
-  border-left:5px solid #89325A;
+  border-left:4px solid #89325A;
   padding-left:2rem;
-  font-size:1rem;
+  font-size:1.5rem;
   padding-top:1rem;
   padding-bottom:1rem;
   .attrib {
@@ -417,6 +426,7 @@ div.community-growth-items {
   padding:2em;
   h3 {
     margin-top:0;
+    font-weight:bold;
   }
   ul li::marker {color:#ccc}
   

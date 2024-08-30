@@ -16,10 +16,15 @@ theme: casestudy
       
       <h3>What is the mCODE Standard?</h3>
       <p><%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %> is an HL7 <strong><em>standard</em></strong>, <%= link_to("FHIR Implementation Guide (IG)","https://hl7.org/fhir/us/mcode/index.html") %> integrating an agreed, core set of common data elements for cancer that are valuable to patients and other stakeholders, computable, and aimed to be available in every electronic health record for patients with a cancer diagnosis. mCODE consists of approximately 30 FHIR profiles and roughly 100 data elements organized into six thematic groups: Patient Information, Health Assessment, Genomics Group, Disease Characterization, Cancer Treatments, and Outcomes.</p>
-      <%= image_tag 'mcode-cancer-ring.png', :width => '600', :class => 'py-5' %>
+      <figure>
+        <%= image_tag 'mcode-cancer-ring.png', :width => '600', :class => 'py-3', :alt=>"Diagram of cancer treatment stakeholders" %>
+        <figcaption>Diagram of cancer treatment stakeholders and categories of related data elements.</figcaption>
+      </figure>
       <h3>What is the CodeX Community?</h3> 
       <p><%= link_to("CodeX","https://confluence.hl7.org/display/COD/CodeX+Home") %> is a Member-driven HL7 FHIR Accelerator hosting a growing <strong><em>Community</strong></em> working together to drive substantial improvements around the most important challenges health. Initial CodeX Use Cases (projects) focused on improving, collecting, and sharing mCODE-based data to improve cancer care and research.  Through 2024, cardiovascular and genomics Communities have also started work within CodeX. The following graphic summarizes a core CodeX strategy: Enabling all patient data to be collected once, and then shared and used (as consented by the patient) for many different Use Cases.</p>
-      <%= image_tag 'codex-vision.png', :width => '700', :class => 'py-5' %>
+      <figure>
+      <%= image_tag 'codex-vision.png', :width => '700', :class => 'py-3', :alt=>"Diagram of data exchange between cancer treatment stakeholders" %>
+      <figcaption>Diagram showing the exchange of FHIR-based data between cancer treatment stakeholders.</figcaption>
       <hr>
       <h2 id="how_it_started">Getting Started</h2>
 <p>(Key Playbook Track: <%= link_to("Community Building", "/playbook/community.html") %>)</p>
@@ -91,7 +96,7 @@ theme: casestudy
     <div class="row">
         <div class="col-lg-6">
         <h3>History 2019-2020</h3>
-        <p><%= link_to("Cancer Data Summit","https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit?preview=/66923557/66934772/Cancer-Data-Summit-Summary_2019.pdf", :class=>"fw-bold") %>: Interest in mCODE was starting to build and new Use Cases were being proposed. A small group of leaders from across the oncology space (patients, providers, researchers, payers, gov’t agencies, vendors, etc.) convened for two days in October 2019 to brainstorm on the future of standardized cancer data, obstacles that could be prevent success, and next steps. Below is one of the many  storytelling roadmaps from the Summit. One outcome was support for creating a clinical requirements group (which became the mCODE Executive Committee) and an implementation group (which became the CodeX HL7 FHIR Accelerator).</p>
+        <p><%= link_to("Cancer Data Summit","https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit", :class=>"fw-bold") %>: Interest in mCODE was starting to build and new Use Cases were being proposed. A small group of leaders from across the oncology space (patients, providers, researchers, payers, gov’t agencies, vendors, etc.) convened for two days in October 2019 to brainstorm on the future of standardized cancer data, obstacles that could be prevent success, and next steps. Below is one of the many  storytelling roadmaps from the Summit. One outcome was support for creating a clinical requirements group (which became the mCODE Executive Committee) and an implementation group (which became the CodeX HL7 FHIR Accelerator).</p>
       </div>
       <div class="col-lg-6">
         <h3>Learnings</h3>
@@ -101,7 +106,7 @@ theme: casestudy
     <div class="row">
     <div class="col">
       <figure>
-      <%= image_tag 'cancer-data-summit-whiteboard.jpg', :width=>"100%" %>
+      <%= image_tag 'cancer-data-summit-whiteboard.jpg', :width=>"100%", :alt=>"Image of storytelling whiteboard writing" %>
       <figcaption>A colorful whiteboard storytelling roadmap image from the Cancer Data Summit in October 2020</figcaption>
         </figure>
     </div>
@@ -256,18 +261,19 @@ theme: casestudy
  <br>
 <p>It is also interesting to review the <%= link_to("evolution of the mCODE FHIR IG standard", "https://hl7.org/fhir/us/mcode/history.html") %>.  This evolution was strongly driven by CodeX Use Cases and their requirements for core oncology data elements to fuel solutions. The static graphic below is mCODE's conceptual model as of October 2023. Visit the <%= link_to("latest version of the mCODE FHIR IG","https://hl7.org/fhir/us/mcode/") %>, where you can click on individual boxes in the graphic to dive into the details of where mCODE stands today.</p>
       <figure>
-      <%= image_tag 'mCODE-stu3-model_Oct2023.png', :width=>"100%" %>
-      <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023) </figcaption>
-        </figure>
+        <%= image_tag 'mCODE-stu3-model_Oct2023.png', :width=>"100%", :alt=>"Modeling diagram" %>
+        <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023) </figcaption>
+     </figure>
         
-
     <hr>
     <h2 id="delivering_value">Delivering Demonstrable Value</h2>
 <p>(Key Playbook Tracks: <%= link_to("Implementation & Testing", "/playbook/implementation.html") %>, <%= link_to("Adoption & Value", "/playbook/adoption.html") %>)</p>
     <p>In less than 5 years, the CodeX Community and other adopters have demonstrated the value of levering the mCODE standard for data collection and sharing to the point where an increasing number of oncology stakeholders are seeing potential value and requesting support from vendors. As of early 2024, there are numerous examples of success.  </p>
     <h3>Vendor Adoption</h3>
-    <%= image_tag 'industry-implementing-codex.png', :width => '600', :class => 'pt-3' %>
-    <p>*Numbers are based on what the team has heard directly. There may be additional independent efforts adopting the CodeX FHIR standards</p>
+    <figure>
+    <%= image_tag 'industry-implementing-codex.png', :width => '600', :class => 'pt-3', :alt=>"Industry adoption of CodeX infographic" %>
+    <figcaption>Infographic showing industry adoption of CodeX standards. Numbers are based on what the team has heard directly. There may be additional independent efforts adopting the CodeX FHIR standards.</figcaption>
+    </figure>
 
     <h3>Adoption for Routine Care</h3>
     <p>Research by  Rodrigo Dienstmann et. al. (<%= link_to("Oncoclinicas Data:","https://ascopubs.org/doi/abs/10.1200/JCO.2022.40.16_suppl.e13022") %> at the largest cancer center outside of North America [NOTE: check] was conducted on 3,069 cancer patients whose data was collected, stored, and used based on the mCODE standard. They found that mCODE enabled a substantial increase in availability of data essential to cancer care, improved quality of capture of critical genetic factors for colorectal cancer, enhanced real-world estimates of progression-free survival, and significantly increased the patient - clinical trials match rate.</li>
@@ -286,7 +292,10 @@ theme: casestudy
 	<li><%= link_to("ONC’s","https://www.healthit.gov") %> US Core Data For Interoperability <%= link_to("(USCDI) + Cancer","https://www.healthit.gov/topic/interoperability/uscdi-plus") %>is aligned with mCODE</li>
 	<li><%= link_to("ONC","https://www.healthit.gov") %> included select mCODE data elements in their USCDI+ proposed Quality Data Element List</li>
 </ul>
-    <%= image_tag 'mcode-outcome-boxes.png', :width => '600', :class => 'pt-2' %>
+  <figure>
+    <%= image_tag 'mcode-outcome-boxes.png', :width => '600', :class => 'pt-2', :alt=>"Box diagram showing CodeX adoption metrics" %>
+    <figcaption>Box diagram highlighting adoption metrics for CodeX and mCODE</figcaption>
+  </figure>
     
     <hr>
     <h2 id="conclusions">Conclusions from the mCODE / CodeX Case Study</h2>
