@@ -27,7 +27,7 @@ function moveToTop(event) {
 }
 backToTopButton.addEventListener('click', moveToTop);
 
-var siteindex = "/playbook/site.index.json"
+var siteindex = "/playbook/0.4/site.index.json"
 $.getJSON(siteindex, function(data) {
   var index = populateIndex(data);
   searchSetup(index,data);
@@ -58,7 +58,7 @@ function debounce(func, delay) {
     }
 }
 function searchSetup(index, contents){
-  const root = "/playbook/";
+  const root = "/playbook/0.4/";
   // Set up Handlebars template
   var resultsTemplate = Handlebars.compile($("#results_template").html());
 
