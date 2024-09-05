@@ -78,7 +78,7 @@ function searchSetup(index, contents){
       }));
       $("#search_results").show();
     });
-  }, 500));
+  }, 400));
 }
 
 
