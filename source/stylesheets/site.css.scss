@@ -80,7 +80,7 @@ figure {
     }
   }
 }
-header.header {position:relative}
+header.header {position:relative; z-index:2000;}
 header ul.nav a.nav-link {
   color:black;
   font-weight:bold;
