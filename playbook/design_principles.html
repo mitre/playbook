@@ -26,7 +26,7 @@
   <div id="top"></div>  
   <div class="layout-grid">
     <div class="container" id="header">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 header">
       <div class="col-md-3 mb-2 mb-md-0">
 <a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
 </a>      </div>
@@ -41,7 +41,7 @@
       <div class="col-md-3 text-end search-form">
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="event.preventDefault(); return false;">
           <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
-          <div id="search_results" class="search-results" style="display:none">
+          <div id="search_results" class="search-results">
             <ul id="search_results_list">
             </ul>
           </div>
@@ -80,7 +80,8 @@
   <li><a href="implementation.html">Implementation & Testing</a></li>
 
   <li><a href="adoption.html">Adoption & Value</a></li>
-</ul>
+ 	    <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
+
 
 </ul>
 </nav>
@@ -232,6 +233,7 @@
     <a href="{{url}}?term={{query}}">{{title}}</a>
   </li>
 </script>
+  <div class="search-overlay"></div>
   </body>
 </html>
 
