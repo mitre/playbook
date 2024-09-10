@@ -8,17 +8,19 @@ pages.each_with_index do |page, index|
     # ... some specifics ommitted
     entry = {
       :id    => index,
+      :doc   => page.data.section,
       :title => page.data.pagetitle,
       :url   => page.path,
       :content => page.render({:layout => false })
-        .downcase
-        # Need regex to remove HTML entities such as &ldquo;
-        # Need regex to replace - with ' '
         .gsub(%r{</?[^>]+?>}, '' )
         .gsub( /<.*?>/, " " )   # get rid of tags
         .gsub( /[^\w ]/, " " )  # get rid of not letters
-        .split( /\s+/ )        # split by words
-        .sort.uniq
+        .gsub(/^\s+|\s+$|\s+(?=\s)/, "")
+      #  .downcase
+        # Need regex to remove HTML entities such as &ldquo;
+        # Need regex to replace - with ' '
+      #  .split( /\s+/ )        # split by words
+      #  .sort.uniq
     }
   entries << entry
 end
