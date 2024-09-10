@@ -77,7 +77,8 @@ figure {
       top: 0.05em; }
 
 header.header {
-  position: relative; }
+  position: relative;
+  z-index: 2000; }
 
 header ul.nav a.nav-link {
   color: black;
