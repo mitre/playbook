@@ -97,7 +97,10 @@
       <p>
        Effective communication allows clinicians and patients to collaborate and ensure better health outcomes. To communicate effectively, clinicians need a common language and the same is true for data systems. Unfortunately, too often data systems are siloed with their own local dialects of data, unable to easily communicate with other systems without time consuming data translation efforts. To improve data communications and ultimately patient care, development of data standards guiding the collection, storage, sharing, and use is necessary. The discussion on this page focuses primarily on standards around data sharing, which may or may not also be how data is stored. This allows clinicians, patients, researchers, payers, public health, and software systems unambiguously understand and communicate every piece of data to other entities within the healthcare ecosystem.      
 	  </p>
-	  <p><img src="../images/fhir-ig-process.png" width="100%" class="py-5" alt="Diagram of FHIR IG process from clinical concept to HL7 standard" /></p>
+<p>The following graphic illustrates key steps that are necessary and/or useful in developing and publishing a quality, HL7 standard, FHIR Implementation Guide. This process is agile (thus the cycles representing steps), with iterations and interactions between each cycle.</p>
+	  <figure><img src="../images/fhir-ig-process.png" width="100%" class="py-5" alt="Diagram of key steps from defining clinical requirements to FHIR IG development to HL7 standardization " /></figure>
+<figcaption>Key steps needed to develop an HL7 standard, FHIR Implementation Guide.</figcaption>
+      </figure>
             <p>
         To develop clear standards for data communication, projects need three things:
 		<ul>
@@ -210,7 +213,7 @@
 				</li>
 				  <ul>
 					<li>
-					 One of these experts should be familiar with FHIR IG development processes including FHIR shorthand, FHIR profiles and extensions, and similar IG development efforts within HL7
+					 One of these experts should be familiar with FHIR IG development processes including FHIR Shorthand, FHIR profiles and extensions, and similar IG development efforts within HL7
 					</li>
 				  </ul>
 				<li>
@@ -241,8 +244,8 @@
         To guide implementation development a logical model representing the data dictionary is needed. The static graphic below is a representation of mCODE's conceptual model. Conceptual models are notional and loosely represent the actual FHIR model and enable clinical and other SMEs to more easily understand context and use of elements, and illustrate how data elements relate to each other. Visit the latest version of the<a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> and explore an interactive version of this graphic and dive into the details of this mCODE concept model
 	  </p>
       <figure>
-        <img src="../images/mCODE-stu3-model_Oct2023.png" width="100%" alt="" />
-        <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023) </figcaption>
+        <img src="../images/mCODE-stu3-model_Oct2023.png" width="100%" class="py-5" alt="mCODE STU3 conceptual modeling diagram" />
+        <figcaption>The mCODE STU3 conceptual modeling diagram, as an example for future projects.</figcaption>
       </figure>
 	  
       <h3>Framework for FHIR Implementation Guide Development</h3>
@@ -302,7 +305,9 @@
       <p>
         To gain wider acceptance Implementation Guides need formal approval from the healthcare interoperability standards body HL7. As the IG is drafted, the interoperability team needs to begin processes for eventual HL7 community balloting and approval of the IG. Often the sooner these processes are begun, the smoother the HL7 stanards process as HL7 processes help ensure harmonization of IG development efforts across projects and communities. This said the standards process is often lengthy and can take many months to over a year from start to publication of an interoperability standard.  Specific details about the HL7 process and FHIR development in general can be found in the resources section.     
       </p>
-	  <img src="../images/fhir-ig-process-flow.png" width="100%" alt="HL7 review and standards process timeline for new IGs" />
+	  <figure><img src="../images/fhir-ig-process-flow.png" width="100%" alt="HL7 standards process timeline for new FHIR IGs" />
+<figcaption>HL7 standards process timeline for new FHIR IGs</figcaption>
+</figure>
 
 	  <p>
 	   It is recommended that the interoperability team used to develop the FHIR IG also guide the IG through the HL7 standards processes. To better navigate HL7 processes it is recommended that:
