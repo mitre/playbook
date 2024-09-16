@@ -1,6 +1,6 @@
 <table class="table table-striped ">
   <caption>
-  Example Options for Progressing System Testing
+  Example options for elements of system testing that aim for a higher degree realistic challenges from the top of the table to the bottom
   </caption>
   <thead>
     <tr>
