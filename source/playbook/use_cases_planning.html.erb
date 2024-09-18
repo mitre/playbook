@@ -17,9 +17,9 @@ theme: playbook
       <p class="lead">Scoped Use Cases are critical to success. Planning Use Case work defines agreed steps, schedules, and resources needed to deliver solutions successfully.</p>
 			<hr>
       <h2 id="what_is_use_case">What is a Use Case?</h2>
-      <p>A Use Case is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within a new workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
+      <p>A Use Case is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within anew, well-scoped workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
       <p>A specific Use Case provides the scope for all that comes next. Thus, a well-scoped and compelling Use Case is critical for success. A Use Case attracts the subset of the larger Community who care deeply about the objectives and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
-      <p>One of many possible CodeX Use Case examples is the Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologist with an mCODE-based FHIR exchange of structure radiation treatment summary data, thus improving information quality and reducing clinical burden. See the <%= link_to("Radiation Therapy Treatment Data Case Study","/casestudies/radiation_therapy.html") %>.</p>
+      <p>One of many possible CodeX Use Case examples is the Radiation Therapy Treatment Data for Cancer. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologists, leveraging an mCODE-based FHIR exchange of structure radiation treatment summary data. This work is already being deployed in real-world systems, improving information quality, and reducing clinical burden. See the <%= link_to("Radiation Therapy Treatment Data Case Study","/casestudies/radiation_therapy.html") %>.</p>
       <figure>
         <%= image_tag 'radiation-therapy-workflow.png', :width => '100%', :class => 'py-3', :alt=>"Workflow diagram for CodeX Use Case" %>
         <figcaption>A workflow diagram for the CodeX Radiation Therapy Treatment Data for Cancer Use Case</figcaption>
@@ -43,39 +43,39 @@ theme: playbook
 				<li>List of organizations and individuals committed to lead the Discovery discussions and alignment</li>
 				<li>List other specific organizations across stakeholder groups that could be candidates for working the concept through Discovery, Planning and Execution</li>
 			</ul>
-			<p>By the end of the Discovery stage, and before moving into the Planning Stage, a Use Case projects typically have the following attributes in the CodeX world:</p>
+			<p>By the end of the Discovery stage, and before moving into the Planning Stage, a CodeX Use Case project typically has the following attributes:</p>
 			<ul class="planning-list">
 				<li>Believed to be viable (some risk, is of course, natural and acceptable)</li>
-        <li>Have the potential to substantial improve patient care and research in within or across specialties</li>
-				<li>Share the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
-				<li>Leverage clinically-based FHIR Implementation Guides for automated collection and exchange of clinical data
+        <li>Has the potential to substantial improve patient care and research in within or across specialties</li>
+				<li>Shares the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
+				<li>Leverages clinically-based FHIR Implementation Guides for automated collection and exchange of a minimal set of clinical data
 					<ul>
-						<li>Leverage resources and open FHIR-based API-based data exchange</li>
-						<li>Leverage Gov’t supported frameworks, including USCDI, the US Core FHIR IG, and others.</li>
-						<li>Leverage and explore updates to mCODE and other foundational, IGs</li>
+						<li>Leverages resources and open FHIR-based API-based data exchange</li>
+						<li>Leverages Gov’t supported frameworks, including USCDI, the US Core FHIR IG, and others.</li>
+						<li>Leverages and explore updates to mCODE and other foundational, IGs</li>
 						<li>May develop supplemental data elements/IGs, more specific to a Use Case</li>
 					</ul>
 				</li>
-				<li>Are driven by a Community, including Champions, representatives from all stakeholders, and committed resources</li>
-				<li>Expedite Use Case project work based on agile project plans, with short phases, quick results</li>
-				<li>Pilot workflows and systems in real-world settings that demonstrate the “art of the possible” and can be adopted and scaled</li>
+				<li>Is driven by a Community, including Champions, representatives from all stakeholders, and committed resources</li>
+				<li>Expedites Use Case project work based on agile project plans, with short phases, quick results</li>
+				<li>Pilots workflows and systems in real-world settings that demonstrate the “art of the possible” and can be adopted and scaled</li>
 			</ul>
 
 			<p>Other considerations that MITRE has found useful to determining readiness to proceed:</p>
 			<ul class="planning-list">
-				<li>A new specialty should consider starting with less ambitious Use Cases. This raises the probability of success at speed, and can help a new Community to gel</li>
-				<li>Ask the right questions
+				<li>A new specialty should consider starting with one or two less ambitious Use Cases, based on simpler new workflows that share a minimal set of standardized data. This raises the probability of success at speed, and can help a new Community to gel.</li>
+				<li>Ask the right questions:
 					<ul>
 						<li>What's driving the need for the Use Case?: e.g., clinical workflow improvement, research needs, regulatory requirements, costs, etc.</li>
 						<li>Who are the target actors? e.g., patients, physicians, nurses, researchers, payors, regulators, etc.</li>
 					</ul>
 				</li>
 				
-				<li>Develop Use Case scenarios
+				<li>Develop Use Case scenarios:
 					<ul>
-						<li>Write scenarios such that the widest group of potential participants can review and understand</li>
-						<li>Create an example persona for role</li>
-						<li>Cite clinical sources, where applicable</li>
+						<li>Write scenarios such that the widest group of potential participants can review and understand.</li>
+						<li>Create an example personas for role<s in the proposed workflow.</li>
+						<li>Cite clinical sources and other prior work, where applicable</li>
 					</ul>
 				</li>
 			</ul>
@@ -99,12 +99,12 @@ theme: playbook
 
 				<li><b>Other Resources</b>. Are there additional personnel, facilities, and/or financial resources required to succeed, that are not committed yet?  Describe the options and plans for attaining these. It can be difficult to estimate resource needs accurately, especially in the early phases of a Use Case. Note that Use Case scope and schedule can be adjusted to the availability of resources and still result in a successful project. </li>
 
-				<li><b>Outside Activities</b>. Are there other consortia or other organizations outside of this Use Case with which the team may want to interface, coordinate or partner, or at least remain aware of? Consider outside work that could be competitive with the current Use Case.</li>
+				<li><b>Outside Activities</b>. Are there other consortia or other organizations outside of this Use Case with which the team may want to interface, coordinate or partner, or at least remain aware of? Identify outside work that could be competitive with the current Use Case.</li>
 
 				<li><b>Schedule of Work</b>
 					<ul>
 						<li>Break the plan into Phases. Each Phase might be 3-9 months. Phase themes, stories, workflows, objectives, development (FHIR IGs, software) will vary.</li>
-						<li>One pattern common in CodeX is a first Phase starting with a small amount of synthetic data, progressing to a Phase with de-identified data, then a Phase with live patient data. Later Phases include strategies for driving Adoption and for Measuring Value in the real world. Participation, realism, and results all become more ambitious with each new Phase.</li>
+						<li>One pattern common in CodeX is a first Phase starting with exchanging synthetic data for a minimal set of data elements, progressing to a Phase with de-identified data, then a Phase with real patient data. Later Phases include strategies for driving Adoption and for Measuring Value in the real world. Participation, realism, and results all become more ambitious with each new Phase.</li>
 						<li>Specify measures of success for each Phase, out to at least a year or two. </li>
 						<li>Note risks and other issues within the plan that require additional alignment within the Use Case team.</li>
 					</ul>
