@@ -39,7 +39,7 @@
       <td>All required data elements via all envisioned exchanges in the workflow</td>
       <td>Software systems intended for deployment and adoption</td>
       <td>Real patient data</td>
-      <td>Envisioned end users/actors from multiple entities of each type organization required by the workflow</td>
+      <td>Envisioned end users/actors from multiple entities of each type of organization required by the workflow</td>
       <td>Full-scale real-world pilots within the envisioned organizations (e.g., health system, lab ...). Likely includes some testing sandboxes in those organizations</td>
     </tr>
   </tbody>
