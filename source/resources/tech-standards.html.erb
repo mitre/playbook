@@ -71,7 +71,7 @@ section: Resources
         </div>
       </div>
 
-      <h3>Key Organizations and Foundational Standards</h3>
+      <h3 id="standards_orgs">Key Organizations and Foundational Standards</h3>
       <p>
        <a href="https://www.hl7.org/">Health Level Seven (HL7)</a> develops, approves, and maintains medical interoperability standards across the world. While it is possible to develop interoperability standards outside HL7, in practice it is unlikely these standards will be widely adopted without HL7 approval. As a result, it is critical to follow HL7 processes and collaborate with HL7 work groups when starting or modifying any IG. This collaboration is best started early in the IG development process at or before the first draft of the IG is complete.
       </p>
@@ -82,7 +82,7 @@ section: Resources
         ONC has increasingly partnered with HL7, the preeminent organization for gathering communities to develop standards that enable health data interoperability. Of the many important efforts within HL7, two are foundational for the work described in this Playbook: <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a> and <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>. Both are further explained below.
       </p>
       
-      <h3>Standards Development Overview</h3>
+      <h3 id="standards_overview">Standards Development Overview</h3>
       <p>
         The following graphic illustrates key steps that are necessary and/or useful in developing and publishing a quality, HL7 standard, FHIR Implementation Guide. This process is agile (thus the cycles representing steps), with iterations and interactions between each cycle.
       </p>
@@ -106,7 +106,7 @@ section: Resources
         This sub-step and subsequent steps are typically iterative.  For example, the clinical expert group may develop a first draft of the Data Dictionary. Subsequent steps often result in requests to the clinical experts for clarification or suggestions for updates to the Data Dictionary based on FHIR development, implementation, and testing.
       </p>
 
-      <h3>Defining the Data Dictionary</h3>
+      <h3 id="standards_dictionary">Defining the Data Dictionary</h3>
       <p>A data dictionary is a conversion of the clinical information needed for the use case into logical model data elements.</p>
 
       <p>
@@ -132,7 +132,7 @@ section: Resources
       </p>
 
 
-      <h3>Common Challenges Related to Compiling Clinical Information Requirements and a Data Dictionary</h3>
+      <h3 id="standards_clin_challenges">Common Challenges Related to Compiling Clinical Information Requirements and a Data Dictionary</h3>
       <ul>
         <li>
           Starting with a large set of “important” data needs/elements, rather than focusing on the needs for each prioritized use cases.
@@ -149,7 +149,7 @@ section: Resources
         </p>
       </ul>
 
-      <h3>Clinical Review of the Data Dictionary</h3>
+      <h3 id="standards_clin_review">Clinical Review of the Data Dictionary</h3>
       <p>
        Before handing the data dictionary over to the FHIR IG development team, the clinical team should answer the following questions:
       </p>
@@ -168,7 +168,7 @@ section: Resources
         Once the clinical subject matter expert group has at least a draft of their data dictionary for the use case, work can begin on incorporating the clinical information into one or more FHIR IGs. Once the interoperability team has been assembled, both the interoperability team and the clinical requirements team will collaborate to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <%= link_to("Design Principles", "/playbook/design_principles.html") %>. 
       </p>
 
-      <h3>Framework for FHIR Implementation Guide Development</h3>
+      <h3 id="stds_framework">Framework for FHIR Implementation Guide Development</h3>
       <p>
        As is likely clear by now, use of the FHIR exchange standard is foundational to the recommendations in this Playbook, technical experts will need a deep understanding of FHIR to guide processes. Below are some helpful guides to better understanding FHIR:
       </p>
@@ -226,7 +226,7 @@ section: Resources
       <p class="alert alert-warning">Image is placeholder only - will replace with accessible image</p>
             <p><%= image_tag 'future-health-stack.png', :width => '100%', :class => 'py-2' %></p>
 
-      <h3>Data Model</h3>
+      <h3 id="stds_data_model">Data Model</h3>
       <p>
         The first task of the FHIR IG development group is to review the output of the clinical group’s data dictionary.  It is helpful if some members of each group have been working together, even before the first draft of the dictionary has been completed. Questions between the groups will be common and essential to taking additional steps.
       </p>
@@ -241,12 +241,12 @@ section: Resources
         <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023) </figcaption>
       </figure>
               
-      <h3>Terminologies</h3>
+      <h3 id="stds_terminology">Terminologies</h3>
       <p>
         As previously noted, terminologies, standard clinical code systems, are important for unambiguously defining how data within the data element are represented.  When a term cannot be found within an existing code system, it’s possible to work with the owner of the code system to add new terms, provided the justification is convincing.
       </p>
 
-      <h3>Profiles and Extensions</h3>
+      <h3 id="stds_profiles">Profiles and Extensions</h3>
       <p>
         FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a resource are required and which are not for a particular context or use case. FHIR extensions add data elements and/or constraints the standard FHIR base resource definitions to create more specific, customized resource definitions for a particular context or use case.
       </p>
@@ -280,7 +280,7 @@ section: Resources
         </ul>
       </p>
 
-      <h3>Planning FHIR IG Development: A Patient Demographics Example</h3>
+      <h3 id="IG_plan">Planning FHIR IG Development: A Patient Demographics Example</h3>
       <p>
        There are a number of important high-level questions to consider when developing a FHIR IG. These questions can be found in the higher level <%= link_to("FHIR IG Development", "playbook/standards.html#fhir_ig_development") %> section.
       </p>
@@ -300,7 +300,7 @@ section: Resources
         <li>Guidance for inclusion is narrative (not computable or enforceable)</li>
       </ul>
 
-      <h3>Validating Modeling Assumptions</h3>
+      <h3 id="stds_assumptions">Validating Modeling Assumptions</h3>
       <p>
         Next, create a comprehensive set of FHIR resources that capture the product of the previous steps. One approach to validating the work is to match it to representative use case personas.  The next figure illustrates how parts of a particular patient journey are mapped into data elements and FHIR. See other <%= link_to('mCODE examples, represented in the mCODE FHIR IG','https://hl7.org/fhir/us/mcode/examples.html') %>.
       </p>
@@ -311,7 +311,7 @@ section: Resources
       <p><%= image_tag("fhir-instances-mcode.png") %></p>
       <p><%= image_tag("example-bundle.png") %></p>
 
-      <h3>Creating the FHIR Implementation Guide</h3>
+      <h3 id="stds_create_IG">Creating the FHIR Implementation Guide</h3>
 
       <p>Initial creation of a FHIR IG can start quite early and iterate as the model is improved. </p>
 
