@@ -95,45 +95,36 @@
       </p>
              
       <ol class="principles-list col-lg-10">
-        <li>A dedicated and diverse <b><a href="community.html">Community</a></b> is critical for every step from launching a new initiative to the products of it being impactful within the health ecosystem.
+        <li>A dedicated and diverse <b><a href="community.html">Community</a></b> is critical for every step from launching a new initiative ensuring that the products of the initiative are adopted and impactful within the health ecosystem.
           <ul>
-            <li>The Community needs patients, providers, health systems, Gov’t, vendors, payers, and others.</li>
-            <li>The Community will plan Use Cases, develop solutions, and drive adoption to that solve specific Community problems.</li>
+            <li>The Community needs all or a subset of patients, providers, health systems, Gov’t, vendors, payers, and others, depending on the Use Case.</li>
+            <li>Community members will plan Use Cases, develop solutions, and drive adoption to that solve specific Community problems.</li>
           </ul>
         </li>
 
         <li>Compelling <b><a href="use_cases_planning.html">Use Cases</a></b> are <b>critical to success</b>.
           <ul>
               <li>Each Use Case is a well-defined project that addresses an important and narrowly-scoped problem.</li>
-              <li>Each Use Case defines an end-to-end plan that includes the scope of work, resources required, a minimal set of data concepts to be standardized, implementation in systems and processes, testing and piloting in realistic settings, and driving adoption and value across the real world.</li>
-              <li>Prioritize Use Cases that address serious problems, and just as importantly, have the Community support and resources needed to succeed.</li>
-              <li>A good primary focus for a Use Case is collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b></li>
-              <li>Secondary uses (e.g., personal, research, quality measurement, payer operations, etc.) of patient care data will be hugely valuable and more cost-effective than current approaches.</li>
+              <li>Each Use Case plan must (ultimately) be end-to-end, including the scope of work, resources required, a minimal set of data concepts to be standardized, how standards will be implemented in systems and processes, how they will be tested and piloted in realistic settings, and how adoption and value will be achieved across the real world.</li>
+              <li>Prioritize Use Cases that address serious problems. But just as importantly, start with Use Cases that have all the Community support and resources needed to succeed.</li>
+              <li>A good primary focus for a Use Case is collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b>. Secondary uses (e.g., personal, research, quality measurement, payer operations, etc.) of such patient care data will make those uses more cost-effective to realize.</li>
           </ul>
         </li>
 
-        <li><b><a href="standards.html#clinical_requirements">Clinical information requirements</a></b> come first.
+        <li><b><a href="standards.html#clinical_requirements">Clinical information requirements</a></b> for a Use Case come first.
           <ul>
-           <li>Define a <b>minimal</b> set of clinical data concepts and elements that address core Use Case requirements and could potentially be used for multiple Use Cases.</li>
+           <li>Build consensus through a diverse team of clinial experts the <b>minimal</b> set of clinical data concepts and elements that address core Use Case requirements and could potentially be used for multiple Use Cases.</li>
            <li>Define clinical requirements as <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).</li>
            <li>If previous work in the space exists, seek to work with the other initiatives and if it makes sense, adopt/adapt their work rather than re-do it.</li>
         <li>Get input and review through <b>clinical specialists and patients first</b>, then other medical, standards, and vendor experts.</li>
-            <li>Ensure clinical relevance as a priority.</li>
-            <li>Add other health Use Cases, technical, and standards expertise.</li>
-
           </ul>
         </li>
 
-
-       <li><b><a href="standards.html#fhir_ig_development">FHIR Standards Development</a></b> should be <b>focused</b>
+       <li><b><a href="standards.html#fhir_ig_development">FHIR Standards Development</a></b> must be <b>focused</b> the minimal clinical requirements.
           <ul>
-           <li>Standards work should start small, and can incrementally expand if future Use Case requirements dictate. One can create supplemental Implementation Guides when the data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
+           <li>Start small, and incrementally expand the core FHIR Implementation Guide (IG) if future Use Case requirements dictate. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
           <li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
-          <li>Design data standards with interoperable <b>data exchange</b> as the top priority.</li>
-            <li>Data exchange standards can also influence and provide value for data collection. Data that will be exchanged must be collected or be computed from data that are collected.</li>
-            <li>How the data are stored within systems can be defined by the implementor to meet engineering requirements. Implementers may find value in leveraging data exchange standards in their storage schemes.</li>
-            <li>How the data are displayed and manipulated (e.g., interfaces for collection, aggregation, review, computation, analysis, etc.) can be defined by the implementor to the benefit of users. Implementers may find value in leveraging data exchange standards in their display and manipulation schemes.</li>
-            <li>Leverage the available approaches and tools for modeling and IG development, to motivate higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
+            <li>Leverage the available tools for modeling and IG development, to motivate higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
 
         <li>Leverage <b>global code systems and terminology standards</b> (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
          <li>Standardize work through an open, royalty-free health standards development organization, like <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
