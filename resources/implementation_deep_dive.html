@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Implementation and Testing Deep Dive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../javascripts/lunr.js"></script>
+    <script src="../javascripts/handlebars.min-v4.7.8.js"></script>
+    <script src="../javascripts/mark.min.js"></script>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <script src="../javascripts/site.js" defer="defer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+  </head>
+  <body class="resources">
+  <div id="skiptocontent"><a href="#content">skip to main content</a></div>
+  <div id="top"></div>  
+  <div class="layout-grid">
+    <div class="container" id="header">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 header">
+      <div class="col-md-3 mb-2 mb-md-0">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../playbook/" class="nav-link">Intro & Tracks</a></li>
+        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
+        <li><a href="./" class="nav-link">Resources</a></li>
+        <li><a href="../about/" class="nav-link">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end search-form">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="event.preventDefault(); return false;">
+          <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <div id="search_results" class="search-results">
+            <ul id="search_results_list">
+            </ul>
+          </div>
+        </form>
+      </div>
+    </header>
+  </div>
+
+    <div class="breadcrumb-box">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class='breadcrumb-item'><a href="../">Home</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="./">Resources</a></li class='breadcrumb-item'><li class='breadcrumb-item'><a href="implementation_deep_dive.html">Implementation and Testing Deep Dive</a></li class='breadcrumb-item'>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+    <div class="container pt-5" data-bs-spy="scroll" data-bs-target="#playbook_menu" data-bs-offset="0">
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="sidebar-menu navbar" id="playbook_menu">
+<h4>On This Page</h4>
+<ul>
+  <li><a href="tech-standards.html">Standards Development</a></li>
+</ul>
+</nav>
+  
+    </div>
+  
+    <div id="content"  class="col-md-9">
+      <h1>Deep Dive into Implementation and Testing</h1>
+      <p>
+        The goal of implementation and testing is to ensure that the developed IG (Implementation Guide) can be translated into real-world software and that this software provides value to end users. To achieve this, the IG developers often need to develop open-source demonstration software, a reference implementation, and should develop testing tools to support software adoption. These resources will help speed the implementation process, guide developers in adapting the software to real-world instances, and excite end users about the potential benefits of the community’s use case.      
+	  </p>
+      <p>
+        Here, we will walk through the development processes identifying common, readily available, free tools that can be used to manage, test, and update the community’s software.      
+	  </p>
+	  <h2>Sofware Development Lifecycle (SDLC)</h2>
+	  <p>
+        The SDLC guides software through key steps in the development process:
+      </p>
+      <ul>
+         <li>
+          Requirement gathering 
+         </li>
+         <li>
+          Software Design
+         </li>
+         <li>
+          Coding
+         </li>
+		 <li>
+		  Testing
+		 </li>
+		 <li>
+		  Deployment
+		 </li>
+		 <li>
+		  Maintenance and Support
+		 </li>
+      </ul>
+	  <p>
+	   While software vendors will oversee this process when they adapt the community’s IG for their software, the community will need to follow this process for any open-source software that is released, such as the reference implementation or testing tools. This discussion provides a detailed overview of the process and methodologies (waterfall, agile, and others) used to guide software development teams through the SDLC phases.
+	  </p>
+	  <h2>Development Recommendations</h2>
+	  <h3>Requirements Gathering</h3>
+	  <p>
+	   See the <a href="../playbook/use_cases_planning.html">Use Cases & Planning</a> page for guidance on requirement gathering.
+	  </p>
+      <h3>Software Design<h3>
+	  <p>	
+		See the <a href="/playbook/standards_development.html">Standards Development</a> section and the associated <a href="/playbook/resources/tech-standards.html">Standards Development Deep Dive</a> for guidance on IG development and software design.
+	  </p>
+	  <h3>Coding</h3>
+	  <h4>Development Environment</h4>
+	  <p>
+	    It is strongly recommended that a community’s open-source software be developed within an environment that allows a teams of developers to effectively manage the code. Key personnel like developers can and often do change over the course of the project, as a result it is critical that there is a single repository for the community’s code, ideally one that can be made public when software is ready to be shared. There are many options for code management and software repositories, the most commonly used repository for open-source projects is <a href="https://github.com/">GitHub</a>. It is also recommended that the developers use project management software such as Jira or Microsoft Teams. This helps ensure that development goals and bug fixes are tracked and resolved in a timely manner.
+	  </p>
+	  <h4>FHIR Artifacts</h4>
+	  <p>
+	    A common starting point for many looking to jumpstart their development are existing FHIR software artifacts such as the <a href="https://hapifhir.io/">Hapi FHIR software</a>, which provides working JAVA software for many basic FHIR resources. Hapi FHIR, <a href="https://confluence.hl7.org/display/FHIR/Open+Source+Implementations">HL7's Confluence page</a>, and other FHIR open-source responsitories provide basic FHIR software that can be adapted for the community’s purposes.
+	  </p>
+	  <h3>Testing</h3>
+	  <p>
+	   Software testing can be broken down into three software states as described in the <a href="../playbook/implementation.html">Implementation & Testing</a> section: 
+	  </p>
+	  <ul>
+         <li>
+          Alpha testing - Initial development and testing stage conducted by developers
+         </li>
+         <li>
+          Beta testing – second round testing conducted with willing potential end users
+         </li>
+         <li>
+          Real-world implementation – implementation and testing of instances of software within live software systems using real-world workflows and data
+         </li>
+      </ul>
+      <p>
+       For community developed tools, the first two states are the primary focus of community software development. Since the final state, real-world implementations, will rely on the community to partnering with software vendors or healthcare organizations to implement instances of the software withing local systems. Discussions will focus on alpha and beta state testing and leave real-world implementations decisions to software vendors.
+      </p>
+	  <h4>Alpha Testing</h4>
+      <p>
+        Much of the development and testing strategy will rely on developers coordinating with use case subject matter experts. One critical need in this stage of testing is for accurate synthetic or fake patients to test workflows. To avoid the time-consuming, monotonous process of manually creating test patients, a synthetic patient data software should be used. The most widely used software within open-source medical development communities, at Connectathons, and in private industry is Synthea because it can generate populations of realistic patients with medical data such as medications, allergies, conditions, and clinical notes. For more information on Synthea’s current capabilities and instructions for generating patient data see <a href="https://synthetichealth.github.io/synthea/">Synthea’s GitHub</a> page for more details.      
+	  </p>
+	  <h4>Beta Testing</h4>
+	  <p>
+        To both guide community members in their individual implementations and provide functionality to demonstrated and test to use case end users, it is recommended that the community develop an open-source demo of their IG, a reference implementation. A reference implementation is a system agnostic implementation of an IG that serves as an idealized representation of how the data exchange should function. Often it is a simple client-server data exchange with a few use case examples to demonstrate software functionality and utility. Reference implementations are often used to test and get feedback from both developers and end users IGs in dedicated implementation feedback sessions and in more general Connectathons.
+      </p>
+      <p>
+	    In this stage of development it is also helpful to investigate developing testing tools for the community. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IGs and simplify individual implementations by helping developers identify issues with their software. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. 
+	  </p>
+	  <h4>Real-world Testing</h4>
+	  <p>
+	    There is an overlap between real-world testing and deployment as real-world testing actually deploys software to local systems. The goal of this stage is to verify the efficacy and efficiency of the community's software, identify any lingering issues with IG development, and gather feedback and prepare the community for larger scale implementations. This step is largely overseen by software vendors who are best equipped to make implementation and testing decisions within their software systems. 
+	  </p>
+	  <h3>Deployment</h3>
+	  <p>
+	    See the <a href="https://mitre.github.io/playbook/playbook/adoption.html#adoption">Adoption</a> subsection of Adoption & Value for high-level guidance on promoting adoption of software.
+	  </p>
+	  <h3>Maintenance and Support</h3>
+	  <h4>Software Versioning</h4>
+      <p>
+        There is one constant in life, change. FHIR, its underlying standards, security protocols, and the community’s IG will all have regular updates, some of which introduce major changes, to ensure continual improvement and refinement of data exchange processes. When creating software development plans, it is a necessity to have a well-established version control process within GitHub or whatever code repository management software the community chooses to use. See this <a href="https://github.com/resources/articles/software-development/what-is-version-control">article</a> for specific recommendation and guidance on maintaining version control for the community’s software releases.        
+	  </p>
+
+
+          
+    </div>
+  </div>
+</div>
+
+
+    <div class="container mt-4 pb-2 text-end">
+<a href="#top" data-js-hook="back-to-top-button">
+  <svg role="img" height="20" width="20" aria-labelledby="back-to-top-title" aria-hidden="true" fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 24" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+  <span id="back-to-top-title">Back to top</span>
+</a>
+</div>
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+<a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
+</a>        <p>
+        The MITRE Interoperability Playbook is provided as a resource for the health information community.
+        For more information email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+      </p>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../playbook/">Introduction & Playbook Tracks</a></li>
+        <li><a href="../casestudies/">Case Studies</a></a></li>
+        <li><a href="./">Resources</a></a></li>
+        <li><a href="../about/">About</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <p>&copy; Copyright 2024 MITRE Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+  </div>
+  <script id="results_template" type="text/x-handlebars-template">
+  <li class="result-item">
+    <a href="{{url}}?term={{query}}">{{title}}</a>
+  </li>
+</script>
+  <div class="search-overlay"></div>
+  </body>
+</html>
+
