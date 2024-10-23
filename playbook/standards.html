@@ -242,7 +242,7 @@
         As noted before, the clinical expert team needs to work in tandem with the IG development team to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes. Each group needs feedback from the other to successfully build and implement specialty data exchange software.
 	  </p>
       <p>
-        To guide implementation, developing a logical model representing the data dictionary is needed. The static graphic below is a representation of mCODE's version 3 (called Standard for Trial Use or STU 3) conceptual model, published in 2023. Conceptual models are notional, loosely represent the actual FHIR model, enable clinical and other SMEs to more easily understand context and use of elements, and illustrate how data elements relate to each other. Visit the latest version of the<a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> and explore an interactive version of this graphic and dive into the details of this mCODE concept model
+        To guide implementation, developing a logical model representing the data dictionary is needed. The static graphic below is a representation of mCODE's version 3 (called Standard for Trial Use or STU 3) conceptual model, published in 2023. Conceptual models are notional, loosely represent the actual FHIR model, enable clinical and other SMEs to more easily understand context and use of elements, and illustrate how data elements relate to each other. Visit the latest version of the <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a>and explore an interactive version of this graphic and dive into the details of this mCODE concept model
 	  </p>
       <figure>
         <img src="../images/mCODE-stu3-model_Oct2023.png" width="100%" class="py-5" alt="mCODE STU3 conceptual modeling diagram" />
@@ -250,10 +250,11 @@
       </figure>
 	  
       <h3>Framework for FHIR Implementation Guide Development</h3>
-	  
+	             <p>A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for set of Use Cases concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
       <p>
 	   The Community’s specialty interests may not be well represented in existing FHIR profiles and standard data elements, similar to the terminology challenges encountered during the data dictionary development. In these cases, existing FHIR artifacts, including profiles and extensions, may need to be developed or updated to better support the community’s data needs. This said, it is critical that specialty communities minimize changes and modification to existing FHIR artifacts to maintain consistency within the larger healthcare data exchange community. This helps ensure the final IG and associated software can be more easily accepted and adopted across all healthcare domains. 
 	  </p>
+
 	  <p>
 	   During the IG development process and after, updates to the IG are common. Updates to the IG could motivated by updates to underlying standards (new FHIR versions, USCDI/UCSDI versions, US Core FHIR profile updates, terminology code system updates, etc.), government mandates and regulation changes, and shifting changes in need, functionality, and technology. Care should be taken to plan long-term upgrade processes to ensure the IG and associated software can be adapted to changing needs and functionality requirements. Further HL7 has established processes for IG updates, becoming more restrictive as the IG meets standardization milestones. It will be necessary to have a system to organize, prioritize, and address requests for changes and other comments during the IG development processes.
 	  </p>
