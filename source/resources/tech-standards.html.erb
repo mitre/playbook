@@ -175,7 +175,9 @@ section: Resources
       <h2 id="fhir_ig_development">FHIR IG Development:<br>Integrating Clinical Requirements into a Specialty FHIR Implementation Guide</h2>
 
       <p>
-        Once the clinical subject matter expert group has at least a draft of their data dictionary for the use case, work can begin on incorporating the clinical information into one or more FHIR IGs. Once the interoperability team has been assembled, both the interoperability team and the clinical requirements team will collaborate to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <%= link_to("Design Principles", "/playbook/design_principles.html") %>. 
+        Once the clinical subject matter expert group has at least a draft of their data dictionary for the use case, work can begin on incorporating the clinical information into one or more FHIR IGs. Once the standards development team has been assembled, both the standards development team and the clinical requirements team will collaborate to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <%= link_to("Design Principles", "/playbook/design_principles.html") %>. 
+ 
+<p>A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for set of Use Cases concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
       </p>
 
       <h3 id="stds_framework">Framework for FHIR Implementation Guide Development</h3>
@@ -262,7 +264,7 @@ section: Resources
       </figure>
 
       <p>
-        To ensure consistency with the wider interoperability community, the IG development team should first check the <a href="https://fhir.org/guides/registry/">FHIR Implementation Guide Registry</a>, <a href="https://registry.fhir.org/">FHIR Package Registry</a>, and <a href="https://hl7.org/fhir/extensions/extension-registry.html">FHIR Extension Registry</a> for existing FHIR artifacts that might be reused in the developing IG.  If an appropriate existing artifact cannot be found, new resources, profiles, or extensions may need to be created.
+        To ensure consistency with the wider interoperability community, the standards development team should first check the <a href="https://fhir.org/guides/registry/">FHIR Implementation Guide Registry</a>, <a href="https://registry.fhir.org/">FHIR Package Registry</a>, and <a href="https://hl7.org/fhir/extensions/extension-registry.html">FHIR Extension Registry</a> for existing FHIR artifacts that might be reused in the developing IG.  If an appropriate existing artifact cannot be found, new resources, profiles, or extensions may need to be created.
       </p> 
       <p>
         Before creating a new FHIR artifact, the development team should discuss the proposed artifact and its purpose with the HL7 Working Group responsible for the FHIR Resource being extended. All FHIR resources and profiles have an HL7 Working Group that is responsible for their development.  The HL7 Working Group is listed on the FHIR resource page itself, or in the case of a profile, in the footer of the profile page. Reviewing the proposed artifact with the responsible working group provides an opportunity for them to understand the purpose for the extension and offer guidance in alignment with their development strategy for the resource.
@@ -362,7 +364,6 @@ section: Resources
       <p>
         Be aware that the interest of the original team, and even that of the use case champions, may change as the work enters maintenance. As repeatedly emphasized in this Playbook, think about which members of the community care most about ensuring a standard is maintained in a well-governed, careful manner. For example, vendors who've implemented the standard and included the standard in products to many customers should care about how the standard is maintained and evolved.
       </p>
-      <!--<p>[NOTE:  Add more?]</p>-->
 
       <h3 id="HL7_best_practices">Best Practices for Smoother HL7 Standardization, Based on the CodeX/mCODE Experience</h3>
       <ul>
