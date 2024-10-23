@@ -26,9 +26,9 @@ theme: playbook
 
         <li>Compelling <b><%= link_to("Use Cases", "use_cases_planning.html") %></b> are the foundation upon which solutions are designed and driven.
           <ul>
-              <li>Define each Use Case as a well-defined project to address one important and narrowly-focused problem.</li>
-              <li>Develop a plan that is (ultimately) <b>end-to-end</b> - including the scope of work, resources required, a minimal set of data concepts to be standardized, and a pragmatic strategy for how standards will be implemented, tested, adopted, and provide value in the real world.</li>
-              <li>Prioritize Use Cases that address serious problems. However, start with Use Cases that have commitment from all or almost all of the <b>Community support and resources needed to succeed</b>.</li>
+              <li>Define each Use Case as a well-defined project to address a single, important, narrowly-focused problem.</li>
+              <li>Early in the process, develop a plan that is <b>end-to-end</b> - including the scope of work, resources required, a minimal set of data concepts to be standardized, and a pragmatic strategy for how standards will be implemented, tested, adopted, and provide value in the real world.</li>
+              <li>Prioritize Use Cases that address salient challenges. However, start with simpler (not simple) Use Cases that have commitment from all or almost all of the <b>Community support and resources needed to succeed</b>. This will enable the Community to have early successes and a sound basis for more complex and ambitious work in the future.</li>
               <li>Prioritize Use Cases that improve collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b> should be the top priority. Patient care data will make major contributions to secondary uses, such as research, quality measurement, payer operations, regulatory requirements, personal use, etc.</li>
           </ul>
         </li>
@@ -37,16 +37,16 @@ theme: playbook
           <ul>
            <li>Build consensus through a <b>diverse team of clinial experts</b> on the <b>minimal data requirements</b> needed to address core Use Case requirements and which could be useful for other Use Cases, as well.</li>
            <li>Define clinical requirements as <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).</li>
-           <li>If </b>previous work</b> in the space exists, seek to work with the other initiatives and if it makes sense, adopt/adapt their work rather than re-do it.</li>
+           <li>If <b>previous work</b> in the space exists, seek to work with the other initiatives and if it makes sense, adopt/adapt their work rather than re-do it.</li>
         <li>Get input and review through <b>clinical specialists and patients first</b>, then other medical, standards, vendor, and/or regulatory experts, as appropriate for the Use Case.</li>
           </ul>
         </li>
 
-       <li>Decisions regarding how clinical requirements are represented in <b><%= link_to("FHIR Implementation Guides (IG)", "standards.html#fhir_ig_development") %></b> influence their implementability, and interoperability within the specialty and accross others.
+       <li>Decisions regarding how clinical requirements are represented in <b><%= link_to("FHIR Implementation Guides (IG)", "standards.html#fhir_ig_development") %></b> influence their implementability, and their interoperability within the specialty and across others.
           <ul>
            <li>A specialty should aim for a <b>single, core IG</b> that represents the minimial clinical requirements for set of Use Cases concepts that are common within the specialty.  The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
-          <li>Not all data elements defined in an IG will be collected for every patient during every encounter, since people and their disease states differ. When data should be collected, the FHIR IG provides the template. </li>
-<li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a> for core patient data, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
+          <li><b>Not all data elements defined in an IG will be collected for every patient</b> during every encounter, since people and their disease states differ. When data should be collected, the FHIR IG provides the template. </li>
+          <li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a> for core patient data, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
           <li>Leverage the <b>available tools</b> for modeling and IG development, to produce higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
           <li>Leverage <b>global code systems and terminology standards</b> (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
          <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, preferrably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
