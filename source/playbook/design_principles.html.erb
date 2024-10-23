@@ -13,7 +13,7 @@ theme: playbook
       <h1>Design Principles</h1>
       
       <p class="lead">
-        Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %> and in the planning, design, development, testing, adoption, and value of FHIR-based data standards, including <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %>. These principles guide the recommendation found in the <%= link_to("Playbook Tracks", "index.html#organization") %> and <%= link_to("Case Studies", "/casestudies/index.html") %> on this website.  If additional specialties follow the principles, the resulting standards are more likely to be developed efficiently, to be interoperable and compatible across specialties as part of a life-time patient Standard Health Record, to be adopted in practice, and to provide value for patients and all stakeholders.
+        Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %> and in the design, planning, development, testing, adoption, and value of FHIR-based data standards, including <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %>. These principles guide the recommendations found in the <%= link_to("Playbook Tracks", "index.html#organization") %> and <%= link_to("Case Studies", "/casestudies/index.html") %> on this website.  If additional specialties follow the principles, the resulting standards are more likely to be developed efficiently, to be compatible across specialties as part of each patient's life-time health, to be adopted in practice, and to provide value for patients and all stakeholders.
       </p>
              
       <ol class="principles-list col-lg-10">
@@ -26,31 +26,30 @@ theme: playbook
 
         <li>Compelling <b><%= link_to("Use Cases", "use_cases_planning.html") %></b> are the foundation upon which solutions are designed and driven.
           <ul>
-              <li>A good Use Case is a well-defined project that addresses an important and narrowly-focused problem.</li>
-              <li>Each Use Case plan must (ultimately) be <b>end-to-end</b>, including the scope of work, resources required, a minimal set of data concepts to be standardized, how standards will be implemented in systems and processes, how they will be tested in realistic settings, and how adoption and value will be achieved in the real world.</li>
-              <li>Prioritize Use Cases that address serious problems. Start with Use Cases that have all the <b>Community support and resources needed to succeed</b>.</li>
-              <li>Use Cases that improve collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b> should be the top priority. Patient care data will make major contributions to secondary uses, such as research, quality measurement, payer operations, regulatory requirements, personal use, etc.</li>
+              <li>Define each Use Case as a well-defined project to address one important and narrowly-focused problem.</li>
+              <li>Develop a plan that is (ultimately) <b>end-to-end</b> - including the scope of work, resources required, a minimal set of data concepts to be standardized, and a pragmatic strategy for how standards will be implemented, tested, adopted, and provide value in the real world.</li>
+              <li>Prioritize Use Cases that address serious problems. However, start with Use Cases that have commitment from all or almost all of the <b>Community support and resources needed to succeed</b>.</li>
+              <li>Prioritize Use Cases that improve collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b> should be the top priority. Patient care data will make major contributions to secondary uses, such as research, quality measurement, payer operations, regulatory requirements, personal use, etc.</li>
           </ul>
         </li>
 
-        <li><b><%= link_to("Clinical information requirements", "standards.html#clinical_requirements") %></b> for a Use Case come first.
+        <li><b><%= link_to("Clinical information requirements", "standards.html#clinical_requirements") %></b> are a first priority for each Use Case.
           <ul>
-           <li>Build consensus through a <b>diverse team of clinial experts</b> on the <b>minimal data requirements</b> needed to address core Use Case requirements and which could be used for multiple Use Cases.</li>
+           <li>Build consensus through a <b>diverse team of clinial experts</b> on the <b>minimal data requirements</b> needed to address core Use Case requirements and which could be useful for other Use Cases, as well.</li>
            <li>Define clinical requirements as <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).</li>
            <li>If </b>previous work</b> in the space exists, seek to work with the other initiatives and if it makes sense, adopt/adapt their work rather than re-do it.</li>
-        <li>Get input and review through <b>clinical specialists and patients first</b>, then other medical, standards, and vendor experts.</li>
+        <li>Get input and review through <b>clinical specialists and patients first</b>, then other medical, standards, vendor, and/or regulatory experts, as appropriate for the Use Case.</li>
           </ul>
         </li>
 
-       <li><b><%= link_to("FHIR Standards Development", "standards.html#fhir_ig_development") %></b> must be focused the minimal clinical requirements.
+       <li><b><%= link_to("FHIR Implementation Guides (IG)", "standards.html#fhir_ig_development") %></b> instruct developers on how to send and receive the clinical data requirements
           <ul>
-           <li><b>Start small</b>.  The innitial, minimal FHIR Implementation Guide (IG), can be expanded if future Use Case requirements dictate. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
+           <li>A specialty should aim for a <b>single, core IG</b> that represents the minimial clinical requirements for set of Use Cases common within the specialty.  The core IG will be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
           <li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
             <li>Leverage the <b>available tools</b> for modeling and IG development, to produce higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
-
           <li>Leverage <b>global code systems and terminology standards</b> (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
           <li>Not all data elements represented in an IG will be collected for every patient during every encounter, since people and their disease states differ. When data should be collected, the standard provides the template.</li>
-         <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, like <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
+         <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, preferrably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
           </ul>
         </li>
 
