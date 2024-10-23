@@ -95,7 +95,7 @@
       </p>
              
       <ol class="principles-list col-lg-10">
-        <li>A dedicated and diverse <b><a href="community.html">Community</a></b> is essential to the design and execution of a health data standards project 
+        <li>A dedicated and diverse <b><a href="community.html">Community</a></b> is essential to the design and execution of a health data standards project. 
           <ul>
           <li>The Community must include all or a subset of patients, providers, health systems, Gov’t, vendors, payers, and others, depending on the Use Case.</li>
           <li>Community members will plan Use Cases, design and develop solutions, and drive impactful adoption to that solve specific Community problems.</li>
@@ -120,27 +120,25 @@
           </ul>
         </li>
 
-       <li><b><a href="standards.html#fhir_ig_development">FHIR Implementation Guides (IG)</a></b> instruct developers on how to send and receive the clinical data requirements
+       <li>Decisions regarding how clinical requirements are represented in <b><a href="standards.html#fhir_ig_development">FHIR Implementation Guides (IG)</a></b> influence their implementability, and interoperability within the specialty and accross others.
           <ul>
-           <li>A specialty should aim for a <b>single, core IG</b> that represents the minimial clinical requirements for set of Use Cases common within the specialty.  The core IG will be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
-          <li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
-            <li>Leverage the <b>available tools</b> for modeling and IG development, to produce higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
+           <li>A specialty should aim for a <b>single, core IG</b> that represents the minimial clinical requirements for set of Use Cases concepts that are common within the specialty.  The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</li>
+          <li>Not all data elements defined in an IG will be collected for every patient during every encounter, since people and their disease states differ. When data should be collected, the FHIR IG provides the template. </li>
+<li>Leverage <b>Government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a> for core patient data, and others. Gov’t support increases motivation for adoption and thus provides a stronger basis for cross-specialty interoperability.</li>
+          <li>Leverage the <b>available tools</b> for modeling and IG development, to produce higher-quality FHIR IGs that are more coherent across specialties, Use Cases, and projects.</li>
           <li>Leverage <b>global code systems and terminology standards</b> (e.g., LOINC, SNOMED CT, CPT, etc.).</li>
-          <li>Not all data elements represented in an IG will be collected for every patient during every encounter, since people and their disease states differ. When data should be collected, the standard provides the template.</li>
          <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, preferrably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
           </ul>
         </li>
-
-
  
-          <li>Work within a vision of a coherent lifetime <b><a href="../resources/tech-standards.html#fhir_additional_considerations">Standard Health Record</a></b> for every patient, even while focusing on each narrowly-scoped Use Case.
+          <li>Work within a vision of a coherent lifetime <b><a href="../resources/tech-standards.html#fhir_additional_considerations">Standard Health Record</a></b> for every patient, even while focusing on specialty-specific Use Cases.
 <ul>
       <li>Work to enable standardized <b>data</b> to become the basis for every patient's <b>health record and standard of care</b>. 
-      <li><b>Collect patient data once</b> (generally around the encounter). Data collected can then be reused for multiple Use Cases going forward, wiht minimal or no re-mapping.</li>
-      <li>Data originally collected for one patient's health event can be important for future events, including different health disease states.</li>
-      <li>Work to enable <b>consistent representation</b> of data elements that could be used across specialties, subspecialties, and Use Cases. Different specialties, subspecialties, and Use Cases within a specialty often require the same data concept that could be modelled differently (and perhaps have been described differently, historically).</li>
+      <li><b>Collect patient data once</b> (generally around the encounter). Data collected can then be reused for multiple Use Cases inside and outside of the specialty, with minimal or no re-mapping.</li>
+      <li>Data originally collected for one patient's health event can be important for <b>future health events</b>, including different health and disease states.</li>
+      <li>Work to enable <b>consistent representation</b> of health data concepts that could be used across specialties, subspecialties, and Use Cases.  See how  previous specialties have modeled similar concepts and aim to be consistent.</li>
       <li>Leverage principles, templates, and cross-specialty processes that reconcile differences and consolidate solutions in one place, where possible.</li>
-      <li>Patients are increasingly aware of and their health data and options for its collection, storage, and use. Work to empower Patients to be <b>engaged with </b> and have <b>control</b> of their health data.</li>
+      <li>Patients are increasingly aware of and their health data and options for its collection, storage, and use. Work to empower Patients to be <b>engaged with</b> and have <b>control</b> of their health data.</li>
           </ul>
         </li>
 
