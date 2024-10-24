@@ -17,8 +17,8 @@ theme: playbook
       <p class="lead">Scoped Use Cases are critical to success. Planning  the work within a Use Case documents agreed steps, schedules, and resources needed to deliver solutions successfully.</p>
 			<hr>
       <h2 id="what_is_use_case">What is a Use Case?</h2>
-      <p>A Use Case is a vision and project that requires electronic collection, storage, sharing, and/or use of standardized data within a new, well-scoped workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
-      <p>A specific Use Case provides the scope for all that comes next. Thus, a well-scoped and compelling Use Case is critical for success. A Use Case attracts the subset of the larger Community who care deeply about the objectives and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
+      <p>A Use Case in this context is a project that requires electronic collection, storage, sharing, and/or use of standardized data within a new, well-scoped workflow relative to current practice. Implementation and adoption of the Use Case should enable measurable improvements in the health ecosystem, including more effective, faster, and/or less expensive patient care and research. </p>
+      <p>A specific Use Case provides the framework for all that comes next. Thus, a well-scoped and compelling Use Case is critical for success. A Use Case attracts the subset of the larger Community who care deeply about the objectives and have the ability to drive work.  A Use Case allows Standards Development work to focus on the data elements needed to execute new systems and workflows.</p>
       <p>A prototypical Use Case is the Radiation Therapy Treatment for Cancer Use Case. This Use Case has worked successfully to replace inefficient sharing of documents (PDF) from a radiation therapy services to oncologists, leveraging an mCODE-based FHIR exchange of structure radiation treatment summary data. This work is already being deployed in real-world systems, improving information quality, and reducing clinical burden. See the <%= link_to("Radiation Therapy Treatment Data Case Study","/casestudies/radiation_therapy.html") %>.</p>
       <figure>
         <%= image_tag 'radiation-therapy-workflow.png', :width => '100%', :class => 'py-3', :alt=>"Workflow diagram for CodeX Use Case" %>
@@ -35,8 +35,8 @@ theme: playbook
 			<p>Below are key learnings around the CodeX Use Case Discovery and Planning stages. The CodeX "Execution" experience will be referenced in the <%= link_to("Implementation & Testing","implementation.html") %> and <%= link_to("Adoption & Value","adoption.html")%> sections of this website.</p>
 			<hr>
 			<h2 id="use_case_discovery">Use Case Discovery:<br>Identifying and Prioritizing Potential Specialty Projects</h2>
-			<p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), who engage and gain commmitment from potential participants. Together, they build a list of possible Use Cases, and agree on their first/next Use Case project, based in part, on the factors below.</p>
-<p>New specialties should look at <%= link_to("CodeX oncology Use Cases","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %>. They may find that there is a parallel Use Case in their specialty (e.g., for clinical trials, registry reporting, quality measurement, prior authorization, etc.) for which previous oncology work could provide a jump start in the new specialty. Modeling new specialty work after existing work could also serve to make the new effort compatible with prior efforts, which serves implementers, health systems, patients well.</p>
+			<p>Use Case Discovery, in CodeX, generally starts with Use Case Champions (leaders), who engage and gain commmitment from potential participants. Together, they build a list of possible Use Cases, and agree on their first (or next) Use Case project, based in part, on the factors below.</p>
+<p>New specialties should look at <%= link_to("CodeX oncology Use Cases","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %>. They may find that there is a parallel Use Case in their specialty (e.g., for clinical trials, registry reporting, quality measurement, prior authorization, etc.) for which previous oncology work could provide a jump start in the new specialty. Modeling new specialty work after existing work could also serve to make the new effort compatible with prior efforts, thus serving implementers, health systems, patients well.</p>
 
 			<p>For the CodeX Program Management Office (with opportunity for input from the Steering and Operating Committees) to assess readiness of a Use Case to go into the CodeX Discovery stage, the following information is requested:</p>
 			<ul class="planning-list">
@@ -44,13 +44,13 @@ theme: playbook
 				<li>List of organizations and individuals committed to lead the Discovery discussions and alignment</li>
 				<li>List other specific organizations across stakeholder groups that could be candidates for working the concept through Discovery, Planning and Execution</li>
 			</ul>
-			<p>By the end of the Discovery stage, and before moving into the Planning Stage, a CodeX Use Case project typically has the following attributes:</p>
+			<p>By the end of the Discovery stage, and before moving into the Planning Stage, a CodeX Use Case project has the following attributes:</p>
 			<ul class="planning-list">
-				<li>Believed to be viable (some risk, is of course, natural and acceptable)</li>
-                                <li>Based on a landscape analysis, is unique and/or advances the function substantially</lI>
+                                <li>Based on a thorough landscape analysis, is unique and/or advances the field </li>
                                 <li>Has the potential to substantially improve patient care and research within and/or across specialties</li>
 				<li>Shares the vision of collecting patient data once (mainly to support patient care) and exchanging for multiple uses</li>
-				<li>Leverages clinically-based FHIR Implementation Guides for automated collection and exchange of a minimal set of clinical data
+                                <li>Believed to be viable (some risk, is of course, natural and acceptable)</li>
+                                <li>Leverages clinically-based FHIR Implementation Guides for automated collection and exchange of a minimal set of clinical data
 					<ul>
 						<li>Leverages resources and open FHIR-based API-based data exchange</li>
 						<li>Leverages Gov’t supported frameworks, including USCDI, the US Core FHIR IG, and others.</li>
@@ -65,7 +65,7 @@ theme: playbook
 
 			<p>Other considerations that MITRE has found useful to determining readiness to proceed:</p>
 			<ul class="planning-list">
-				<li>A new specialty should consider starting with one or two less ambitious Use Cases, based on simpler new workflows that share a minimal set of standardized data. This raises the probability of success at speed, and can help a new Community to gel.</li>
+				<li>A new specialty should consider starting with one or two less ambitious Use Cases, based on simpler new workflows that share a minimal set of standardized data. This raises the probability of success at speed, and can help a new Community to become a functional team.</li>
 				<li>Ask the right questions:
 					<ul>
 						<li>What's driving the need for the Use Case?: Is the need related to clinical workflow improvements, research improvements, new regulatory requirements, cost or burden reduction, and/or other factors?</li>
@@ -85,7 +85,7 @@ theme: playbook
 			<h2 id="use_case_planning">Use Case Planning:<br>From Starting Work to Providing Value in the Ecosystem </h2>
 			 
 			<p>
-				Once a Use Case has been prioritized through the Discovery stage, the next step is to develop a plan.  Often some of the plan components have been considered and even detailed during the Discovery stage. Here are considerations that CodeX documents in their Use Case Development Guidelines, augmented by additional MITRE experience.
+				Once a Use Case has been prioritized through the Discovery stage, the next step is for the Community to develop a plan.  Often some of the plan components have been considered and even detailed during the Discovery stage. Here are considerations that CodeX documents in their <%= link_to("Use Case Development Guidelines","https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines") %>, augmented by additional MITRE experience.
 			</p>
 
 			<ul class="planning-list">
