@@ -21,7 +21,7 @@ section: Resources
      <p>
         Here, we will walk through the development processes identifying common, readily available, free tools that can be used to manage, test, and update the community’s software.      
      </p>
-     <h2>Sofware Development Lifecycle (SDLC)</h2>
+     <h2>Software Development Lifecycle (SDLC)</h2>
      <p>
         The SDLC guides software through key steps in the development process:
      </p>
@@ -60,11 +60,11 @@ section: Resources
       <h3>Coding</h3>
       <h4>Development Environment</h4>
       <p>
-       It is strongly recommended that a community’s open-source software be developed within an environment that allows a teams of developers to effectively manage the code. Key personnel like developers can and often do change over the course of the project, as a result it is critical that there is a single repository for the community’s code, ideally one that can be made public when software is ready to be shared. There are many options for code management and software repositories, the most commonly used repository for open-source projects is <a href="https://github.com/">GitHub</a>. It is also recommended that the developers use project management software such as Trello, Jira, or Microsoft Teams. This helps ensure that development goals and bug fixes are tracked and resolved in a timely manner.
+       It is strongly recommended that a community’s open-source software be developed within an environment that allows a team of developers to effectively manage the code. Key personnel like developers can and often do change over the course of the project, as a result it is critical that there is a single repository for the community’s code, ideally one that can be made public when software is ready to be shared. There are many options for code management and software repositories, the most commonly used repository for open-source projects is <a href="https://github.com/">GitHub</a>. It is also recommended that the developers use project management software such as Trello, Jira, or Microsoft Teams. This helps ensure that development goals and bug fixes are tracked and resolved in a timely manner.
       </p>
       <h4>FHIR Artifacts</h4>
       <p>
-        A common starting point for many looking to jumpstart their development are existing FHIR software artifacts such as the <a href="https://hapifhir.io/">Hapi FHIR software</a>, which provides working JAVA software for many basic FHIR resources. Hapi FHIR, <a href="https://confluence.hl7.org/display/FHIR/Open+Source+Implementations">HL7's Confluence page</a>, and other FHIR open-source responsitories provide basic FHIR software that can be adapted for the community’s purposes.
+        A common starting point for many looking to jumpstart their development are existing FHIR software artifacts such as the <a href="https://hapifhir.io/">Hapi FHIR software</a>, which provides working JAVA software for many basic FHIR resources. Hapi FHIR, <a href="https://confluence.hl7.org/display/FHIR/Open+Source+Implementations">HL7's Confluence page</a>, and other FHIR open-source repositories provide basic FHIR software that can be adapted for the community’s purposes.
       </p>
       <h3>Testing</h3>
       <p>
@@ -82,7 +82,10 @@ section: Resources
          </li>
       </ul>
       <p>
-       For community developed tools, the first two states are the primary focus of community software development. Since the final state, real-world implementations, will rely on the community to partnering with software vendors or healthcare organizations to implement instances of the software withing local systems. Discussions will focus on alpha and beta state testing and leave real-world implementations decisions to software vendors.
+        For community developed tools, the first two states are the primary focus of community software development. Since the final state, real-world implementations, will rely on the community to partnering with software vendors or healthcare organizations to implement instances of the software withing local systems. Discussions will focus on alpha and beta state testing and leave real-world implementations decisions to software vendors.
+      </p>
+      <p>
+        it is vital to develop testing tools for the development team and the community to ensure that the IG and associated implementations function as intended. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IG standards and simplify individual implementations by helping developers identify issues with their software or with the IG. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. Another testing tool option is <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a>, a commercial testing framework that is also widely used across the FHIR community.
       </p>
       <h4>Alpha Testing</h4>
       <p>
@@ -94,7 +97,7 @@ section: Resources
       </p>
       <ul>
          <li>
-          HL7 maintains an instance of the <a href="https://hapifhir.io/">Hapi FHIR server</a> for everyone to use. It should be noted, however, that this instance has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons. Further because of those resource instances are used by the public, real patient data should never be uploaded to Hapi FHIR servers and Hapi may regularly purge test data to ensure continued server functionality for all. 
+          HL7 maintains an instance of the <a href="https://hapifhir.io/">Hapi FHIR server</a> for everyone to use. It should be noted, however, that this instance has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons. Further, because those resource instances are available to the public, real patient data should never be uploaded to the HL7 Hapi FHIR servers and HL7 may regularly purge test data to ensure continued server functionality for all. 
          </li>
          <li>
           <a href="https://site.healthit.gov/">HealthIT.gov</a> also provides a <a href="https://site.healthit.gov/sandbox-fhir">FHIR Sandbox</a> that includes <a href="https://fhirsandbox.healthit.gov/secure/r4/">FHIR(R4) servers </a> and the <a href="https://inferno.healthit.gov/">Inferno testing tool</a>.
@@ -103,9 +106,6 @@ section: Resources
           <a href="https://www.logicahealth.org/the-re-envisioned-logica-hl7-fhir-sandbox-for-2024/">HL7</a> and <a href="https://www.logicahealth.org/solutions/fhir-sandbox/">Logica Health</a> provides free services for developing SMART-on-FHIR apps, graphical front-ends, Electronic Health Record (EHR) simulators, and OAuth authentication support.
          </li>
       </ul>
-      <p>
-        In this stage of development it is also helpful to investigate developing testing tools for the community. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IGs and simplify individual implementations by helping developers identify issues with their software. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. Another testing tool option is <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a>, a proprietary testing framework that is also widely used across the FHIR community.
-      </p>
       <h4>Real-world Testing</h4>
       <p>
        There is an overlap between real-world testing and deployment as real-world testing actually deploys software to local systems. The goal of this stage is to verify the efficacy and efficiency of the community's software, identify any lingering issues with IG development, and gather feedback and prepare the community for larger scale implementations. This step is largely overseen by software vendors who are best equipped to make implementation and testing decisions within their software systems. 
