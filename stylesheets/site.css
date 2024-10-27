@@ -86,6 +86,9 @@ header ul.nav a.nav-link {
   header ul.nav a.nav-link:hover {
     background-color: #f5f5f6; }
 
+.note {
+  font-style: italic; }
+
 .breadcrumb-box {
   background-color: var(--breadcrumb-bkg);
   border-top: 1px solid var(--breadcrumb-border-color);

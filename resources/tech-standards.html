@@ -157,10 +157,45 @@
         <figcaption>Diagram describing the development of a FHIR Implementation Guide from Clinical Requirements to FHIR IG Development to HL7 Standardization.</figcaption>
       </figure>
 
-      <hr>
-<h3 id="fhir_additional_considerations">Additional Considerations to Enable Cross-Health Data Interoperability</h3>
+      <h3 id="clinical_example">Simple Clinical Concept Example: Systolic Blood Pressure</h3>
+      <p>
+        The following example shows how the FHIR Implementation Guide development process outlined above can be applied to a simple clinical concept, such as systolic blood pressure:
+      <p>
+        <b>Step 1:</b> Clinicians are consulted about what information and factors need to be captured regarding systolic blood pressure, for example:
+        <ul>
+          <li>What is the measurement value</li>
+          <li>What units are used to measure the value</li>
+        </ul>
+      </p>
+      <p class="note">
+        Note that this is a simplified example to introduce the process.  There are other factors to be considered (e.g., how the blood pressure measured, where it is measured on the body, body position, etc).
+      </p>
+      <p>
+        <b>Step 2:</b> Create a data dictionary to capture how that information from Step 1 should be represented.  Consult with clinical terminology subject matter experts to fill out the data dictionary.  Review results with clinicians and gain their approval.
+      </p>
 
- <p>When defining Use Cases and the associated data standards, make interoperable <b>data exchange</b> the top priority. Data exchange standards can also influence and provide value for data collection. Data that will be exchanged must be collected or be computed from data that are collected. How the data are stored within systems can be defined by the implementor to meet engineering requirements. Implementers may find value in leveraging data exchange standards in their storage schemes. How the data are displayed and manipulated (e.g., interfaces for collection, aggregation, review, computation, analysis, etc.) can be defined by the implementor to the benefit of users. Implementers may find value in leveraging data exchange standards in their display and manipulation schemes. </p>
+      <figure>
+        <img src="../images/data-dictionary-systolic.png" width="100%" class="py-3" alt="Example data dictionary for exchanging systolic blood pressure" />
+        <figcaption>Diagram showing example data dictionary for exchanging systolic blood pressure</figcaption>
+      </figure>
+
+      <p>
+        <b>Step 3:</b> Determine the FHIR design from the data dictionary to exchange the required systolic blood pressure information.  Review results with the community (clinicians, terminologists, technologists) and gain consensus.
+      </p>
+
+      <figure>
+        <img src="../images/fhir-systolic.png" width="100%" class="py-3" alt="Example FHIR design for exchanging systolic blood pressure" />
+        <figcaption>
+          Diagram showing example FHIR design for exchanging systolic blood pressure from <a href="https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-blood-pressure.html">HL7 FHIR US Core 7.0.0</a>
+        </figcaption>
+      </figure>
+
+      <hr>
+      <h3 id="fhir_additional_considerations">Additional Considerations to Enable Cross-Health Data Interoperability</h3>
+
+      <p>
+        When defining Use Cases and the associated data standards, make interoperable <b>data exchange</b> the top priority. Data exchange standards can also influence and provide value for data collection. Data that will be exchanged must be collected or be computed from data that are collected. How the data are stored within systems can be defined by the implementor to meet engineering requirements. Implementers may find value in leveraging data exchange standards in their storage schemes. How the data are displayed and manipulated (e.g., interfaces for collection, aggregation, review, computation, analysis, etc.) can be defined by the implementor to the benefit of users. Implementers may find value in leveraging data exchange standards in their display and manipulation schemes. 
+      </p>
 
       <p>
         Following the <a href="../playbook/design_principles.html">Design Principles</a> has many benefits, including helping to ensure consistency with other efforts which is critical in working towards a unified lifetime <b>Standard Health Record</b> where an individual's health data is captured accurately and consistently across medical systems and specialties (see figure below). Leveraging established clinical requirements and a common standards framework of US Core and standard terminologies, as CodeX Use Cases and mCODE do, enables individual specialties to develop their IGs independently and yet as consistently as possible. 
@@ -242,7 +277,8 @@
       <p>
         Once the clinical subject matter expert group has at least a draft of their data dictionary for the use case, work can begin on incorporating the clinical information into one or more FHIR IGs. Once the FHIR IG development team has been assembled, both the IG development team and the clinical requirements team will collaborate to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <a href="../playbook/design_principles.html">Design Principles</a>. 
  
-<p>A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for set of Use Cases concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
+      <p>
+        A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for set of Use Cases concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
       </p>
 
       <h3 id="stds_framework">Framework for FHIR Implementation Guide Development</h3>
@@ -251,7 +287,7 @@
       </p>
 
       <ul>
-       <li>
+        <li>
           <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a> is the health data sharing framework widely used now and is being mandated for certain applications through ONC.
         </li>
         <li>
@@ -270,9 +306,9 @@
           Standard Terminology. (refs:  <a href="https://www.himss.org/terminology-standards">HIMSS</a>, <a href="https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf">CMS</a>) A terminology code system is a managed collection of structured terminologies (concepts like procedures, diagnoses, treatments, measurements, results, etc.) with the objective that there is one globally unique code (alpha-numeric, typically) to represent each concept. Code systems, terminologies, and vocabularies are not the same things, but are highly related and often used together or for the same idea. <a href="https://www.snomed.org/use-snomed-ct">SNOMED CT</a>, <a href="https://loinc.org/">LOINC</a>, <a href="https://www.ama-assn.org/topics/cpt-codes">CPT</a> are some examples of widely used code systems. The benefit of representing a concept with standard terminology in an IG (and elsewhere) is that the concept can be implemented (in FHIR or other standards) in health information systems and understood everywhere the concept is collected, stored, exchanged, and used.
         </li>
         <li>
-        <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a> is a domain-specific language for defining FHIR artifacts involved in creation of FHIR Implementation Guides (IG). The goal of FSH is to allow Implementation Guide (IG) creators to more directly express their intent with fewer concerns about underlying FHIR mechanics, and efficiently produce high-quality FHIR IGs.”  FSH is an HL7 standard. FSH is increasingly used around the world.
-</ul>
-</li>
+          <a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH)</a> is a domain-specific language for defining FHIR artifacts involved in creation of FHIR Implementation Guides (IG). The goal of FSH is to allow Implementation Guide (IG) creators to more directly express their intent with fewer concerns about underlying FHIR mechanics, and efficiently produce high-quality FHIR IGs.”  FSH is an HL7 standard. FSH is increasingly used around the world.
+        </li>
+      </ul>
 
       <div class="row">
         <div class="col-md-4">
@@ -308,9 +344,8 @@
       </p>
       <figure>
         <img src="../images/mCODE-stu3-model_Oct2023.png" width="100%" alt="" />
-        <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023) </figcaption>
+        <figcaption>Example conceptual modeling diagram for mCODE STU 3 (2023). <a href="https://www.drawio.com/">draw.io</a> was used to <a href="https://ciscodevnet.github.io/graphyte/diagrams_drawio/">create the mCODE modeling diagram</a>.</figcaption>
       </figure>
-              
       <h3 id="stds_terminology">Terminologies</h3>
       <p>
         As previously noted, terminologies, standard clinical code systems, are important for unambiguously defining how data within the data element are represented.  When a term cannot be found within an existing code system, it’s possible to work with the owner of the code system to add new terms, provided the justification is convincing.
@@ -448,8 +483,7 @@
           Discuss any new extension and its purpose with the HL7 Working Group that has responsibility for the FHIR Resource being extended, so that they understand the need and can provide guidance.
         </li>
         <!--<li>[NOTE:  Add more best practices].</li>-->
-      </ul>
-          
+      </ul> 
     </div>
   </div>
 </div>
