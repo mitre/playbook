@@ -81,13 +81,13 @@
       <h1>Technical Deep Dive into FHIR-Based Standards Development</h1>
       <h2>Tailored for clinical subject matter experts, standards developers, and systems implementers.</h2>
       <p class="lead">
-        Health data standards help patients, health systems, payers, researchers and others who need to work together communicate using a common language. Health data standards can specify clearly how data are collected, stored, shared, and/or used such that every piece of data can be unambiguously understood by all entities within the health ecosystem. These standards are not the end product, and instead are an essential means empowering accurate, electronic data sharing to improve health care and access, and to reduce burden and costs.
+        Health data standards help patients, health systems, payers, researchers, and others who need to work together communicate using a common language. Health data standards can specify clearly how data are collected, stored, shared, and/or used such that every piece of data can be unambiguously understood by all entities within the health ecosystem. These standards are not the end product, and instead are an essential means empowering accurate, electronic data sharing to improve health care and access, and to reduce burden and costs.
       </p>
       <p>
-       The following sections will guide clinical and technical experts through Health Level 7® (HL7®) processes to refine clinical requirements and develop implementation guides (IGs).  It is advised that throughout the process the teams undertaking these efforts utilizing existing communities and resources including chat.fhir.org, HL7 Work Groups, and FHIR Accelerators. These external groups have extensive expectance in all aspects of FHIR software development and can significantly reduce the time required to develop real-world impactful software for the specialty community.
+       The following sections will guide clinical and technical experts through Health Level 7® (HL7®) processes to refine clinical requirements and develop implementation guides (IGs).  It is advised that throughout the process the teams undertaking these efforts utilize existing communities and resources including chat.fhir.org, HL7 Work Groups, and FHIR Accelerators. These external groups have extensive expectance in all aspects of FHIR software development and can significantly reduce the time required to develop real-world impactful software for the specialty community.
       </p>
       <p>
-        The best standards are demanded by product consumers; community-driven and developed within an open, royalty-free standards organization; often recommended or mandated by the government; well documented; demonstrated to provide value; easy to implement in systems and workflows; and widely adopted by the community.
+        The best standards are standards that are demanded by product consumers; community-driven and developed within an open, royalty-free standards organization; often recommended or mandated by the government; well documented; demonstrated to provide value; easy to implement in systems and workflows; and widely adopted by the community.
       </p>
       <h3 id="mcode_standards_tutorial">CodeX / mCODE Standards Development Tutorial</h3>
       <p>
@@ -168,7 +168,7 @@
         </ul>
       </p>
       <p class="note">
-        Note that this is a simplified example to introduce the process.  There are other factors to be considered (e.g., how the blood pressure measured, where it is measured on the body, body position, etc).
+        Note that this is a simplified example to introduce the process.  There are other factors to be considered (e.g., how is blood pressure measured, where it is measured on the body, body position, etc.).
       </p>
       <p>
         <b>Step 2:</b> Create a data dictionary to capture how that information from Step 1 should be represented.  Consult with clinical terminology subject matter experts to fill out the data dictionary.  Review results with clinicians and gain their approval.
@@ -210,7 +210,7 @@
       </p>
 
       <p>
-        One of the first task of the clinical requirements team is to the define scope of the data dictionary. Both CodeX and FHIR design principles recommend a minimalist approach: cover the most common and important use cases, not necessarily all edge cases. This approach speeds development work, improves the odds of reaching consensus, and creates a final product that can be expanded to meet future needs. 
+        One of the first tasks of the clinical requirements team is to define the scope of the data dictionary. Both CodeX and FHIR design principles recommend a minimalist approach: cover the most common and important use cases, not necessarily all edge cases. This approach speeds development work, improves the odds of reaching consensus, and creates a final product that can be expanded to meet future needs. 
       </p>
       <p>
         This sub-step and subsequent steps are typically iterative.  For example, the clinical expert group may develop a first draft of the Data Dictionary. Subsequent steps often result in requests to the clinical experts for clarification or suggestions for updates to the Data Dictionary based on FHIR development, implementation, and testing.
@@ -220,7 +220,7 @@
       <p>A data dictionary is a conversion of the clinical information needed for the use case into logical model data elements.</p>
 
       <p>
-        To begin to define the data dictionary, the clinical expert group will identify a set clinical requirements for a use case. The <a href="../Files/Clinical_Data_Requirements_Data_Dictionary_template.xlsx">clinical requirements and data dictionary template</a> provides an example assessment of a cancer patient and instructions for filling out the template. The spreadsheet Clinfo_NGS contains necessary data elements for the use case, data sources, references to prior work, and under the "Use Case Relevance" column a expert assessment of “Relevance to Patients Like Mine” to help prioritize the minimal set of information needed. A blank spreadsheet for clinical requirement development can be found in the Clinfo_Template spreadsheet.
+        To begin to define the data dictionary, the clinical expert group will identify a set of clinical requirements for a use case. The <a href="../Files/Clinical_Data_Requirements_Data_Dictionary_template.xlsx">clinical requirements and data dictionary template</a> provides an example assessment of a cancer patient and instructions for filling out the template. The spreadsheet Clinfo_NGS contains necessary data elements for the use case, data sources, references to prior work, and under the "Use Case Relevance" column is an expert assessment of “Relevance to Patients Like Mine” to help prioritize the minimal set of information needed. A blank spreadsheet for clinical requirement development can be found in the Clinfo_Template spreadsheet.
       </p>
 
       <p>
@@ -248,7 +248,7 @@
           Starting with a large set of “important” data needs/elements, rather than focusing on the needs for each prioritized use cases.
         </li>
         <li>
-          Not thinking about how to maximize the utility of information across other use cases.  For example, the information needed for initial diagnosis of cancer, might also be used for clinical trials matching or conducting trials. Slight changes to the initial requirements could enable the same information to be useable across all three use cases.
+          Not thinking about how to maximize the utility of information across other use cases.  For example, the information needed for initial diagnosis of cancer might also be used for clinical trials matching or conducting trials. Slight changes to the initial requirements could enable the same information to be useable across all three use cases.
         </li>
         <li>
           Asking for interpreted information rather than source data because that is established practice.  For example, asking for age, rather than collecting birth data and date/time of the encounter. 
@@ -278,7 +278,7 @@
         Once the clinical subject matter expert group has at least a draft of their data dictionary for the use case, work can begin on incorporating the clinical information into one or more FHIR IGs. Once the FHIR IG development team has been assembled, both the IG development team and the clinical requirements team will collaborate to ensure the clinical information needs are captured properly in the FHIR IG, that the FHIR IG is implementable in systems and processes, and that it is consistent with the <a href="../playbook/design_principles.html">Design Principles</a>. 
  
       <p>
-        A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for set of Use Cases concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
+        A specialty should aim for a <b>single, core IG</b> that represents the minimal clinical requirements for a set of Use Case concepts that are common within the specialty. The <a href="https://hl7.org/fhir/us/mcode/"> mCODE FHIR IG</a> is an example of a core IG. The core IG can be appended and improved as Use Cases are executed. Supplemental IGs can be built when new data requirements are not considered core, but important for smaller Communities and/or edge applications.</p>
       </p>
 
       <h3 id="stds_framework">Framework for FHIR Implementation Guide Development</h3>
@@ -353,7 +353,7 @@
 
       <h3 id="stds_profiles">Profiles and Extensions</h3>
       <p>
-        FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a resource are required and which are not for a particular context or use case. FHIR extensions add data elements and/or constraints the standard FHIR base resource definitions to create more specific, customized resource definitions for a particular context or use case.
+        FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a resource are required and which are not for a particular context or use case. FHIR extensions add data elements and/or constraints for the standard FHIR base resource definitions to create more specific, customized resource definitions for a particular context or use case.
       </p>
       <p>
         The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. 
@@ -377,7 +377,7 @@
         <ul>
           <li>Have they been officially published and if not, when will they publish?  This will affect the development timeline.</li>
           <li>
-            What level of adoption does that version have or will have in the near future?  Using the latest version may push adoption further out instead of using an older version in broader use.
+            What level of adoption does that version have or will have in the near future?  Using the latest version may push adoption further out in time relative to using an older version in broader use.
           </li>
           <li>
             What regulations may apply?  Regulations can stipulate what versions can be used (e.g., US Core version requirements for product certifications).
@@ -431,7 +431,7 @@
 
       <h3 id="HL7_process">HL7 Standards Process</h3>
       <p>
-        Agreeing on content of the FHIR IG to be standardized and then moving the IG through the HL7 process can take many months – on the order of a year from start to publication of a standard.  Time required depends on level of alignment of the IG authors, and also on how familiar project's standards process leader is with HL7 processes and people but can be many months to more than a year.  Projects should make sure to include sufficient time in the use case plan, and also start the standardization process early, before a complete draft FHIR IG is available.
+        Agreeing on content of the FHIR IG to be standardized and then moving the IG through the HL7 process can take many months – on the order of a year from start to publication of a standard.  Time required depends on level of alignment of the IG authors, and also on how familiar project's standards process leader is with HL7 processes and people but can be many months to more than a year.  Projects should make sure to include sufficient time in the use case plan, and also start the standardization process early - before a complete draft FHIR IG is available.
       </p>
       <p>Resources that are important to review and understand:</p>
       <ul>
@@ -456,7 +456,7 @@
         Once the first version of a specialty standard, the Standard for Trial Use (STU), has been completed and published, work begins on maintaining the standard over time. Any standard that is valued, implemented into systems, used widely will generate requests for updated versions.
       </p>
       <p>
-        Updates to specialty standards maybe needed for a variety of reasons. The standards on which your standard depends (e.g., FHIR, US Core) may be updated, and may require or at least motivate changes to standards that depend on them. Users may ask vendors who've integrated your standard or the vendors themselves may ask for updates. Government rules and regulations may motivate changes.
+        Updates to specialty standards may be needed for a variety of reasons. The base standards on which your standard depends (e.g., FHIR, US Core) may be updated, and may require or at least motivate changes to standards that depend on them. Users or the vendors may ask for updates. Government rules and regulations may motivate changes.
       </p>
       <p>
         Because changes to your standard may be required over time, it's important to keep a core of the original IG development team intact (and add to that core), with the necessary skills (e.g., clinical, FHIR, HL7) available when needed. It's important to keep a good relationship with the sponsoring HL7 Work Group. It's necessary to have a system to collect, organize, prioritize, and address requests for changes and other comments - likely the same system used for building the original standard (e.g., Jira at HL7).
@@ -477,7 +477,7 @@
           Have a good relationship with a sponsoring HL7 Work Group and its leadership. Ensure they are included in plans and progress. In many cases HL7 Work Group may have deep expertise within the community's specialty; however, even if they do not, they will know HL7 standards, HL7 processes, and work that other Work Groups are doing that may be related to your work.
         </li>
         <li>
-          Collaborate with a HL7 FHIR Accelerator like CodeX. This path has the benefit of working within an organization that will be more knowledgeable of and more closely connected to HL7 people and processes.
+          Collaborate with a HL7 FHIR Accelerator like CodeX. This path has the benefit of working within an organization that will be more knowledgeable of and connected closely to HL7 people and processes.
         </li>
         <li>
           Discuss any new extension and its purpose with the HL7 Working Group that has responsibility for the FHIR Resource being extended, so that they understand the need and can provide guidance.
