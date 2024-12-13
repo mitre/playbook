@@ -4,81 +4,84 @@ pagetitle: Case Studies
 theme: casestudy
 directory_index: false
 ---
-<div class="container">
+<div class="container pt-5">
   <div class="row">
-    <div class="col-md-6 pt-5 mb-3">
-      <h1>Case Studies</h1>
-      <p>This section highlights projects that have contributed to and leveraged the MITRE Health Data Interoperability Playbook to achieve success.</p>
+    <div class="col-md-3">
+      <%= partial "partials/playbook_menu" %>
     </div>
-  </div>
-</div>
-<div id="content">
-  <div class="d-flex">
-    <div class="container border-bottom">
-      <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
-        <div class="col-sm-8 col-md-8 col-lg-6">
-          <%= image_tag 'cancer-survivor.png', :width=>'80%', :class => 'py-2', :alt=>"Image of a cancer survivor in knit cap" %>
-        </div>
-        <div class="col-md-12 col-lg-6">
-          <h1 class="fw-bold lh-1 mb-3"><%= link_to("mCODE Standard and CodeX Community", "mcode_codex.html") %></h1>
-          <div class="row border-bottom py-4 mb-3">
-            <div class="col">
-              <span class="field-label">Organizations</span><br>
-              <strong>American Society of Clinical Oncology (ASCO)<br>MITRE Corporation</strong>
+    <div id="content" class="col-md-9">
+      <div class="col-md-6 mb-3">
+        <h1>Case Studies</h1>
+        <p>This section highlights projects that have contributed to and leveraged the MITRE Health Data Interoperability Playbook to achieve success.</p>
+      </div>
+      <div class="d-flex">
+        <div class="container border-bottom">
+          <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
+            <div class="col-sm-8 col-md-8 col-lg-6">
+              <%= image_tag 'cancer-survivor.png', :width=>'80%', :class => 'py-2', :alt=>"Image of a cancer survivor in knit cap" %>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <h1 class="fw-bold lh-1 mb-3"><%= link_to("mCODE Standard and CodeX Community", "mcode_codex.html") %></h1>
+              <div class="row border-bottom py-4 mb-3">
+                <div class="col">
+                  <span class="field-label">Organizations</span><br>
+                  <strong>American Society of Clinical Oncology (ASCO)<br>MITRE Corporation</strong>
+                </div>
+              </div>
+              <p class="py-3">
+                The history of the mCODE FHIR standard and the CodeX Community, how both started, how they grew, lessons learned, and progress toward solving challenges facing (initially) cancer  patients, researchers and others.</p>
+              <p>This case study should be especially valuable to those interested in starting broad, new standards initiatives for additional medical specialties.</p>
             </div>
           </div>
-          <p class="py-3">
-            The history of the mCODE FHIR standard and the CodeX Community, how both started, how they grew, lessons learned, and progress toward solving challenges facing (initially) cancer  patients, researchers and others.</p>
-<p>This case study should be especially valuable to those interested in starting broad, new standards initiatives for additional medical specialties.
-          </p>
-
-
         </div>
       </div>
-    </div>
-  </div>
 
-
-  <div class="container border-bottom">
-    <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
-      <div class="col-sm-8 col-md-4 col-lg-6">
-        <%= image_tag 'radiation-theraphy-patient.png', :width=> '80%', :class => 'py-2', :alt=>"Image of a patient about to undergo therapy" %>
-      </div>      
-  
-      <div class="col-md-8 col-lg-6">
-        <h1 class="fw-bold lh-1 mb-3"><%= link_to("CodeX Radiation Therapy Treatment Data Use Case","radiation_therapy.html") %></h1>
-        <div class="border-bottom py-4 mb-3">
-          <span class="field-label">Organizations</span><br>
-          <strong>American Society for Radiation Oncology (ASTRO)<br>American Association of Physicists in Medicine (AAPM)</strong>
+      <div class="container border-bottom">
+        <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
+          <div class="col-sm-8 col-md-4 col-lg-6">
+            <%= image_tag 'radiation-theraphy-patient.png', :width=> '80%', :class => 'py-2', :alt=>"Image of a patient about to undergo therapy" %>
+          </div>      
+      
+          <div class="col-md-8 col-lg-6">
+            <h1 class="fw-bold lh-1 mb-3"><%= link_to("CodeX Radiation Therapy Treatment Data Use Case","radiation_therapy.html") %></h1>
+            <div class="border-bottom py-4 mb-3">
+              <span class="field-label">Organizations</span><br>
+              <strong>American Society for Radiation Oncology (ASTRO)<br>American Association of Physicists in Medicine (AAPM)</strong>
+            </div>
+            <p class="py-3">
+              Learn how developing a core set of structured data elements for oncology electronic health records (EHRs) changed oncology radiation therapy.
+            </p>
+            <p>
+              The RTTD CodeX use case developed, implemented, tested and is driving adoption of FHIR-based standards and systems such that (a) radiation oncology information systems can seamlessly generate and share patients' radiation therapy treatment summary information across health systems and providers, and (b) clinicians can then use the radiation therapy treatment summary information to make informed, impactful decisions related to a patient's health.
+            </p>
+          </div>
         </div>
-        <p class="py-3">
-          Learn how developing a core set of structured data elements for oncology electronic health records (EHRs) changed oncology radiation therapy.
-        </p>
-        <p>
-          The RTTD CodeX use case developed, implemented, tested and is driving adoption of FHIR-based standards and systems such that (a) radiation oncology information systems can seamlessly generate and share patients' radiation therapy treatment summary information across health systems and providers, and (b) clinicians can then use the radiation therapy treatment summary information to make informed, impactful decisions related to a patient's health.
-        </p>
       </div>
-    </div>
-  </div>
-  
-  <div class="container">
-    <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
-      <div class="col-sm-8 col-md-4 col-lg-6">
-        <%= image_tag 'woman-walker-round.png', :width=> '80%', :class => 'py-2', :alt=>"Image of a woman holding a walker" %>
-      </div>      
-  
-      <div class="col-md-8 col-lg-6">
-        <h1 class="fw-bold lh-1 mb-3"><%= link_to("PACIO Project", "pacio.html") %></h1>
-        <div class="border-bottom py-4 mb-3">
-          <span class="field-label">Organizations</span><br>
-          <strong>CMS Division of Chronic and Post-Acute Care (DCPAC)<br>PACIO Project</strong>
+      
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-top g-5 py-5">
+          <div class="col-sm-8 col-md-4 col-lg-6">
+            <%= image_tag 'woman-walker-round.png', :width=> '80%', :class => 'py-2', :alt=>"Image of a woman holding a walker" %>
+          </div>      
+      
+          <div class="col-md-8 col-lg-6">
+            <h1 class="fw-bold lh-1 mb-3"><%= link_to("PACIO Project", "pacio.html") %></h1>
+            <div class="border-bottom py-4 mb-3">
+              <span class="field-label">Organizations</span><br>
+              <strong>CMS Division of Chronic and Post-Acute Care (DCPAC)<br>PACIO Project</strong>
+            </div>
+            <p class="py-3">
+              Learn how streamlining transitions of care and care coordination through FHIR changed post-acute care.
+            </p>
+            <p>
+            The PACIO (Post-Acute Care InterOperability) Project is all about care coordination – Forty-five percent of Medicare patients who leave hospitals go into some kind of post-acute care. Post-acute care accounts for $74 billion in Medicare payments annually, so it is a large part of our healthcare system. Post-acute care patients are typically very complex and have multiple transitions in their healthcare journey.  When a person transitions between healthcare settings, including ambulatory care, acute care, long-term post-acute care (LTPAC), and home- and community-based services (HCBS) &mdash; their care is often fragmented and can lead to poor health outcomes, increased burden, and increased costs.  The PACIO Project is helping to fix these problems.
+            </p>
+          </div>
         </div>
-        <p class="py-3">
-          Learn how streamlining transitions of care and care coordination through FHIR changed post-acute care.
-        </p>
-        <p>
-        The PACIO (Post-Acute Care InterOperability) Project is all about care coordination – Forty-five percent of Medicare patients who leave hospitals go into some kind of post-acute care. Post-acute care accounts for $74 billion in Medicare payments annually, so it is a large part of our healthcare system. Post-acute care patients are typically very complex and have multiple transitions in their healthcare journey.  When a person transitions between healthcare settings, including ambulatory care, acute care, long-term post-acute care (LTPAC), and home- and community-based services (HCBS) &mdash; their care is often fragmented and can lead to poor health outcomes, increased burden, and increased costs.  The PACIO Project is helping to fix these problems.
-        </p>
+      </div>
+      <div class="playbook-bottom-navigation">
+        <div class="previous"><%= link_to("Prev: Adoption & Value", "../playbook/adoption.html", :class=>"btn btn-outline-primary btn-lg") %></div>
+        <div class="next"><%= link_to("Next: Resources", "../resources/index.html", :class=>"btn btn-outline-primary btn-lg") %></div>
       </div>
     </div>
   </div>
