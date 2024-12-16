@@ -16,36 +16,36 @@ theme: playbook
       <h1>Track 4. Implementation & Testing</h1>
       <p class="lead">Health data standards must be implemented into software systems and workflows to provide a new or enhanced, potentially valuable function in the health ecosystem. Assessing the potential for real value requires testing, including pilots in increasingly realistic settings.</p>
 
-      <p>Both the implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software.
-      There are other significant biproducts of this Implementation & Testing track.  For example, it’s an opportunity to ensure the necessary Community members are actively involved within increasingly realistic environments. It’s an opportunity to attract new, critical organizations, based by demonstrating potential value, rather than just asserting potential value.
-      For Implementation & Testing to progress effectively, activities and necessary resources must be included thoughtfully in the Use Case plans, and prepared for as the Use Case initiative moves forward.</p>
+      <p>Both implementation and testing are necessary for each use case (concept, workflow), standards, and/or software.
+      There are other significant biproducts of this Implementation & Testing track. It is both an opportunity to ensure the necessary community members are actively involved within increasingly realistic environments and to attract new organizations by demonstrating value.
+      For Implementation & Testing to progress effectively, activities and necessary resources must be included thoughtfully in the use case plans, and prepared for as the use case initiative moves forward.</p>
       <p>
-      The rest of this section covers experience gained in (a) Implementation, (b) Testing, and (c) Feedback into the previously discussed Use Case & Planning and Standards Development tracks.
+      The rest of this section covers experience gained in (a) Implementation, (b) Testing, and (c) Feedback on the previously discussed Use Case & Planning and Standards Development tracks.
       </p>
       <hr>
       <h2 id="implement_workflows">Implement FHIR IG(s) into Systems and Workflows</h2>
-      <p>Every Use Case requires implementing at least part of a FHIR IG into software to support generally new aspects of the envisioned workflow to be piloted. It’s highly recommended to engage market-leading software vendors in the specialty space. Vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Candidate vendors should be engaged in the Community and committed to implement and test (and more) as early in the Use Case project as possible.</p>
+      <p>Every use case requires implementing at least part of a FHIR IG into software to support generally new aspects of the envisioned workflow to be piloted. It’s highly recommended to engage market-leading software vendors in the specialty space. Vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Candidate vendors should be engaged in the community and committed to implement and test (and more) as early in the use case project as possible.</p>
       <p>If in the early phases engaging leading vendors is not possible, implementation into prototypes and/or testing software may be a satisfactory first step to allow useful assessments.</p>
       <p>Questions that should be addressed during Implementation include:</p>
       <ul>
       	<li>Is the IG understandable based on technical specifications and documentation?</li>
       	<li>Is the IG implementable?</li>
       	<li>Is the system within which the IG is implemented consistent and interoperable with other systems with which data exchange would be needed?</li>
-      	<li>Is the workflow represented within the Use Case and IG realistic and consistent from the developer perspective (will also need user input during testing)?</li>
+      	<li>Is the workflow represented within the use case and IG realistic and consistent from the developer perspective (will also need user input during testing)?</li>
       </ul>
-      <p>In all cases, it’s critical to receive specific comments and recommendations for change that can be taken back to the FHIR IG and the Use Case and Planning teams so that adjustments can be considered - adjustments that could be very helpful before testing becomes intense.</p>
+      <p>In all cases, it’s critical to receive specific comments and recommendations for change that can be taken back to the FHIR IG and the use case team so that adjustments can be considered - adjustments that could be very helpful before testing becomes intense.</p>
       <hr>
       <h2 id="execute_pilots">Test and Pilot</h2>
-      <p>Testing and pilots within Use Cases tend to start simply and then ramp up to as realistic a scenario as possible, via multiple phases. Testing of the implemented IG should start as early as possible, even if on a subset of the future functionality. </p>
+      <p>Testing and pilots within use cases tend to start simply and then ramp up to as realistic a scenario as possible, via multiple phases. Testing of the implemented IG should start as early as possible, even if on a subset of the future functionality. </p>
       <p>The following table is a simplified set of testing axes that aim for a higher degree of realistic challenges from the top of the table to the bottom.  A particular test or pilot might combine components from different rows, and not just across a single row. </p>
 
       <%= partial "partials/example_options" %>
 
-      <p>Note that the use of real patient data (bottom row) involves patient and institutional consent, appropriate human protections, and should be planned for many months before testing aims to start.</p>
-<p>Early testing provides early feedback and engages key Community members in activities that bring the Use Case concept and IG closer to life. </p>
-      <p>However, the CodeX Use Cases have found it useful to start with very simple tests that can be started in 6-12 months after start of the project, including components similar to the first row in the table above. Over time, CodeX Use Cases typically ramp up through increasingly ambitious tests to real-world pilots including components similar to the bottom row: e.g., demonstrating the full Use Case workflow, using software systems intended for sale or otherwise deployed, using real patient data, driven by the intended users, and within many organizations across which the future Use Case is planned to operate. See the <%= link_to("Radiation Therapy Treatment Data Case Study","https://codex-hl7-fhir-accelerator.github.io/playbook/casestudies/radiation_therapy.html") %> for a good example of planning and ramping up of testing.</p>
+      <p>Note that the use of real patient data (bottom row) involves patient and institutional consent, appropriate privacy and security protections, and should be planned for many months before testing aims to start.</p>
+      <p>Early testing provides early feedback and engages key community members in activities that bring the use case concept and IG closer to life. </p>
+      <p>However, CodeX use cases have found it useful to start with very simple tests that can be started in 6-12 months after the start of the project, including components similar to the first row in the table above. Over time, CodeX use cases typically ramp up through increasingly ambitious tests to real-world pilots including components similar to the bottom row: e.g., demonstrating the full use case workflow, using software systems intended for sale or otherwise deployed, using real patient data, driven by the intended users, and within many organizations across which the future use case is planned to operate. See the <%= link_to("Radiation Therapy Treatment Data Case Study","https://codex-hl7-fhir-accelerator.github.io/playbook/casestudies/radiation_therapy.html") %> for a good example of planning and ramping up of testing.</p>
       <p>
-      Obviously, these real-world types of real-world pilot require substantial planning, commitment, preparation, and execution, well in advance of the execution of the pilot. This advanced planning is particularly important for testing in real healthcare settings, using real patient data, etc.
+      Obviously, these real-world pilots require substantial planning, commitment, preparation, and execution, well in advance of the execution of the pilot. This advanced planning is particularly important for testing in real healthcare settings, using real patient data, etc.
       </p>
 
       <p>For each of the tests and pilots, considerations typically include the elements below.  These elements should be nearly finalized when initial planning is complete, especially the commitment of the necessary resources.</p>
@@ -53,17 +53,17 @@ theme: playbook
       <ul class="action-list">
         <li>Objectives 
           <ul>
-            <li>What improvements in health care and/or research does the Use Case aim to provide that will be assessed?  (e.g., What will be made better, faster, less expensive, more accessible, etc.?)</li>
+            <li>What improvements in health care and research will the use case provide?  (e.g., What will be made better, faster, less expensive, more accessible, etc.?)</li>
           </ul>
         </li>
         <li>Test Configuration
           <ul>
-            <li>What parts of the Use Case workflow are being tested, and where are they being tested?</li>
+            <li>What parts of the use case workflow are being tested, and where are they being tested?</li>
           </ul>
         </li>
         <li>Resources
           <ul>
-            <li>Skill sets (e.g., project management, clinical, technical, logistics, legal, operational, etc.)</li>
+            <li>Skill sets (e.g., project management, clinical, technical, logistical, legal, operational, etc.)</li>
           	<li>Software (e.g., EHRs, specialty systems, etc.)</li>
           	<li>Facilities (e.g., health system, labs, homes, registries, etc.)</li>
           	<li>Funding (e.g., for facilities, expertise, etc.)</li>
@@ -79,9 +79,9 @@ theme: playbook
       </ul>
       <hr>
       <h2 id="use_feedback">Feedback to Update Previous Work, As Needed</h2>
-      <p>Even early phase pilots can provide valuable feedback on how implementable the IG is in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow. Both implementation and testing can surface the need for updates to the Use Case (concept, workflow), standards, and/or software. A test or pilot may need to be repeated, once these updates are agreed and implemented.</p>
+      <p>Even early phase pilots can provide valuable feedback on how implementable the IG is in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow. Both implementation and testing can surface the need for updates to the use case (concept, workflow), standards, and/or software. A test or pilot may need to be repeated once these updates are agreed and implemented.</p>
 
-    <div class="playbook-bottom-navigation">
+      <div class="playbook-bottom-navigation">
         <div class="previous">  <%= link_to("Prev: Standards Development", "standards.html", :class=>"btn btn-outline-primary btn-lg") %></div>
         <div class="next"><%= link_to("Next: Adoption & Value", "adoption.html", :class=>"btn btn-outline-primary btn-lg") %></div>
       </div>

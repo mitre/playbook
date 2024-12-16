@@ -12,7 +12,7 @@ theme: casestudy
     <div id="content" class="col-md-9 pt-5 mb-3">
       <h1 class="super-title">Case Study</h1>
       <h2>The mCODE Standard and CodeX Community</h2>
-      <p>This Case Study summarizes, from MITRE's perspective, the history of the mCODE FHIR standard and the CodeX Community, how both started, how they grew, lessons learned, and progress toward solving challenges facing (initially) cancer patients, researchers and others. This Case Study should be especially valuable to those interested in starting broad, new standards initiatives for additional medical specialties.</p>
+      <p>This Case Study summarizes, from MITRE's perspective, the history of the mCODE FHIR standard and the CodeX Community.  Included here are how both started, how they grew, lessons learned, and progress toward solving challenges facing (initially) cancer patients, researchers and others. This Case Study should be especially valuable to those interested in starting - within CodeX or elsewhere - broad, new standards initiatives for additional medical specialties.</p>
       <div class="row">
         <div class="col-md-4">
           <ul class="action-list">
@@ -60,29 +60,30 @@ theme: casestudy
       <p>Before reviewing the mCODE standard and CodeX Community experience, here is a brief definition of each:</p>
       
       <h3>What is the mCODE Standard?</h3>
-      <p><%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %> is an HL7 <strong><em>standard</em></strong>, <%= link_to("FHIR Implementation Guide (IG)","https://hl7.org/fhir/us/mcode/index.html") %> integrating an agreed, core set of common data elements for cancer that are valuable to patients and other stakeholders, computable, and aimed to be available in every electronic health record for patients with a cancer diagnosis. mCODE consists of approximately 30 FHIR profiles and roughly 100 data elements organized into six thematic groups: Patient Information, Health Assessment, Genomics Group, Disease Characterization, Cancer Treatments, and Outcomes.</p>
+      <p><%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %> is an HL7 <strong><em>standard</em></strong> <%= link_to("FHIR Implementation Guide (IG)","https://hl7.org/fhir/us/mcode/index.html") %> integrating an agreed, core set of common data elements for cancer. These data elements are deemed valuable to patients and other stakeholders via multiple use cases, potentially available in every electronic health record for cancer patients, and machine computable. mCODE consists of approximately 30 FHIR profiles and roughly 100 data elements organized into six thematic groups (see below): Patient Information, Health Assessment, Genomics Group, Disease Characterization, Cancer Treatments, and Outcomes.</p>
       <figure>
         <%= image_tag 'mcode-cancer-ring.png', :width => '600', :class => 'py-3', :alt=>"Diagram of cancer treatment stakeholders" %>
         <figcaption>Diagram of oncology stakeholders and categories of related data elements in the mCODE FHIR standard</figcaption>
       </figure>
       <h3>What is the CodeX Community?</h3> 
-      <p><%= link_to("CodeX","https://confluence.hl7.org/display/COD/CodeX+Home") %> is a member-driven HL7 FHIR Accelerator hosting a growing <strong><em>Community</strong></em> working together to drive substantial improvements around the most important challenges facing specialty health care and research. Initial <%= link_to("CodeX Use Cases","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %> (projects) focused on improving, collecting, and sharing mCODE-based data in the oncology space.  Through 2024, cardiovascular and genomics Communities have also started work within CodeX. The following graphic summarizes a core CodeX strategy: Enabling all patient data to be collected once, and then shared and used (as consented by the patient) for many different Use Cases.</p>
+      <p><%= link_to("CodeX","https://confluence.hl7.org/display/COD/CodeX+Home") %> is a member-driven HL7 FHIR Accelerator hosting a growing <strong><em>community</strong></em> working together to drive substantial improvements around the most important challenges facing specialty health care and research. Initial <%= link_to("CodeX Use Cases","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %> (projects) focused on improving, collecting, and sharing mCODE-based data in the oncology space.  Through 2024, cardiovascular and genomics Communities have also started work within CodeX.</p>
+<p>The following graphic summarizes a core CodeX strategy: Enabling all patient data to be collected once, and then shared and used (as consented by the patient) for many different use cases.</p>
       <figure>
       <%= image_tag 'codex-vision.png', :width => '700', :class => 'py-3', :alt=>"Diagram of data exchange between cancer treatment stakeholders" %>
-      <figcaption>CodeX vision that a cancer patient's data can be collected once and more easily shared for multiple Use Cases, provided the data are standardized.</figcaption>
+      <figcaption>CodeX vision that a cancer patient's data can be collected once and more easily shared for multiple use cases, provided the data are standardized.</figcaption>
       <hr>
       <h2 id="how_it_started">Getting Started</h2>
 <p>(Key Playbook Track: <%= link_to("Community Building", "/playbook/community.html") %>)</p>
       <div class="row">
         <div class="col-lg-6">
         <h3>History 2017-2018</h3>
-        <p><strong>Origin:</strong> The lucky spark was a chance encounter between former medical colleagues, Dr. Jay Schnitzer and Dr. Monica Bertagnolli, on an airplane in 2017. Bertagnolli was a preeminent cancer surgeon at Brigham and Women’s and was leading the American Society of Clinical Oncology (ASCO) and Alliance for Cancer Trials in Oncology (ACTO). Dr. Schnitzer, was Chief Technology Officer at MITRE, with a growing portfolio of health information technology research.</p>
+        <p><strong>Origin:</strong> The lucky spark was a chance encounter between former medical colleagues, Dr. Jay Schnitzer and Dr. Monica Bertagnolli, on an airplane in 2017. Bertagnolli was a preeminent cancer surgeon at Brigham and Women’s and was leading the American Society of Clinical Oncology (ASCO) and Alliance for Cancer Trials in Oncology (ACTO). Dr. Schnitzer, was Chief Medical Officer and Chief Technology Officer at MITRE, with a growing portfolio of health information technology research.</p>
         <p>Drs. Bertagnolli and Schnitzer had been circling around how to achieve a Learning Health System, where caring for every patient enables learning from every patient. Every person with any disease should have access to high-quality care, and also will have the opportunity for their experience to help others in the future. </p>
-<p>Drs. Bertagnolli and Schnitzer had also been circling around one of the fundamental challenges to achieving a Learning Health System: Lack of a single standard for collecting and sharing patient data electronically. They organized the first clinical requirements team convened under the auspices of ASCO, co-chaired by Drs. Jim Chen and Doug Blaney, and filled-out with respected experts from across the oncology space. The team's mandate was to agree on first Use Cases (a narrow scope was important), and on a minimal set of data elements to address Use Case requirements. This data dictionary later seeded a new standard for cancer data: the <%= link_to("minimal Common Oncology Data Elements","https://confluence.hl7.org/display/COD/mCODE") %>. </p>
+<p>Drs. Bertagnolli and Schnitzer had also been circling around one of the fundamental challenges to achieving a Learning Health System: Lack of a single standard for collecting and sharing patient data electronically. They organized the first clinical requirements team convened under the auspices of ASCO, co-chaired by Drs. Jim Chen and Doug Blaney, and staffed with world-class experts from across the oncology space. The team's mandate was to agree on first use cases (a narrow scope was important), and on a minimal set of clinical data to address use case requirements. This data dictionary later seeded a new standard for cancer data: the <%= link_to("minimal Common Oncology Data Elements","https://confluence.hl7.org/display/COD/mCODE") %>. </p>
       </div>
       <div class="col-lg-6">
         <h3>Learnings</h3>
-        <p>ASCO and MITRE, led by Drs. Bertagnolli and Schnitzer, became what we now call <%= link_to("Champions", "/playbook/community.html#champions") %> for the new oncology specialty initiative. As <strong>Champions</strong>, they:</p>
+        <p>ASCO and MITRE, led by Drs. Bertagnolli and Schnitzer, became what we now call <%= link_to("Champions", "/playbook/community.html#champions") %> for the new oncology specialty initiative. As <strong>champions</strong>, they:</p>
 
         <ul>
           <li>Committed their leadership</li>
@@ -93,14 +94,14 @@ theme: casestudy
               <li>Both – convening power</li>
             </ul>
           </li>
-          <li>Had access to potential members of the <strong>Community</strong> and the resources needed develop and leverage mCODE: 
+          <li>Had access to potential members of the <strong>community</strong> and the resources needed to develop and leverage mCODE: 
             <ul>
               <li>ASCO and ACTO –  access to almost all clinical cancer organizations and vendors</li>
               <li>MITRE –  deep expertise in standards and systems engineering</li>
               <li>Both –  strong links to Federal health agencies.</li>
             </ul>
           </li>
-          <li>Established the need for clinical expert consensus on very specific Use Cases and associated minimal data requirements.</li> 
+          <li>Established the need for clinical expert consensus on very specific use cases and associated minimal data requirements.</li> 
 
         </ul>
       </div>
@@ -114,16 +115,16 @@ theme: casestudy
     <div class="row">
       <div class="col-lg-6">
         <h3>History 2018-2019</h3>
-        <p><b>First Project:</b>  <%= link_to("EHR Endpoints for Cancer Clinical Trials (ICAREdata study)","https://confluence.hl7.org/display/COD/EHR+Endpoints+for+Cancer+Clinical+Trials") %>. The original mCODE clinical team envisioned a small set of Use Cases in its initial, conceptual work. It was clear that success required executing a project where standardized data collection and sharing in the real world would test that value of the new standard. The Use Case for the ICAREdata project was to capture and share, using the mCODE standard, high quality clinical treatment data from electronic health records (EHRs) that could be used for oncology clinical trials and other research.</p>
+        <p><b>First Project:</b>  <%= link_to("EHR Endpoints for Cancer Clinical Trials (ICAREdata study)","https://confluence.hl7.org/display/COD/EHR+Endpoints+for+Cancer+Clinical+Trials") %>. The original mCODE clinical team envisioned a small set of use cases in its initial, conceptual work. It was clear that success required executing a project where standardized data collection and sharing in the real world would test the value of the new data standard. The use case for the ICAREdata project was to capture and share, using the mCODE standard, high quality clinical treatment data from electronic health records (EHRs) that could be used for oncology clinical trials and other research.</p>
         <p>ACTO and MITRE became the ICAREdata Use Case Champions. Over time, multiple health systems, clinical trials, Epic, pharmaceutical companies, NCI, and FDA participated in, hosted, and/or funded development and testing.</p>  
         <p>Initial work focused on standardizing and collecting just three key data elements (cancer type, disease status (e.g., progressing, stable...), and reason for treatment change), all modeled within the fledgling mCODE IG.</p>
       </div>
       <div class="col-lg-6">
         <h3>Learnings</h3>
-        <p>ACTO, and MITRE understood that the best way to develop a cancer data standard is to focus on the small set of core data elements needed for specific Use Cases (e.g., specific challenges) that, if empowered by standardized data, could have a substantial impact.</p>
+        <p>ACTO, and MITRE understood that the best way to develop a cancer data standard is to focus on the small set of core data elements needed for specific use cases (e.g., specific challenges) that, if empowered by standardized data, could have a substantial impact.</p>
         <p>ACTO and ASCO’s credibility and clinical network facilitated the engagement of outstanding clinical experts and vendors.</p>
         <p>Adoption and Value in real-world settings was in the Plan from the start. This ultimately helped refine mCODE and workflows and led to greater participation and substantial funding.</p>
-        <p>This Use Case also helped identify the skillsets necessary during different phases of Use Case work.</p>
+        <p>This use case also helped identify the skillsets necessary during different phases of use case work.</p>
       </div>
     </div>
   
@@ -133,7 +134,7 @@ theme: casestudy
       <p><b>mCODE V 1.0 IG</b> was balloted in the Health Level Seven (HL7) standards organization in 2019 and benefited substantially from the ICAREdata experience.</p>
       </div>
       <div class="col-lg-6">
-        <p>mCODE design principles started to become clear during the ICAREdata Use Case and have improved and served mCODE’s evolution since. Principles include:  Focus on discrete data collected during patient encounters. Collect clinical expert input first and engage other experts as the IG is developed. Base the IG on government and industry requirements and trends (e.g., FHIR, US Core). Leverage the best existing clinical data modeling efforts. Adopt global standard code systems. More details in the <%= link_to("Design Principles","/playbook/design_principles.html", :class=>"fw-bold") %> section.</p>
+        <p>mCODE design principles started to become clear during the ICAREdata Use Case and have improved and served mCODE’s evolution since. Principles include: (a) Focus on discrete data collected during patient encounters. (b) Acquire clinical expert input first and engage other experts as the IG is developed. (c) Base the IG on government and industry requirements and trends (e.g., FHIR, US Core). (d) Leverage the best existing clinical data modeling efforts. (e) Adopt global standard code systems. More details in the <%= link_to("Design Principles","/playbook/design_principles.html", :class=>"fw-bold") %> section.</p>
       </div>
     </div>
 
@@ -143,7 +144,7 @@ theme: casestudy
     <div class="row">
         <div class="col-lg-6">
         <h3>History 2019-2020</h3>
-        <p><%= link_to("Cancer Data Summit","https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit", :class=>"fw-bold") %>: Interest in mCODE was starting to build and new Use Cases were being proposed. A small group of leaders from across the oncology space (patients, providers, researchers, payers, gov’t agencies, vendors, etc.) convened for two days in October 2019 to brainstorm on the future of standardized cancer data, obstacles to success, and next steps. Below is one of the many  storytelling roadmaps from the Summit. One outcome was support for creating a clinical requirements group (which became the mCODE Executive Committee) and an implementation group (which became the CodeX HL7 FHIR Accelerator).</p>
+        <p><%= link_to("Cancer Data Summit","https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit", :class=>"fw-bold") %>: Interest in mCODE was starting to build and new use cases were being proposed. A small group of leaders from across the oncology space (patients, providers, researchers, payers, gov’t agencies, vendors, etc.) convened for two days in October 2019 to brainstorm on the future of standardized cancer data, obstacles to success, and next steps. Below is one of the many  storytelling roadmaps from the Summit. One outcome was support for creating a clinical requirements group (which became the mCODE Executive Committee) and an implementation group (which became the CodeX HL7 FHIR Accelerator).</p>
       </div>
       <div class="col-lg-6">
         <h3>Learnings</h3>
@@ -160,27 +161,27 @@ theme: casestudy
     </div>
     <div class="row">
         <div class="col-lg-6">
-        <p><b>mCODE Executive Committee and Technical Review Group</b>: This body was organized under the leadership of ASCO, and included clinical leaders and experts from major cancer-related societies, government agencies, and others as needed. This group followed from the original clinical requirements team convened by ASCO in 2019 (see above). The mandate continues to be to maintain and evolve the clinical description of the data elements in mCODE.</p>
+        <p><b>mCODE Executive Committee and Technical Review Group</b>: This body was organized under the leadership of ASCO, and included clinical leaders and experts from major cancer-related societies, government agencies, and others as needed. This group followed from the original clinical requirements team convened by ASCO in 2019 (see above). The mandate continues to be to maintain and evolve the clinical data dictionary that underpins mCODE.</p>
       </div>
       <div class="col-lg-6">
-        <p>It has proven beneficial to have this strictly clinical group focusing on clinical requirements and interpretation. An expert can be an invaluable contributor to mCODE, without being deeply involved in the technical and logistical work that CodeX would take on. However, a valuable, small subset of those involved in the Executive Committee have joined CodeX work.</p>
+        <p>It has proven beneficial to have this strictly clinical group focusing on clinical requirements and interpretation. An expert can be an invaluable contributor to mCODE without being deeply involved in the technical and logistical work that CodeX would take on. However, a valuable, small subset of those involved in the Executive Committee have joined CodeX standards and use case work.</p>
       </div>
     </div>
     <div class="row">
         <div class="col-lg-6">
-        <p><b>CodeX Community</b> To complement the Executive Committee’s clinical leadership, MITRE led the creation of CodeX within HL7’s then-new FHIR Accelerator Program. CodeX was established, and still operates, with a focus on creating FHIR IGs, but also just as importantly a focus on implementing FHIR IGs into software and workflows, testing these in the field, and supporting adoption and value measurement in the real world. A lightweight process, <%= link_to("Governance structure","https://confluence.hl7.org/display/COD/Governance") %> and <%= link_to("Membership fee model","https://confluence.hl7.org/display/COD/CodeX+Membership+Options") %> were established. There were 9 Founding Members and other categories Members by the end of 2020.</p>
+        <p><b>CodeX Community</b> To complement the Executive Committee’s clinical leadership, MITRE led the creation of CodeX within HL7’s then-new FHIR Accelerator Program. CodeX was established, and still operates, with a focus on creating FHIR IGs, but also just as importantly a focus on implementing FHIR IGs into software and workflows, testing these in the field, and supporting adoption and value measurement in the real world. A lightweight process, <%= link_to("Governance structure","https://confluence.hl7.org/display/COD/Governance") %> and <%= link_to("Membership fee model","https://confluence.hl7.org/display/COD/CodeX+Membership+Options") %> were established. There were 9 founding members and other categories members by the end of 2020.</p>
       </div>
       <div class="col-lg-6">
-        <p>Establishing the goal of adoption and value of a standard, rather than focusing primarily on standards development, was and is not easy.  This generally takes a greater commitment of resources and time from more parts of the Community to achieve the goal. However, this goal resonated with the growing Community, and ultimately paid off in new Use Cases, Members, adoption and value in the real world.</p>
+        <p>Establishing the goal of adoption and value of a standard, rather than focusing primarily on standards development, was and is not easy.  This generally takes a greater commitment of resources and time from more parts of the community to achieve the goal. However, this goal resonated with the growing community, and ultimately paid off in new use cases, members, adoption and value in the real world.</p>
       </div>
     </div>
     
     <div class="row">
         <div class="col-lg-6">
-        <p><b>Initial Vendor Implementation:</b> Epic and others started to implement parts of mCODE in their software and delivering to their customers.</p>
+        <p><b>Initial Vendor Implementation:</b> Epic and others started to integrate parts of mCODE in their software.</p>
       </div>
       <div class="col-lg-6">
-        <p>Demand for mCODE from large cancer centers (through ASCO, ACTO and the Summit) contributed substantially to vendors responding to their customers.</p>
+        <p>Demand for mCODE from large cancer centers (through ASCO, ACTO and the Summit) provided substantial motivation for vendors to deliver mCODE-infused systems to their customers.</p>
       </div>
     </div>
 
@@ -202,7 +203,7 @@ theme: casestudy
       </div>
       <div class="col-lg-6">
         <h3>Learnings</h3>
-        <p>CodeX leadership agreed to a <%= link_to("Use Case selection process","https://confluence.hl7.org/display/COD/CodeX+Use+Case+Development+Guidelines") %> to help ensure Use Cases have the ingredients (e.g., the Tracks described on this website) to succeed. The table below lists Use Case start dates and the Champions that drove them. Medical Societies and Government agencies were the most frequent Champions.</p>
+        <p>CodeX leadership agreed to a <%= link_to("use case selection process","https://confluence.hl7.org/display/COD/CodeX+Use+Case+Development+Guidelines") %> to help ensure use cases have the ingredients (e.g., the Tracks described on this website) to succeed. The table below lists use case start dates and the champions that drove them. Medical societies and government agencies were the most frequent champions.</p>
       </div>
     </div>
     <div class="row">
@@ -218,7 +219,7 @@ theme: casestudy
 
       </div>
       <div class="col-lg-6">
-        <p>Two main drivers for attracting new Members include initial promising progress within ongoing Use Cases, as well as new Use Cases which engage different segments of a given specialty (ex., the radiology segment of the oncology space). Successful Use Cases engaged at least one (generally more) of each of the types of organizations needed to execute the Use Case.</p>
+        <p>Two main drivers for attracting new members included promising progress within ongoing use cases, as well as new use cases which engage different segments of a given specialty (ex., the radiology segment of the oncology space). Successful use cases engaged at least one (generally more) of each of the types of organizations needed to execute the use case.</p>
       </div>
     </div>
 <br>
@@ -259,7 +260,7 @@ theme: casestudy
       <tr>
         <td>2020</td>
         <td><a href="https://confluence.hl7.org/display/COD/Integrated+Trial+Matching+for+Cancer+Patients+and+Providers">Trials Matching</a></td>
-        <td>American Cancer Society/CAN<br>(engaged multiple cancer centers & vendors)</td>
+        <td>American Cancer Society - Cancer Action Network<br>(which engaged multiple cancer centers & vendors)</td>
       </tr>
       <tr>
         <td>2020</td>
@@ -274,7 +275,7 @@ theme: casestudy
       <tr>
         <td>2021</td>
         <td><a href="https://confluence.hl7.org/display/COD/Prior+Authorization+in+Oncology">Prior Authorization</a></td>
-        <td><a href="https://confluence.hl7.org/display/COD/Prior+Authorization+in+Oncology">??? [NOTE:  not listed on the Prior Auth site]</a></td>
+        <td>Evernorth and many others</td>
       </tr>
       <tr>
         <td></td>
@@ -308,10 +309,10 @@ theme: casestudy
   </table>
 <p><%= link_to("CodeX Use Cases today","https://confluence.hl7.org/display/COD/CodeX+Use+Cases") %></p>
  <br>
-<p>It is also interesting to review the <%= link_to("evolution of the mCODE FHIR IG standard", "https://hl7.org/fhir/us/mcode/history.html") %>.  This evolution was strongly driven by CodeX Use Cases and their requirements for core oncology data elements to fuel solutions. The static graphic below is mCODE's conceptual model as of October 2023. Visit the <%= link_to("latest version of the mCODE FHIR IG","https://hl7.org/fhir/us/mcode/") %>, where you can click on individual boxes in the graphic to dive into the details of where mCODE stands today.</p>
+<p>The <%= link_to("evolution of the mCODE FHIR IG standard", "https://hl7.org/fhir/us/mcode/history.html") %> was strongly driven by CodeX Use Cases and their requirements for core oncology data elements to fuel solutions. The static graphic below is mCODE's conceptual model as of October 2023. Visit the <%= link_to("latest version of the mCODE FHIR IG","https://hl7.org/fhir/us/mcode/") %>, where you can click on individual boxes in the graphic to dive into the details of where mCODE stands today.</p>
       <figure>
         <%= image_tag 'mCODE-stu3-model_Oct2023.png', :width=>"100%", :alt=>"Modeling diagram" %>
-        <figcaption>The mCODE STU3 conceptual modeling diagram, built through defining the needs of different cancer Use Cases </figcaption>
+        <figcaption>The mCODE STU3 conceptual modeling diagram, built through defining the needs of different cancer use cases </figcaption>
      </figure>
         
     <hr>
@@ -350,7 +351,7 @@ theme: casestudy
     <h2 id="conclusions">Conclusions from the mCODE / CodeX Case Study</h2>
 <p>(Key Playbook Tracks: <%= link_to("Community Building", "/playbook/community.html") %>, <%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %>, <%= link_to("Standards Development", "/playbook/standards.html") %>, <%= link_to("Implementation & Testing", "/playbook/implementation.html") %>, and <%= link_to("Adoption & Value", "/playbook/adoption.html") %>)</p>
     <p>Between 2019 and 2024, the CodeX Community and colleagues improved and leveraged mCODE to address difficult problems in oncology, substantially improving cancer care and research. During 2022-2024, the cardiology and genomics Communities started their CodeX journey.</p>
-<p>This Playbook is a compilation of the experience from CodeX and elsewhere, that is hoped will speed the work of additional, new specialties that are considering following the mCODE / CodeX model. [NOTE: Add more.]</p>
+<p>This Playbook is a compilation of the experience from CodeX and elsewhere that is hoped will speed the work of additional, new specialties that are considering following the mCODE / CodeX model.</p>
    
     </div>
   </div>
