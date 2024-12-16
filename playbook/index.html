@@ -97,18 +97,18 @@
 
       <h2 id="motivation">Why?</h2>
       <p>"Why" is the Playbook being created and shared now? Three primary reasons:</p>
-<p>First, data interoperability remains a serious impediment to better and more affordable health care. Multiple recent studies demonstrate interoperability-driven impediments including: 
-      <ul>
+      <p>First, data interoperability remains a serious impediment to better and more affordable health care. Multiple recent studies demonstrate interoperability-driven impediments including: 
+        <ul>
           <li><a href="https://ascopubs.org/doi/10.1200/JCO.2023.41.16_suppl.6561">Average treatment delays of a month</a> which can result from prior authorizations data sharing breakdowns.</li> 
           <li>It takes an average of <a href="https://jamanetwork.com/journals/jama/article-abstract/2803716">17 years for research to reach clinical practice</a>.</li>
           <li>It can take <a href="https://www.cdc.gov/national-program-cancer-registries/data-modernization/index.html">3 years for public health data to be aggregated</a> and available for broader use. </li> 
           <li>Nearly <a href="https://jamanetwork.com/journals/jama/fullarticle/2785480">$1 trillion per year for healthcare administrative costs</a>, which could be reduced with more efficient, standardized data exchange.</li>  
-      </ul>
-</p>
+        </ul>
+      </p>
       <p>Second, formerly disparate elements are converging to make this a prime time for other specialties to create FHIR-based data standards to address challenges.
       Patients, providers, payers, researchers, and others are realizing the need for standards that provide semantic interoperability. Recent government rules and regulations are driving standards-based approaches upon which specialty communities can build. Vendors are working to meet customer demands and government direction, delivering products increasingly based on standards. CodeX and mCODE have leveraged these underpinnings from the start. </p>
       
-<p> The third reason to share this Playbook is that MITRE has had a primary role in creating and building a Community within the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator</a>, building applications using the <a href="https://confluence.hl7.org/display/COD/mCODE">mCODE cancer data standard</a>, and the accelerating adoption of <a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX's mCODE-based use cases</a> to address interoperability challenges in the oncology space. This success has led leaders in the cardiovascular and genomics domains to start work in CodeX. It has also led many additional medical specialties to ask MITRE's experts questions such as:</p>
+      <p> The third reason to share this Playbook is that MITRE has had a primary role in creating and building a Community within the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator</a>, building applications using the <a href="https://confluence.hl7.org/display/COD/mCODE">mCODE cancer data standard</a>, and the accelerating adoption of <a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX's mCODE-based use cases</a> to address interoperability challenges in the oncology space. This success has led leaders in the cardiovascular and genomics domains to start work in CodeX. It has also led many additional medical specialties to ask MITRE's experts questions such as:</p>
       <ul>
         <li>What are CodeX and mCODE?</li>
         <li>What impact are CodeX and mCODE making to enable data interoperability and solve real health challenges?</li>
@@ -116,14 +116,23 @@
         <li>How could my specialty replicate the impacts realized by CodeX and mCODE, and perhaps move even faster?</li> 
       </ul>
       <p>These questions are just some of the motivations that led MITRE to consolidate and share its experience in this Playbook.</p>
-<p>There are approaches in addition to MITRE's that may be useful to review. Whatever approach the community follows, the outcome must aim to be consistent with other specialties and in the best interest of all patients who typically need the services of multiple specialties during their lifetime. MITRE's <a href="./#organization">Playbook Tracks</a> and <a href="design_principles.html">Design Principles</a> aim to ensure the necessary level of consistency and quality, and have a track record of success.</p> 
+      <p>There are approaches in addition to MITRE's that may be useful to review. Whatever approach the community follows, the outcome must aim to be consistent with other specialties and in the best interest of all patients who typically need the services of multiple specialties during their lifetime. MITRE's <a href="./#organization">Playbook Tracks</a> and <a href="design_principles.html">Design Principles</a> aim to ensure the necessary level of consistency and quality, and have a track record of success.</p> 
       
       <h2 id="intended_audience">Who?</h2>
       <p>"Who" is the intended audience for the Playbook? The Playbook will be valuable to a range of organizations and people interested in creating and leveraging specialty health data standards to address real-world challenges.</p>
       <p>The Playbook should be particularly helpful for specialty leaders exploring how to replicate the CodeX model for oncology within their own specialty. Specialty leaders may be motivated to work with CodeX and other specialties to speed work and increase coherency.</p>
-<p>Parts of the Playbook will be useful to particular stakeholders (e.g., patient organizations, health systems, specialty societies, government agencies, payers, vendors, etc.) and roles (e.g., decision makers, funders, project managers, community organizers, clinical experts, informaticists, standards developers, system engineers, communications personnel, etc.) involved in just a subset of the spectrum of all future work. The <a href="../resources/roles.html">Key Playbook Sections by Role</a> provided here aims to help guide people with leadership, clinical, or technical responsibilities to quickly find the most relevant information for them.</p>
-<p>
-To get the most out of the Playbook, it would be helpful for leaders to have at least a high-level knowledge of standards that are foundational in the Playbook (e.g., the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>, etc.).  Standards implementers should, of course, have a much deeper understanding of these foundations. </p>
+      <p>Parts of the Playbook will be useful to particular stakeholders (e.g., patient organizations, health systems, specialty societies, government agencies, payers, vendors, etc.) and roles (e.g., decision makers, funders, project managers, community organizers, clinical experts, informaticists, standards developers, system engineers, communications personnel, etc.) involved in just a subset of the spectrum of all future work. The <a href="../resources/roles.html">Key Playbook Sections by Role</a> provided here aims to help guide people with leadership, clinical, or technical responsibilities to quickly find the most relevant information for them.</p>
+      <p>
+      To get the most out of the Playbook, it would be helpful for leaders to have at least a high-level knowledge of standards that are foundational in the Playbook:
+        <ul>
+          <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a></li>
+          <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a></li>
+          <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a></li>
+          <li><a href="https://uscdiplus.healthit.gov/uscdi">USCDI+ (specialty supplements to USCDI)<a></li>
+          <li><a href="https://www.aapc.com/resources/what-is-medical-coding">Health Information Coding Systems<a></li>
+          <li><a href="https://www.himss.org/terminology-standards">Health Information Terminology Standards<a>
+        </ul>
+      Standards implementers should, of course, have a much deeper understanding of these foundations. </p>
   
       <h2 id="organization">How?</h2>
       <p>"How" is this Playbook organized? The Playbook is organized around the approach used by the CodeX community to drive development and value of standard FHIR Implementation Guides. This approach has five tracks that overlap in time, interact substantially, and have been improving with experience. The first graphic below is a simplified representation of the five tracks.  The second graphic shows a notional timeline of the overlapping and interacting tracks for a hypothetical use case.  In CodeX, the time from the start of the work to initial adoption of a use case solution has been on the order of 3 - 5 years.</p>
@@ -151,9 +160,9 @@ To get the most out of the Playbook, it would be helpful for leaders to have at 
 
       <p>Also provided in the Playbook are <a href="design_principles.html">Design Principles</a> that help drive efficient and consistent standards development work. These Principles, when used by different specialty initiatives, will also help ensure alignment between initiatives, within and across specialties.</p>
 
-<p><a href="../casestudies/">Case Studies</a> show how real projects have leveraged the tracks, including the history of activities, outcomes, and lessons that may be useful for new specialties.</p>
+      <p><a href="../casestudies/">Case Studies</a> show how real projects have leveraged the tracks, including the history of activities, outcomes, and lessons that may be useful for new specialties.</p>
 
-<p>Playbook sections recommended for people in particular roles, lower-level details on particular topics, and links and tools related to the tracks and Case Studies can be found on the <a href="../resources/">Resources</a> page.</p>
+      <p>Playbook sections recommended for people in particular roles, lower-level details on particular topics, and links and tools related to the tracks and Case Studies can be found on the <a href="../resources/">Resources</a> page.</p>
   
       <div class="playbook-bottom-navigation">
         <div class="previous inactive"></div>
