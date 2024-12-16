@@ -31,13 +31,6 @@
 <a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
 </a>      </div>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="../playbook/" class="nav-link">Intro & Tracks</a></li>
-        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
-        <li><a href="./" class="nav-link">Resources</a></li>
-        <li><a href="../about/" class="nav-link">About</a></li>
-      </ul>
-
       <div class="col-md-3 text-end search-form">
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="event.preventDefault(); return false;">
           <input id="search_field" type="search" class="form-control" placeholder="Search..." aria-label="Search">
@@ -60,200 +53,236 @@
   </div>
 </div>
 
-    <div class="container">
+    <div class="container pt-5">
   <div class="row">
-    <div class="col-md-6 pt-5 mb-3">
-      <h1>Resources</h1>
-      <p>On this Resource page, you'll find the MITRE Health Data Interoperability Playbook sections recommended for people in particular roles, lower-level details on particular topics, and links related to the tools, tracks, and Case Studies.</p>
+    <div class="col-md-3">
+      <nav class="sidebar-menu navbar" id="playbook_menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li><a href="../playbook/">Intro & Tracks</a></li>
+
+  <li><a href="../playbook/getting_started.html">Before Starting</a></li>
+  <li><a href="../playbook/design_principles.html">Design Principles</a></li>
+  
+  <li><a href="../playbook/community.html">Track 1. Community Building</a></li>
+
+  <li><a href="../playbook/use_cases_planning.html">Track 2. Use Cases & Planning</a></li>
+  
+  <li><a href="../playbook/standards.html">Track 3. Standards Development</a></li>
+  
+  <li><a href="../playbook/implementation.html">Track 4. Implementation & Testing</a></li>
+
+  <li><a href="../playbook/adoption.html">Track 5. Adoption & Value</a></li>
+
+  <li><a href="../casestudies/">Case Studies</a></li>
+
+  <li class="active"><a href="./" class="active">Resources</a></li>
+    <li class="sub"><a href="../resources/roles.html">By project role</a></li>
+    <li class="sub"><a href="../resources/tech-standards.html">Standards Development Deep Dive</a></li>
+    <li class="sub"><a href="../resources/implementation_deep_dive.html">Implementation Deep Dive</a></li>
+
+  <li><a href="../about/">About</a></li>
+ 	    <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
+
+
+</ul>
+</nav>
+
     </div>
-  </div>
-  <div id="content">
-    <h2>Explore</h2>   
-    <div class="resource-section-container">
-      <div class="resource-section">
-        <h3>By Role</h3>
-        <p>The most important Playbook sections recommended for particular experts on a standards-focused project team:</p>
-        <a href="roles.html">Playbook Content for Particular Roles</a>
+    <div id="content" class="col-md-9">
+      <div class="col-md-6 mb-3">
+        <h1>Resources</h1>
+        <p>On this Resource page, you'll find the MITRE Health Data Interoperability Playbook sections recommended for people in particular roles, lower-level details on particular topics, and links related to the tools, tracks, and Case Studies.</p>
       </div>
-      <div class="resource-section">
-        <h3>Technical Deep Dives</h3>
-        <p>Detailed Playbook tracks for clinical subject matter experts, standards developers, and systems implementers.</p>
-        <p><a href="tech-standards.html">Standards Development Technical Deep Dive</a></p>
-        <p><a href="implementation_deep_dive.html">Implementation & Testing Deep Dive</a></p>
-      </div>
-      <div class="resource-section">
-        <h3>Tools</h3>
-        <p>Resources that new specialty standards initiatives can use for more efficient work.</p>
-        <p><a href="../Files/Playbook-Checklist.docx">Playbook Checklist</a> of the most important steps across all five Tracks (download)</p>
-        <p><a href="../Files/Standards%20Community%20Charter%20Template.docx">Community charter template</a> (download)</p> 
-        <p><a href="../Files/Use-Case-Roles-and-Resource-Planning.xlsx">Role and resource planning speadsheet</a> (download)</p>
-        <p><a href="../Files/Clinical_Data_Requirements_Data_Dictionary_template.xlsx">Data Dictionary Template spreadsheet</a> (download)</p>
-        <p><a href="https://www.drawio.com/">SVG Tool</a> used for <a href="https://ciscodevnet.github.io/graphyte/diagrams_drawio/">creating interactive diagrams</a> like the <a href="https://hl7.org/fhir/us/mcode/">mCODE conceptual data model diagram</a></p> 
-      </div>
-    </div>
-    
-    <h2>Links to External Resources</h2>
-      <div class="resource-list-container">
+      <h2>Explore</h2>   
+      <div class="resource-section-container">
         <div class="resource-section">
-          <h3>Key References: <a href="../playbook/#organization">Five Tracks</a></h3>
+          <h3>By Role</h3>
+          <p>The most important Playbook sections recommended for particular experts on a standards-focused project team:</p>
+          <a href="roles.html">Playbook Content for Particular Roles</a>
+        </div>
+        <div class="resource-section">
+          <h3>Technical Deep Dives</h3>
+          <p>Detailed Playbook tracks for clinical subject matter experts, standards developers, and systems implementers.</p>
+          <p><a href="tech-standards.html">Standards Development Technical Deep Dive</a></p>
+          <p><a href="implementation_deep_dive.html">Implementation & Testing Deep Dive</a></p>
+        </div>
+        <div class="resource-section">
+          <h3>Tools</h3>
+          <p>Resources that new specialty standards initiatives can use for more efficient work.</p>
+          <p><a href="../Files/Playbook-Checklist.docx">Playbook Checklist</a> of the most important steps across all five Tracks (download)</p>
+          <p><a href="../Files/Standards%20Community%20Charter%20Template.docx">Community charter template</a> (download)</p> 
+          <p><a href="../Files/Use-Case-Roles-and-Resource-Planning.xlsx">Role and resource planning speadsheet</a> (download)</p>
+          <p><a href="../Files/Clinical_Data_Requirements_Data_Dictionary_template.xlsx">Data Dictionary Template spreadsheet</a> (download)</p>
+          <p><a href="https://www.drawio.com/">SVG Tool</a> used for <a href="https://ciscodevnet.github.io/graphyte/diagrams_drawio/">creating interactive diagrams</a> like the <a href="https://hl7.org/fhir/us/mcode/">mCODE conceptual data model diagram</a></p> 
+        </div>
+      </div>
+      
+      <h2>Links to External Resources</h2>
+        <div class="resource-list-container">
+          <div class="resource-section">
+            <h3>Key References: <a href="../playbook/#organization">Five Tracks</a></h3>
 
-          <section>
-            <h4><a href="../playbook/community.html">Community Building</a></h4>
-            <ul class="resource-list">
-              <li><a href="../playbook/getting_started.html">Questions to Address Before Getting Started</a></li>
-              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a></li>
-              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership">CodeX HL7 Membership List</a> </li>
-              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership+Options">CodeX Membership Options</a></li>
-              <li><a href="https://confluence.hl7.org/display/COD/Governance">CodeX Governance</a></li>
-            </ul>
-          </section>
+            <section>
+              <h4><a href="../playbook/community.html">Community Building</a></h4>
+              <ul class="resource-list">
+                <li><a href="../playbook/getting_started.html">Questions to Address Before Getting Started</a></li>
+                <li><a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a></li>
+                <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership">CodeX HL7 Membership List</a> </li>
+                <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership+Options">CodeX Membership Options</a></li>
+                <li><a href="https://confluence.hl7.org/display/COD/Governance">CodeX Governance</a></li>
+              </ul>
+            </section>
 
 
-         <section> 
-            <h4><a href="../playbook/use_cases_planning.html">Use Cases & Planning</a></h4>
-            <ul>
-              <li><a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">CodeX Use Case Development Guidelines</a></li>
-              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX Use Cases: Plans and Progress</a></li>
-            </ul>
-        </section>
+            <section> 
+              <h4><a href="../playbook/use_cases_planning.html">Use Cases & Planning</a></h4>
+              <ul>
+                <li><a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">CodeX Use Case Development Guidelines</a></li>
+                <li><a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX Use Cases: Plans and Progress</a></li>
+              </ul>
+            </section>
 
-        <section>        
-            <h4>Standards Development <br><a href="../playbook/standards.html">Overview</a> and <a href="tech-standards.html">Technical Deep Dive</a></h4>
-            <ul class="resource-list">
-              <li><a href="../playbook/design_principles.html">CodeX Standards Design Principles</a></li>
-	      <li><a href="tech-standards.html#mcode_standards_tutorial">Video tutorial on the development of mCODE</a> (May Terry, MITRE, Nov 2023, 2 hr 33 min)</li>
-              <li><a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a></li>
-              <li><a href="https://www.hl7.org/">Health Level Seven (HL7)</a>
-                <ul>
-                  <li><a href="https://confluence.hl7.org/display/HE/HL7+Essentials">HL7 Essentials</a> </li>
-                  <li><a href="https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process">Understanding the Standards Process</a></li>
-                  <li><a href="https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow">FHIR Implementation Guide Process Flow</a></li>  
-                </ul>
-              </li>              
-              
-              <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a></li>
-              <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a></li>
-              <li><a href="https://uscdiplus.healthit.gov/uscdi">USCDI+ - specialty supplements to USCDI<a></li>
-              <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a></li>
-              <li><a href="https://www.aapc.com/resources/what-is-medical-coding">Health Information Coding Systems<a></li>
-              <li><a href="https://www.himss.org/terminology-standards">Health Information Terminology Standards<a>
-              <li><a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH) - Language for creating FHIR IGs</a>
+            <section>        
+              <h4>Standards Development <br><a href="../playbook/standards.html">Overview</a> and <a href="tech-standards.html">Technical Deep Dive</a></h4>
+              <ul class="resource-list">
+                <li><a href="../playbook/design_principles.html">CodeX Standards Design Principles</a></li>
+                <li><a href="tech-standards.html#mcode_standards_tutorial">Video tutorial on the development of mCODE</a> (May Terry, MITRE, Nov 2023, 2 hr 33 min)</li>
+                <li><a href="https://www.healthit.gov/">Office of the National Coordinator for Health Information Technology (ONC)</a></li>
+                <li><a href="https://www.hl7.org/">Health Level Seven (HL7)</a>
+                  <ul>
+                    <li><a href="https://confluence.hl7.org/display/HE/HL7+Essentials">HL7 Essentials</a> </li>
+                    <li><a href="https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process">Understanding the Standards Process</a></li>
+                    <li><a href="https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow">FHIR Implementation Guide Process Flow</a></li>  
+                  </ul>
+                </li>              
+                
+                <li><a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a></li>
+                <li><a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a></li>
+                <li><a href="https://uscdiplus.healthit.gov/uscdi">USCDI+ - specialty supplements to USCDI<a></li>
+                <li><a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a></li>
+                <li><a href="https://www.aapc.com/resources/what-is-medical-coding">Health Information Coding Systems<a></li>
+                <li><a href="https://www.himss.org/terminology-standards">Health Information Terminology Standards<a>
+                <li><a href="https://hl7.org/fhir/uv/shorthand/">FHIR Shorthand (FSH) - Language for creating FHIR IGs</a>
                 <ul>
                   <li><a href="https://fshschool.org/">FSH School Tutorial</a></li>
                   <li><a href="https://www.youtube.com/watch?v=tmtEnjxrCDA">Learn to FSH: A friendly introduction to FHIR Shorthand (Video)</a></li>
                 </ul>
-              </li>
-              <li><a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) FHIR Implementation Guide<a></li>
-            </ul>
-        </section>
-        <section>
-            <h4><a href="../playbook/implementation.html">Implementation & Testing</a></h4>
-              <ul class="resource-list">
-              <li><a href="https://confluence.hl7.org/display/COD/Phase+1">CodeX Trial Matching Use Case Phase 1 pilot report</a>
-              <li>More links coming soon</li>
-              </ul>
-        </section>
-        <section>
-            <h4><a href="../playbook/adoption.html">Adoption & Value</a></h4> 
-              <ul class="resource-list">
-                <li><a href="../playbook/community.html#value_prop">Stakeholder-Specific Value Propositions</a></li>
-<li><a href="https://www.whitehouse.gov/cancermoonshot/">White House Cancer Moonshot</a> leveraging mCODE</li>
-	<li><a href="https://www.whitehouse.gov/ostp/">OSTP</a> and <a href="https://arpa-h.gov">ARPA-H</a> noted CodeX as an important partner in strengthening the nation’s clinical trial infrastructure</li>
-	<li><a href="https://prescancerpanel.cancer.gov">President’s Cancer Panel</a> noted the importance of mCODE in their recommendations for <a href="https://nationalcancerplan.cancer.gov">NCI’s National Cancer Plan</a> </li>
-	<li><a href="https://www.cms.gov">CMS</a> using mCODE in their <a href="https://www.cms.gov/priorities/innovation/innovation-models/enhancing-oncology-model">Enhancing Oncology Model</a></li>
-	<li><a href="https://www.fda.gov">FDA</a> championing CodeX <a href="https://www.fda.gov/drugs/drug-safety-and-availability/risk-evaluation-and-mitigation-strategies-rems">REMS Integration Use Case</a></li>
-	<li><a href="https://www.cdc.gov">CDC’s</a> use of mCODE for <a href="https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html">Central Cancer Registry Reporting IG</a></li>
-	<li><a href="https://www.healthit.gov">ONC’s</a> US Core Data for Interoperability <a href="https://www.healthit.gov/topic/interoperability/uscdi-plus">(USCDI) + Cancer</a> is aligned with mCODE</li>
-	<li><a href="https://www.healthit.gov">ONC</a> included select mCODE data elements in their USCDI+ proposed Quality Data Element List</li>
-</ul>
+                </li>
+                <li><a href="https://hl7.org/fhir/us/mcode/">minimal Common Oncology Data Elements (mCODE) FHIR Implementation Guide<a></li>
               </ul>
             </section>
-      </div><!-- end resource-section -->
-   
+            <section>
+              <h4><a href="../playbook/implementation.html">Implementation & Testing</a></h4>
+              <ul class="resource-list">
+                <li><a href="https://confluence.hl7.org/display/COD/Phase+1">CodeX Trial Matching Use Case Phase 1 pilot report</a>
+                <li>More links coming soon</li>
+              </ul>
+            </section>
+            <section>
+              <h4><a href="../playbook/adoption.html">Adoption & Value</a></h4> 
+              <ul class="resource-list">
+                <li><a href="../playbook/community.html#value_prop">Stakeholder-Specific Value Propositions</a></li>
+                <li><a href="https://www.whitehouse.gov/cancermoonshot/">White House Cancer Moonshot</a> leveraging mCODE</li>
+                <li><a href="https://www.whitehouse.gov/ostp/">OSTP</a> and <a href="https://arpa-h.gov">ARPA-H</a> noted CodeX as an important partner in strengthening the nation’s clinical trial infrastructure</li>
+                <li><a href="https://prescancerpanel.cancer.gov">President’s Cancer Panel</a> noted the importance of mCODE in their recommendations for <a href="https://nationalcancerplan.cancer.gov">NCI’s National Cancer Plan</a> </li>
+                <li><a href="https://www.cms.gov">CMS</a> using mCODE in their <a href="https://www.cms.gov/priorities/innovation/innovation-models/enhancing-oncology-model">Enhancing Oncology Model</a></li>
+                <li><a href="https://www.fda.gov">FDA</a> championing CodeX <a href="https://www.fda.gov/drugs/drug-safety-and-availability/risk-evaluation-and-mitigation-strategies-rems">REMS Integration Use Case</a></li>
+                <li><a href="https://www.cdc.gov">CDC’s</a> use of mCODE for <a href="https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html">Central Cancer Registry Reporting IG</a></li>
+                <li><a href="https://www.healthit.gov">ONC’s</a> US Core Data for Interoperability <a href="https://www.healthit.gov/topic/interoperability/uscdi-plus">(USCDI) + Cancer</a> is aligned with mCODE</li>
+                <li><a href="https://www.healthit.gov">ONC</a> included select mCODE data elements in their USCDI+ proposed Quality Data Element List</li>
+              </ul>
+            </section>
+          </div><!-- end resource-section -->
+     
           <div class="resource-section">
             <h3>Key References: <a href="../casestudies/">Case Studies</a></h3>
             
             <section>
             <h4><a href="../casestudies/mcode_codex.html">mCODE Standard and CodeX Community</a></h4>
-              <ul class="resource-list">
-      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7713551/">Improving Cancer Data Interoperability: The Promise of the Minimal Common Oncology Data Elements (mCODE) Initiative</a>. (Osterman et al., JCO Clinical Cancer Informatics Journal, Nov 2020)</li>
-      <li><a href="https://www.statnews.com/2023/02/01/mcode-learning-from-everyone-with-cancer/">Unlocking the promise of learning from everyone with cancer</a>. (Schnitzer., STAT, Feb 2023)</li>
-       <li><a href="https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit">2019 Cancer Data Summit</a></li>
-      <li><a href="https://confluence.hl7.org/display/COD/mCODE">Getting Started with mCODE</a></li>
-      <li><a href="https://hl7.org/fhir/us/mcode/index.html">Latest mCODE FHIR IG</a>.</li>
-        <li><a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a></li>
-        <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership">CodeX HL7 Membership List</a> </li>
-        <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership+Options">CodeX Membership Options</a></li>
-        <li><a href="https://confluence.hl7.org/display/COD/Governance">CodeX Governance</a></li>
-        <li><a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">CodeX Use Case Development Guidelines</a></li>
-        <li><a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX Use Cases</a></li>
-        <li><a href="../playbook/design_principles.html">CodeX Standards Design Principles</a></li>
-              </ul>
-        </section>
-        <section>
+            <ul class="resource-list">
+              <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7713551/">Improving Cancer Data Interoperability: The Promise of the Minimal Common Oncology Data Elements (mCODE) Initiative</a>. (Osterman et al., JCO Clinical Cancer Informatics Journal, Nov 2020)</li>
+              <li><a href="https://www.statnews.com/2023/02/01/mcode-learning-from-everyone-with-cancer/">Unlocking the promise of learning from everyone with cancer</a>. (Schnitzer., STAT, Feb 2023)</li>
+              <li><a href="https://confluence.hl7.org/display/COD/2019+Cancer+Data+Summit">2019 Cancer Data Summit</a></li>
+              <li><a href="https://confluence.hl7.org/display/COD/mCODE">Getting Started with mCODE</a></li>
+              <li><a href="https://hl7.org/fhir/us/mcode/index.html">Latest mCODE FHIR IG</a>.</li>
+              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a></li>
+              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership">CodeX HL7 Membership List</a> </li>
+              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Membership+Options">CodeX Membership Options</a></li>
+              <li><a href="https://confluence.hl7.org/display/COD/Governance">CodeX Governance</a></li>
+              <li><a href="https://confluence.hl7.org/display/COD/Use+Case+Development+Guidelines">CodeX Use Case Development Guidelines</a></li>
+              <li><a href="https://confluence.hl7.org/display/COD/CodeX+Use+Cases">CodeX Use Cases</a></li>
+              <li><a href="../playbook/design_principles.html">CodeX Standards Design Principles</a></li>
+            </ul>
+          </section>
+          <section>
             <h4><a href="../casestudies/radiation_therapy.html">CodeX Radiation Therapy Treatment Data Use Case</a></h4>
-              <ul>
-      <li><a href="https://confluence.hl7.org/display/COD/Radiation+Therapy+Treatment+Data+for+Cancer">Radiation Therapy Treatment Data Use Case CodeX Page</a></li>
-      <li><a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>(Hayman et al., 2019)</li>
-      <li><a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Operational Ontology for Oncology (O3): A Professional Society-Based, Multistakeholder, Consensus-Driven Informatics Standard Supporting Clinical and Research Use of Real-World Data From Patients Treated for Cancer</a> (May et al. et al., 2023)</li>
-              </ul>
-            </section>
-        <section>
-          <h4><a href="../casestudies/pacio.html">PACIO Project</a></h4>
-          <ul class="resource-list">
-            <li><a href="https://www.youtube.com/embed/Wx6kOg52vqM?si=EABm_jViVk2G2Bh-">PACIO Project Overview</a></li>
-            <li><a href="https://confluence.hl7.org/download/attachments/90899598/2020-12-02%20PACIO%20Project%20Charter.pdf?version=2&amp;modificationDate=1608680002591&amp;api=v2">PACIO Project Charter</a></li>
-            <li><a href="http://pacioproject.org">PACIO Project Website</a></li>
-            <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project">HL7 Confluence Page for the PACIO Project</a></li>
-            <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project+Use+Cases">Use Cases</a></li>
-            <li><a href="https://confluence.hl7.org/display/PC/Dashboard">Dashboard</a></li>
-            <li><a href="https://confluence.hl7.org/display/PC/Meeting+Index">Meeting Index</a></li>
-            <li><a href="https://youtube.com/@pacioproject">YouTube Channel</a></li>
-            <li>FHIR Implementation Guides:
-              <ul class="resource-list">
-                <li><i>Personal Functioning and Engagement:</i>
-                  <ul class="resource-list">
-                    <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-pfe/">Implementation Guide</a></li>
-                    <li><a href="https://github.com/HL7/fhir-pacio-pfe">GitHub Repository</a></li>
-                  </ul>
-                </li>
-                <li><i>Advance Directives Interoperability:</i>
-                  <ul class="resource-list">
-                    <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">Implementation Guide</a></li>
-                    <li><a href="https://github.com/HL7/fhir-pacio-adi">GitHub Repository</a></li>
-                  </ul>
-                </li>
-                <li><i>Re-assessment Timepoints:</i>
-                  <ul class="resource-list">
-                    <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-rt/">Implementation Guide</a></li>
-                    <li><a href="https://github.com/HL7/fhir-pacio-rt">GitHub Repository</a></li>
-                  </ul>
-                </li>
-                <li><i>Standardized Medication Profile:</i>
-                  <ul class="resource-list">
-                    <li><a href="https://build.fhir.org/ig/HL7/smp-ig/">Implementation Guide</a></li>
-                    <li><a href="https://github.com/HL7/smp-ig">GitHub Repository</a></li>
-                  </ul>
-                </li>
-                <li><i>Transitions of Care:</i>
-                  <ul class="resource-list">
-                    <li>Coming soon!</li>
-                  </ul>
-                </li>
-              </ul>
-            <li>GitHub Repositories: 
-              <ul class="resource-list">
-                <li><a href="https://github.com/paciowg">PACIO Project</a></li>
-                <li><a href="https://github.com/hl7">HL7</a></li>
-              </ul>
-            </li>
-            <li><a href="https://github.com/paciowg/pseudo-ehr">Reference Implementation</a></li>
-            <li><a href="https://github.com/paciowg/sample-data">Sample Data</a></li>
-          </ul>
-        </section>
+            <ul>
+              <li><a href="https://confluence.hl7.org/display/COD/Radiation+Therapy+Treatment+Data+for+Cancer">Radiation Therapy Treatment Data Use Case CodeX Page</a></li>
+              <li><a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Minimum Data Elements for Radiation Oncology: An American Society for Radiation Oncology Consensus Paper</a>(Hayman et al., 2019)</li>
+              <li><a href="https://www.practicalradonc.org/article/S1879-8500(19)30232-2/fulltext">Operational Ontology for Oncology (O3): A Professional Society-Based, Multistakeholder, Consensus-Driven Informatics Standard Supporting Clinical and Research Use of Real-World Data From Patients Treated for Cancer</a> (May et al. et al., 2023)</li>
+            </ul>
+          </section>
+          <section>
+            <h4><a href="../casestudies/pacio.html">PACIO Project</a></h4>
+            <ul class="resource-list">
+              <li><a href="https://www.youtube.com/embed/Wx6kOg52vqM?si=EABm_jViVk2G2Bh-">PACIO Project Overview</a></li>
+              <li><a href="https://confluence.hl7.org/download/attachments/90899598/2020-12-02%20PACIO%20Project%20Charter.pdf?version=2&amp;modificationDate=1608680002591&amp;api=v2">PACIO Project Charter</a></li>
+              <li><a href="http://pacioproject.org">PACIO Project Website</a></li>
+              <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project">HL7 Confluence Page for the PACIO Project</a></li>
+              <li><a href="https://confluence.hl7.org/display/PC/PACIO+Project+Use+Cases">Use Cases</a></li>
+              <li><a href="https://confluence.hl7.org/display/PC/Dashboard">Dashboard</a></li>
+              <li><a href="https://confluence.hl7.org/display/PC/Meeting+Index">Meeting Index</a></li>
+              <li><a href="https://youtube.com/@pacioproject">YouTube Channel</a></li>
+              <li>FHIR Implementation Guides:
+                <ul class="resource-list">
+                  <li><i>Personal Functioning and Engagement:</i>
+                    <ul class="resource-list">
+                      <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-pfe/">Implementation Guide</a></li>
+                      <li><a href="https://github.com/HL7/fhir-pacio-pfe">GitHub Repository</a></li>
+                    </ul>
+                  </li>
+                  <li><i>Advance Directives Interoperability:</i>
+                    <ul class="resource-list">
+                      <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">Implementation Guide</a></li>
+                      <li><a href="https://github.com/HL7/fhir-pacio-adi">GitHub Repository</a></li>
+                    </ul>
+                  </li>
+                  <li><i>Re-assessment Timepoints:</i>
+                    <ul class="resource-list">
+                      <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-rt/">Implementation Guide</a></li>
+                      <li><a href="https://github.com/HL7/fhir-pacio-rt">GitHub Repository</a></li>
+                    </ul>
+                  </li>
+                  <li><i>Standardized Medication Profile:</i>
+                    <ul class="resource-list">
+                      <li><a href="https://build.fhir.org/ig/HL7/smp-ig/">Implementation Guide</a></li>
+                      <li><a href="https://github.com/HL7/smp-ig">GitHub Repository</a></li>
+                    </ul>
+                  </li>
+                  <li><i>Transitions of Care:</i>
+                    <ul class="resource-list">
+                      <li>Coming soon!</li>
+                    </ul>
+                  </li>
+                </ul>
+              <li>GitHub Repositories: 
+                <ul class="resource-list">
+                  <li><a href="https://github.com/paciowg">PACIO Project</a></li>
+                  <li><a href="https://github.com/hl7">HL7</a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/paciowg/pseudo-ehr">Reference Implementation</a></li>
+              <li><a href="https://github.com/paciowg/sample-data">Sample Data</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="playbook-bottom-navigation">
+        <div class="previous"><a href="../casestudies/" class="btn btn-outline-primary btn-lg">Prev: Case Studies</a></div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 </div>
 
 

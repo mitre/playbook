@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
 
   </head>
-  <body class="about">
+  <body class="playbook">
   <div id="skiptocontent"><a href="#content">skip to main content</a></div>
   <div id="top"></div>  
   <div class="layout-grid">
@@ -30,13 +30,6 @@
       <div class="col-md-3 mb-2 mb-md-0">
 <a href="../">          <img src="../images/playbook-logo.svg" alt="MITRE Interoperability Playbook Logo" />
 </a>      </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="../playbook/" class="nav-link">Intro & Tracks</a></li>
-        <li><a href="../casestudies/" class="nav-link">Case Studies</a></li>
-        <li><a href="../resources/" class="nav-link">Resources</a></li>
-        <li><a href="./" class="nav-link">About</a></li>
-      </ul>
 
       <div class="col-md-3 text-end search-form">
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="event.preventDefault(); return false;">
@@ -60,24 +53,55 @@
   </div>
 </div>
 
-    <div id="content" class="container pt-5">
+    <div class="container pt-5">
   <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <h1>About the Playbook</h1>
-      <h2 class="h5">Better Data.  Better Health.</h2>
-    
-      <p>
-        The purpose of this Playbook is to capture the learnings of the <a href="https://www.mitre.org">MITRE</a> team as they, with the cooperation of a growing community, launched the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator</a>, led development of the <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a> and other FHIR Implementation Guides, and deployed FHIR-based solutions to help patients, providers, and others in the real world. It is hoped that MITRE's experience can provide a recipe to successfully launch and implement new healthcare specialty interoperability initiatives.
-      </p>
-<p>
-   For more comments and questions, please email: <a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
-</p>
+    <div class="col-md-3">
+      <nav class="sidebar-menu navbar" id="playbook_menu">
+<h4>Playbook Menu</h4>
+<ul>
+  <li><a href="../playbook/">Intro & Tracks</a></li>
 
-      <div class="about-author">
-      <h3 class="h5">Organization</h3>
-      <h4><a href="https://www.mitre.org">The MITRE Corporation</a></h4>
-      <p>MITRE was established to advance national security in new ways and serve the public interest as an independent adviser. MITRE continues to deliver on that promise every day, applying our systems-thinking approach to provide solutions that enhance our national security and way of life. Our non-profit status sets us apart. Motivated by impact, our people discover new possibilities, create unexpected opportunities, and lead as pioneers for the public good.
-      </p>
+  <li><a href="../playbook/getting_started.html">Before Starting</a></li>
+  <li><a href="../playbook/design_principles.html">Design Principles</a></li>
+  
+  <li><a href="../playbook/community.html">Track 1. Community Building</a></li>
+
+  <li><a href="../playbook/use_cases_planning.html">Track 2. Use Cases & Planning</a></li>
+  
+  <li><a href="../playbook/standards.html">Track 3. Standards Development</a></li>
+  
+  <li><a href="../playbook/implementation.html">Track 4. Implementation & Testing</a></li>
+
+  <li><a href="../playbook/adoption.html">Track 5. Adoption & Value</a></li>
+
+  <li><a href="../casestudies/">Case Studies</a></li>
+
+  <li><a href="../resources/">Resources</a></li>
+
+  <li class="active"><a href="./" class="active">About</a></li>
+ 	    <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
+
+
+</ul>
+</nav>
+
+    </div>
+    <div id="content" class="col-md-9">
+      <div class="col-md-8 offset-md-2">
+        <h1>About the Playbook</h1>
+        <h2 class="h5">Better Data.  Better Health.</h2>
+        <p>
+          The purpose of this Playbook is to capture the learnings of the <a href="https://www.mitre.org">MITRE</a> team as they, with the cooperation of a growing community, launched the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator</a>, led development of the <a href="https://confluence.hl7.org/display/COD/mCODE">minimal Common Oncology Data Elements (mCODE)</a> and other FHIR Implementation Guides, and deployed FHIR-based solutions to help patients, providers, and others in the real world. It is hoped that MITRE's experience can provide a recipe to successfully launch and implement new healthcare specialty interoperability initiatives.
+        </p>
+        <p>
+          For more comments and questions, please email: <a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+        </p>
+        <div class="about-author">
+          <h3 class="h5">Organization</h3>
+          <h4><a href="https://www.mitre.org">The MITRE Corporation</a></h4>
+          <p>MITRE was established to advance national security in new ways and serve the public interest as an independent adviser. MITRE continues to deliver on that promise every day, applying our systems-thinking approach to provide solutions that enhance our national security and way of life. Our non-profit status sets us apart. Motivated by impact, our people discover new possibilities, create unexpected opportunities, and lead as pioneers for the public good.
+          </p>
+        </div>
       </div>
     </div>
   </div>
