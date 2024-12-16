@@ -14,6 +14,7 @@ section: Resources
   
     <div id="content"  class="col-md-9">
       <h1>Deep Dive into Implementation and Testing</h1>
+  <h2>Tailored for technical systems developers and test leaders.</h2>
       <p>
         The goal of implementation and testing is to ensure that the developed IG (Implementation Guide) is translated into real-world software and that this software provides value to end users. To achieve this, the IG developers often need to coordinate with workflow subject matter experts, end users, and software vendors to develop open-source demonstration software including reference implementations and develop testing tools to support software adoption. These resources will help speed the implementation process, guide developers in adapting the software to real-world instances, and excite end users about the potential benefits of the community’s use case.      
      </p>
@@ -54,7 +55,7 @@ section: Resources
       </p>
       <h3>Software Design</h3>
       <p>	
-	See the <%= link_to("Standards Development", "/playbook/standards_development.html") %> section and the associated <%= link_to("Standards Development Deep Dive", "/playbook/resources/tech-standards.html") %> for guidance on IG development and software design.
+	     Software design typically encompasses both the function of the software and the user interface. However, what end users see and how they interact with the data is typically the purview of software vendors. As such, discussions on the community's role in software design focus on the design of standardized data exchange and IG development. See the <%= link_to("Standards Development", "/playbook/standards_development.html") %> section and the associated <%= link_to("Standards Development Deep Dive", "/playbook/resources/tech-standards.html") %> for guidance on IG development.
       </p>
       <h3>Coding</h3>
       <h4>Development Environment</h4>
@@ -83,6 +84,9 @@ section: Resources
       <p>
        For community developed tools, the first two states are the primary focus of community software development. Since the final state, real-world implementation, relies on the community partnerships with software vendors or healthcare organizations to implement instances of the software within local systems. Discussions will focus on the community's role in initial testing and prototyping and leave real-world implementations decisions to software vendors.
       </p>
+      <p>
+        It is vital to develop testing tools for the development team and the community to ensure that the IG and associated implementations function as intended. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IG standards and simplify individual implementations by helping developers identify issues with their software or with the IG. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. Another testing tool option is <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a>, a commercial testing framework that is also widely used across the FHIR community.
+      </p>
       <h4>Initial Testing</h4>
       <p>
         Much of the development and testing strategy will rely on developers coordinating with use case subject matter experts. One critical need in this stage of testing is for accurate synthetic or fake patients to test workflows. To avoid the time-consuming, monotonous process of manually creating test patients, developers should use software to generate synthetic patient, like Synthea. Synthea is widely use by open-source medical development communities, at Connectathons, and in private industry because it can generate populations of realistic patients with medical data such as medications, allergies, conditions, and clinical notes. For more information on Synthea’s current capabilities and instructions for generating patient data see <a href="https://synthetichealth.github.io/synthea/">Synthea’s GitHub</a> page for more details.      
@@ -93,7 +97,7 @@ section: Resources
       </p>
       <ul>
          <li>
-          HL7 maintains an instance of the <a href="https://hapifhir.io/">Hapi FHIR server</a> for everyone to use. It should be noted, however, that the public Hapi FHIR server has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons, and since these resource instances are public, testers should never use real patient data on the Hapi FHIR servers or any other open-access environment. Finally, because of the large testing community using Hapi FHIR servers, Hapi may regularly purge test data to ensure continued server functionality for all. 
+          HL7 maintains an instance of the <a href="https://hapifhir.io/">HAPI FHIR server</a> for everyone to use. It should be noted, however, that the public HAPI FHIR server has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons, and since these resource instances are public, testers should never use real patient data on the HAPI FHIR servers or any other open-access environment. Finally, because of the large testing community using HAPI FHIR servers, HAPI may regularly purge test data to ensure continued server functionality for all. 
          </li>
          <li>
           <a href="https://site.healthit.gov/">HealthIT.gov</a> also provides a <a href="https://site.healthit.gov/sandbox-fhir">FHIR Sandbox</a> that includes <a href="https://fhirsandbox.healthit.gov/secure/r4/">FHIR(R4) servers </a> and the <a href="https://inferno.healthit.gov/">Inferno testing tool</a>.
