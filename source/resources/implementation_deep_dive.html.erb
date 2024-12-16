@@ -14,120 +14,117 @@ section: Resources
   
     <div id="content"  class="col-md-9">
       <h1>Deep Dive into Implementation and Testing</h1>
-  <h2>Tailored for technical systems developers and test leaders.</h2>
+      <h2>Tailored for technical systems developers and test leaders.</h2>
       <p>
         The goal of implementation and testing is to ensure that the developed IG (Implementation Guide) is translated into real-world software and that this software provides value to end users. To achieve this, the IG developers often need to coordinate with workflow subject matter experts, end users, and software vendors to develop open-source demonstration software including reference implementations and develop testing tools to support software adoption. These resources will help speed the implementation process, guide developers in adapting the software to real-world instances, and excite end users about the potential benefits of the community’s use case.      
-     </p>
-     <p>
+      </p>
+      <p>
         Here, we will walk through the development processes identifying common, readily available, free tools that the community can use to manage, test, and update the community’s software.      
-     </p>
-     <h2>Software Development Lifecycle (SDLC)</h2>
-     <p>
+      </p>
+      <h2>Software Development Lifecycle (SDLC)</h2>
+      <p>
         The SDLC guides software through key steps in the development process:
-     </p>
-     <ul>
-         <li>
+      </p>
+      <ul>
+        <li>
           Requirement gathering 
-         </li>
-         <li>
+        </li>
+        <li>
           Software Design
-         </li>
-         <li>
+        </li>
+        <li>
           Coding
-         </li>
-	 <li>
-	  Testing
-	 </li>
-	 <li>
-	  Deployment
-	 </li>
-	 <li>
-	  Maintenance and Support
-	 </li>
+        </li>
+        <li>
+          Testing
+        </li>
+        <li>
+          Deployment
+        </li>
+        <li>
+          Maintenance and Support
+        </li>
       </ul>
       <p>
-       While software vendors will oversee this process when they adapt the community’s IG for local instances of the IG software, the community will need to follow this process for any of its open-source software, such as reference implementations or testing tools. This discussion provides a detailed overview of the process and methodologies (waterfall, agile, and others) used to guide software development teams through the SDLC phases.
+        While software vendors will oversee this process when they adapt the community’s IG for local instances of the IG software, the community will need to follow this process for any of its open-source software, such as reference implementations or testing tools. This discussion provides a detailed overview of the process and methodologies (waterfall, agile, and others) used to guide software development teams through the SDLC phases.
       </p>
       <h2>Development Recommendations</h2>
       <h3>Requirements Gathering</h3>
       <p>
-       See the <%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %> page for guidance on requirement gathering.
+        See the <%= link_to("Use Cases & Planning", "/playbook/use_cases_planning.html") %> page for guidance on requirement gathering.
       </p>
       <h3>Software Design</h3>
-      <p>	
-	     Software design typically encompasses both the function of the software and the user interface. However, what end users see and how they interact with the data is typically the purview of software vendors. As such, discussions on the community's role in software design focus on the design of standardized data exchange and IG development. See the <%= link_to("Standards Development", "/playbook/standards_development.html") %> section and the associated <%= link_to("Standards Development Deep Dive", "/playbook/resources/tech-standards.html") %> for guidance on IG development.
+      <p>
+        Software design typically encompasses both the function of the software and the user interface. However, what end users see and how they interact with the data is typically the purview of software vendors. As such, discussions on the community's role in software design focus on the design of standardized data exchange and IG development. See the <%= link_to("Standards Development", "/playbook/standards_development.html") %> section and the associated <%= link_to("Standards Development Deep Dive", "/playbook/resources/tech-standards.html") %> for guidance on IG development.
       </p>
       <h3>Coding</h3>
       <h4>Development Environment</h4>
       <p>
-       It is strongly recommended that the community develop open-source software within an environment that allows a team of developers to effectively manage the code. Key personnel like developers can and often do change over the course of the project, as a result it is critical that there is a single repository for the community’s code, ideally one that can be made public when software is ready for release. There are many options for code management and software repositories, the most common repository for open-source projects is <a href="https://github.com/">GitHub</a>. To ensure that developers can work collaboratively, yet independently is also recommended that they use project management software such as Trello, Jira, or Microsoft Teams to track development goals and resolve bug fixes in a timely manner.
+        It is strongly recommended that the community develop open-source software within an environment that allows a team of developers to effectively manage the code. Key personnel like developers can and often do change over the course of the project. As a result it is critical that there is a single repository for the community’s code, ideally one that can be made public when software is ready for release. There are many options for code management and software repositories, the most common repository for open-source projects is <a href="https://github.com/">GitHub</a>. To ensure that developers can work collaboratively, yet independently, it is also recommended that they use project management software such as Trello, Jira, or Microsoft Teams to track development goals and resolve bug fixes in a timely manner.
       </p>
       <h4>FHIR Artifacts</h4>
       <p>
-        A common starting point for many looking to jumpstart their development are existing FHIR software artifacts such as the <a href="https://hapifhir.io/">Hapi FHIR software</a>, which provides working JAVA software for many basic FHIR resources. Hapi FHIR, <a href="https://confluence.hl7.org/display/FHIR/Open+Source+Implementations">HL7's Confluence page</a>, and other FHIR open-source repositories provide basic FHIR software that can be adapted for the community’s purposes.
+        A common starting point for many looking to jumpstart their development is leveraging existing FHIR software artifacts such as the <a href="https://hapifhir.io/">HAPI FHIR software</a>, which provides working JAVA software for many basic FHIR resources. HAPI FHIR, <a href="https://confluence.hl7.org/display/FHIR/Open+Source+Implementations">HL7's Confluence page</a>, and other FHIR open-source repositories provide basic FHIR software that can be adapted for the community’s purposes.
       </p>
       <h3>Testing</h3>
       <p>
        Software testing can be broken down into three software states as described in the <%= link_to("Implementation & Testing", "/playbook/implementation.html") %> section: 
       </p>
       <ul>
-         <li>
+        <li>
           Initial testing - Initial development and testing stage conducted by developers
-         </li>
-         <li>
+        </li>
+        <li>
           Prototyping – second round testing conducted with willing potential end users
-         </li>
-         <li>
+        </li>
+        <li>
           Real-world implementation – implementation and testing of instances of software within live software systems using real-world workflows and data
-         </li>
+        </li>
       </ul>
       <p>
-       For community developed tools, the first two states are the primary focus of community software development. Since the final state, real-world implementation, relies on the community partnerships with software vendors or healthcare organizations to implement instances of the software within local systems. Discussions will focus on the community's role in initial testing and prototyping and leave real-world implementations decisions to software vendors.
+       The first two states are the primary focus of community software development. The final state, real-world implementation relies on community partnerships with software vendors or healthcare organizations to implement instances of software within local systems. Discussions should focus on the community's role in initial testing and prototyping and leave real-world implementation decisions to software vendors.
       </p>
       <p>
         It is vital to develop testing tools for the development team and the community to ensure that the IG and associated implementations function as intended. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IG standards and simplify individual implementations by helping developers identify issues with their software or with the IG. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. Another testing tool option is <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a>, a commercial testing framework that is also widely used across the FHIR community.
       </p>
       <h4>Initial Testing</h4>
       <p>
-        Much of the development and testing strategy will rely on developers coordinating with use case subject matter experts. One critical need in this stage of testing is for accurate synthetic or fake patients to test workflows. To avoid the time-consuming, monotonous process of manually creating test patients, developers should use software to generate synthetic patient, like Synthea. Synthea is widely use by open-source medical development communities, at Connectathons, and in private industry because it can generate populations of realistic patients with medical data such as medications, allergies, conditions, and clinical notes. For more information on Synthea’s current capabilities and instructions for generating patient data see <a href="https://synthetichealth.github.io/synthea/">Synthea’s GitHub</a> page for more details.      
+        Much of the development and testing strategy will rely on developers coordinating with use case subject matter experts. One critical need in this stage of testing is for accurate synthetic patients to test workflows. To avoid the time-consuming, monotonous process of manually creating test patients, developers should use software to generate synthetic patients, like Synthea. Synthea is widely use by open-source medical development communities, at Connectathons, and in private industry because it can generate populations of realistic patients with medical data such as medications, allergies, conditions, and clinical notes. For more information on Synthea’s current capabilities and instructions for generating patient data see <a href="https://synthetichealth.github.io/synthea/">Synthea’s GitHub</a> page for more details.      
       </p>
       <h4>Prototyping</h4>
       <p>
-        To both guide community members in their individual implementations and demostrate the software to end users, the community should develop an open-source demo of their IG, a reference implementation. A reference implementation is a system agnostic implementation of an IG that serves as an idealized representation of how the data exchange should function. Often it is a simple client-server data exchange with a few workflow examples to demonstrate software functionality and utility. FHIR IG creators use reference implementations to test and get feedback from both developers and end users IGs in dedicated implementation feedback sessions and in more general Connectathons.
+        To both guide community members in their individual implementations and demonstrate the software to end users, the community should develop an open-source demo, otherwise known as a reference implementation, of their IG. A reference implementation is a system-agnostic implementation of an IG that serves as an idealized representation of how the data exchange should function. Often it is a simple client-server data exchange with a few workflow examples to demonstrate software functionality and utility. FHIR IG creators use reference implementations to test and get feedback from both developers and end users in dedicated implementation feedback sessions and during Connectathons.
       </p>
       <ul>
-         <li>
-          HL7 maintains an instance of the <a href="https://hapifhir.io/">HAPI FHIR server</a> for everyone to use. It should be noted, however, that the public HAPI FHIR server has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons, and since these resource instances are public, testers should never use real patient data on the HAPI FHIR servers or any other open-access environment. Finally, because of the large testing community using HAPI FHIR servers, HAPI may regularly purge test data to ensure continued server functionality for all. 
-         </li>
-         <li>
+        <li>
+          HL7 maintains an instance of the <a href="https://hapifhir.io/">HAPI FHIR server</a> for everyone to use. It should be noted, however, that the public HAPI FHIR server has millions of FHIR resource instances and can be heavily loaded, particularly during Connectathons. Since these resource instances are public, testers should never use real patient data on the HAPI FHIR servers or any other open-access environment. Finally, because of the large testing community using the HL7 HAPI FHIR server, HL7 may occasionally purge test data to ensure continued server functionality for all. 
+        </li>
+        <li>
           <a href="https://site.healthit.gov/">HealthIT.gov</a> also provides a <a href="https://site.healthit.gov/sandbox-fhir">FHIR Sandbox</a> that includes <a href="https://fhirsandbox.healthit.gov/secure/r4/">FHIR(R4) servers </a> and the <a href="https://inferno.healthit.gov/">Inferno testing tool</a>.
-         </li>
-         <li>
-          <a href="https://www.logicahealth.org/the-re-envisioned-logica-hl7-fhir-sandbox-for-2024/">HL7</a> and <a href="https://www.logicahealth.org/solutions/fhir-sandbox/">Logica Health</a> provides free services for developing SMART-on-FHIR apps, graphical front-ends, Electronic Health Record (EHR) simulators, and OAuth authentication support.
-         </li>
+        </li>
+        <li>
+          <a href="https://www.logicahealth.org/the-re-envisioned-logica-hl7-fhir-sandbox-for-2024/">HL7</a> and <a href="https://www.logicahealth.org/solutions/fhir-sandbox/">Logica Health</a> provide free services for developing SMART-on-FHIR apps, graphical front-ends, Electronic Health Record (EHR) simulators, and OAuth authentication support.
+        </li>
       </ul>
       <p>
-        In this stage of development, it is also helpful to investigate developing testing tools for the community. Properly developed, IG testing tools can facilitate uniform adoption of the community’s IGs and simplify individual implementations by helping developers identify issues with their software. One tool that can be adapted to test the community’s IG is the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a>, which is widely used within the FHIR community to test numerous IGs, and by the Assistant Secretary for Technology Policy / Office of the National Coordinator (ASTP/ONC) to verify EHRs meet certification requirements for interoperability. <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a> is another proprietary testing framework that is also widely used across the FHIR community.
+        In this stage of development, the <a href="https://inferno-framework.github.io/docs/">Inferno testing toolkit</a> and <a href="https://touchstone.aegis.net/touchstone/">AEGIS Touchstone</a>, as described above, are also great tools for testing throughout this stage.
       </p>
       <h4>Real-world Testing</h4>
       <p>
-       There is an overlap between real-world testing and deployment as real-world testing deploys software to local systems. The goal of this stage is to verify the efficacy and efficiency of the community's software, identify any lingering issues with IG development, and gather feedback and prepare the community for larger scale implementations. This step is largely overseen by software vendors who are best equipped to make implementation and testing decisions within their software systems. 
+        There is an overlap between real-world testing and deployment as real-world testing deploys software to local systems. The goal of this stage is to verify the efficacy and efficiency of the community's software, identify any lingering issues with IG development, and gather feedback and prepare the community for larger scale implementations. This step is largely overseen by software vendors who are best equipped to make implementation and testing decisions within their software systems. 
       </p>
       <h3>Deployment</h3>
       <p>
-       See the <%= link_to("Adoption", "/playbook/adoption.html#adoption") %> subsection of Adoption & Value for high-level guidance on promoting adoption of software.
+        See the <%= link_to("Adoption", "/playbook/adoption.html#adoption") %> subsection of Adoption & Value for high-level guidance on promoting adoption of software.
       </p>
       <h3>Maintenance and Support</h3>
       <h4>Software Versioning</h4>
       <p>
-        There is one constant in life, change. FHIR, its underlying standards, security protocols, and the community’s IG will all have regular updates, some of which introduce major changes, to ensure continual improvement and refinement of data exchange processes. When creating software development plans, it is a necessity to have a well-established version control process within GitHub or whatever code repository management software the community chooses to use. See this <a href="https://github.com/resources/articles/software-development/what-is-version-control">article</a> for specific recommendation and guidance on maintaining version control for the community’s software releases.        
+        There is one constant in life, change. FHIR, its underlying standards, security protocols, and the community’s IG will all have regular updates, some of which introduce major changes, to ensure continual improvement and refinement of data exchange processes. When creating software development plans, it is a necessity to have a well-established version control process within GitHub or whatever code repository management software the community chooses to use. See this <a href="https://github.com/resources/articles/software-development/what-is-version-control">article</a> for specific recommendations and guidance on maintaining version control for the community’s software releases.        
       </p>
       <p>
-	Over time, the HL7 community has developed multiple versions of FHIR profiles, including the foundation for all United States-based FHIR Implementation Guides, US Core. HL7 releases new US Core versions regularly, often every year and regulations are being proposed to require a minimum version of US Core that certified medical software vendors must use.  HL7 is creating <a href="https://confluence.hl7.org/display/DVP/IG+migration+process+for+3.1.1+to+6.1.0">draft guidance</a> on how to navigate how IGs can support multiple versions of US Core.
+        Over time, the HL7 community has developed multiple versions of FHIR profiles, including the foundation for all United States-based FHIR Implementation Guides, US Core. HL7 releases new US Core versions regularly, often every year and regulations are being proposed to require a minimum version of US Core that certified medical software vendors must use.  HL7 is creating <a href="https://confluence.hl7.org/display/DVP/IG+migration+process+for+3.1.1+to+6.1.0">draft guidance</a> on how to navigate how IGs can support multiple versions of US Core.
       </p>
-
-
-          
     </div>
   </div>
 </div>
