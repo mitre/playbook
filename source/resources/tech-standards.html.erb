@@ -16,7 +16,7 @@ section: Resources
       <h1>Technical Deep Dive into FHIR-Based Standards Development</h1>
       <h2>Tailored for clinical subject matter experts, standards developers, and systems implementers.</h2>
       <p class="lead">
-        Health data standards help patients, health systems, payers, researchers, and others who need to work together communicate using a common language. Health data standards can specify clearly how data are collected, stored, shared, and/or used such that every piece of data can be unambiguously understood by all entities within the health ecosystem. These standards are not the end product, and instead are an essential means empowering accurate, electronic data sharing to improve health care and access, and to reduce burden and costs.
+        Health data standards help patients, health systems, payers, researchers, and others who need to work together communicate using a common language. Health data standards can specify clearly how data are collected, stored, shared, and/or used such that every piece of data can be unambiguously understood by all entities within the health ecosystem. These standards are not the end product, and instead are an essential means of empowering accurate, electronic data sharing to improve health care and access, and to reduce burden and costs.
       </p>
       <p>
        The following sections will guide clinical and technical experts through Health Level 7® (HL7®) processes to refine clinical requirements and develop implementation guides (IGs).  It is advised that throughout the process the teams undertaking these efforts utilize existing communities and resources including chat.fhir.org, HL7 Work Groups, and FHIR Accelerators. These external groups have extensive expectance in all aspects of FHIR software development and can significantly reduce the time required to develop real-world impactful software for the specialty community.
@@ -103,7 +103,7 @@ section: Resources
         </ul>
       </p>
       <p class="note">
-        Note that this is a simplified example to introduce the process.  There are other factors to be considered (e.g., how is blood pressure measured, where it is measured on the body, body position, etc.).
+        Note that this is a simplified example to introduce the process.  There are other factors to be considered (e.g., how is blood pressure measured, where it is measured on the body, body position).
       </p>
       <p>
         <b>Step 2:</b> Create a data dictionary to capture how that information from Step 1 should be represented.  Consult with clinical terminology subject matter experts to fill out the data dictionary.  Review results with clinicians and gain their approval.
@@ -218,7 +218,7 @@ section: Resources
 
       <h3 id="stds_framework">Framework for FHIR Implementation Guide Development</h3>
       <p>
-       As is likely clear by now, use of the FHIR exchange standard is foundational to the recommendations in this Playbook, technical experts will need a deep understanding of FHIR to guide processes. Below are some helpful guides to better understanding FHIR:
+       As is likely clear by now, use of the FHIR exchange standard is foundational to the recommendations in this Playbook, technical experts will need a deep understanding of FHIR to guide processes. Below are guides to better understanding FHIR:
       </p>
 
       <ul>
@@ -283,7 +283,7 @@ section: Resources
       </figure>
       <h3 id="stds_terminology">Terminologies</h3>
       <p>
-        As previously noted, terminologies, standard clinical code systems, are important for unambiguously defining how data within the data element are represented.  When a term cannot be found within an existing code system, it’s possible to work with the owner of the code system to add new terms, provided the justification is convincing.
+        As previously noted, terminologies, standard clinical code systems, are important for unambiguously defining how data within the data element are represented.  When a term cannot be found within an existing code system, it’s possible to work with the organization that maintains the code system to add new terms, provided the justification is convincing.
       </p>
 
       <h3 id="stds_profiles">Profiles and Extensions</h3>
@@ -394,7 +394,7 @@ section: Resources
         Updates to specialty standards may be needed for a variety of reasons. The base standards on which your standard depends (e.g., FHIR, US Core) may be updated, and may require or at least motivate changes to standards that depend on them. Users or the vendors may ask for updates. Government rules and regulations may motivate changes.
       </p>
       <p>
-        Because changes to your standard may be required over time, it's important to keep a core of the original IG development team intact (and add to that core), with the necessary skills (e.g., clinical, FHIR, HL7) available when needed. It's important to keep a good relationship with the sponsoring HL7 Work Group. It's necessary to have a system to collect, organize, prioritize, and address requests for changes and other comments - likely the same system used for building the original standard (e.g., Jira at HL7).
+        Because changes to your standard may be required over time, it's important to keep experts from the original IG development team engaged (add more, if possible), so that the necessary skills (e.g., clinical, FHIR, HL7) are available when needed. It's important to keep a good relationship with the sponsoring HL7 Work Group. It's necessary to have a system to collect, organize, prioritize, and address requests for changes and other comments - likely the same system used for building the original standard (e.g., Jira at HL7).
       </p>
       <p>
         Be aware that the interest of the original teams, and even that of the Use Case champions, may change as the work enters maintenance. As repeatedly emphasized in this Playbook, think about which members of the community care most about ensuring a standard is maintained in a well-governed, careful manner. For example, vendors who've implemented the standard and included the standard in products to many customers should care about how the standard is maintained and evolved.
