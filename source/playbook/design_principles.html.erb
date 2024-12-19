@@ -13,49 +13,48 @@ theme: playbook
       <h1>Design Principles</h1>
       
       <p class="lead">
-        Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator Community","https://confluence.hl7.org/display/COD/CodeX+Home") %> and in the design, planning, development, testing, adoption, and value of FHIR-based data standards, including <%= link_to("mCODE","https://confluence.hl7.org/display/COD/mCODE") %>. These principles guide and are elaborated upon in the <%= link_to("Playbook Tracks", "index.html#organization") %> and <%= link_to("Case Studies", "/casestudies/index.html") %>.  If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, to be compatible across specialties as part of each patient's life-time health, to be adopted in practice, and to provide value for patients and all stakeholders.
+        Below are principles that have guided the <%= link_to("CodeX HL7 FHIR Accelerator","https://confluence.hl7.org/display/COD/CodeX+Home") %> through the design, planning, development, testing, and adoption of FHIR-based data standards. These principles guide and are elaborated upon in the <%= link_to("Playbook Tracks", "index.html#organization") %> and <%= link_to("Case Studies", "/casestudies/index.html") %>.  If specialty communities follow these principles, the resultant standards can be developed more efficiently, will be more compatible with other aspects of the patient's health records, have better adoption, and improve healthcare experiences for all.
       </p>
              
       <ol>
-        <li>A dedicated and diverse <b><%= link_to("community", "community.html") %></b> is essential to the design and execution of a health data standards project. 
+        <li>A dedicated and diverse <b><%= link_to("community", "community.html") %></b> is essential. 
           <ul>
-          <li>Each use case needs committed representation from all stakeholders needed to drive the use case (e.g., patients, providers, health systems, Gov’t agencies, vendors, payers, and others).</li>
+          <li>Each use case needs representation from <b>all</b> stakeholders (e.g., patients, providers, health systems, Gov’t agencies, vendors, payers, and others).</li>
           </ul>
         </li>
 
-        <li>Compelling <b><%= link_to("use cases", "use_cases_planning.html") %></b> are the foundation upon which solutions are designed and driven.
+        <li>Compelling <b><%= link_to("use cases", "use_cases_planning.html") %></b> are the foundation for solutions.
           <ul>
-              <li>Define each use case as a project that addresses a single, important, <b>narrowly focused problem</b>.</li>
-              <li>Build a use case plan that is <b>end-to-end</b> - including the scope, resources, data requirements, and a pragmatic strategy for how standards will be adopted and provide value in the real world.</li>
-              <li>Prioritize use cases that address salient challenges. However, start with simpler (not simple) use cases that have commitment from all the <b>community members needed to succeed</b>.</li>
-              <li>Prioritize use cases that improve collection and sharing of quality, core, standardized data related to <b>patient care and outcomes</b> should be the top priority.</li>
+              <li>Each use case should address a single, important, <b>narrowly-focused</b> problem.</li>
+              <li>Plan with the <b>end in mind</b>. Comprehensive plans include the scope, resources, data requirements, and a pragmatic strategy for how standards will be adopted and provide real-world value.</li>
+              <li>Prioritize critical community challenges. However, start with simpler use cases that have a <b>commitment from the community</b>.</li>
+              <li>Use cases that improve collection and sharing of data related to patient care and outcomes should be the <b>top priority</b>.</li>
           </ul>
         </li>
 
         <li><b><%= link_to("Clinical information requirements", "standards.html#clinical_requirements") %></b> are a first priority for each use case.
           <ul>
-           <li>Build consensus within a <b>diverse team of clinical experts</b> on the <b>minimal data requirements</b> needed to address core use case requirements.</li>
-           <li>Define clinical requirements as <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).</li>
-           <li>If previous work in the space exists, seek to work with the other initiatives and <b>adapt their work rather than re-do</b>.</li>
+           <li>Build consensus within a <b>diverse team of clinical experts</b> on the <b>minimal data requirements</b> needed to address the use case.</li>
+           <li>Clinical requirements should be <b>discrete</b> observations and actions (e.g., patient birth date = 11/04/1989 vs. patient is 34 years old).</li>
+           <li>Seek to collaborate with the other initiatives and <b>adapt their work rather than re-do</b>.</li>
           </ul>
         </li>
 
-       <li>How clinical requirements are represented in <b><%= link_to("FHIR Implementation Guides (IG)", "standards.html#fhir_ig_development") %></b> influence their useability, and their interoperability across specialties.
+       <li>A use case's <b><%= link_to("FHIR Implementation Guide (IG)", "standards.html#fhir_ig_development") %></b> influences its useability, interoperability, and thus value to adopters.
           <ul>
-           <li>Develop first a <b>single, core IG</b> that represents the minimal clinical requirements for small set of use cases concepts common within the specialty. This core IG can be improved upon as use cases are executed and supplemented within related IGs when data requirements are important for just a small subset of the community.</li>
-          <li>Leverage <b>government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a> for core patient data, and others.</li>
-          <li>Leverage the <b>available tools</b> (see the <%= link_to("Resources page", "/resources/index.html") %>) for modeling and IG development, to produce higher-quality FHIR IGs that are more coherent across specialties, use cases, and projects.</li>
-          <li>Leverage <b>global code systems and terminology standards</b> (e.g., LOINC, SNOMED CT, CPT, and other systems).</li>
-         <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, preferably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
+           <li>Develop first a <b>single, core IG</b> that represents the minimal clinical requirements for small set of use cases. This core IG can be expanded upon as use cases are executed and supplemented by related IGs when data requirements are important for just a small subset of the community.</li>
+          <li>Leverage <b>government-backed interoperability standards</b> (<a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a> and <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a>) and <b>global code systems and terminology standards</b> (LOINC, SNOMED CT, CPT, etc.).</li>
+          <li>Leverage the <b>available tools</b> (see the <%= link_to("Resources page", "/resources/index.html") %>) to produce high-quality FHIR IGs that are coherent across specialties, use cases, and projects.</li>
+          <li>Publish work through an <b>open, royalty-free health standards organization</b>, preferably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
           </ul>
         </li>
  
-   <li>Build use cases within a vision of a coherent lifetime <b><%= link_to("Standard Health Record", "/resources/tech-standards.html#fhir_additional_considerations") %></b> for every patient.
+   <li>Build use cases within a vision of a comprehensive lifetime <b><%= link_to("Standard Health Record", "/resources/tech-standards.html#fhir_additional_considerations") %></b> for every patient.
 <ul>
-      <li>Enable standardized data to become the basis for <b>every patient's health record and standard of care</b>. 
-      <li>Empower patients to be <b>engaged with</b> and have <b>control</b> of their health data.</li>
-      <li><b>Collect patient data once</b> (generally around the encounter) and reuse it for future patient encounters and multiple use cases.</li>
-      <li>Enable <b>consistent representation</b> of health data concepts that could be used across specialties, subspecialties, and use cases.</li>
+      <li>Enable standardized data to become the foundation for <b>every patient's health records and care</b>. 
+      <li>Empower patients to <b>engaged and control</b> their health data.</li>
+      <li><b>Collect data once</b> and reuse it for future needs and other use cases.</li>
+      <li>Enable <b>consistent representation</b> of health data that can be used across specialties, subspecialties, and use cases.</li>
           </ul>
         </li>
 
