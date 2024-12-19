@@ -55,7 +55,7 @@
   <% end %>
 
   <%= content_tag(:li, link_to("Resources", "../resources/index.html", nav_active('resources/index')), nav_active('resources/index')) %>
-  <% if show_sub('resources/index') || show_sub('resources/roles') %>
+  <% if show_sub('resources/index') || show_sub('resources/roles') || show_sub('resources/implementation_deep_dive') %>
     <li class="sub"><a href="../resources/roles.html">By project role</a></li>
     <li class="sub"><a href="../resources/tech-standards.html">Standards Development Deep Dive</a></li>
     <li class="sub"><a href="../resources/implementation_deep_dive.html">Implementation Deep Dive</a></li>
