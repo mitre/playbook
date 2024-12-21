@@ -93,29 +93,28 @@
   
     <div id="content" class="col-md-9">
       <h1>Track 4. Implementation & Testing</h1>
-      <p class="lead">Health data standards must be implemented into software systems and workflows to provide a new or enhanced, potentially valuable function in the health ecosystem. Assessing the potential for real value requires testing, including pilots in increasingly realistic settings.</p>
+      <p class="lead">Health data standards must be implemented into software systems and workflows to provide a new or enhanced functionality. Assessing the feasibility and value for these enhancements requires piloting software in increasingly realistic settings.</p>
 
-      <p>Both implementation and testing are necessary for each use case (concept, workflow), standards, and/or software.
-      There are other significant biproducts of this Implementation & Testing track. It is both an opportunity to ensure the necessary community members are actively involved within increasingly realistic environments and to attract new organizations by demonstrating value.
-      For Implementation & Testing to progress effectively, activities and necessary resources must be included thoughtfully in the use case plans, and prepared for as the use case initiative moves forward.</p>
+      <p>Both implementation and testing are necessary for each use case, standard, and developed software. Furthermore, it is an opportunity to encourage community members to become actively involved in project efforts and attract new organizations by through demonstrating value in increasingly realistic settings.
+      For work to progress effectively, activities and necessary resources must be included in the use case plans, and prepared for as the initiative moves forward.</p>
       <p>
       The rest of this section covers experience gained in (a) Implementation, (b) Testing, and (c) Feedback on the previously discussed Use Case & Planning and Standards Development tracks.
       </p>
       <hr>
       <h2 id="implement_workflows">Implement FHIR IG(s) into Systems and Workflows</h2>
-      <p>Every use case requires implementing at least part of a FHIR IG into software to support generally new aspects of the envisioned workflow to be piloted. It’s highly recommended to engage market-leading software vendors in the specialty space. Vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Candidate vendors should be engaged in the community and committed to implement and test (and more) as early in the use case project as possible.</p>
+      <p>Every use case requires implementing at least part of a FHIR IG into software to support the workflow to be piloted. It is highly recommended to engage market-leading software vendors in the specialty space as these vendors typically have prior experience testing, a customer base that may be interested in new approaches, and credibility that will attract others. Given their important role and valuable experience, vendors should be engaged as early as possible in the community's use cases.</p>
       <p>If in the early phases engaging leading vendors is not possible, implementation into prototypes and/or testing software may be a satisfactory first step to allow useful assessments.</p>
       <p>Questions that should be addressed during Implementation include:</p>
       <ul>
       	<li>Is the IG understandable based on technical specifications and documentation?</li>
       	<li>Is the IG implementable?</li>
       	<li>Is the system within which the IG is implemented consistent and interoperable with other systems with which data exchange would be needed?</li>
-      	<li>Is the workflow represented within the use case and IG realistic and consistent from the developer perspective (will also need user input during testing)?</li>
+      	<li>Is the workflow represented within the use case and IG realistic and consistent for both developers and end users?</li>
       </ul>
-      <p>In all cases, it’s critical to receive specific comments and recommendations for change that can be taken back to the FHIR IG and the use case team so that adjustments can be considered - adjustments that could be very helpful before testing becomes intense.</p>
+      <p>In all cases, it is critical to receive comments and recommendations for change that can be taken back to the FHIR IG and use case teams so that adjustments can be considered.</p>
       <hr>
       <h2 id="execute_pilots">Test and Pilot</h2>
-      <p>Testing and pilots within use cases tend to start simply and then ramp up to as realistic a scenario as possible, via multiple phases. Testing of the implemented IG should start as early as possible, even if on a subset of the future functionality. </p>
+      <p>Testing and pilots within use cases tends to start simply and become increasingly realistic, via multiple phases. Testing of the implemented IG should start as early as possible, even if on a subset of the future functionality. </p>
       <p>The following table is a simplified set of testing axes that aim for a higher degree of realistic challenges from the top of the table to the bottom.  A particular test or pilot might combine components from different rows, and not just across a single row. </p>
 
       <table class="table table-striped ">
@@ -168,12 +167,12 @@
 
       <p>Note that the use of real patient data (bottom row) involves patient and institutional consent, appropriate privacy and security protections, and should be planned for many months before testing aims to start.</p>
       <p>Early testing provides early feedback and engages key community members in activities that bring the use case concept and IG closer to life. </p>
-      <p>However, CodeX use cases have found it useful to start with relatively simple tests that can be run 6-12 months after the start of the project, including components similar to the first row in the table above. Over time, CodeX use cases typically ramp up through increasingly ambitious tests to real-world pilots including components similar to the bottom row: e.g., demonstrating the full use case workflow, using software systems intended for sale or otherwise deployed, using real patient data, driven by the intended users, and within many organizations across which the future use case is planned to operate. See the <a href="https://mitre.github.io/playbook/casestudies/radiation_therapy.html">Radiation Therapy Treatment Data Case Study</a> for a good example of planning and ramping up of testing.</p>
+      <p>CodeX use cases have found it useful to start with relatively simple tests that can be run 6-12 months after the start of the project, including components similar to the first row in the table above. Over time, CodeX use cases, for example the <a href="https://mitre.github.io/playbook/casestudies/radiation_therapy.html">Radiation Therapy Treatment Data Case Study</a>, typically ramp up through increasingly ambitious tests to real-world pilots. These CodeX use cases include components similar to the bottom row: e.g., demonstrating the full use case workflow, using software systems intended for sale or otherwise deployed, using real patient data, driven by the intended users, and within many organizations across which the future use case is planned to operate.</p>
       <p>
-      Obviously, these real-world pilots require substantial planning, commitment, preparation, and legal/regulatory steps, well in advance of the execution of the pilot. This advanced planning is particularly important for testing within real healthcare settings, working with real patients, and using real patient data.
+      Obviously, these real-world pilots require substantial planning, commitment, preparation, and legal/regulatory steps, well in advance of pilot execution. This advanced planning is particularly important for testing within real-world healthcare settings and when working with real patient data.
       </p>
 
-      <p>For each of the tests and pilots, considerations typically include the elements below.  These elements should be nearly finalized when initial planning is complete, especially the commitment of the necessary resources.</p>
+      <p>For each of the tests and pilots have considerations that should be finalized when initial planning is complete, especially the commitment of the necessary resources, including:</p>
 
       <ul class="action-list">
         <li>Objectives 
@@ -204,7 +203,7 @@
       </ul>
       <hr>
       <h2 id="use_feedback">Feedback to Update Previous Work, As Needed</h2>
-      <p>Even early phase pilots can provide valuable feedback on how implementable the IG is in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow. Both implementation and testing can surface the need for updates to the use case (concept, workflow), standards, and/or software. A test or pilot may need to be repeated once these updates are agreed and implemented.</p>
+      <p>Even early phase pilots can provide valuable feedback on how implementable the IG is in software, the usability of the updated systems, and the costs, human burden, and potential benefits of the new workflow. Further, pilots can identify the need for project update and necessitate further testing on the revised software, hence early testing is critical to quickly developing valuable software for the community.</p>
 
       <div class="playbook-bottom-navigation">
         <div class="previous">  <a href="standards.html" class="btn btn-outline-primary btn-lg">Prev: Standards Development</a></div>
