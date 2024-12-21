@@ -243,7 +243,7 @@ section: Resources
           Standard Terminology. (refs:  <%= link_to('HIMSS','https://www.himss.org/terminology-standards') %>, <%= link_to('CMS','https://mmshub.cms.gov/sites/default/files/Codes-Code-Systems-Value-Sets.pdf') %>) A terminology code system is a managed collection of structured terminologies (concepts like procedures, diagnoses, treatments, measurements, results, and others) with the objective that there is one globally unique code (alpha-numeric, typically) to represent each concept. Code systems, terminologies, and vocabularies are not the same things, but are highly related and often used together or for the same idea. <%= link_to('SNOMED CT','https://www.snomed.org/use-snomed-ct') %>, <%= link_to('LOINC','https://loinc.org/') %>, <%= link_to('CPT','https://www.ama-assn.org/topics/cpt-codes') %> are some examples of widely used code systems. The benefit of representing a concept with standard terminology in an IG (and elsewhere) is that the concept can be implemented (in FHIR or other standards) in health information systems and understood everywhere the concept is collected, stored, exchanged, and used.
         </li>
         <li>
-          <%= link_to('FHIR Shorthand (FSH)','https://hl7.org/fhir/uv/shorthand/') %> is a domain-specific language for defining FHIR artifacts involved in creation of FHIR Implementation Guides (IG). The goal of FSH is to allow Implementation Guide (IG) creators to more directly express their intent with fewer concerns about underlying FHIR mechanics, and efficiently produce high-quality FHIR IGs.”  FSH is an HL7 standard. FSH is increasingly used around the world.
+          <%= link_to('FHIR Shorthand (FSH)','https://hl7.org/fhir/uv/shorthand/') %> is a domain-specific language for defining FHIR artifacts involved in creation of FHIR Implementation Guides (IG). The goal of FSH is to allow Implementation Guide (IG) creators to more directly express their intent with fewer concerns about underlying FHIR mechanics and efficiently produce high-quality FHIR IGs.”  FSH is an HL7 standard. FSH is increasingly used around the world.
         </li>
       </ul>
 
@@ -293,7 +293,7 @@ section: Resources
         FHIR profiles customize the standard FHIR base Resource definitions by constraining which values and elements of a resource are required and which are not for a particular context or use case. FHIR extensions add data elements and/or constraints for the standard FHIR base resource definitions to create more specific, customized resource definitions for a particular context or use case.
       </p>
       <p>
-        The following shows how mCODE derived profiles from the aforementioned framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. 
+        The following shows how mCODE derived profiles from the framework of the US Core FHIR IG. The subsequent three figures illustrate how the mCODE conceptual model is represented in the FHIR IG for patient demographics, labs, and medications to match the clinical information needs as structured data. 
       </p>
       <figure>
         <%= image_tag("profile-derivations.png", :width=>"100%", :alt=>"FHIR Resource Derivations diagram") %>
@@ -324,7 +324,7 @@ section: Resources
 
       <h3 id="IG_plan">Planning FHIR IG Development: A Patient Demographics Example</h3>
       <p>
-        There are a number of important high-level questions to consider when developing a FHIR IG. These questions can be found in the higher level <%= link_to("FHIR IG Development", "playbook/standards.html#fhir_ig_development") %> section.
+        There are several important high-level questions to consider when developing a FHIR IG. These questions can be found in the higher level <%= link_to("FHIR IG Development", "playbook/standards.html#fhir_ig_development") %> section.
       </p>
       
       <figure class="small-figure">
@@ -372,7 +372,7 @@ section: Resources
 
       <h3 id="HL7_process">HL7 Standards Process</h3>
       <p>
-        Agreeing on content of the FHIR IG to be standardized and then moving the IG through the HL7 process can take many months – on the order of a year from start to publication of a standard.  Time required depends on level of alignment of the IG authors, and also on how familiar project's standards process leader is with HL7 processes and people but can be many months to more than a year.  Projects should make sure to include sufficient time in the use case plan, and also start the standardization process early - before a complete draft FHIR IG is available.
+        Agreeing on content of the FHIR IG to be standardized and then moving the IG through the HL7 process can take many months – on the order of a year from start to publication of a standard.  Time required depends on level of alignment of the IG authors, and also on how familiar the project's standards process leader is with HL7 processes and people.  Projects should make sure to include sufficient time in the use case plan and start the standardization process early - before a complete draft FHIR IG is available.
       </p>
       <p>Resources that are important to review and understand:</p>
       <ul>
@@ -383,7 +383,7 @@ section: Resources
           <%= link_to('Understanding the Standards Process','https://confluence.hl7.org/display/HL7/Understanding+the+Standards+Process') %>.  Explains what HL7 does, rationale for the processes, and how to maximize the benefits of using the process.
         </li>
         <li>
-          <%= link_to('FHIR Implementation Guide Process Flow','https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow') %>. When creating a FHIR IG that is intended to an HL7 standard, there are a number of specific steps to complete.  A timeline based on HL7's early 2024 processes is shown here.  This is subject to change. Please check the previous link for the latest.
+          <%= link_to('FHIR Implementation Guide Process Flow','https://confluence.hl7.org/display/FHIR/FHIR+Implementation+Guide+Process+Flow') %>. When creating a FHIR IG that is intended to an HL7 standard, there are several specific steps to complete.  A timeline based on HL7's early 2024 processes is shown here.  This is subject to change. Please check the previous link for the latest.
           <br>
           <%= image_tag 'fhir-ig-process-flow.png', :width => '100%' %>
         </li>
