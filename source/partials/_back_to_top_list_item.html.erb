@@ -1,2 +1,7 @@
     <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
-    <li class="back-to-top-list-item invisible"><a href="../index.html" data-js-hook="back-to-top-button"><span id="back-to-top-title">Home</span></a></li>
+    <li class="back-to-top-list-item invisible">
+      <% link_to "index.html", data: { 'js-hook': "back-to-top-button" }, relative: true do %>
+        <span id="back-to-top-title">Home</span>
+      <% end %>
+    </li>
+
