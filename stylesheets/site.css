@@ -392,6 +392,9 @@ div.community-growth-items p.stakeholder-value {
   background-color: var(--card-title-bkg);
   padding: 0.5rem 1rem; }
 
+.small-figure {
+  text-align: center; }
+
 .resource-section-container {
   display: -ms-grid;
   display: grid;

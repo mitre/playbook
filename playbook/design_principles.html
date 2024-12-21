@@ -57,32 +57,33 @@
   <div class="row">
     <div class="col-md-3">
       <nav class="sidebar-menu navbar" id="playbook_menu">
-<h4>Playbook Menu</h4>
-<ul>
-  <li><a href="./">Intro & Tracks</a></li>
+  <h4>Playbook Menu</h4>
+  <ul>
+    <li><a href="./">Intro & Tracks</a></li>
 
-  <li><a href="getting_started.html">Before Starting</a></li>
-  <li class="active"><a href="design_principles.html" class="active">Design Principles</a></li>
-  
-  <li><a href="community.html">Track 1. Community Building</a></li>
+    <li><a href="getting_started.html">Before Starting</a></li>
+    <li class="active"><a href="design_principles.html" class="active">Design Principles</a></li>
+    
+    <li><a href="community.html">Track 1. Community Building</a></li>
 
-  <li><a href="use_cases_planning.html">Track 2. Use Cases & Planning</a></li>
-  
-  <li><a href="standards.html">Track 3. Standards Development</a></li>
-  
-  <li><a href="implementation.html">Track 4. Implementation & Testing</a></li>
+    <li><a href="use_cases_planning.html">Track 2. Use Cases & Planning</a></li>
+    
+    <li><a href="standards.html">Track 3. Standards Development</a></li>
+    
+    <li><a href="implementation.html">Track 4. Implementation & Testing</a></li>
 
-  <li><a href="adoption.html">Track 5. Adoption & Value</a></li>
+    <li><a href="adoption.html">Track 5. Adoption & Value</a></li>
 
-  <li><a href="../casestudies/">Case Studies</a></li>
+    <li><a href="../casestudies/">Case Studies</a></li>
 
-  <li><a href="../resources/">Resources</a></li>
+    <li><a href="../resources/">Resources</a></li>
 
-  <li><a href="../about/">About</a></li>
- 	    <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
+    <li><a href="../about/">About</a></li>
+   	    <li class="back-to-top-list-item invisible"><a href="#top" data-js-hook="back-to-top-button"><span id="back-to-top-title">Back to top</span></a></li>
+    <li class="back-to-top-list-item invisible"><a href="/index.html" data-js-hook="back-to-top-button"><span id="back-to-top-title">Home</span></a></li>
 
 
-</ul>
+  </ul>
 </nav>
 
     </div>
@@ -90,7 +91,12 @@
       <h1>Design Principles</h1>
       
       <p class="lead">
-        Below are principles that have guided the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a> and in the design, planning, development, testing, adoption, and value of FHIR-based data standards, including <a href="https://confluence.hl7.org/display/COD/mCODE">mCODE</a>. These principles guide and are elaborated upon in the <a href="./#organization">Playbook Tracks</a> and <a href="../casestudies/">Case Studies</a>.  If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, to be compatible across specialties as part of each patient's life-time health, to be adopted in practice, and to provide value for patients and all stakeholders.
+        Below are principles that have guided the <a href="https://confluence.hl7.org/display/COD/CodeX+Home">CodeX HL7 FHIR Accelerator Community</a> and in the design, planning, development, testing, adoption, and value of FHIR-based data standards, including <a href="https://confluence.hl7.org/display/COD/mCODE">mCODE</a>. These principles guide and are elaborated upon in the <a href="./#organization">Playbook Tracks</a> and <a href="../casestudies/">Case Studies</a>.  
+      </p>
+      <hr>
+      <br>
+      <p>
+        If additional specialties follow these principles, the resulting standards are more likely to be developed efficiently, to be compatible across specialties as part of each patient's life-time health, to be adopted in practice, and to provide value for patients and all stakeholders.
       </p>
              
       <ol>
@@ -117,7 +123,7 @@
           </ul>
         </li>
 
-       <li>How clinical requirements are represented in <b><a href="standards.html#fhir_ig_development">FHIR Implementation Guides (IG)</a></b> influence their useability, and their interoperability across specialties.
+       <li>How clinical requirements are represented in <b><a href="standards.html#fhir_ig_development">FHIR Implementation Guides (IGs)</a></b> influence their useability, and their interoperability across specialties.
           <ul>
            <li>Develop first a <b>single, core IG</b> that represents the minimal clinical requirements for small set of use cases concepts common within the specialty. This core IG can be improved upon as use cases are executed and supplemented within related IGs when data requirements are important for just a small subset of the community.</li>
           <li>Leverage <b>government-backed interoperability standards</b> whenever possible, e.g., <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">United States Core Data for Interoperability (USCDI)</a>, <a href="https://hl7.org/fhir/summary.html">Fast Healthcare Interoperability Resources (FHIR)</a>, <a href="https://www.hl7.org/fhir/us/core/">US Core FHIR Implementation Guide</a> for core patient data, and others.</li>
@@ -126,23 +132,21 @@
          <li>Standardize work through an <b>open, royalty-free health standards development organization</b>, preferably <a href="https://www.hl7.org/">Health Level Seven (HL7).</a></li>
           </ul>
         </li>
- 
-   <li>Build use cases within a vision of a coherent lifetime <b><a href="../resources/tech-standards.html#fhir_additional_considerations">Standard Health Record</a></b> for every patient.
-<ul>
-      <li>Enable standardized data to become the basis for <b>every patient's health record and standard of care</b>. 
-      <li>Empower patients to be <b>engaged with</b> and have <b>control</b> of their health data.</li>
-      <li><b>Collect patient data once</b> (generally around the encounter) and reuse it for future patient encounters and multiple use cases.</li>
-      <li>Enable <b>consistent representation</b> of health data concepts that could be used across specialties, subspecialties, and use cases.</li>
+
+        <li>Build use cases within a vision of a coherent lifetime <b><a href="../resources/tech-standards.html#fhir_additional_considerations">Standard Health Record</a></b> for every patient.
+          <ul>
+            <li>Enable standardized data to become the basis for <b>every patient's health record and standard of care</b>. 
+            <li>Empower patients to be <b>engaged with</b> and have <b>control</b> of their health data.</li>
+            <li><b>Collect patient data once</b> (generally around the encounter) and reuse it for future patient encounters and multiple use cases.</li>
+            <li>Enable <b>consistent representation</b> of health data concepts that could be used across specialties, subspecialties, and use cases.</li>
           </ul>
         </li>
-
-     
       </ol>
       
-    <div class="playbook-bottom-navigation">
-      <div class="previous"><a href="getting_started.html" class="btn btn-outline-primary btn-lg">Prev: Before Starting</a></div>
-      <div class="next"><a href="community.html" class="btn btn-outline-primary btn-lg">Next: Community Building</a></div>
-    </div>
+      <div class="playbook-bottom-navigation">
+        <div class="previous"><a href="getting_started.html" class="btn btn-outline-primary btn-lg">Prev: Before Starting</a></div>
+        <div class="next"><a href="community.html" class="btn btn-outline-primary btn-lg">Next: Community Building</a></div>
+      </div>
 
     </div>
   </div>
@@ -159,10 +163,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-<a href="../">          <img src="../images/playbook-logo.svg" alt="Health Interoperability Playbook Logo" />
-</a>        <p>
+<a href="../">        <img src="../images/playbook-logo.svg" alt="Health Interoperability Playbook Logo" />
+</a>      <p>
         The Health Interoperability Playbook is provided as a resource for the health information community.
-        For more comments and questions, please email:<br><a href="mailto:mcode@mitre.org">mcode@mitre.org</a>
+        For more comments and questions, please email:<br><a href="mailto:feedback@hplaybook.org">feedback@hplaybook.org</a>
       </p>
     </div>
     <div class="col-md-4">
